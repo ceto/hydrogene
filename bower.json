@@ -1,9 +1,9 @@
 {
-  "name": "roots",
-  "version": "7.0.2",
-  "homepage": "http://roots.io",
+  "name": "hydrogene",
+  "version": "1.0.0",
+  "homepage": "http://hydrogene.hu",
   "authors": [
-    "Ben Word <ben@benword.com>"
+    "Gabor Szabo <szabogabi@gmail.com>"
   ],
   "license": "MIT",
   "private": true,
@@ -15,7 +15,7 @@
   "dependencies": {
     "modernizr": "2.8.2",
     "jquery": "1.11.1",
-    "bootstrap": "3.3.0",
+    "bootstrap-sass-official": "3.3.1",
     "respond": "1.4.2"
   }
 }
