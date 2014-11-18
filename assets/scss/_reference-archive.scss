@@ -1,0 +1,56 @@
+.reference--widerow {
+	@include clearfix();
+	position: relative;
+
+}
+
+	.reference__figure {
+		position: relative;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		margin:0;
+		@include bp($s3){
+			position: absolute;
+			left:40%;
+			top:0;
+			right:0;
+			bottom:0;
+
+			
+
+			.reference--widerow:nth-of-type(2n) & {
+				left:0;
+				right:40%;
+			}	
+		}
+		a {
+			@include bp($s3){
+				position: absolute;
+				top:0;right:0;bottom:0;left:0;
+				opacity: 0;
+			}
+			img {
+
+			}
+		}
+	}
+	.reference__header {
+		position: relative;
+		padding:1em;
+
+		@include bp($s3){
+			min-height: 66vh;
+			width:40%;
+			float:left;
+			
+			.reference--widerow:nth-of-type(2n) & {
+				float:right;	
+			}	
+		}
+
+		
+
+
+	}
