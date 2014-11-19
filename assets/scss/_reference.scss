@@ -1,0 +1,95 @@
+.refrow {
+	@include clearfix();
+	position: relative;
+
+}
+
+	.refrow__figure {
+		position: relative;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		margin:0;
+		@include bp($s3){
+			width:66.666%;
+			float:right;
+			
+
+			.refrow:nth-of-type(2n) & {
+				float:left;
+			}	
+		}
+		@include bp($s4){
+			width:66.666%;
+		}
+
+		a {
+			display: block;
+			//transition: all .2s ease-in;
+			backface-visibility:hidden;
+			overflow: hidden;
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+			img {
+				transition: all .6s ease-in-out;
+				max-width: none;
+				width:100%;
+				display: block;
+			}
+		}
+	}
+	.refrow__header {
+		position: relative;
+		padding:1em 1em;
+
+
+		@include bp($s3){
+			font-size: 0.75em;
+			width:33.333%;
+			float:left;
+			
+			.refrow:nth-of-type(2n) & {
+				float:right;
+			}	
+		}
+		@include bp($s4){
+			//font-size: 1em;
+			width:33.333%;
+		}
+		.innerwrap{
+			max-width: 600px;
+			margin:0 auto;
+		}
+	}
+
+
+.refsingle {
+	
+	
+
+}
+
+	.refsingle__hero {
+		position: relative;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		margin:0;
+		
+
+		@include bp($s3){
+			min-height: 50vh;
+		}
+
+		img {
+			display: block;
+			@include bp($s3){
+				display: none;
+			}
+		}
+	}
+

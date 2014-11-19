@@ -1,0 +1,18 @@
+.wrapper {
+	@include clearfix();
+	margin:0 auto;
+	padding:0 1em;
+	//background-color: gray;
+}
+
+	.wrapper--wide {
+		max-width: 60em;
+	}
+
+	.wrapper--normal {
+		max-width: 42em;
+	}
+
+	.wrapper--narrow {
+		max-width: 30em;
+	}

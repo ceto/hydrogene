@@ -29,8 +29,16 @@ img {
   max-width: inherit;
 }
 
+figure {
+  margin:0;
+}
+
 .vertalignwrap {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.wp-caption {
+  width:auto !important;
 }

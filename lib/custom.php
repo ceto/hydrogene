@@ -68,3 +68,6 @@ function h2_refrences_taxonomies() {
 
 	register_taxonomy( 'references', array( 'reference' ), $args );
 }
+
+
+

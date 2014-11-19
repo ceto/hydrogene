@@ -50,7 +50,9 @@ function roots_display_sidebar() {
        */
       array(
         'is_404',
-        'is_front_page'
+        'is_front_page',
+        'is_archive',
+        array('is_singular', array('reference'))
       ),
       /**
        * Page template checks (via is_page_template())
