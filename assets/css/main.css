@@ -2,6 +2,52 @@
 /*============= Color Definition =================*/
 /*============= Fonts Definition =================*/
 /****************** Breakpoints Definition ***********/
+/* latin-ext */
+@font-face {
+  font-family: 'Futura BT Heavy';
+  src: url('../fonts/Futura-BT-Heavy.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Futura-BT-Heavy.eot?#iefix') format('embedded-opentype'), url('../fonts/Futura-BT-Heavy.woff') format('woff'), url('../fonts/Futura-BT-Heavy.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Georgia Pro';
+  src: url('../fonts/Georgia-Pro-Regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Georgia-Pro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Georgia-Pro-Regular.woff') format('woff'), url('../fonts/Georgia-Pro-Regular.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Georgia Pro';
+  src: url('../fonts/Georgia-Pro-Bold.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Georgia-Pro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Georgia-Pro-Bold.woff') format('woff'), url('../fonts/Georgia-Pro-Bold.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Georgia Pro';
+  src: url('../fonts/Georgia-Pro-Italic.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Georgia-Pro-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/Georgia-Pro-Italic.woff') format('woff'), url('../fonts/Georgia-Pro-Italic.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  font-style: italic;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('../fonts/BrandonText-Bold.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/BrandonText-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/BrandonText-Bold.woff') format('woff'), url('../fonts/BrandonText-Bold.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 700; }
+
 /* line 20, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/mixins */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -35,6 +81,7 @@ figure {
 
 /* line 1, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/base */
 html {
+  font-family: 'Georgia Pro', Georgia, serif;
   font-size: 1em;
   line-height: 1.4;
   background-color: #ffffff;
@@ -45,7 +92,8 @@ html {
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
   @media only screen and (min-width: 1024px) {
     html {
       font-size: 1.25em; } }
@@ -147,7 +195,18 @@ html {
     max-width: 600px;
     margin: 0 auto; }
 
-/* line 76, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 69, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+.refrow__title {
+  font-family: 'Futura BT Heavy', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* line 74, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+.refrow__subtitle {
+  font-family: 'Futura BT Heavy', sans-serif;
+  font-weight: 700; }
+
+/* line 86, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .refsingle__hero {
   position: relative;
   -webkit-background-size: cover;
@@ -158,10 +217,15 @@ html {
   @media only screen and (min-width: 1024px) {
     .refsingle__hero {
       min-height: 50vh; } }
-  /* line 88, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+  /* line 98, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
   .refsingle__hero img {
     display: block; }
     @media only screen and (min-width: 1024px) {
       .refsingle__hero img {
         display: none; } }
+
+/* line 106, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+.refsingle__title {
+  font-family: 'Futura BT Heavy', sans-serif;
+  text-transform: uppercase; }
 /*# sourceMappingURL=main.css.map */

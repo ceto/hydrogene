@@ -66,6 +66,16 @@
 		}
 	}
 
+	.refrow__title {
+		font-family: $headingfont;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.refrow__subtitle {
+		font-family: $headingfont;
+		font-weight: 700;
+	}
+
 
 .refsingle {
 	
@@ -91,5 +101,10 @@
 				display: none;
 			}
 		}
+	}
+
+	.refsingle__title {
+		font-family: $headingfont;
+		text-transform: uppercase;
 	}
 
