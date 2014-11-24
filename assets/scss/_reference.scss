@@ -45,6 +45,7 @@
 	.refrow__header {
 		position: relative;
 		padding:1em 1em;
+		text-align: center;
 
 
 		@include bp($s3){
@@ -70,12 +71,99 @@
 		font-family: $headingfont;
 		font-weight: 700;
 		text-transform: uppercase;
+		margin:0.5em 0;
+		font-size: 1.2em;
+		line-height: 1.2;
+
 	}
 	.refrow__subtitle {
-		font-family: $headingfont;
+		position: relative;
+		//display: inline-block;
+		//font-family: $headingfont;
 		font-weight: 700;
+		margin:0;
+		font-size: 0.875em;
+		line-height: 1;
+		text-align: center;
+		margin:0.875em auto;
+		&:after {
+			content:'';
+			width:2em;
+			height:1px;
+			background-color: gray;
+			display: block;
+			margin:0.75em auto 0 auto;
+		}
+	}
+	.refrow__summary {
+		margin:1em 0;
+		//text-align: left;
+		&:before {
+			content:'';
+			width:0.875em;
+			height:0.875em;
+			background-color: gray;
+			display: block;
+			margin:0.75em auto 0.875em auto;
+		}
+		
+	}
+	.refrow__actions {
+		margin:1.5em 0;
+		//text-align: left;
+		a {
+			font-family: $headingfont;
+			font-size: 0.75em;
+			font-weight: 700;
+			text-decoration:none;
+			display: inline-block;
+			padding: 0.25em 0.5em;
+			border:1px solid gray;
+			color:black;
+			margin:0.25em;
+
+		}
 	}
 
+	.refrow__tags {
+		max-width: $s1;
+		margin:0 auto;
+		font-size: 0.875em;
+		ul {
+			margin:0;
+			padding:0;
+			li {
+				list-style-type: none;
+				display: inline;
+				font-style: italic;
+				&:before {
+					content:' × ';
+					//font-style: normal;
+
+				}
+				&:first-of-type {
+					&:before {
+						content:'';
+					}
+				}
+
+			}
+		}
+	}
+		
+		.refrow__tags__title {
+			font-size: 1em;
+			margin:0.75em 0;
+			position: relative;
+			&:after {
+				content:'';
+				width:2em;
+				height:1px;
+				background-color: black;
+				display: block;
+				margin:0.75em auto 0 auto;
+			}
+		}
 
 .refsingle {
 	

@@ -47,7 +47,7 @@ function h2_refrences_taxonomies() {
 		'name'              => _x( 'Reference Categories', 'taxonomy general name','hydrogene' ),
 		'singular_name'     => _x( 'Reference Category', 'taxonomy singular name','hydrogene' ),
 		'search_items'      => __( 'Search Reference Categories','hydrogene' ),
-		'all_items'         => __( 'All Reference Categorires','hydrogene' ),
+		'all_items'         => __( 'All Reference Categories','hydrogene' ),
 		'parent_item'       => __( 'Parent Reference Category','hydrogene' ),
 		'parent_item_colon' => __( 'Parent Reference Category:','hydrogene' ),
 		'edit_item'         => __( 'Edit Reference Category','hydrogene' ),
@@ -67,6 +67,82 @@ function h2_refrences_taxonomies() {
 	);
 
 	register_taxonomy( 'references', array( 'reference' ), $args );
+}
+
+
+/************ MetaBoxes **********/
+
+if ( file_exists(  __DIR__ .'/CMB2/init.php' ) ) { require_once  __DIR__ .'/CMB2/init.php';};
+
+function cmb2_hide_if_no_cats( $field ) {
+	if ( ! has_tag( 'cats', $field->object_id ) ) {
+		return false;
+	}
+	return true;
+}
+
+
+add_filter( 'cmb2_meta_boxes', 'h2_metaboxes' );
+function h2_metaboxes( array $meta_boxes ) {
+	$prefix = '_refdata_';
+	$meta_boxes['reference_metabox'] = array(
+		'id'            => 'reference_metabox',
+		'title'         => __( 'Referencia meta adatok	', 'cmb2' ),
+		'object_types'  => array( 'reference', ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+		// 'cmb_styles' => false, // false to disable the CMB stylesheet
+		'fields'        => array(
+			array(
+				'name' => __( 'Subtitle', 'cmb2' ),
+				'desc' => __( 'subtitle field description', 'cmb2' ),
+				'id'   => $prefix . 'subtitle',
+				'type' => 'text',
+				// 'repeatable' => true,
+			),
+			array(
+				'name'    => __( 'Excerpt', 'cmb2' ),
+				'desc'    => __( 'short excerpt', 'cmb2' ),
+				'id'      => $prefix . 'excerpt',
+				'type'    => 'wysiwyg',
+				'options' => array( 'textarea_rows' => 5, ),
+			),
+
+			array(
+				'name' => __( 'Year', 'cmb2' ),
+				'id'   => $prefix . 'year',
+				'type' => 'text_small',
+				// 'repeatable' => true,
+			),
+			
+			array(
+				'name' => __( 'Website URL', 'cmb2' ),
+				'desc' => __( 'add a url if exists', 'cmb2' ),
+				'id'   => $prefix . 'url',
+				'type' => 'text_url',
+				// 'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'), // Array of allowed protocols
+				// 'repeatable' => true,
+			),
+
+			array(
+				'name' => 'Some attached Image',
+				'desc' => 'Upload an image or enter an URL.',
+				'id' => $prefix . 'image',
+				'type' => 'file',
+				// 'allow' => array( 'url', 'attachment' ) // limit to just attachments with array( 'attachment' )
+			),
+		
+			array(
+				'name' => __( 'oEmbed', 'cmb2' ),
+				'desc' => __( 'Enter a youtube, twitter, or instagram URL. Supports services listed at <a href="http://codex.wordpress.org/Embeds">http://codex.wordpress.org/Embeds</a>.', 'cmb2' ),
+				'id'   => $prefix . 'test_embed',
+				'type' => 'oembed',
+			),
+		),
+	);
+
+	return $meta_boxes;
 }
 
 

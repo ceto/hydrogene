@@ -12,21 +12,24 @@
   </figure>
 	  <header class="refrow__header">
 	  	<div class="innerwrap">
-		    <h3 class="refrow__subtitle">Subtitle text is coming here</h3>
+		    <h3 class="refrow__subtitle"><?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?></h3>
 		    <h2 class="refrow__title"><?php the_title(); ?></h2>
-		    <div class="refrow__summary"><?php the_excerpt(); ?></div>
+		    <div class="refrow__tags">
+					<!-- <h3 class="refrow__tags__title">Alkalmazott technológiák</h3> -->
+					<ul>
+						<li>Arculattervezés</li>
+						<li>Weboldal tervezés</li>
+						<li>Responsive webdesign</li>
+						<li>Wordpress weboldalkészítés</li>    		
+					</ul>
+				</div>
+		    <div class="refrow__summary"><?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?></div>
+				
 		    <div class="refrow__actions">
 		    	<a class="btn" href="<?php the_permalink(); ?>"><?php _e('Projekt bemutása','hydrogene'); ?></a>
 		    	<a class="btn" target="_blank" href="#"><?php _e('Weboldal megnyitása','hydrogene'); ?></a>
 		    </div>
-		    <div class="refrow__tags">
-		    	<ul>
-		    		<li>Arculattervezés</li>
-		    		<li>Weboldal tervezés</li>
-		    		<li>Responsive webdesign</li>
-		    		<li>Wordpress weboldalkészítés</li>    		
-		    	</ul>
-		    </div>
+
 	    </div>
 	  </header>
 </article>
