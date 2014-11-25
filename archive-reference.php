@@ -1,10 +1,13 @@
-<?php get_template_part('templates/page', 'header'); ?>
-<?php if (!have_posts()) : ?>
-  <div class="alert alert-warning">
-    <?php _e('Sorry, no results were found.', 'roots'); ?>
+<div class="refarchive__header">
+  <div class="wrapper wrapper--normal">
+    <div class="innerwrap">
+      <h1 class="refarchive__title"><?php _e('Kiemelt munkák','h2'); ?></h1>
+      <div class="refarchive__headdesc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, odio, quidem. Cum nisi, recusandae corporis, molestiae doloribus enim rerum nulla omnis eaque laborum delectus aliquam nobis iusto repudiandae minima sint.</p>
+      </div>
+    </div>
   </div>
-  <?php get_search_form(); ?>
-<?php endif; ?>
+</div>
 
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/reference', 'widerow'); ?>

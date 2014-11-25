@@ -1,6 +1,10 @@
 .refrow {
 	@include clearfix();
 	position: relative;
+	border-bottom:1.5vw solid white;
+	background-color: rgba(37, 37, 37, 1);
+	color:white;
+
 
 }
 
@@ -9,31 +13,66 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
+		overflow: hidden;
 
 		margin:0;
+		
 		@include bp($s3){
-			width:66.666%;
-			float:right;
+			position: absolute;
+			width:60%;
+			height: 100%;
+			right:0;
+			left:40%;
+			top:0;
+			border-left: 1.5vw solid white;
 			
 
 			.refrow:nth-of-type(2n) & {
-				float:left;
+				left:0;
+				right:40%;
+				border-right: 1.5vw solid white;
+				border-left: none;
 			}	
+			
+			a img {
+				visibility: hidden;
+			}
 		}
 		@include bp($s4){
-			width:66.666%;
+			//width:66.666%;
 		}
 
 		a {
 			display: block;
-			//transition: all .2s ease-in;
+			position: relative;
 			backface-visibility:hidden;
 			overflow: hidden;
+			&:after {
+				display: block;
+				position: absolute;
+				content:'';
+				left:0;right:0;
+				top:0;bottom:0;
+				background-color: rgba(37, 37, 37, 0.333);
+				opacity: 0;
+				transition: all .6s ease-in-out;
+			}
 			&:hover {
+				&:after {
+					opacity: 1;
+				}
 				img {
 					transform: scale(1.05);
 				}
 			}
+
+			@include bp($s3) {
+				position: absolute;
+				left:0;top:0;
+				width:100%;
+				height:100%;
+			}
+
 			img {
 				transition: all .6s ease-in-out;
 				max-width: none;
@@ -42,28 +81,41 @@
 			}
 		}
 	}
+
+
 	.refrow__header {
 		position: relative;
-		padding:1em 1em;
-		text-align: center;
+		padding:2em 1em;
+		text-align: left;
 
-
+		@include bp($s2){
+			font-size: 1.125em;		
+		}
 		@include bp($s3){
-			font-size: 0.75em;
-			width:33.333%;
+			font-size: 0.875em;
+			width:40%;
 			float:left;
+			padding:3em 1.5em;
 			
 			.refrow:nth-of-type(2n) & {
 				float:right;
 			}	
 		}
 		@include bp($s4){
+			padding:4em 2em;
 			//font-size: 1em;
-			width:33.333%;
+			//width:33.333%;
+
+		}
+		@include bp($s5){
+			font-size: 1em;
 		}
 		.innerwrap{
-			max-width: 600px;
+			max-width: 35em;
 			margin:0 auto;
+			@include bp($s3){
+				max-width: $s1;
+			}
 		}
 	}
 
@@ -74,6 +126,14 @@
 		margin:0.5em 0;
 		font-size: 1.2em;
 		line-height: 1.2;
+		a {
+			color:inherit;
+			text-decoration: none;
+			&:hover, &:focus {
+				//color:gray;
+				text-decoration: underline;
+			}
+		}
 
 	}
 	.refrow__subtitle {
@@ -84,15 +144,15 @@
 		margin:0;
 		font-size: 0.875em;
 		line-height: 1;
-		text-align: center;
+		text-align: left;
 		margin:0.875em auto;
 		&:after {
 			content:'';
 			width:2em;
 			height:1px;
-			background-color: gray;
+			background-color: white;
 			display: block;
-			margin:0.75em auto 0 auto;
+			margin:0.75em auto 0 0	;
 		}
 	}
 	.refrow__summary {
@@ -102,9 +162,9 @@
 			content:'';
 			width:0.875em;
 			height:0.875em;
-			background-color: gray;
+			background-color: white;
 			display: block;
-			margin:0.75em auto 0.875em auto;
+			margin:0.75em auto 0.875em 0;
 		}
 		
 	}
@@ -118,16 +178,16 @@
 			text-decoration:none;
 			display: inline-block;
 			padding: 0.25em 0.5em;
-			border:1px solid gray;
-			color:black;
-			margin:0.25em;
+			border:1px solid white;
+			color:inherit;
+			margin:0.25em 0.25em 0 0;
 
 		}
 	}
 
 	.refrow__tags {
 		max-width: $s1;
-		margin:0 auto;
+		margin:0 0;
 		font-size: 0.875em;
 		ul {
 			margin:0;
@@ -170,6 +230,38 @@
 	
 
 }
+	.refsingle__header {
+		@include clearfix();
+		text-align: center;
+		margin:0 0;
+		padding:4em 0 2em;
+	}
+	.refsingle__subtitle {
+		position: relative;
+		font-weight: 700;
+		margin:0;
+		//font-size: 0.875em;
+		line-height: 1;
+		text-align: center;
+		margin:1em auto;
+		&:after {
+			content:'';
+			width:2em;
+			height:1px;
+			background-color: gray;
+			display: block;
+			margin:1em auto 0 auto;
+		}
+	}
+	.refsingle__title {
+		font-family: $headingfont;
+		text-transform: uppercase;
+
+	}
+	.refsingle__summary {
+		font-size: 1.333em;
+		margin-bottom: 3em;
+	}
 
 	.refsingle__hero {
 		position: relative;
@@ -177,10 +269,30 @@
 		background-repeat: no-repeat;
 		background-position: center center;
 		margin:0;
+		overflow: hidden;
 		
 
 		@include bp($s3){
-			min-height: 50vh;
+			min-height: 66vh;
+			width:66.666%;
+			float:right;
+		}
+		&:hover:after {
+				left:100%;
+
+			}
+		&:after {
+			position: absolute;
+			width:50%;
+			left:50%;
+			bottom: 0;
+			top:0;
+			//z-index: 10;
+			content: '';
+			background-color: rgba(37, 37, 37, 0.333);
+			border-left: 1.5vw solid white;
+			box-sizing:content-box;
+			transition:all .8s ease;
 		}
 
 		img {
@@ -191,8 +303,84 @@
 		}
 	}
 
-	.refsingle__title {
-		font-family: $headingfont;
-		text-transform: uppercase;
+	.refsingle__infopanel {
+		@include clearfix();
+		
+		background-color: black;
+		color:white;
+		text-align: right;
+		margin:1.5vw 0 0;
+		padding:1em;
+
+		@include bp($s3){
+			margin:0 0;
+			min-height: 66vh;
+			width:33.333%;
+			float:left;
+			border-right: 1.5vw solid white;
+		}
+		
+		.innerwrap {
+			@include clearfix();
+			font-size: 0.875em;
+			text-align: left;
+			// border:1px solid white;
+			// padding:1em;
+			max-width: $s1;
+			width: 100%;
+
+			@include bp($s3){
+				display: inline-block;
+				//width: $s1;
+			}
+		}
+
+		h4 {
+			font-family: $headingfont;
+			font-size: 0.75em;
+			line-height: 1;
+			//text-transform: uppercase;
+		}
+	}
+	.infopanel__data {
+		@include clearfix();
+		margin:1em 0;
+		font-size: 1.333em;
+		line-height: 1;
+
+		span {
+			display: block;
+			font-family: $headingfont;
+			font-weight: 700;
+			font-size: 0.5em;
+			margin-right: 0.5em;
+			min-width:7em;
+		}
 	}
 
+
+
+
+
+
+/******** Reference Archive Style *********/
+
+.refarchive__header {
+	padding:4em 0 2em;
+	//background-color: black;
+	//color:white;
+	text-align: center;
+	
+	.innerwrap{
+		//margin-left: 33.333%;
+		
+	}
+}
+	.refarchive__title {
+		font-family: $headingfont;
+		text-transform: uppercase;		
+	}
+
+	.refarchive__headdesc {
+		font-size: 1.333em;		
+	}

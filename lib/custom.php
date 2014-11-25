@@ -115,6 +115,13 @@ function h2_metaboxes( array $meta_boxes ) {
 				'type' => 'text_small',
 				// 'repeatable' => true,
 			),
+			array(
+				'name' => __( 'Main color', 'cmb2' ),
+				'desc'    => __( 'add rgb values, ex, 125, 200, 120', 'cmb2' ),
+				'id'   => $prefix . 'color',
+				'type' => 'text_small',
+				// 'repeatable' => true,
+			),
 			
 			array(
 				'name' => __( 'Website URL', 'cmb2' ),
