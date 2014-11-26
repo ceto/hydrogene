@@ -15,15 +15,18 @@
         }
       </style>
       <style>
-        .refsingle__infopanel {
+        .refsingle__header {
           background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
         }
+        /*.refsingle__infopanel {
+          background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
+        }*/
         .refsingle__hero:after {
           background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
         }
-        .refsingle__subtitle {
+        /*.refsingle__subtitle {
           color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
-        }
+        }*/
       </style>
       <figure class="refsingle__hero">
         <?php the_post_thumbnail(); ?>
