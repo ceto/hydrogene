@@ -26,12 +26,14 @@
 		overflow: hidden;
 		backface-visibility:hidden;
 
-		margin:0;
+		margin:0 auto;
+		
 		
 		@include bp($s3){
 			position: absolute;
-			width:60%;
-			height: 100%;
+			width:70%;
+			height: 80%;
+
 
 			left:50%;
 			top: 50%;
@@ -42,7 +44,8 @@
 			
 
 			.refrow:nth-of-type(2n) & {
-				left:-10%;
+				left:-20%;
+				background-position: right center;
 				//border-right: 1.5vw solid white;
 				//border-left: none;
 			}	
@@ -60,6 +63,8 @@
 			position: relative;
 			backface-visibility:hidden;
 			overflow: hidden;
+			padding:0 0 2em;
+			text-align: center;
 			&:after {
 				display: block;
 				position: absolute;
@@ -75,7 +80,7 @@
 					opacity: 1;
 				}
 				img {
-					transform: scale(1.05);
+					//transform: scale(1.05);
 				}
 			}
 
@@ -88,9 +93,12 @@
 
 			img {
 				transition: all .6s ease-in-out;
-				max-width: none;
-				width:100%;
-				display: block;
+				//max-width: 90%;
+				max-height: 27em;
+				width:auto;
+				//width:100%;
+				//display: block;
+				
 			}
 		}
 	}
@@ -106,6 +114,7 @@
 			//font-size: 1.125em;		
 		}
 		@include bp($s3){
+
 			width:50%;
 			left:0;
 			padding:3em 2em 3em 2em;
@@ -247,140 +256,24 @@
 			}
 		}
 
+
+/************** Reference Single Style Definitions ****************/
+
 .refsingle {
-	
-	
+	.refrow {
+		//border-top:0.125em solid rgba(255,255,255,0.333);
+	}
+
 
 }
 	.refsingle__header {
 		@include clearfix();
-		text-align: center;
-		margin:0 0;
-		padding:4em 0 0;
-		color:#fff;
+		//text-align: left;
+		//margin:0 0;
+		//padding:4em 0 0;
+		//color:#fff;
 	}
-	.refsingle__subtitle {
-		position: relative;
-		color:rgba(255,255,255,0.333);
-		font-weight: 700;
-		margin:0;
-		//font-size: 0.875em;
-		line-height: 1;
-		text-align: center;
-		margin:1em auto;
-		&:after {
-			content:'';
-			width:2em;
-			height:1px;
-			background-color: rgba(255,255,255,0.333);
-			display: block;
-			margin:1em auto 0 auto;
-		}
-	}
-	.refsingle__title {
-		font-family: $headingfont;
-		text-transform: uppercase;
-
-	}
-	.refsingle__summary {
-		font-size: 1.333em;
-		margin-bottom: 3em;
-	}
-
-	.refsingle__hero {
-		position: relative;
-		background-size: auto 80%;
-		background-repeat: no-repeat;
-		background-position: left center;
-		margin:0;
-		overflow: hidden;
-		
-
-		@include bp($s3){
-			min-height: 66vh;
-			width:66.666%;
-			float:right;
-		}
-		&:hover:after {
-				left:100%;
-
-			}
-		&:after {
-			position: absolute;
-			width:50%;
-			left:50%;
-			bottom: 0;
-			top:0;
-			//z-index: 10;
-			content: '';
-			background-color: rgba(37, 37, 37, 0.333);
-			//border-left: 1.5vw solid white;
-			box-sizing:content-box;
-			transition:all .8s ease;
-		}
-
-		img {
-			display: block;
-			@include bp($s3){
-				display: none;
-			}
-		}
-	}
-
-	.refsingle__infopanel {
-		@include clearfix();
-		
-		background-color: rgba(0,0,0,0.333);
-		color:white;
-		text-align: right;
-		margin:1.5vw 0 0;
-		padding:1em;
-
-		@include bp($s3){
-			margin:0 0;
-			min-height: 66vh;
-			width:33.333%;
-			float:left;
-			//border-right: 1.5vw solid white;
-		}
-		
-		.innerwrap {
-			@include clearfix();
-			font-size: 0.875em;
-			text-align: left;
-			// border:1px solid white;
-			// padding:1em;
-			max-width: $s1;
-			width: 100%;
-
-			@include bp($s3){
-				display: inline-block;
-				//width: $s1;
-			}
-		}
-
-		h4 {
-			font-family: $headingfont;
-			font-size: 0.75em;
-			line-height: 1;
-			//text-transform: uppercase;
-		}
-	}
-	.infopanel__data {
-		@include clearfix();
-		margin:1em 0;
-		font-size: 1.333em;
-		line-height: 1;
-
-		span {
-			display: block;
-			font-family: $headingfont;
-			font-weight: 700;
-			font-size: 0.5em;
-			margin-right: 0.5em;
-			min-width:7em;
-		}
-	}
+	
 
 
 

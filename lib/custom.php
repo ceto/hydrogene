@@ -154,3 +154,10 @@ function h2_metaboxes( array $meta_boxes ) {
 
 
 
+function h2_post_class($classes) {
+  if (get_post_type()=='reference' ) {
+		$classes[] = 'reference-'.get_the_ID();
+  }
+  return $classes;
+}
+add_filter('post_class', 'h2_post_class');

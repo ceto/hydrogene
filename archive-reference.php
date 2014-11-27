@@ -10,7 +10,9 @@
 </div>
 
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/reference', 'widerow'); ?>
+  <article <?php post_class(); ?>>
+    <?php get_template_part('templates/reference', 'widerow'); ?>
+  </article>
 <?php endwhile; ?>
 
 <?php if ($wp_query->max_num_pages > 1) : ?>
