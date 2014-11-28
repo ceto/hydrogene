@@ -34,8 +34,8 @@
 			    <div class="refrow__summary"><?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?></div>
 					
 			    <div class="refrow__actions">
-			    	<a class="btn" href="<?php the_permalink(); ?>"><?php _e('Projekt bemutása','hydrogene'); ?></a>
-			    	<a class="btn" target="_blank" href="#"><?php _e('Weboldal megnyitása','hydrogene'); ?></a>
+			    	<a class="btn--pseudo" href="<?php the_permalink(); ?>"><?php _e('Projekt részletek','hydrogene'); ?> <i class="ion ion-clipboard"></i></a>
+			    	<a class="btn--pseudo" target="_blank" href="#"><?php _e('Megnézem élőben','hydrogene'); ?> <i class="ion ion-monitor"></i></a>
 			    </div>
 			  </div>
 			</header>

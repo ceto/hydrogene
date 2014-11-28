@@ -1,7 +1,7 @@
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class('refsingle'); ?>>
-    <header class="refsingle__header refrow">  
-      <?php get_template_part('templates/reference', 'widerow'); ?>
+    <header class="refsingle__header">  
+      <?php get_template_part('templates/reference', 'singlehead'); ?>
     </header>
     <div class="wrapper wrapper--normal">
       <div class="refsingle__content">

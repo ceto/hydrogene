@@ -3,6 +3,7 @@
 	position: relative;
 	//border-bottom:1.5vw solid white;
 	background-color: rgba(37, 37, 37, 1);
+	border-top: 10px solid rgba(255,255,255,0.2);
 	color:white;
 	overflow: hidden;
 
@@ -20,9 +21,9 @@
 
 	.refrow__figure {
 		position: relative;
-		background-size: auto auto;
+		background-size: auto 100%;
 		background-repeat: no-repeat;
-		background-position: left center;
+		background-position: left bottom;
 		overflow: hidden;
 		backface-visibility:hidden;
 
@@ -32,7 +33,7 @@
 		@include bp($s3){
 			position: absolute;
 			width:70%;
-			height: 80%;
+			height: 100%;
 
 
 			left:50%;
@@ -45,7 +46,7 @@
 
 			.refrow:nth-of-type(2n) & {
 				left:-20%;
-				background-position: right center;
+				background-position: right bottom;
 				//border-right: 1.5vw solid white;
 				//border-left: none;
 			}	
@@ -63,7 +64,7 @@
 			position: relative;
 			backface-visibility:hidden;
 			overflow: hidden;
-			padding:0 0 2em;
+			padding:0 0 0;
 			text-align: center;
 			&:after {
 				display: block;
@@ -107,8 +108,10 @@
 	.refrow__header {
 		@include clearfix();
 		position: relative;
-		padding:2em 0;
+		padding:4em 0 0;
 		text-align: left;
+
+
 
 		@include bp($s2){
 			//font-size: 1.125em;		
@@ -201,17 +204,9 @@
 	.refrow__actions {
 		margin:1.5em 0;
 		//text-align: left;
-		a {
-			font-family: $headingfont;
+		.btn--pseudo {
 			font-size: 0.75em;
-			font-weight: 700;
-			text-decoration:none;
-			display: inline-block;
-			padding: 0.25em 0.5em;
-			border:1px solid rgba(255,255,255,0.333);
-			color:inherit;
-			margin:0.25em 0.25em 0 0;
-
+			margin:0.25em 1.5em 0 0;
 		}
 	}
 
@@ -262,6 +257,35 @@
 .refsingle {
 	.refrow {
 		//border-top:0.125em solid rgba(255,255,255,0.333);
+		//padding-top: 2em;
+	}
+
+	.refrow__header {
+		@include bp($s3){
+			width:60%;
+			// position: static;
+			// top: 0;
+			// transform: none;
+		}
+	}
+
+	.refrow__figure {
+		@include bp($s3){
+			//width:70%;
+			left:60%;
+			//position: fixed;
+		}
+	}
+	
+	.refrow__subtitle {
+		font-size: 1.5em;
+	}
+	.refrow__title {
+		font-size: 2.5em;
+	}
+
+	.refrow__summary {
+		font-size: 1.25em;
 	}
 
 
@@ -274,9 +298,67 @@
 		//color:#fff;
 	}
 	
+	.refsingle--infoblock{
+
+		background-color: rgba(37,37,37,1);
+		color:white;
+
+		.wrapper {
+					position: relative;
+		}
+		
+	}
+	
+	.refsingle--infopanel{
+		padding:4em 0;
+		color:white;
+		@include bp($s3){
+			width:66.666%;
+			padding:3em 2em 3em 2em;
+			float:right;
+		}
+		@include bp($s4){
+			padding:4em 3em 4em 3em;
+		}
+	}
+	
+
+	.refsingle--actions {
+		text-align: center;
+		@include bp($s3){
+			width:33.333%;
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+	}
+	.infopanel--subtitle {
+		color:rgba(255,255,255,0.333);
+		font-size: 2em;
+		margin-bottom: 0;
 
 
-
+	}
+	
+	.infopanel--taskelements {
+		font-size: 1em;
+		font-family: $headingfont;
+		text-transform: uppercase;
+		font-weight: 700;
+		//font-style: italic;
+		color:rgba(255,255,255,0.333);
+		padding:0;
+		margin:1em 0;
+		li {
+			list-style-type: none;
+			//margin:0.125em 0.5em;
+			display: inline-block;
+			margin-right: 1em;
+			i{
+				margin-right: 0.5em;
+			}
+		}
+	}
 
 
 
@@ -284,8 +366,8 @@
 
 .refarchive__header {
 	padding:4em 0 2em;
-	//background-color: black;
-	//color:white;
+	background-color: rgba(37,37,37,1);
+	color:white;
 	text-align: center;
 	
 	.innerwrap{
