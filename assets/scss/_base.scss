@@ -69,3 +69,91 @@ h2, h3 {
 	}
 
 }
+
+
+.blocktitle {
+	color:rgba(white,0.333);
+	font-family: $headingfont;
+	font-weight: 700;
+	font-size: 1.5em;
+	line-height: 1;
+	//text-transform: uppercase;
+
+	small {
+		display: block;
+		font-size: 66.666%;
+		line-height: 1.25;
+		text-transform: none;
+		//font-weight: 400;
+		//font-family: $serif;	
+		color:rgba(white,0.333);
+	}
+}
+
+
+
+.formitem {
+	margin:1em 0;
+}
+
+label {
+	//display: none;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+
+	box-sizing:content-box;
+	font-family: $sans-serif;
+	background-color: rgba(white,0.125);
+	border:none;
+	border:1px solid rgba(white,0.1333);
+	color:$gray-main;
+	padding:0.75em;
+	-webkit-appearance: none;
+	outline:none;
+	width:100%;
+	
+
+	&:focus {
+		background-color: rgba(white,0.5);
+		&::-webkit-input-placeholder {
+			color:transparent;
+		}
+		&:-moz-placeholder {
+			color:transparent;
+		}
+		&::-moz-placeholder {
+			color:transparent;
+		}
+		&:-ms-input-placeholder {
+			color:transparent;
+		}
+		
+	}
+
+}
+
+::-webkit-input-placeholder {
+   color: $gray-main;
+   text-transform: uppercase;
+   font-family: $headingfont;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $gray-main;
+   text-transform: uppercase;
+   font-family: $headingfont;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $gray-main;
+   text-transform: uppercase;
+   font-family: $headingfont;  
+}
+
+:-ms-input-placeholder {  
+   color: $gray-main;
+   text-transform: uppercase;
+   font-family: $headingfont;  
+}
+

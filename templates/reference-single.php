@@ -8,7 +8,12 @@
         <?php the_content(); ?>
       </div>
     </div>
-    
+    <div class="refsingle__quoteshare">
+      <div class="wrapper wrapper--wide">
+      <?php get_template_part('templates/reference', 'quoteshare'); ?>
+      </div>
+    </div>
+
     <footer>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
     </footer>

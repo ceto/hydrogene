@@ -15,9 +15,17 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}
 			
-			.refsingle--infoblock {
+			.refsingle__infoblock {
 				border-top: 10px solid rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}
+			.refsingle__quoteshare{
+				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
+			}
+			/*.refsingle__shareblock {
+				border-left: 10px solid rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
+			}
+*/
+
 
 		</style>
 			<header class="refrow__header">
@@ -33,7 +41,7 @@
 			</figure>
 	</div>
 </div>
-<section class="refsingle--infoblock">
+<section class="refsingle__infoblock">
 	<div class="wrapper wrapper--wide">
 		<div class="refsingle--infopanel">
 			<h3 class="infopanel--subtitle">A feladat elemei</h3>
