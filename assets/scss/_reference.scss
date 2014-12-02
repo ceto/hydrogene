@@ -262,7 +262,7 @@
 
 	.refrow__header {
 		@include bp($s3){
-			width:60%;
+			width:66%;
 			// position: static;
 			// top: 0;
 			// transform: none;
@@ -392,6 +392,7 @@
 		padding:0;
 		color:rgba(white,0.75);
 		font-family: $headingfont;
+		font-size: 1.25em;
 		//font-style: italic;
 		//font-weight: 700;
 		//text-transform: uppercase;

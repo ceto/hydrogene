@@ -26,49 +26,6 @@ h2, h3 {
 	// text-transform: uppercase;
 }
 
-.btn--pseudo {
-	position: relative;
-	display: inline-block;
-	font-size: 1.25em;
-	line-height: 1.125;
-	font-family: $headingfont;
-	font-weight: 700;
-	//text-transform: uppercase;
-	color:rgba(255,255,255,1);
-	text-decoration: none;
-	padding:0.75em 1em;
-	text-align: center;
-	max-width: 18em;
-	background-color: rgba(255,255,255,0.333);
-
-	transition:transform .2s ease; 
-	&:before {
-		content:'';
-		position: absolute;
-		z-index: 0;
-		width:100%;
-		height:100%;
-		left:9px;
-		top:9px;
-		border-color: rgba(255,255,255,0.125);
-		border-width: 8px;
-		border-style: solid;
-		border-top:none;
-		border-left:none;
-		
-		transition:all .2s ease; 
-
-	}
-	&:hover, &:focus {
-		background-color: rgba(0,0,0,0.125);
-		//transform:translate(9px,9px);
-		&:before {
-			
-			border-color: rgba(255,255,255,0.125);
-		}
-	}
-
-}
 
 
 .blocktitle {
@@ -92,68 +49,4 @@ h2, h3 {
 
 
 
-.formitem {
-	margin:1em 0;
-}
-
-label {
-	//display: none;
-}
-
-input[type="text"], input[type="tel"], input[type="email"], textarea {
-
-	box-sizing:content-box;
-	font-family: $sans-serif;
-	background-color: rgba(white,0.125);
-	border:none;
-	border:1px solid rgba(white,0.1333);
-	color:$gray-main;
-	padding:0.75em;
-	-webkit-appearance: none;
-	outline:none;
-	width:100%;
-	
-
-	&:focus {
-		background-color: rgba(white,0.5);
-		&::-webkit-input-placeholder {
-			color:transparent;
-		}
-		&:-moz-placeholder {
-			color:transparent;
-		}
-		&::-moz-placeholder {
-			color:transparent;
-		}
-		&:-ms-input-placeholder {
-			color:transparent;
-		}
-		
-	}
-
-}
-
-::-webkit-input-placeholder {
-   color: $gray-main;
-   text-transform: uppercase;
-   font-family: $headingfont;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: $gray-main;
-   text-transform: uppercase;
-   font-family: $headingfont;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: $gray-main;
-   text-transform: uppercase;
-   font-family: $headingfont;  
-}
-
-:-ms-input-placeholder {  
-   color: $gray-main;
-   text-transform: uppercase;
-   font-family: $headingfont;  
-}
 

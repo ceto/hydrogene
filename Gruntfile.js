@@ -7,17 +7,17 @@ module.exports = function(grunt) {
 
   var jsFileList = [
     'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js',
-    'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js',
-    'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/button.js',
-    'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/button.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js',
     'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js',
-    'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js',
-    'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js',
-    'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js',
-    'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js',
-    'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js',
-    'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js',
-    'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js',
+    // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js',
     'assets/js/plugins/*.js',
     'assets/js/_*.js'
   ];
@@ -34,33 +34,6 @@ module.exports = function(grunt) {
         '!assets/**/*.min.*'
       ]
     },
-    // less: {
-    //   dev: {
-    //     files: {
-    //       'assets/css/main.css': [
-    //         'assets/less/main.less'
-    //       ]
-    //     },
-    //     options: {
-    //       compress: false,
-    //       // LESS source map
-    //       // To enable, set sourceMap to true and update sourceMapRootpath based on your install
-    //       sourceMap: true,
-    //       sourceMapFilename: 'assets/css/main.css.map',
-    //       sourceMapRootpath: '/app/themes/roots/'
-    //     }
-    //   },
-    //   build: {
-    //     files: {
-    //       'assets/css/main.min.css': [
-    //         'assets/less/main.less'
-    //       ]
-    //     },
-    //     options: {
-    //       compress: true
-    //     }
-    //   }
-    // },
     sass: {
       dev: {
         files: {
