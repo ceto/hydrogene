@@ -6,7 +6,12 @@
 				.reference-<?php echo get_the_ID(); ?> .refrow__figure {
 					background-image: url(<?php echo $imgsrc[0]; ?>);
 				}
+				.navigation--main{
+					background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.95);
+				}
 			}
+
+
 
 			.reference-<?php echo get_the_ID(); ?> .refrow{
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
@@ -14,13 +19,26 @@
 			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__figure a:after {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}
+
 			
 			.refsingle__infoblock {
 				border-top: 10px solid rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}
-			.refsingle__quoteshare{
+			.refsingle__shareblock{
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
+			.refsingle__quote {
+				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
+			}
+
+			.refsingle__contactopener {
+				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
+			}
+			
+/*			.refsingle__contactopener .btn--pseudo, .refsingle__infoblock .btn--pseudo {
+				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
+			}*/
+
 			/*.refsingle__shareblock {
 				border-left: 10px solid rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}

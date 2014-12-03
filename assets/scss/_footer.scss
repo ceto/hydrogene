@@ -1,3 +1,44 @@
+.contactopener {
+	background-color: $gray-main;
+	.wrapper {
+		padding-top:2em;
+		padding-bottom: 2em;
+	}
+}
+
+.contactintro {
+	@include clearfix();
+
+	
+	.bal{
+		.blocktitle {
+			margin:0;
+		}
+		@include bp($s2) {
+			//width:75%;
+			float:left;
+			padding-right: 0.5em;
+		}
+	}
+
+	.jobb {
+		margin-top: 1.5em;
+		
+		.btn {
+			font-size: 1em;
+			margin-right: 0.5em;
+		}
+		@include bp($s2) {
+			//width:25%;
+			margin-top: 0;
+			text-align: right;
+			float:right;
+			padding-left: 0.5em;
+		}
+	}
+
+}
+
 .footer--contactblock {
 	background-color: #171717;
 	color:white;
@@ -7,39 +48,7 @@
 	.wrapper{
 	}
 
-	.contactintro {
-		@include clearfix();
-		padding-top:2em;
-		padding-bottom: 2em;
-		
-		.bal{
-			.blocktitle {
-				margin:0;
-			}
-			@include bp($s2) {
-				//width:75%;
-				float:left;
-				padding-right: 0.5em;
-			}
-		}
 
-		.jobb {
-			margin-top: 1.5em;
-			
-			.btn {
-				font-size: 1em;
-				margin-right: 0.5em;
-			}
-			@include bp($s2) {
-				//width:25%;
-				margin-top: 0;
-				text-align: right;
-				float:right;
-				padding-left: 0.5em;
-			}
-		}
-	
-	}
 	
 
 	.contactform {

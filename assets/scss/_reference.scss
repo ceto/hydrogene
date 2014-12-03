@@ -44,7 +44,7 @@
 			//display: none;
 			
 
-			.refrow:nth-of-type(2n) & {
+			.reference:nth-of-type(2n) & {
 				left:-20%;
 				background-position: right bottom;
 				//border-right: 1.5vw solid white;
@@ -117,7 +117,6 @@
 			//font-size: 1.125em;		
 		}
 		@include bp($s3){
-
 			width:50%;
 			left:0;
 			padding:3em 2em 3em 2em;
@@ -126,14 +125,14 @@
 			top: 50%;
 			transform: translate(0, -50%);
 
-			.refrow:nth-of-type(2n) & {
+			.reference:nth-of-type(2n) & {
 				left:50%;
 				padding:3em 2em 3em 2em;
 			}	
 		}
 		@include bp($s4){
 			padding:4em 3em 4em 3em;
-			.refrow:nth-of-type(2n) & {
+			.reference:nth-of-type(2n) & {
 				padding:4em 3em 4em 3em;
 			}	
 		}
@@ -256,7 +255,7 @@
 
 .refsingle {
 	.refrow {
-		//border-top:0.125em solid rgba(255,255,255,0.333);
+		border-top:none;
 		//padding-top: 2em;
 	}
 
@@ -362,53 +361,116 @@
 		}
 	}
 
-	.refsingle__quoteshare {
-		background-color: $gray-main;
-		//border-top: 10px solid rgba(white, 0.2);
-		color:white;
+	.refsingle__quoteblock {
+		margin:2em 0;
+		.wrapper {
+		}
+	}
+
+
+	.refsingle__quote {
+		@include clearfix();
+		position: relative;
+		border-top: 5px solid $gray;
+		//border-bottom: 5px solid $gray;
+		padding:1em 0 2em 0;
+		margin:0;
+		font-family: $serif;
+		//font-weight: 700;
+		font-size: 1.75em;
+		line-height: 1.125;
+		//text-transform: uppercase;
 		@include bp($s3){
-			background-image: linear-gradient(to right, transparent 0, transparent 66.666%, $gray-main 66.666% );
+			//padding:1em 2em 2em;
+			//padding-right: 15%;
+		}
+
+		p{
+			opacity: 0.75;
+
+		}
+
+		cite {
+			opacity: 0.75;
+			text-transform: none;
+			font-variant: small-caps;
+			margin-top: 0.5em;
+			font-size: 0.75em;
+			line-height: 1;
+			//display: block;
+			float: right;
+			font-family: $sans-serif;
+			font-weight: 700;
+			font-style: normal;
+
+			.titulus {
+				font-variant: normal;
+				font-family: $sans-serif;
+				font-weight: 400;
+				font-size: 0.75em;	
+				display: block;
+				//font-style: italic;
+				
+			}
+			&:before {
+				content:'';
+				display: block;
+				width:1em;
+				height:2px;
+				margin:0 0 0.333em;
+				background-color: $gray;
+			}
+		}
+
+	}
+
+	.refsingle__shareblock {
+		background-color: $gray-main;
+		color:white;
+		@include bp($s2){
+			background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
 		}
 		.wrapper {
-			@include bp($s3){
-			  background-image: linear-gradient(to right, transparent 0, transparent 66.666%, $gray-main 66.666% );
+			@include bp($s2){
+			  background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
 			}
 		}
 	}
 
-	.refsingle__quoteblock {
-		padding:2em 0;
-		@include bp($s3) {
-			width:66.666%;
+
+	.refsingle__share {
+		padding:1em 0 2em;
+		@include bp($s2) {
+			width:50%;
 			float:left;
-			padding: 2em 2em 2em 1em;
+			padding:2em 2em 3em 1em	;
+			margin:0;
+		}
+		.blocktitle {
+			font-size: 1.25em;
+		}
+		.btn {
+			margin-right: 0.75em;
+			font-size: 1em;
 		}
 	}
-	
-	.refsingle__quote {
-		//font-size: 1.125em;
 
-		margin:0 0;
-		padding:0;
-		color:rgba(white,0.75);
-		font-family: $headingfont;
-		font-size: 1.25em;
-		//font-style: italic;
-		//font-weight: 700;
-		//text-transform: uppercase;
-	}
-
-	.refsingle__shareblock {
-		padding:2em 1em;
-		background-color: $gray-main;
+	.refsingle__contactopener{
+		padding:1em 1em 2em;
 		margin:0 -1em;
-		@include bp($s3) {
-			width:33.333%;
-			float:right;
-			padding:2em 1em 2em 2em;
+		background-color: $gray-main;
+		border-color:rgba(white,0.333);
+		border-top: 10px solid rgba(white,0.333);
+		@include bp($s2) {
+			border-top: none;
+			border-left: 10px solid rgba(white,0.333);
 			margin:0;
+			width:50%;
+			float:right;
+			padding:2em 0em 3em 2em;
 			background-color: transparent;
 		}
+
 		.blocktitle {
 			font-size: 1.25em;
 		}

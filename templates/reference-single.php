@@ -8,11 +8,25 @@
         <?php the_content(); ?>
       </div>
     </div>
-    <div class="refsingle__quoteshare">
+
+    <section class="refsingle__quoteblock">
       <div class="wrapper wrapper--wide">
-      <?php get_template_part('templates/reference', 'quoteshare'); ?>
+        <blockquote class="refsingle__quote">
+          <p>
+            Komolyabb ráncfelvarrással kerestük meg a Hydrogenet akiket a referenciájuk alapján választottunk ki. 
+            Központjainkba történő jelentkezések, és az ügyfélkör ugrásszerű növekedése &mdash; az új arculatnak és weblapnak köszönhetően &mdash; jócskán felülmúlta várakozásunkat.
+          </p>
+          <cite>Koczó Levente<span class="titulus">ügyvezető igazgató</span></cite>
+        </blockquote>
       </div>
-    </div>
+    </section>
+
+
+    <aside class="refsingle__shareblock">
+      <div class="wrapper wrapper--wide">
+        <?php get_template_part('templates/reference', 'share'); ?>
+      </div>
+    </aside>
 
     <footer>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>

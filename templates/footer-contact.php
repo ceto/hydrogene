@@ -1,6 +1,6 @@
-<footer class="footer--contactblock">
+<?php if (!is_singular('reference')): ?>
+<section class="contactopener">
 	<div class="wrapper wrapper--wide">
-		<?php if (!is_singular('reference')): ?>
 			<div class="contactintro">
 				<div class="bal">
 					<h3 class="blocktitle">Szeretnéd ha neked dolgoznánk?<small>Az együttműködés ajánlatkéréssel kezdődik.</small></h3>
@@ -9,8 +9,12 @@
 					<a href="#contactformwrap" aria-expanded="false" aria-controls="contactformwrap" data-toggle="collapse" class="btn btn--pseudo">Kapcsolat felvétel <i class="ion ion-chatboxes"></i></a>
 				</div>
 		</div>
-		<?php endif ?>
+	</div>
+</section>
+<?php endif; ?>
 
+<footer class="footer--contactblock">
+	<div class="wrapper wrapper--wide">
 		<div id="contactformwrap" class="panel-collapse collapse" aria-labelledby="contactformwrap">
 			<form id="contactform" class="contactform">
 				<h3 class="blocktitle">Ajánlatkérés</h3>
