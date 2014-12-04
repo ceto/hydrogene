@@ -277,14 +277,14 @@
 	}
 	
 	.refrow__subtitle {
-		font-size: 1.5em;
+		font-size: 1.333em;
 	}
 	.refrow__title {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 
 	.refrow__summary {
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 
 
@@ -482,22 +482,3 @@
 
 /******** Reference Archive Style *********/
 
-.refarchive__header {
-	padding:4em 0 2em;
-	background-color: rgba($gray-main,1);
-	color:white;
-	text-align: center;
-	
-	.innerwrap{
-		//margin-left: 33.333%;
-		
-	}
-}
-	.refarchive__title {
-		font-family: $headingfont;
-		text-transform: uppercase;		
-	}
-
-	.refarchive__headdesc {
-		font-size: 1.333em;		
-	}

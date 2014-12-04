@@ -1,10 +1,12 @@
 .banner {
-
+	@include bp($s3) {
+		font-size: 21px;	
+	}
 }
 .banner__brand {
 	position: absolute;
 	left:1em;
-	top: 1em;
+	top: 1.75em;
 	z-index: 10;
 	display: inline-block;
 	color:rgba(white,0.5);
@@ -12,9 +14,17 @@
 	text-transform: uppercase;
 	font-weight: 700;
 	text-decoration: none;
+	&:hover, &:focus {
+		color:rgba(white,0.875);
+	}
 	@include bp($s3) {
+		transition: all .4s ease;
 		position: fixed;
-		top:0.75em;
+		top:1.75em;
+		.scrolled & {
+			color:$gray-main;
+			top:0.75em;
+		}
 	}
 
 }
@@ -111,11 +121,18 @@ input[type="checkbox"]#nav-toggle {
 	}
 
 	@include bp($s3) {
-		min-height: 2.666em;
+		min-height: 3.666em;
 		height:auto;
-		background-color: rgba($gray-main,0.95);
+		background-color: rgba(white,0);
 		border-bottom: 1px solid rgba(white,0.125);
 		overflow: visible;
+
+
+		.scrolled & {
+			background-color: rgba(white,0.9);
+			border-bottom: 1px solid rgba(white,1);
+			min-height: 2.666em;
+		}
 	}
 
 
@@ -125,7 +142,7 @@ input[type="checkbox"]#nav-toggle {
 	margin:0 auto;
 	padding:0 1em;
 	width:100%;
-	transition: transform .4s ease;
+	transition: all .4s ease;
 	position: absolute;
   
   top: 50%;
@@ -137,6 +154,10 @@ input[type="checkbox"]#nav-toggle {
 
 	@include bp($s3) {
 		text-align: right;
+		top:1em;
+		.scrolled & {
+			top:0;
+		}
 
 	}
 
@@ -179,7 +200,15 @@ input[type="checkbox"]#nav-toggle {
 					
 					border-color: rgba(white,0.333);
 				}
+				
+				.scrolled & {
+					color:$gray-main;
 
+					&:hover, &:focus {
+						border-color: transparent;
+						color:rgba(black,1)
+					}
+				}
 			}
 
 		}

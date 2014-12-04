@@ -16,3 +16,65 @@
 	.wrapper--narrow {
 		max-width: 30em;
 	}
+
+.pageheader {
+	background-color: $gray-main;
+	color:white;
+	text-align: center;
+	padding:6em 0 2em;
+	border-bottom:10px solid rgba(white,0.125);
+}
+
+.pageheader--title {
+	display: inline-block;
+	margin:0.25em 0 0;
+	padding:0.125em 0;
+	font-size: 2em;
+	line-height: 1.25;
+	border-top: 1px solid rgba(white,0.333);
+	text-transform: uppercase;
+	font-family: $sans-serif;
+	font-weight: 700;
+	color:rgba(white,0.75);
+}
+.pageheader--subtitle {
+	font-family: $serif;
+	font-weight: 700;
+	font-size: 1.25em;
+	line-height: 1.25;
+	margin:0 0;
+	color:rgba(white,0.75);
+}
+
+
+.pageheader--intro {
+	font-family: $sans-serif;
+	display: none;
+}
+
+.pagecontent {
+	padding:2em 0;
+}
+
+.whiteblock {
+	padding:4em 0;
+	text-align: center;
+}
+
+.whiteblock--title {
+	text-align: center;
+	display: block;
+	font-size: 2em;
+	font-family: $sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	small {
+		display: block;
+		font-family: $serif;
+		font-weight: 700;
+		font-size: 0.75em;
+		line-height: 1;
+		text-transform: lowercase;
+
+	}
+}

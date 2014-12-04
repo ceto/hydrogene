@@ -62,6 +62,18 @@ $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
 
+/************* Main header Fixing ***********/
+var htop = $('.banner').offset().top - parseFloat($('.banner').css('marginTop').replace(/auto/, 0));
+$(window).scroll(function (event) {
+  var y = $(this).scrollTop();
+  if (y-90 >= htop) {
+    $('.banner').addClass('scrolled');
+  } else {
+    $('.banner').removeClass('scrolled');
+  }
+  //$('body').attr('data-offset' ,  $('.banner').height() );
+});
+/************* End of fixing ***********/
 
 
 

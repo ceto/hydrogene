@@ -1,5 +1,4 @@
 <header class="banner" role="banner">
-  <div class="container">
     <a class="banner__brand" href="<?php echo esc_url(home_url('/')); ?>">Hydrogene</a>
     
     <input type="checkbox" id="nav-toggle">
@@ -11,5 +10,4 @@
         endif;
       ?>
     </nav>
-  </div>
 </header>

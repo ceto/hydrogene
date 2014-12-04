@@ -6,9 +6,6 @@
 				.reference-<?php echo get_the_ID(); ?> .refrow__figure {
 					background-image: url(<?php echo $imgsrc[0]; ?>);
 				}
-				.navigation--main{
-					background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.95);
-				}
 			}
 
 

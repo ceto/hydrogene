@@ -1,14 +1,10 @@
-<div class="refarchive__header">
+<?php get_template_part('templates/page', 'header'); ?>
+<section class="whiteblock">
   <div class="wrapper wrapper--normal">
-    <div class="innerwrap">
-      <h1 class="refarchive__title"><?php _e('Kiemelt munkák','h2'); ?></h1>
-      <div class="refarchive__headdesc">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, odio, quidem. Cum nisi, recusandae corporis, molestiae doloribus enim rerum nulla omnis eaque laborum delectus aliquam nobis iusto repudiandae minima sint.</p>
-      </div>
-    </div>
+    <h3 class="whiteblock--title"><small>legújabb webes és arculati</small>munkáink</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat recusandae sequi animi tempore asperiores fuga repellendus, iure mollitia, hic veritatis ipsum cum culpa consequatur numquam minima illum esse, optio velit.
   </div>
-</div>
-
+</section>
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
     <?php get_template_part('templates/reference', 'widerow'); ?>
