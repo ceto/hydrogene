@@ -189,6 +189,8 @@ input[type="checkbox"]#nav-toggle {
 				border-color: rgba(white,1);
 			}
 
+			
+
 			@include bp($s3) {
 				display: inline-block;
 				font-size: 0.666em;
@@ -209,6 +211,23 @@ input[type="checkbox"]#nav-toggle {
 						color:rgba(black,1)
 					}
 				}
+			}
+
+		}
+
+		&.contactstart > a {
+			background-color: rgba(black,0.666);
+			//color:rgba(black,0.5);
+			border:1px solid rgba(black,0.333);
+			border-radius:2px;
+			padding:0.666em 0.5em 0.5em;
+			&:hover, &:focus {
+				border-color: rgba(black,1);
+				background-color: rgba(black,1);
+				//color: black;
+			}
+			.scrolled & {
+				color:white;
 			}
 
 		}

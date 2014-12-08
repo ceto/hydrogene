@@ -6,5 +6,5 @@
 </div>
 <div class="refsingle__contactopener">
 	<h3 class="blocktitle">Szeretnéd ha neked dolgoznánk?<small>Az együttműködés ajánlatkéréssel kezdődik.</small></h3>
-	<a href="#contactformwrap" aria-expanded="false" aria-controls="contactformwrap" data-toggle="collapse" class="btn btn--pseudo">Kapcsolat felvétel <i class="ion ion-chatboxes"></i></a>
+	<a href="<?php echo get_permalink(58); ?>" class="btn btn--pseudo">Kapcsolat felvétel <i class="ion ion-chatboxes"></i></a>
 </div>

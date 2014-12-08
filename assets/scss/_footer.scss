@@ -1,87 +1,37 @@
-.contactopener {
-	background-color: $gray-main;
-	.wrapper {
-		padding-top:2em;
-		padding-bottom: 2em;
-	}
-}
-
-.contactintro {
-	@include clearfix();
-
-	
-	.bal{
-		.blocktitle {
-			margin:0;
-		}
-		@include bp($s2) {
-			//width:75%;
-			float:left;
-			padding-right: 0.5em;
-		}
-	}
-
-	.jobb {
-		margin-top: 1.5em;
-		
-		.btn {
-			font-size: 1em;
-			margin-right: 0.5em;
-		}
-		@include bp($s2) {
-			//width:25%;
-			margin-top: 0;
-			text-align: right;
-			float:right;
-			padding-left: 0.5em;
-		}
-	}
-
-}
-
-.footer--contactblock {
-	background-color: #171717;
-	color:white;
-	//border-top: 10px solid rgba(black,0.125);
+.pagefooter {
+	//background-color: black;
+	//color:white;
 	font-family: $sans-serif;
-
-	.wrapper{
+	padding:2em 0;
+	.balfel {
+		@include bp($s2) {
+			max-width:25%;
+			float:left;
+		}
 	}
 
+	.jobbfel {
+		@include bp($s2){
+			width: 75%;
+			float:right;
+			text-align: right;
+		}
+	}
+}
 
-	
+.pagefooter__brand {
+	display: inline-block;
+	color:rgba(black,0.75);
+	font-family: $sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: none;
+}
 
-	.contactform {
-		@include clearfix();
-		max-width: 25em;
-		margin:2em auto;
-	}
-	.formbal{
-		// @include bp($s3) {
-		// 	width:50%;
-		// 	float:left;
-		// 	padding-right: 0.5em;
-		// }
-	}
-
-	.formjobb {
-		// @include bp($s3) {
-		// 	width:50%;
-		// 	float:left;
-		// 	padding-left: 0.5em;
-		// }
-	}
-
-	.formitem {
-		clear:both;
-	}
-	
-	.blocktitle {
-		margin-bottom: 0;
-	}
-	.contacttext {
-		color:rgba(white,0.333);
-		font-size: 0.875em;
-		line-height: 1.25;
-	}
+.pagefooter__slogan {
+	font-size: 0.666em;
+	line-height: 1;
+	font-weight: 700;
+	margin:0;
+	color:rgba(black,0.75);
 }

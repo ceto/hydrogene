@@ -59,7 +59,9 @@ function roots_display_sidebar() {
        * Any of these page templates that return true won't show the sidebar
        */
       array(
-        'template-custom.php'
+        'template-custom.php',
+        'template-contact.php'
+
       )
     );
     $display = apply_filters('roots/display_sidebar', $sidebar_config->display);
