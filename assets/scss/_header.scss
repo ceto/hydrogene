@@ -1,0 +1,69 @@
+.banner {
+	@include bp($s3) {
+		font-size: 21px;	
+	}
+}
+.banner__brand {
+	position: absolute;
+	left:1em;
+	top: 1.75em;
+	z-index: 10;
+	display: inline-block;
+	color:rgba(white,0.5);
+	font-family: $sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: none;
+	&:hover, &:focus {
+		color:rgba(white,0.875);
+	}
+	@include bp($s3) {
+		transition: all .4s ease;
+		position: fixed;
+		top:1.75em;
+		.scrolled & {
+			color:$gray-main;
+			top:0.75em;
+		}
+	}
+
+}
+
+.pageheader {
+	background-color: $gray-main;
+	color:white;
+	text-align: center;
+
+	border-bottom:10px solid rgba(white,0.125);
+}
+
+.pageheader__content {
+	padding:8em 0 4em;
+}
+
+.pageheader__title {
+	display: inline-block;
+	margin:0.25em 0 0;
+	padding:0.125em 0;
+	font-size: 2em;
+	line-height: 1.25;
+	border-top: 1px solid rgba(white,0.333);
+	text-transform: uppercase;
+	font-family: $sans-serif;
+	font-weight: 700;
+	color:rgba(white,0.75);
+}
+.pageheader__subtitle {
+	font-family: $serif;
+	font-weight: 700;
+	font-size: 1.25em;
+	line-height: 1.25;
+	margin:0 0;
+	color:rgba(white,0.75);
+}
+
+
+.pageheader__intro {
+	font-family: $sans-serif;
+	display: none;
+}

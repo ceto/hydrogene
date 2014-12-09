@@ -1,9 +1,18 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<header class="pageheader">
+  <div class="wrapper wrapper--normal">
+    <div class="pageheader__content">
+      <h2 class="pageheader__subtitle">A feladatok különböznek ahogyan a megoldások</h2>
+      <h1 class="pageheader__title">Nézd meg miket csinálunk</h1>
+      <p class="pageheader__intro">
+      Árvíztűrő tükörfúrógép és természetesen fifike effektezik. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sapiente iusto consectetur explicabo odit, ducimus quasi voluptatum quod dignissimos quia. Minus sed, ex harum labore.</p>
+    </div>
+  </div>
+</header>
+
 <section class="whiteblock">
   <div class="wrapper wrapper--normal">
-    <h3 class="whiteblock--title"><small>legújabb webes és arculati</small>munkáink</h3>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat recusandae sequi animi tempore asperiores fuga repellendus, iure mollitia, hic veritatis ipsum cum culpa consequatur numquam minima illum esse, optio velit.
-  </div>
+    <h3 class="whiteblock--title"><small>egyedi munkák</small>weben, mobilon és offline</h3>
+    Munkánk során nagy hangsúlyt fektetünk a tervezésre, szeretünk kísérletezni és új módszereket, technológiákat kipróbálni. Valljuk, hogy a hosszabb fejlesztési időszak, elengedhetetlen az <em>emlékezetes és használható</em> weboldal, arculat vagy nyomdai termék létrehozásában.
 </section>
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
@@ -19,3 +28,4 @@
     </ul>
   </nav>
 <?php endif; ?>
+ 

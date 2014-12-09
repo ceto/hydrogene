@@ -1,8 +1,16 @@
 .pagefooter {
 	//background-color: black;
 	//color:white;
+	border-top: 1px solid rgba(black,0.125);
 	font-family: $sans-serif;
 	padding:2em 0;
+	color:rgba(black,0.75);
+	
+	a {
+		color:rgba($gray-main,0.75);
+		text-decoration: none;
+	}
+
 	.balfel {
 		@include bp($s2) {
 			max-width:25%;
@@ -21,7 +29,6 @@
 
 .pagefooter__brand {
 	display: inline-block;
-	color:rgba(black,0.75);
 	font-family: $sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -33,5 +40,13 @@
 	line-height: 1;
 	font-weight: 700;
 	margin:0;
-	color:rgba(black,0.75);
+
+}
+.pagefooter__helper {
+	font-size: 0.666em;
+	//line-height: 1;
+	//text-transform: uppercase;
+	font-weight: 700;
+	margin:0;
+
 }
