@@ -2,7 +2,7 @@
 	<div class="wrapper wrapper--wide">
 		<?php $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'nemtudommeg');  ?>
 		<style>
-			@media only screen and (min-width: 1024px) {
+			@media only screen and (min-width: 768px) {
 				.reference-<?php echo get_the_ID(); ?> .refrow__figure {
 					background-image: url(<?php echo $imgsrc[0]; ?>);
 				}
@@ -18,6 +18,9 @@
 
 
 		</style>
+					<figure class="refrow__figure">
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
+			</figure>
 			<header class="refrow__header">
 				<div class="innerwrap">
 			    <h3 class="refrow__subtitle"><?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?></h3>
@@ -39,8 +42,6 @@
 			    </div>
 			  </div>
 			</header>
-			<figure class="refrow__figure">
-				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
-			</figure>
+
 	</div>
 </div>

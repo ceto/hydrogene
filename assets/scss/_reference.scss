@@ -11,8 +11,16 @@
 	.wrapper {
 		position: relative;
 
+		@include bp($s2){
+			//height: 66.666vh;
+			min-height: 32em;
+			max-height: 32em;
+		}
 		@include bp($s3){
-			min-height: 100vh;
+			//height: 100vh;
+			//max-height: 100vh;
+			//min-height: 30em;
+			//max-height: 30em;
 		}
 	}
 
@@ -27,10 +35,13 @@
 		overflow: hidden;
 		backface-visibility:hidden;
 
-		margin:0 auto;
+		margin:2em auto 1em;
+		//margin-top: -2em;
+		//z-index: -1;
 		
 		
-		@include bp($s3){
+		@include bp($s2){
+			margin: 0;
 			position: absolute;
 			width:70%;
 			height: 100%;
@@ -85,7 +96,7 @@
 				}
 			}
 
-			@include bp($s3) {
+			@include bp($s2) {
 				position: absolute;
 				left:0;top:0;
 				width:100%;
@@ -95,7 +106,8 @@
 			img {
 				transition: all .6s ease-in-out;
 				//max-width: 90%;
-				max-height: 27em;
+				max-height: 15em;
+				max-width: 18em;
 				width:auto;
 				//width:100%;
 				//display: block;
@@ -108,15 +120,16 @@
 	.refrow__header {
 		@include clearfix();
 		position: relative;
-		padding:4em 0 0;
+		padding:0 0 3em;
 		text-align: left;
+		z-index: 1;
 
 
 
 		@include bp($s2){
 			//font-size: 1.125em;		
 		}
-		@include bp($s3){
+		@include bp($s2){
 			width:50%;
 			left:0;
 			padding:3em 2em 3em 2em;
@@ -142,7 +155,7 @@
 		}
 
 		.innerwrap{
-			max-width: 35em;
+			max-width: 32em;
 			margin:0 auto;
 			@include bp($s3){
 				max-width: none;
@@ -257,11 +270,24 @@
 	.refrow {
 		border-top:none;
 		//padding-top: 2em;
+		.wrapper {
+			@include bp($s2){
+				//height: 66.666vh;
+				min-height: 35em;
+				max-height: 35em;
+			}
+			@include bp($s4){
+				height: 100vh;
+				//max-height: 100vh;
+				min-height: 40em;
+				max-height: 45em;
+			}
+		}
 	}
 
 	.refrow__header {
 		@include bp($s3){
-			width:66%;
+			//width:66%;
 			// position: static;
 			// top: 0;
 			// transform: none;
@@ -271,7 +297,7 @@
 	.refrow__figure {
 		@include bp($s3){
 			//width:70%;
-			left:60%;
+			//left:60%;
 			//position: fixed;
 		}
 	}
@@ -307,56 +333,96 @@
 		.wrapper {
 					position: relative;
 		}
+
+		.inner {
+			max-width: 32em;
+			margin:0 auto;
+			@include bp($s2) {
+				max-width: none;
+				padding:0 1em;
+			}
+			@include bp($s4) {
+				padding:0 2em;
+			}
+		}
 		
+		.btn {
+			font-size: 0.875em;
+		}
 	}
 	
-	.refsingle--infopanel{
-		padding:4em 0;
-		color:white;
-		@include bp($s3){
+	.infoblock__detailspanel{
+		padding:2em 0;
+		@include bp($s2){
+			padding:2em 0 2.5em;
 			width:66.666%;
-			padding:3em 2em 3em 2em;
-			float:right;
-		}
-		@include bp($s4){
-			padding:4em 3em 4em 3em;
+			float:left;
 		}
 	}
 	
 
-	.refsingle--actions {
-		text-align: center;
-		@include bp($s3){
+	.infoblock__textpanel {
+		padding:2em 0;
+		@include bp($s2){
+			padding:2em 0 2.5em;
 			width:33.333%;
-			position: absolute;
-			top: 50%;
-			transform: translate(0, -50%);
+			float:left;
+		}
+		p{
+			font-family: $serif;
+			color:rgba(255,255,255,0.333);
+			font-size: 0.875em;
 		}
 	}
-	.infopanel--subtitle {
+
+	.infoblock__harmadik {
+		padding:2em 0;
+		@include bp($s3){
+			padding:2em 0;
+			width:33.333%;
+			float:left;
+		}
+
+	}
+	.infopanel__subtitle {
 		color:rgba(255,255,255,0.333);
-		font-size: 2em;
-		margin-bottom: 0;
+		font-family: $serif;
+		font-size: 1.5em;
+		margin: 0;
 
 
 	}
 	
-	.infopanel--taskelements {
-		font-size: 1em;
-		font-family: $headingfont;
-		text-transform: uppercase;
+	.infopanel__taskelements {
+		font-size: 0.875em;
+		font-family: $sans-serif;
+
+		//text-transform: uppercase;
 		font-weight: 700;
 		//font-style: italic;
-		color:rgba(255,255,255,0.333);
+		color:rgba(255,255,255,0.75);
 		padding:0;
-		margin:1em 0;
+		margin:0.5em 0 1.5em;
 		li {
 			list-style-type: none;
-			//margin:0.125em 0.5em;
+			margin:0.125em 0.75em 0.125em 0;
 			display: inline-block;
-			margin-right: 1em;
-			i{
-				margin-right: 0.5em;
+			.ion {
+				box-sizing:border-box;
+				margin-right: 0.25em;
+				font-size: 1em;
+				//line-height: 1.5;
+
+				background-color: rgba(black,0.125);
+				color:rgba(white,0.75);
+				border-radius: 50%;
+				width:1.666em;
+				height:1.666em;
+
+				padding-left:1px;
+				padding-top: 1px;
+				text-align: center;
+				line-height: 1.666;
 			}
 		}
 	}

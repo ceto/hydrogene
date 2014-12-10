@@ -9,7 +9,7 @@
   	<div class="jobbfel">
   	<p class="pagefooter__helper">
       Küldj emailt <a href="mailto:office@hydrogene.hu">office@hydrogene.hu</a> &middot; Hívj telefonon <a href="tel:+36 70 770 5653">(0036) 70.770.5653</a><br>
-      &copy; 2015 &middot; <a href="<?php echo esc_url(home_url('/')); ?>">Hydrogene Design</a> &middot; Minden jog fenntartva
+      &copy; 2015 <a href="<?php echo esc_url(home_url('/')); ?>">Hydrogene Design</a>  &middot; Handmade in Budapest &middot; All rights is reserved
 	
 		</p>  		
   	</div>

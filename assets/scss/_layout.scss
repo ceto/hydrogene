@@ -10,16 +10,25 @@
 	}
 
 	.wrapper--normal {
-		max-width: 41em;
+		max-width: 34em;
+		@include bp($s2) {
+			max-width: 45em;
+		}
+		@include bp($s3) {
+			max-width: 45em;
+		}
+		@include bp($s4) {
+			max-width: 34em;
+		}
 	}
 
 	.wrapper--narrow {
-		max-width: 30em;
+		max-width: 32em;
 	}
 
 
 
-.pagecontent {
+.page__content {
 	padding:2em 0;
 }
 

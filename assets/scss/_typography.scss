@@ -1,0 +1,146 @@
+.page__content, .single__content, .refsingle__content {
+	color:$textcolor;
+	a {
+		color:$secondary-color;
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
+		&:hover, &:focus {
+			border-bottom: 1px solid $secondary-color;
+		}
+	}
+	h1,h2,h3,h4,h5,h6 {
+		font-family: $sans-serif;
+		line-height: 1.2;
+		margin:2em 0 0;
+		color: $textcolor-light;
+		&:before {
+			display: inline-block;
+			content: '';
+			height:0.8em;
+			width:0.8em;
+			margin-right: 0.25em;
+			background-color: $secondary-color;	
+		}
+		+ p {
+			//text-indent: 1.5em;
+		}
+	}
+	
+	p {
+		
+	}
+
+	ul {
+		margin:1.25em 0;
+		padding-left: 2.5em;
+		li {
+			list-style-type: square;
+			padding-left: 0;
+			margin:0.5em 0;
+		}
+	}
+	ol {
+		li {
+
+		}
+	}
+
+	.wp-caption {
+		@include clearfix();
+		margin:1em 0;
+
+		img {
+			display: block;
+		}
+		&.alignnone {
+			// @include bp($s2) {
+			// 	width:110%;
+			// 	margin-left: -5%;
+			// }
+			@include bp($s3) {
+				width:117%;
+				margin-left: -8.5%;
+			}
+			@include bp($s4) {
+				width:150%;
+				margin-left: -25%;
+			}
+		}
+		&.alignleft, &.alignright {
+			@include bp($s4) {
+				width:132.333%;
+				img {
+					width:75.5%;
+					float:left;
+				}
+				.wp-caption-text {
+					width:24.5%;
+					float:right;
+					padding:0 1em;
+					text-align: left;
+					&:before {
+						display: block;
+						content: '';
+						width:1.25em;
+						height:2px;
+						margin: 0 0 1em;
+						background-color: $secondary-color;
+					} 
+				}
+			}
+		}
+		&.alignright {
+			@include bp($s4) {
+				margin-left: -32.333%;
+				img {
+					float:right;
+				}
+				.wp-caption-text {
+					float:left;
+					text-align: right;
+					&:before {
+						float:right;
+					}
+				}
+
+			}
+		}
+		&.aligncenter {
+
+		}
+	}
+	.wp-caption-text {
+		font-family: $sans-serif;
+		font-size: 14px;
+		line-height: 1.2;
+		text-align: center;
+		color:$textcolor-light;
+		font-style: italic;
+		padding: 0.5em 0;
+
+
+	}
+
+	blockquote {
+		font-size: 1.25em;
+		line-height: 1.2;
+		font-family: $sans-serif;
+		//font-style: italic;
+		color:$textcolor-light;
+		margin:1.5em 0;
+		padding:1.333em 1.25em;
+
+		border:2px solid $secondary-color;
+		border-left: none;
+		border-right: none;
+		> p {
+				&:first-child {
+					margin-top: 0;
+				}
+				&:first-child {
+					margin-bottom: 0;
+				}
+				
+		}
+	}
+}
