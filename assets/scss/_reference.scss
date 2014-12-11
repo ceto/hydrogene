@@ -428,7 +428,11 @@
 	}
 
 	.refsingle__quoteblock {
-		margin:2em 0;
+		margin:2em 0 0;
+		padding:3em 0 4em;
+
+		background-color: $secondary-color;
+		color:white;
 		.wrapper {
 		}
 	}
@@ -437,27 +441,19 @@
 	.refsingle__quote {
 		@include clearfix();
 		position: relative;
-		border-top: 5px solid $gray;
-		//border-bottom: 5px solid $gray;
-		padding:1em 0 2em 0;
 		margin:0;
-		font-family: $serif;
-		//font-weight: 700;
-		font-size: 1.75em;
-		line-height: 1.125;
-		//text-transform: uppercase;
-		@include bp($s3){
-			//padding:1em 2em 2em;
-			//padding-right: 15%;
-		}
+		padding:0;
+		font-family: $sans-serif;
+		font-size: 1.5em;
+		line-height: 1.25;
 
 		p{
-			opacity: 0.75;
+			//opacity: 0.75;
 
 		}
 
 		cite {
-			opacity: 0.75;
+			//opacity: 0.75;
 			text-transform: none;
 			font-variant: small-caps;
 			margin-top: 0.5em;
@@ -484,7 +480,7 @@
 				width:1em;
 				height:2px;
 				margin:0 0 0.333em;
-				background-color: $gray;
+				background-color:rgba(white,0.2);
 			}
 		}
 
@@ -493,14 +489,15 @@
 	.refsingle__shareblock {
 		background-color: $gray-main;
 		color:white;
-		@include bp($s2){
-			background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
-		}
-		.wrapper {
-			@include bp($s2){
-			  background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
-			}
-		}
+		border-top:10px solid rgba($secondary-color,0.2);
+		// @include bp($s2){
+		// 	background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
+		// }
+		// .wrapper {
+		// 	@include bp($s2){
+		// 	  background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
+		// 	}
+		// }
 	}
 
 
@@ -525,11 +522,7 @@
 		padding:1em 1em 2em;
 		margin:0 -1em;
 		background-color: $gray-main;
-		border-color:rgba(white,0.333);
-		border-top: 10px solid rgba(white,0.333);
 		@include bp($s2) {
-			border-top: none;
-			border-left: 10px solid rgba(white,0.333);
 			margin:0;
 			width:50%;
 			float:right;

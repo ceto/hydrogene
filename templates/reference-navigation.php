@@ -49,9 +49,9 @@
 									</a>
 				    	</div>
 				  </div>
-				  											    	<a class="backtoallref" href="<?php echo esc_url(home_url('/')); ?>?post_type=reference">
+<!-- 				  											    	<a class="backtoallref" href="<?php echo esc_url(home_url('/')); ?>?post_type=reference">
 								<?php _e('Mutasd mindet','hydrogene'); ?> <i class="ion ion-images"></i>
-							</a>
+							</a> -->
 				</header>
 
 

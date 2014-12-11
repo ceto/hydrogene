@@ -24,7 +24,8 @@
 			.refsingle__infoblock .btn {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.75	);
 			}
-			.refsingle__infoblock .btn:before{
+			.refsingle__infoblock .btn:before,
+			.refsingle__shareblock {
 				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
 			}
 
@@ -32,16 +33,28 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
 			}
 */
-			.refsingle__shareblock{
+			.inverseblock,
+			.refsingle__content > h1:before,
+			.refsingle__content > h2:before,
+			.refsingle__content > h3:before,
+			.refsingle__content > h4:before,
+			.refsingle__content > h5:before,
+			.refsingle__content > h6:before,
+			.refsingle__quoteblock {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
-			.refsingle__quote {
+
+			.refsingle__content a{
+				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
+			}
+
+			.refsingle__quote, .refsingle__content > blockquote, .refsingle__content a:hover {
 				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 
-			.refsingle__contactopener {
+/*			.refsingle__contactopener {
 				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
-			}
+			}*/
 			
 /*			.refsingle__contactopener .btn--pseudo, .refsingle__infoblock .btn--pseudo {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);

@@ -5,5 +5,8 @@ assets/vendor/*
 #assets/css/main.css.map
 #assets/css/*main*.css
 #assets/js/*scripts*.js
-#assets/js/vendor/modernizr.min.js
+!assets/vendor/modernizr/modernizr.js
+!assets/vendor/modernizr/modernizr.min.js
+!assetsvendor/jquery/dist/jquery.min.js
+!assetsvendor/jquery/dist/jquery.js
 #assets/manifest.json

@@ -59,7 +59,7 @@ var UTIL = {
 };
 
 $(document).ready(UTIL.loadEvents);
-
+//$(".pageheader").fitVids();
 })(jQuery); // Fully reference jQuery after this point.
 
 /************* Main header Fixing ***********/

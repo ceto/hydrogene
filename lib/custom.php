@@ -242,3 +242,18 @@ function h2_img_caption_shortcode( $attr, $content = null ) {
 	return '<div ' . $atts['id'] . $style . 'class="' . esc_attr( $class ) . '">'
 	. do_shortcode( $content ) . '<p class="wp-caption-text">' . $atts['caption'] . '</p></div>';
 }
+
+
+
+
+
+
+
+
+/********** Inverse Block Shortcode **********/
+
+function h2_inverseblock_shortcode( $atts, $content = null ) {
+	$a = shortcode_atts( array('wrapper' => 'normal'), $atts );
+	return do_shortcode('<section class="inverseblock"><div class="wrapper wrapper--'.$a['wrapper'].'">'.$content.'</div></section>');
+}
+add_shortcode( 'inverseblock', 'h2_inverseblock_shortcode');

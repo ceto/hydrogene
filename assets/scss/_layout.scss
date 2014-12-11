@@ -15,10 +15,10 @@
 			max-width: 45em;
 		}
 		@include bp($s3) {
-			max-width: 45em;
+			max-width: 42em;
 		}
 		@include bp($s4) {
-			max-width: 34em;
+			max-width: 36em;
 		}
 	}
 

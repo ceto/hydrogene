@@ -31,7 +31,37 @@
 
 }
 
+
+/******* Video *********/
+
+
 .pageheader {
+	overflow: hidden;
+}
+
+.fullvideo {
+	position: absolute;
+	left:0;
+	top:0;
+	width:100%;
+	//height:100%;
+	z-index:1;
+	filter:grayscale(1) brightness(0.3);
+}
+.overlay {
+	position: absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-image: url('../img/grid.png');
+	background-repeat: repeat;
+	z-index: 2;
+}
+/******* End of Video *********/
+
+.pageheader {
+	position: relative;
 	background-color: $gray-main;
 	color:white;
 	text-align: center;
@@ -41,6 +71,8 @@
 
 .pageheader__content {
 	padding:8em 0 4em;
+	position: relative;
+	z-index: 3;
 }
 
 .pageheader__title {
