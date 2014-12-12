@@ -72,7 +72,26 @@
       google.maps.event.addDomListener(window, 'load', initialize);
 
     </script>
-  <?php endif ?>
+  <?php endif; ?>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.async=true;
+      js.src = "//connect.facebook.net/hu_HU/sdk.js#xfbml=1&appId=171677096215391&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <script src="https://apis.google.com/js/platform.js" async defer>
+    {lang: 'hu'}
+  </script>
+
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 
 </body>
 </html>

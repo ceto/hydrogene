@@ -5629,16 +5629,18 @@ html {
 
 /* line 20, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/base */
 body {
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
 
-/* line 31, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/base */
+/* line 33, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/base */
 .blocktitle {
   color: rgba(255, 255, 255, 0.5);
   font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: 700;
   font-size: 1.5em;
   line-height: 1; }
-  /* line 39, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/base */
+  /* line 41, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/base */
   .blocktitle small {
     display: block;
     font-size: 75%;
@@ -5705,6 +5707,15 @@ body {
     font-size: 0.75em;
     line-height: 1;
     text-transform: lowercase; }
+
+/* line 64, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/layout */
+.tab-content > .tab-pane {
+  display: none;
+  visibility: hidden; }
+/* line 68, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/layout */
+.tab-content > .active {
+  display: block;
+  visibility: visible; }
 
 /* line 1, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/typography */
 .page__content, .single__content, .refsingle__content {
@@ -5860,6 +5871,54 @@ body {
   color: #454545;
   font-style: italic;
   padding: 0.5em 1em; }
+
+/* line 192, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/typography */
+.uglybuttons {
+  margin: 0 auto 1em;
+  padding: 0;
+  width: 224px;
+  padding: 6px 12px; }
+  /* line 11, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/mixins */
+  .uglybuttons:before, .uglybuttons:after {
+    content: " ";
+    display: table; }
+  /* line 15, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/mixins */
+  .uglybuttons:after {
+    clear: both; }
+  /* line 204, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/typography */
+  .uglybuttons li {
+    position: relative;
+    width: 33.333%;
+    height: 29px;
+    display: block;
+    float: left;
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+    /* line 11, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/mixins */
+    .uglybuttons li:before, .uglybuttons li:after {
+      content: " ";
+      display: table; }
+    /* line 15, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/mixins */
+    .uglybuttons li:after {
+      clear: both; }
+    /* line 217, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/typography */
+    .uglybuttons li.twitter > * {
+      bottom: 5px;
+      right: 3px; }
+    /* line 223, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/typography */
+    .uglybuttons li.gplus > * {
+      bottom: 1px;
+      left: 12px; }
+    /* line 231, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/typography */
+    .uglybuttons li.face > * {
+      bottom: 5px;
+      left: 3px; }
+    /* line 238, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/typography */
+    .uglybuttons li > * {
+      display: inline-block;
+      position: absolute;
+      bottom: 5px; }
 
 /* line 1, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/navigation */
 .nav-toggle {
@@ -6331,25 +6390,29 @@ input[type="checkbox"]#nav-toggle {
   padding: 2em 0; }
   @media only screen and (min-width: 768px) {
     .infoblock__detailspanel {
-      padding: 2em 0 2.5em;
+      padding: 2em 1em 2.5em 0;
       width: 66.666%;
       float: left; } }
 
 /* line 364, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .infoblock__textpanel {
-  padding: 2em 0; }
+  padding: 1.5em 0;
+  text-align: left; }
+  /* line 367, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+  .infoblock__textpanel .blocktitle {
+    font-size: 1.5em;
+    margin-top: 0.333em;
+    margin-bottom: 0.5em; }
+  /* line 372, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+  .infoblock__textpanel .uglybuttons {
+    margin: 0 0 0 -15px; }
   @media only screen and (min-width: 768px) {
     .infoblock__textpanel {
-      padding: 2em 0 2.5em;
+      padding: 2em 0 2.5em 1em;
       width: 33.333%;
       float: left; } }
-  /* line 371, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
-  .infoblock__textpanel p {
-    font-family: 'Surveyor Text', 'Georgia Pro', Georgia, serif;
-    color: rgba(255, 255, 255, 0.333);
-    font-size: 0.875em; }
 
-/* line 378, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 383, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .infoblock__harmadik {
   padding: 2em 0; }
   @media only screen and (min-width: 1024px) {
@@ -6358,14 +6421,14 @@ input[type="checkbox"]#nav-toggle {
       width: 33.333%;
       float: left; } }
 
-/* line 387, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 392, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .infopanel__subtitle {
   color: rgba(255, 255, 255, 0.333);
   font-family: 'Surveyor Text', 'Georgia Pro', Georgia, serif;
   font-size: 1.5em;
   margin: 0; }
 
-/* line 396, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 401, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .infopanel__taskelements {
   font-size: 0.875em;
   font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -6373,12 +6436,12 @@ input[type="checkbox"]#nav-toggle {
   color: rgba(255, 255, 255, 0.75);
   padding: 0;
   margin: 0.5em 0 1.5em; }
-  /* line 406, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+  /* line 411, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
   .infopanel__taskelements li {
     list-style-type: none;
     margin: 0.125em 0.75em 0.125em 0;
     display: inline-block; }
-    /* line 410, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+    /* line 415, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
     .infopanel__taskelements li .ion {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -6394,14 +6457,14 @@ input[type="checkbox"]#nav-toggle {
       text-align: center;
       line-height: 1.666; }
 
-/* line 430, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 435, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .refsingle__quoteblock {
   margin: 2em 0 0;
   padding: 3em 0 4em;
   background-color: #A71D3E;
   color: white; }
 
-/* line 441, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 446, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .refsingle__quote {
   position: relative;
   margin: 0;
@@ -6416,7 +6479,7 @@ input[type="checkbox"]#nav-toggle {
   /* line 15, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/mixins */
   .refsingle__quote:after {
     clear: both; }
-  /* line 455, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+  /* line 460, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
   .refsingle__quote cite {
     text-transform: none;
     font-variant: small-caps;
@@ -6427,14 +6490,14 @@ input[type="checkbox"]#nav-toggle {
     font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     font-weight: 700;
     font-style: normal; }
-    /* line 468, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+    /* line 473, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
     .refsingle__quote cite .titulus {
       font-variant: normal;
       font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
       font-weight: 400;
       font-size: 0.75em;
       display: block; }
-    /* line 477, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+    /* line 482, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
     .refsingle__quote cite:before {
       content: '';
       display: block;
@@ -6443,50 +6506,80 @@ input[type="checkbox"]#nav-toggle {
       margin: 0 0 0.333em;
       background-color: rgba(255, 255, 255, 0.2); }
 
-/* line 489, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 494, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .refsingle__shareblock {
   background-color: #252525;
   color: white;
-  border-top: 10px solid rgba(167, 29, 62, 0.2); }
+  border-top: 10px solid rgba(167, 29, 62, 0.2);
+  text-align: center; }
 
-/* line 504, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 509, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+.shareblock__nav {
+  padding: 4em 0 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.333);
+  font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  text-align: center; }
+  /* line 519, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+  .shareblock__nav .nav-tabs {
+    margin: 0;
+    padding: 0; }
+    /* line 522, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+    .shareblock__nav .nav-tabs li {
+      display: inline;
+      list-style-type: none;
+      padding: 0 0.5em;
+      position: relative; }
+      /* line 528, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+      .shareblock__nav .nav-tabs li.active > a {
+        color: rgba(255, 255, 255, 0.333); }
+      /* line 532, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+      .shareblock__nav .nav-tabs li > a {
+        color: rgba(255, 255, 255, 0.25);
+        text-decoration: none; }
+        /* line 535, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+        .shareblock__nav .nav-tabs li > a:hover {
+          color: rgba(255, 255, 255, 0.5); }
+      /* line 540, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+      .shareblock__nav .nav-tabs li:before {
+        content: '';
+        display: inline-block;
+        width: 0.333em;
+        height: 0.333em;
+        background-color: #A71D3E;
+        position: absolute;
+        top: 0.5em;
+        left: -0.25em; }
+      /* line 550, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+      .shareblock__nav .nav-tabs li:first-child:before {
+        display: none; }
+
+/* line 557, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .refsingle__share {
-  padding: 1em 0 2em; }
-  @media only screen and (min-width: 768px) {
-    .refsingle__share {
-      width: 50%;
-      float: left;
-      padding: 2em 2em 3em 1em;
-      margin: 0; } }
-  /* line 512, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+  padding: 0 0 4em; }
+  /* line 560, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
   .refsingle__share .blocktitle {
-    font-size: 1.25em; }
-  /* line 515, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+    font-size: 1.5em; }
+  /* line 565, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
   .refsingle__share .btn {
     margin-right: 0.75em;
-    font-size: 1em; }
+    font-size: 1em;
+    display: none; }
 
-/* line 521, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 572, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .refsingle__contactopener {
-  padding: 1em 1em 2em;
-  margin: 0 -1em;
+  padding: 0 0 4em;
   background-color: #252525; }
-  @media only screen and (min-width: 768px) {
-    .refsingle__contactopener {
-      margin: 0;
-      width: 50%;
-      float: right;
-      padding: 2em 0em 3em 2em;
-      background-color: transparent; } }
-  /* line 533, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+  /* line 583, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
   .refsingle__contactopener .blocktitle {
-    font-size: 1.25em; }
-  /* line 536, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+    font-size: 1.5em; }
+  /* line 586, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
   .refsingle__contactopener .btn {
     margin-right: 0.75em;
     font-size: 1em; }
 
-/* line 544, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 594, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .refnav {
   padding: 4em 0; }
   /* line 11, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/mixins */
@@ -6497,13 +6590,13 @@ input[type="checkbox"]#nav-toggle {
   .refnav:after {
     clear: both; }
 
-/* line 550, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 600, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .refnav__blocktitle {
   font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   text-align: center;
   margin: 0 0 2em;
   font-size: 2em; }
-  /* line 555, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+  /* line 605, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
   .refnav__blocktitle span {
     display: block;
     font-family: 'Surveyor Text', 'Georgia Pro', Georgia, serif;
@@ -6517,16 +6610,16 @@ input[type="checkbox"]#nav-toggle {
 .refnav__item:after {
   clear: both; }
 
-/* line 569, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 619, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .refnav__header {
   color: white; }
   @media only screen and (min-width: 768px) {
     .refnav__header {
       width: 50%;
       float: right; } }
-  /* line 577, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+  /* line 627, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
   .refnav__header .teteje {
-    background-color: orange;
+    background-color: #A71D3E;
     padding: 2em 2em 1.5em; }
     /* line 11, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/mixins */
     .refnav__header .teteje:before, .refnav__header .teteje:after {
@@ -6535,7 +6628,7 @@ input[type="checkbox"]#nav-toggle {
     /* line 15, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/mixins */
     .refnav__header .teteje:after {
       clear: both; }
-  /* line 585, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+  /* line 636, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
   .refnav__header .alja {
     background-color: #252525;
     padding: 1em 2em 2em 2em;
@@ -6554,34 +6647,34 @@ input[type="checkbox"]#nav-toggle {
     float: left;
     padding: 1em 2em; } }
 
-/* line 603, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 655, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .refnav__summary {
   font-size: 0.875em;
   margin: 0.5em 0 1em; }
 
-/* line 608, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 660, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .refnav__subtitle {
   margin: 0 0;
   font-size: 1em;
   color: rgba(255, 255, 255, 0.333); }
 
-/* line 614, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 666, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .refnav__title {
   font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.25em;
   line-height: 1;
   margin: 0.25em 0 0.5em; }
-  /* line 621, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+  /* line 673, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
   .refnav__title a {
     text-decoration: none;
     color: inherit; }
 
-/* line 631, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 683, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .refnav__actions .btn {
   font-size: 0.75em; }
 
-/* line 635, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
+/* line 687, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/reference */
 .backtoallref {
   display: inline-block;
   text-decoration: none;
@@ -6786,7 +6879,7 @@ textarea {
 
 /* line 9, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/contact */
 .contactblock {
-  background-color: #e1382d;
+  background-color: #A71D3E;
   padding: 3em 0;
   color: white; }
   /* line 11, /Users/szabogabi/Documents/htdocs/hydrogene/wp-content/themes/hydrogene/assets/scss/mixins */

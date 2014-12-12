@@ -21,10 +21,11 @@
 			.refsingle__infoblock {
 				border-top: 10px solid rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}
-			.refsingle__infoblock .btn {
-				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.75	);
+			.refsingle__infoblock .btn, .refsingle__shareblock .btn  {
+				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.875	);
 			}
 			.refsingle__infoblock .btn:before,
+			.refsingle__shareblock .btn:before,
 			.refsingle__shareblock {
 				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
 			}
@@ -40,7 +41,8 @@
 			.refsingle__content > h4:before,
 			.refsingle__content > h5:before,
 			.refsingle__content > h6:before,
-			.refsingle__quoteblock {
+			.refsingle__quoteblock,
+			.shareblock__nav .nav-tabs li:before {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 
@@ -98,9 +100,20 @@
 
 			</div>
 			<div class="infoblock__textpanel">
-				<h3 class="infopanel__subtitle">Projekt adatok</h3>
-				<p>Reprehenderit doloribus, tempore adipisci consequuntur quaerat, est sunt iusto doloremque corporis architecto! Veritatis maxime molestiae voluptates adipisci ipsam quas, voluptatibus illum molestias.</p>
-			</div>
+				<h3 class="blocktitle">Ha tetszik ez a munkánk<small>bökj egyet nekünk. Köszönjük.</small></h3>
+				<ul class="uglybuttons">
+					<li class="face">
+						<div class="fb-like" data-colorscheme="dark" data-href="<?php the_permalink(); ?>" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+					</li>
+
+					<li class="gplus">
+						<div class="g-plusone" data-size="tall" data-annotation="none"></div>
+					</li>
+					<li class="twitter">
+						  <a href="https://twitter.com/share" class="twitter-share-button" data-via="hydrogenedesign" data-count="none">Tweet</a>
+					</li>
+
+				</ul>
 		</div>
 	</div>
 </section>
