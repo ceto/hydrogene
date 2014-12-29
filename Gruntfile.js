@@ -131,19 +131,15 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      // less: {
-      //   files: [
-      //     'assets/less/*.less',
-      //     'assets/less/**/*.less'
-      //   ],
-      //   tasks: ['less:dev', 'autoprefixer:dev']
-      // },
       sass: {
         files: [
           'assets/scss/*.scss',
           'assets/scss/**/*.scss'
         ],
-        tasks: ['sass:dev', 'autoprefixer:dev']
+        tasks: [
+          'sass:dev',
+          'autoprefixer:dev'
+        ]
       },
       js: {
         files: [

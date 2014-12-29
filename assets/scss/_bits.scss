@@ -1,6 +1,5 @@
 /*============= Color Definition =================*/
 
-
 $secondary-color:#A71D3E;
 $textcolor:#252525;
 $textcolor-light: #454545;
@@ -11,11 +10,12 @@ $gray-heading:#484646;
 $gray-light:#9A9898;
 $green:#4AB84A;
 
+
 /*============= Fonts Definition =================*/
 
-$serif: 'Surveyor Text', 'Georgia Pro', Georgia, serif;
-$sans-serif: 'Avenir Next', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-$headingfont: 'Avenir Next', 'Gotham', 'Futura BT Heavy', sans-serif;
+$serif: 'Archer', 'Georgia Pro', Georgia, serif;
+$sans-serif: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+$headingfont: $sans-serif;
 
 /****************** Breakpoints Definition ***********/
 
@@ -28,6 +28,7 @@ $s4:1280px;
 $s5:1600px;
 
 $maximum:960px;
+
 
 
 
