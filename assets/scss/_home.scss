@@ -1,0 +1,76 @@
+.hero {
+	padding: 8em 0 4em;
+}
+.home__hero
+{
+  color: white;
+  background-color: $secondary-color;
+}
+
+.hero__textblock
+{
+  @include clearfix();
+  @include bp($s2)
+  {
+    float: left;
+
+    width: 27em;
+  }
+}
+
+.hero__title
+{
+  //font-family: $headingfont;
+  font-size: 2.125em;
+  //font-weight: 400;
+  line-height: 1;
+
+  margin: 0 0 0.25em;
+
+  color: rgba(white,.75);
+  // text-transform: uppercase;
+
+}
+
+.hero__subtitle
+{
+  font-family: $headingfont;
+  font-size: 3.25em;
+  line-height: 1;
+  //font-weight: 400;
+
+  margin: 0 0;
+
+  text-transform: uppercase;
+
+  span {
+  	display: block;
+  	font-size: 1.75em;
+  	margin-top: -0.1em;
+  }
+
+  &.small {
+		font-size:3.5em; 	
+	}
+}
+
+.hero__disclaimer
+{
+  font-size: 1.125em;
+
+  margin-top: .5em;
+  //text-align: center;
+  strong
+  {
+    font-family: $sans-serif;
+
+    text-transform: uppercase;
+
+    color: rgba(white,.75);
+  }
+  a {
+  	color: inherit;
+  	text-decoration: none;
+  	border-bottom: 1px solid rgba(white,0.75);
+  }
+}

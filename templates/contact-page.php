@@ -1,20 +1,15 @@
-<header class="pageheader">
-	<div class="wrapper wrapper--normal">
-		<div class="pageheader__content">
-		  <h2 class="pageheader__subtitle">Van egy jó projekted?</h2>
-		  <h1 class="pageheader__title">Számolj velünk</h1>
-		  <p class="pageheader__intro">
-		  Árvíztűrő tükörfúrógép és természetesen fifike effektezik. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sapiente iusto consectetur explicabo odit, ducimus quasi voluptatum quod dignissimos quia. Minus sed, ex harum labore.</p>
+<header class="contact__hero hero">
+	<div class="wrapper wrapper--wide">
+		<div class="hero__textblock">
+		  <h1 class="hero__title">Van egy jó projekted?</h1>
+		  <h2 class="hero__subtitle">Nálad a labda</h2>
+		  <p class="hero__disclaimer">
+		  	<strong>Beszélgessünk.</strong> Örömmel veszünk részt egyedi tervezési feladatokban, történjen az webre, mobilra vagy klasszikus offline felületekre. Az együttműködés kapcsolatfelvétellel kezdődik.
+		  </p>
 		</div>
 	</div>
 </header>
-<section class="whiteblock">
-  <div class="wrapper wrapper--normal">
-    <h3 class="whiteblock--title"><small>nálad a labda</small>Beszélgessünk</h3>
-    Örömmel veszünk részt egyedi tervezési feladatokban, történjen az webre, mobilra vagy klasszikus offline felületekre.
-		Az együttműködés kapcsolatfelvétellel kezdődik. 
-	</div>
-	</section>
+
 
 <section class="contactblock">
 	<div class="wrapper wrapper--normal">

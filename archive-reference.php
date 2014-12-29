@@ -1,19 +1,20 @@
-<header class="pageheader">
-  <div class="wrapper wrapper--normal">
-    <div class="pageheader__content">
-      <h2 class="pageheader__subtitle">A feladatok különböznek ahogyan a megoldások</h2>
-      <h1 class="pageheader__title">Nézd meg miket csinálunk</h1>
-      <p class="pageheader__intro">
-      Árvíztűrő tükörfúrógép és természetesen fifike effektezik. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sapiente iusto consectetur explicabo odit, ducimus quasi voluptatum quod dignissimos quia. Minus sed, ex harum labore.</p>
+<header class="contact__hero hero">
+  <div class="wrapper wrapper--wide">
+    <div class="hero__textblock">
+      <h1 class="hero__title">Egyedi munkák</h1>
+      <h2 class="hero__subtitle">weben&nbsp;mobilon és offline</h2>
+      <p class="hero__disclaimer">
+        <strong>Nézd meg miket csinálunk.</strong> A feladatok külöbözőek, akárcsak a megoldások. Több tucat sikeres projekt közül megmutatjuk a kedvenceinket. Hasonlót szeretnél? Vedd fel velünk a <a href="<?php echo get_permalink(58); ?>">kapcsolatot.</a>
+      </p>
     </div>
   </div>
 </header>
-
 <section class="whiteblock">
   <div class="wrapper wrapper--normal">
-    <h3 class="whiteblock--title"><small>egyedi munkák</small>weben, mobilon és offline</h3>
-    Munkánk során nagy hangsúlyt fektetünk a tervezésre, szeretünk kísérletezni és új módszereket, technológiákat kipróbálni. Valljuk, hogy a hosszabb fejlesztési időszak, elengedhetetlen az <em>emlékezetes és használható</em> weboldal, arculat vagy nyomdai termék létrehozásában.
+    <h3 class="whiteblock__title"><small>egyedi munkák</small>weben, mobilon és offline</h3>
+    <p class="whiteblock__disclaimer">Munkánk során nagy hangsúlyt fektetünk a tervezésre, szeretünk kísérletezni és új módszereket, technológiákat kipróbálni. Valljuk, hogy a hosszabb fejlesztési időszak, elengedhetetlen az <em>emlékezetes és használható</em> weboldal, arculat vagy nyomdai termék létrehozásában.</p>
 </section>
+
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
     <?php get_template_part('templates/reference', 'widerow'); ?>
