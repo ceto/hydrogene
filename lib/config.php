@@ -60,7 +60,8 @@ function roots_display_sidebar() {
        */
       array(
         'template-custom.php',
-        'template-contact.php'
+        'template-contact.php',
+        'template-aboutus.php'
 
       )
     );

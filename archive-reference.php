@@ -9,12 +9,6 @@
     </div>
   </div>
 </header>
-<section class="whiteblock">
-  <div class="wrapper wrapper--normal">
-    <h3 class="whiteblock__title"><small>egyedi munkák</small>weben, mobilon és offline</h3>
-    <p class="whiteblock__disclaimer">Munkánk során nagy hangsúlyt fektetünk a tervezésre, szeretünk kísérletezni és új módszereket, technológiákat kipróbálni. Valljuk, hogy a hosszabb fejlesztési időszak, elengedhetetlen az <em>emlékezetes és használható</em> weboldal, arculat vagy nyomdai termék létrehozásában.</p>
-</section>
-
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
     <?php get_template_part('templates/reference', 'widerow'); ?>

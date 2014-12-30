@@ -20,6 +20,19 @@
 			<p class="whiteblock__disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sapiente sunt quisquam minus, nesciunt consequatur. Rerum voluptatibus voluptatum, maxime minus dicta iusto aliquid enim amet ipsum laborum accusantium alias quasi!</p>
 	</div>
 </section>
+<section class="home__references">
+<?php 
+	$the_refs = new WP_Query( array(
+		'post_type' => 'reference',
+		'posts_per_page' => 2,
+	));
+?>
+	<?php while ($the_refs->have_posts()) : $the_refs->the_post(); ?>
+	  <article <?php post_class(); ?>>
+	    <?php get_template_part('templates/reference', 'widerow'); ?>
+	  </article>
+	<?php endwhile; ?>
+</section>
   <?php // get_template_part('templates/page', 'header'); ?>
   <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
