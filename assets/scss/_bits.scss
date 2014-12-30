@@ -1,14 +1,14 @@
 /*============= Color Definition =================*/
 
-$secondary-color:#A71D3E;
-$textcolor:#252525;
+$secondary-color: #D32F2F;
+$tertiary-color: #00796B;
+$textcolor: #212121;
 $textcolor-light: #454545;
-
-$gray-main:#252525;
-$gray:#686868;
-$gray-heading:#484646;
-$gray-light:#9A9898;
-$green:#4AB84A;
+$gray-main: #212121;
+$gray: #686868;
+$gray-heading: #484646;
+$gray-light: #9a9898;
+$green: #4ab84a;
 
 
 /*============= Fonts Definition =================*/
@@ -19,22 +19,10 @@ $headingfont: $sans-serif;
 
 /****************** Breakpoints Definition ***********/
 
-$s0:320px;
-$s1:480px;
-$s2:768px;
-$s3:1024px;
-
-$s4:1280px;
-$s5:1600px;
-
-$maximum:960px;
-
-
-
-
-
-
-
-
-
-
+$s0: 320px;
+$s1: 480px;
+$s2: 768px;
+$s3: 1024px;
+$s4: 1280px;
+$s5: 1600px;
+$maximum: 960px;

@@ -74,8 +74,11 @@
 			</figure>
 			<header class="refrow__header">
 				<div class="innerwrap">
-			    <h3 class="refrow__subtitle"><?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?></h3>
-			    <h2 class="refrow__title"><?php the_title(); ?></h2>
+					<h2 class="refrow__title"><?php the_title(); ?></h2>
+			    <h3 class="refrow__subtitle">
+			    	<?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?>
+			    </h3>
+			    
 			    <div class="refrow__summary"><?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?></div>
 			  </div>
 			</header>

@@ -1,116 +1,128 @@
-.contact__hero
-{
-	color: white;
-  background-color: $gray-main;
+.contact__hero {
+  color: white;
+  background-color: #512DA8;
 }
 
 .contactopener {
-	background-color: $gray-main;
-	.wrapper {
-		padding-top:2em;
-		padding-bottom: 2em;
-	}
+  background-color: $gray-main;
+  .wrapper {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
 }
 
-.contactblock{
-	@include clearfix();
-	background-color: $secondary-color;
-	padding:3em 0;
-	color:white;
+.contactblock {
+  padding: 3em 0;
 
+  color: white;
+  background-color: $gray-main;
+
+  @include clearfix();
 }
 
 .contact__title {
-	font-family: $serif;
-	color:rgba(white,0.5);
-	font-size: 1.75em;
-	line-height: 1;
-	margin: 0;
+  font-family: $serif;
+  font-size: 1.75em;
+  line-height: 1;
 
+  margin: 0;
+
+  color: rgba(white,.5);
 }
 .contactdata {
-	padding:2em 0;
-	@include bp($s2) {
-		width:50%;
-		float:left;
-		padding-right: 1em;
-	}
-	@include bp($s3) {
-		padding-right: 2em;
-	}
+  padding: 2em 0;
+
+  @include bp($s2) {
+    float: left;
+
+    width: 50%;
+    padding-right: 1em;
+  }
+  @include bp($s3) {
+    padding-right: 2em;
+  }
 }
 
 
-	.contactelement {
-		margin:1em 0;
-		padding:1em 0 0;
-		border-top:5px solid rgba(white,0.125);
-	
+.contactelement {
+  margin: 1em 0;
+  padding: 1em 0 0;
 
-		a {
-			color: inherit;
-			text-decoration: none;
-			&:hover, &:focus {
-				color:white;
-			}
-		}
+  border-top: 5px solid rgba(white,.125);
+  a {
+    text-decoration: none;
 
-		.ion {
-			box-sizing:border-box;
-			margin-right: 0.5em;
-			font-size: 1em;
-			//line-height: 1.5;
+    color: inherit;
+    &:hover,
+    &:focus {
+      color: white;
+    }
+  }
+  .ion {
+    font-size: 1em;
+    line-height: 1.666;
 
-			background-color: rgba(black,0.125);
-			//color:white;
-			border-radius: 50%;
-			width:1.666em;
-			height:1.666em;
+    box-sizing: border-box;
+    width: 1.666em;
+    height: 1.666em;
+    margin-right: .5em;
+    padding-top: 1px;
+    padding-left: 1px;
 
-			padding-left:1px;
-			padding-top: 1px;
-			text-align: center;
-			line-height: 1.666;
-		}
+    text-align: center;
+    //color:white;
 
-	}
+    border-radius: 50%;
+    //line-height: 1.5;
+    background-color: rgba(black,.125);
+  }
+}
 
-		.contactelement__title {
-			font-size: 1.333em;
-			text-transform: uppercase;
-			font-family: $sans-serif;
-			font-weight: 700;
-			margin:0;
-			color:rgba(white,0.666);
+.contactelement__title {
+  font-family: $sans-serif;
+  font-size: 1.333em;
+  font-weight: 700;
 
-		}
+  margin: 0;
 
-		.contactelement__data {
-			font-size: 0.875em;
-			//text-transform: uppercase;
-			margin:0.333em 0;
-			font-family: $sans-serif;
-			//font-weight: 700;
-			color:rgba(white,0.333);
-		}
+  text-transform: uppercase;
+
+  color: rgba(white,.666);
+}
+
+.contactelement__data {
+  font-family: $sans-serif;
+  font-size: .875em;
+  //text-transform: uppercase;
+
+  margin: .333em 0;
+  //font-weight: 700;
+
+  color: rgba(white,.333);
+}
 
 .contactformwrap {
-	padding:2em 0;
-	@include bp($s2) {
-		width:50%;
-		float:right;
-		padding-left: 1em;
-	}
-	@include bp($s3) {
-		padding-left: 2em;
-	}
+  padding: 2em 0;
+
+  @include bp($s2) {
+    float: right;
+
+    width: 50%;
+    padding-left: 1em;
+  }
+  @include bp($s3) {
+    padding-left: 2em;
+  }
 }
 
 .contactform {
-	@include clearfix();
-	margin:0;
-	color:white;
-	font-family: $sans-serif;
+  font-family: $sans-serif;
+
+  margin: 0;
+
+  color: white;
+
+  @include clearfix();
 }
 
 
@@ -119,110 +131,113 @@
 
 
 .formitem {
-	clear:both;
+  clear: both;
 }
 
 
 .contacttext {
-	color:rgba(white,0.333);
-	font-size: 0.875em;
-	line-height: 1.25;
+  font-size: .875em;
+  line-height: 1.25;
+
+  color: rgba(white,.333);
 }
 
 .mapblock {
-	//height:50vh;
-	//min-height: 75vh;
-	position: relative;
+  //height:50vh;
+  //min-height: 75vh;
+  position: relative;
 }
 
-	#map-canvas {
-		
-		margin: 1em 0 0;
-	  padding: 0;
-	  height:300px;
+#map-canvas {
+  height: 300px;
+  margin: 1em 0 0;
+  padding: 0;
 
-		@include bp($s2){
-			margin:0;
-			position: absolute;
-			top:0;
-			left:0;
-			right:0;
-			height: 100%;
-		}
-	}
+  @include bp($s2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    height: 100%;
+    margin: 0;
+  }
+}
 
 
 
-	.mapblock__content {
-		@include clearfix();
-		position: relative;
-		background-color: $gray-main;
-		
-		color:white;
-		padding:1em;
-		margin:1em 0;
-		//border-radius: 2px;
-		// &:before {
-		// 	content:'';
-		// 	position: absolute;
-		// 	//z-index: 1;
-		// 	width:100%;
-		// 	height:100%;
-		// 	left:-15px;
-		// 	top:-15px;
-		// 	border-color: rgba(black,0.333);
-		// 	border-radius: 2px;	
-		// 	border-width: 14px;
-		// 	border-style: solid;
-		// 	border-bottom:none;
-		// 	border-right:none;
-			
-		// 	transition:all .2s ease; 
-		// }
-		@include bp($s2){
-			//width:55%;
-			position: relative;
-			z-index: 1;
-			margin:4em 0;
-			padding:0 2em;
-			box-shadow: 0 0 10px 0 $gray-main;
-			background-image: linear-gradient(to right, black 50%, $gray-main 50% );
-		}
+.mapblock__content {
+  position: relative;
 
-		.balfel {
-			@include bp($s2) {
-				width:50%;
-				float:left;
-				padding:2em 1em 2em 0;
-			}
-		}
+  margin: 1em 0;
+  padding: 1em;
 
-		.jobbfel {
-			@include bp($s2){
-				width: 50%;
-				float:right;
-				padding:2em 1em 2em 1.5em;
-				border-left:10px solid rgba(black,0.333);
-			}
-		}
-		.contact__title {
-			//font-size: 1.5em;
-		}
-		.contactelement {
-			@include bp($s2){
-				border-top:none;
-				margin:0;
-				padding:0;
-			}
-		}
-		.contactelement__title {
-			//font-size: 1.25em;
+  color: white;
+  background-color: $gray-main;
 
-			//margin-top: 0;
-		}
-		.behuz {
-			//margin-left: 3.2em;
-		}
+  @include clearfix();
+  //border-radius: 2px;
+  // &:before {
+  // 	content:'';
+  // 	position: absolute;
+  // 	//z-index: 1;
+  // 	width:100%;
+  // 	height:100%;
+  // 	left:-15px;
+  // 	top:-15px;
+  // 	border-color: rgba(black,0.333);
+  // 	border-radius: 2px;	
+  // 	border-width: 14px;
+  // 	border-style: solid;
+  // 	border-bottom:none;
+  // 	border-right:none;
+  // 	transition:all .2s ease; 
+  // }
+  @include bp($s2) {
+    //width:55%;
+    position: relative;
+    z-index: 1;
 
-	}
+    margin: 4em 0;
+    padding: 0 2em;
 
+    background-image: linear-gradient(to right, black 50%, $gray-main 50% );
+    box-shadow: 0 0 10px 0 $gray-main;
+  }
+  .balfel {
+    @include bp($s2) {
+      float: left;
+
+      width: 50%;
+      padding: 2em 1em 2em 0;
+    }
+  }
+  .jobbfel {
+    @include bp($s2) {
+      float: right;
+
+      width: 50%;
+      padding: 2em 1em 2em 1.5em;
+
+      border-left: 10px solid rgba(black,.333);
+    }
+  }
+  .contact__title {
+    //font-size: 1.5em;
+  }
+  .contactelement {
+    @include bp($s2) {
+      margin: 0;
+      padding: 0;
+
+      border-top: none;
+    }
+  }
+  .contactelement__title {
+    //font-size: 1.25em;
+    //margin-top: 0;
+  }
+  .behuz {
+    //margin-left: 3.2em;
+  }
+}

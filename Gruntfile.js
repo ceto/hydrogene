@@ -37,9 +37,7 @@ module.exports = function(grunt) {
     sass: {
       dev: {
         files: {
-          'assets/css/main.css': [
-            'assets/scss/main.scss'
-          ]
+          'assets/css/main.css': ['assets/scss/main.scss']
         },
         options: {
           outputStyle: 'nested',
@@ -48,9 +46,7 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'assets/css/main.min.css': [
-            'assets/scss/main.scss'
-          ]
+          'assets/css/main.min.css': ['assets/scss/main.scss']
         },
         options: {
           outputStyle: 'compressed',
@@ -75,14 +71,9 @@ module.exports = function(grunt) {
       }
     },
     autoprefixer: {
-      options: {
-        browsers: ['last 2 versions', 'ie 8', 'ie 9', 'android 2.3', 'android 4', 'opera 12']
-      },
       dev: {
         options: {
-          map: {
-            prev: 'assets/css/'
-          }
+          map: true
         },
         src: 'assets/css/main.css'
       },

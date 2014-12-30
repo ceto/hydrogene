@@ -1,4 +1,4 @@
-<header class="contact__hero hero">
+<header class="refarchive__hero hero">
   <div class="wrapper wrapper--wide">
     <div class="hero__textblock">
       <h1 class="hero__title">Egyedi munkák</h1>

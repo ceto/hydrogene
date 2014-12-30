@@ -12,7 +12,7 @@
 	h1,h2,h3,h4,h5,h6 {
 		font-family: $sans-serif;
 		line-height: 1.2;
-		margin:2em 0 0;
+		margin:1.75em 0 0;
 		color: $textcolor-light;
 		&:before {
 			display: inline-block;
@@ -51,8 +51,8 @@
 	blockquote {
 		font-size: 1.25em;
 		line-height: 1.2;
-		font-family: $sans-serif;
-		//font-style: italic;
+		//font-family: $sans-serif;
+		font-style: italic;
 		color:$textcolor-light;
 		margin:1.5em 0;
 		padding:1.333em 1.25em;

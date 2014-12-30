@@ -23,8 +23,13 @@
 			</figure>
 			<header class="refrow__header">
 				<div class="innerwrap">
-			    <h3 class="refrow__subtitle"><?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?></h3>
 			    <h2 class="refrow__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			    <h3 class="refrow__subtitle">
+			    	<a href="<?php the_permalink(); ?>">
+			    		<?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?>
+						</a>
+			    </h3>
+					
 			    <div class="refrow__tags">
 						<!-- <h3 class="refrow__tags__title">Alkalmazott technológiák</h3> -->
 						<ul>

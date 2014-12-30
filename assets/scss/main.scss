@@ -1,4 +1,4 @@
-@import "../vendor/normalize.css/normalize.css";
+@import "normalize";
 @import "component-animations";
 @import "bits";
 @import "fonts";
@@ -8,10 +8,11 @@
 @import "base";
 @import "layout";
 @import "typography";
+@import "header";
 @import "navigation";
 @import "reference";
 @import "forms";
 @import "footer";
-@import "contact";
-@import "header";
 @import "home";
+@import "aboutus";
+@import "contact";
