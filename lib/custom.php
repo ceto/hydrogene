@@ -133,9 +133,9 @@ function h2_metaboxes( array $meta_boxes ) {
 			),
 
 			array(
-				'name' => 'Some attached Image',
-				'desc' => 'Upload an image or enter an URL.',
-				'id' => $prefix . 'image',
+				'name' => 'Big start illustration',
+				'desc' => 'Product in real life. eg: on devices',
+				'id' => $prefix . 'reallife',
 				'type' => 'file',
 				// 'allow' => array( 'url', 'attachment' ) // limit to just attachments with array( 'attachment' )
 			),

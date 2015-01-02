@@ -18,7 +18,7 @@
 			}
 
 			
-			.refsingle__infoblock {
+			.refsingle__quoteblock {
 				border-top: 10px solid rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}
 			.refsingle__infoblock .btn, .refsingle__shareblock .btn  {
@@ -41,12 +41,12 @@
 			.refsingle__content > h4:before,
 			.refsingle__content > h5:before,
 			.refsingle__content > h6:before,
-			.refsingle__quoteblock,
 			.shareblock__nav .nav-tabs li:before {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 
-			.refsingle__content a{
+			.refsingle__content a,
+			.refsingle__quote:before {
 				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 
@@ -70,7 +70,7 @@
 
 		</style>
 			<figure class="refrow__figure">
-				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
+				<a href="#"><?php the_post_thumbnail('large'); ?></a>
 			</figure>
 			<header class="refrow__header">
 				<div class="innerwrap">
@@ -78,45 +78,63 @@
 			    <h3 class="refrow__subtitle">
 			    	<?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?>
 			    </h3>
+			    <div class="refsingle__tasks">
+						<h3 class="tasks__subtitle">A feladat elemei</h3>
+						<ul class="tasks__elements">
+							<li><i class="ion ion-lightbulb"></i>Arculattervezés</li>
+							<li><i class="ion ion-pinpoint"></i>Tartalom stratégia</li>
+							<li><i class="ion ion-monitor"></i>Weboldal tervezés</li>
+							<li><i class="ion ion-iphone"></i>Mobil verzió</li>
+							<li><i class="ion ion-social-wordpress"></i>Wordpress</li>    		
+						</ul>
+					</div>
+
 			    
-			    <div class="refrow__summary"><?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?></div>
+ 			    <div class="refrow__actions">
+						<a class="btn--pseudo" target="_blank" href="#">
+							<?php _e('Mutasd a részleteket','hydrogene'); ?>
+						</a>
+			    </div>
 			  </div>
 			</header>
 
 
 	</div>
 </div>
-<section class="refsingle__infoblock">
-	<div class="wrapper wrapper--wide">
-		<div class="inner">
-			<div class="infoblock__detailspanel">
-				<h3 class="infopanel__subtitle">A feladat elemei</h3>
-				<ul class="infopanel__taskelements">
-					<li><i class="ion ion-lightbulb"></i>Arculattervezés</li>
-					<li><i class="ion ion-pinpoint"></i>Tartalom stratégia</li>
-					<li><i class="ion ion-monitor"></i>Weboldal tervezés</li>
-					<li><i class="ion ion-iphone"></i>Mobil verzió</li>
-					<li><i class="ion ion-social-wordpress"></i>Wordpress</li>    		
-				</ul>
-							<a class="btn btn--pseudo" target="_blank" href="#"><?php _e('Megnézem a weboldalt','hydrogene'); ?> <i class="ion ion-monitor"></i></a>
 
+<section class="refsingle__quoteblock">
+  <div class="wrapper wrapper--wide">
+  	<figure class="quotefigure">
+  		<img src="http://placehold.it/80/80" alt="">
+  		<figcaption>
+  			<span class="name">Koczó Levente</span>
+  			<span class="titulus">ügyvezető igazgatója</span>
+  		</figcaption>
+  	</figure>
 
-			</div>
-			<div class="infoblock__textpanel">
-				<h3 class="blocktitle">Ha tetszik ez a munkánk<small>bökj egyet nekünk. Köszönjük.</small></h3>
-				<ul class="uglybuttons">
-					<li class="face">
-						<div class="fb-like" data-colorscheme="dark" data-href="<?php the_permalink(); ?>" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-					</li>
-
-					<li class="gplus">
-						<div class="g-plusone" data-size="tall" data-annotation="none"></div>
-					</li>
-					<li class="twitter">
-						  <a href="https://twitter.com/share" class="twitter-share-button" data-via="hydrogenedesign" data-count="none">Tweet</a>
-					</li>
-
-				</ul>
-		</div>
-	</div>
+    <blockquote class="refsingle__quote">
+      <p>
+        Komolyabb ráncfelvarrással kerestük meg a Hydrogenet akiket a referenciájuk alapján választottunk ki. Központjainkba történő jelentkezések, és az ügyfélkör ugrásszerű növekedése &mdash; az új arculatnak és weblapnak köszönhetően &mdash; jócskán felülmúlta várakozásunkat.
+      </p>
+      <!-- <cite>Koczó Levente<span class="titulus">a lorem ipsum ügyvezető igazgató</span></cite> -->
+    </blockquote>
+  </div>
 </section>
+
+<section class="refsingle__reallife">
+  <div class="wrapper wrapper--fullwidth">
+  	<div class="wrapper wrapper--normal">
+			<h3 class="whiteblock__title"><small>lorem ipsum marika</small>helén dolor sit amet</h3>
+			<p class="whiteblock__disclaimer">
+				<?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?>
+			</p>
+		</div>
+		<?php
+			$realimage = wp_get_attachment_image( get_post_meta( get_the_ID(), '_refdata_reallife_id', 1 ), 'full');
+			//var_dump($realimage);
+		?>
+		<?php echo $realimage; ?>
+  </div>
+</section>
+
+

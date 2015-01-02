@@ -4635,6 +4635,10 @@ body {
     line-height: 1;
     text-transform: lowercase; }
 
+.whiteblock__disclaimer, .darkblock__disclaimer {
+  font-size: 1.25em;
+  text-align: center; }
+
 .tab-content > .tab-pane {
   display: none;
   visibility: hidden; }
@@ -5053,8 +5057,44 @@ input[type="checkbox"]#nav-toggle {
       .scrolled .nav--main li.contactstart > a {
         color: white; }
 
+.sidebar:before, .sidebar:after {
+  content: " ";
+  display: table; }
+.sidebar:after {
+  clear: both; }
+
+.widget {
+  padding: 1em 0; }
+  @media only screen and (min-width: 768px) {
+    .widget {
+      width: 33.333%;
+      float: left;
+      padding: 1em; } }
+
+.widget__body {
+  font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif; }
+  .widget__body ul {
+    margin: 0;
+    padding: 0; }
+    .widget__body ul li {
+      font-size: 0.875em;
+      line-height: 1.125;
+      margin: 0.5em 0; }
+      .widget__body ul li > a {
+        text-decoration: none;
+        color: #D32F2F; }
+
+.reflist {
+  background-color: #fff; }
+  .reflist:before, .reflist:after {
+    content: " ";
+    display: table; }
+  .reflist:after {
+    clear: both; }
+
 .refarchive__hero {
-  background-color: #7b1fa2; }
+  background-color: #7b1fa2;
+  background-color: #212121; }
 
 .refrow {
   position: relative;
@@ -5071,8 +5111,12 @@ input[type="checkbox"]#nav-toggle {
     position: relative; }
     @media only screen and (min-width: 768px) {
       .refrow .wrapper {
-        min-height: 32em;
-        max-height: 32em; } }
+        min-height: 25em;
+        max-height: 25em; } }
+    @media only screen and (min-width: 1024px) {
+      .refrow .wrapper {
+        min-height: 28em;
+        max-height: 28em; } }
 
 .refrow__figure {
   position: relative;
@@ -5114,26 +5158,10 @@ input[type="checkbox"]#nav-toggle {
         left: 0;
         width: 100%;
         height: 100%; } }
-    .refrow__figure a:after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      display: block;
-      content: '';
-      -webkit-transition: all 0.6s ease-in-out;
-              transition: all 0.6s ease-in-out;
-      opacity: 0;
-      background-color: rgba(37, 37, 37, 0.333); }
-    .refrow__figure a:hover:after {
-      opacity: 1; }
     .refrow__figure a img {
       width: auto;
       max-width: 18em;
-      max-height: 15em;
-      -webkit-transition: all 0.6s ease-in-out;
-              transition: all 0.6s ease-in-out; }
+      max-height: 15em; }
 
 .refrow__header {
   position: relative;
@@ -5160,9 +5188,7 @@ input[type="checkbox"]#nav-toggle {
         padding: 3em 2em 3em 2em; } }
   @media only screen and (min-width: 1280px) {
     .refrow__header {
-      padding: 4em 3em 4em 3em; }
-      .reference:nth-of-type(2n) .refrow__header {
-        padding: 4em 3em 4em 3em; } }
+      padding: 4em 3em 4em 3em; } }
   .refrow__header .innerwrap {
     max-width: 32em;
     margin: 0 auto; }
@@ -5177,6 +5203,8 @@ input[type="checkbox"]#nav-toggle {
   position: relative;
   margin: 0 0 0.125em;
   color: rgba(255, 255, 255, 0.75); }
+  .refsingle .refrow__title {
+    font-size: 1.666em; }
   .refrow__title a {
     text-decoration: none;
     color: inherit; }
@@ -5190,6 +5218,8 @@ input[type="checkbox"]#nav-toggle {
   line-height: 1;
   margin: 0 0 0 0;
   text-transform: uppercase; }
+  .refsingle .refrow__subtitle {
+    font-size: 3em; }
   .refrow__subtitle a {
     text-decoration: none;
     color: inherit; }
@@ -5197,37 +5227,39 @@ input[type="checkbox"]#nav-toggle {
       color: rgba(255, 255, 255, 0.75); }
 
 .refrow__tags {
-  font-size: 0.875em;
-  max-width: 480px;
-  margin: 0 0;
+  font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0.25em 0 0 0;
   color: rgba(255, 255, 255, 0.75); }
   .refrow__tags ul {
     margin: 0;
     padding: 0; }
     .refrow__tags ul li {
-      font-style: italic;
       display: inline;
+      margin: 0;
+      padding: 0;
       list-style-type: none; }
       .refrow__tags ul li:before {
-        content: ' × '; }
+        content: '\b7\a0'; }
       .refrow__tags ul li:first-of-type:before {
         content: ''; }
 
 .refrow__summary {
-  margin: 1em 0; }
-  .refrow__summary:before {
-    display: block;
-    width: 0.875em;
-    height: 0.875em;
-    margin: 0.75em auto 0.875em 0;
-    content: '';
-    background-color: rgba(255, 255, 255, 0.333); }
+  margin: 0.75em 0;
+  padding-top: 0.5em;
+  border-top: 1px solid rgba(255, 255, 255, 0.125); }
+  .refisngle .refrow__summary {
+    font-size: 1em; }
 
 .refrow__actions {
   margin: 1.5em 0; }
   .refrow__actions .btn--pseudo {
     font-size: 0.75em;
-    margin: 0.25em 1.5em 0 0; }
+    margin: 0.25em 0 0 0; }
+    .refsingle .refrow__actions .btn--pseudo {
+      font-size: 1em; }
 
 .refrow__tags__title {
   font-size: 1em;
@@ -5251,20 +5283,51 @@ input[type="checkbox"]#nav-toggle {
   @media only screen and (min-width: 1280px) {
     .refsingle .refrow .wrapper {
       height: 100vh;
-      min-height: 40em;
-      max-height: 45em; } }
-.refsingle .refrow__title {
-  font-size: 1.666em; }
-.refsingle .refrow__subtitle {
-  font-size: 3em; }
-.refsingle .refrow__summary {
-  font-size: 1em; }
+      min-height: 35em;
+      max-height: 40em; } }
 
 .refsingle__header:before, .refsingle__header:after {
   content: " ";
   display: table; }
 .refsingle__header:after {
   clear: both; }
+
+.refsingle__tasks {
+  margin-top: 1em; }
+
+.tasks__subtitle {
+  font-family: 'Archer', 'Georgia Pro', Georgia, serif;
+  font-size: 1.25em;
+  margin: 0;
+  opacity: 0.75; }
+
+.tasks__elements {
+  font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0.5em 0 1.5em;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.75); }
+  .tasks__elements li {
+    display: inline-block;
+    margin: 0.125em 0.75em 0.125em 0;
+    list-style-type: none; }
+    .tasks__elements li .ion {
+      font-size: 1em;
+      line-height: 1.666;
+      box-sizing: border-box;
+      width: 1.666em;
+      height: 1.666em;
+      margin-right: 0.25em;
+      padding-top: 1px;
+      padding-left: 1px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.75);
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.125); }
+
+.refsingle__reallife {
+  padding: 4em 0; }
 
 .refsingle__infoblock {
   color: white;
@@ -5316,46 +5379,46 @@ input[type="checkbox"]#nav-toggle {
       width: 33.333%;
       padding: 2em 0; } }
 
-.infopanel__subtitle {
-  font-family: 'Archer', 'Georgia Pro', Georgia, serif;
-  font-size: 1.5em;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.333); }
-
-.infopanel__taskelements {
-  font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-  font-size: 0.875em;
-  font-weight: 700;
-  margin: 0.5em 0 1.5em;
-  padding: 0;
-  color: rgba(255, 255, 255, 0.75); }
-  .infopanel__taskelements li {
-    display: inline-block;
-    margin: 0.125em 0.75em 0.125em 0;
-    list-style-type: none; }
-    .infopanel__taskelements li .ion {
-      font-size: 1em;
-      line-height: 1.666;
-      box-sizing: border-box;
-      width: 1.666em;
-      height: 1.666em;
-      margin-right: 0.25em;
-      padding-top: 1px;
-      padding-left: 1px;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.75);
-      border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.125); }
-
 .refsingle__quoteblock {
-  margin: 2em 0 0;
-  padding: 3em 0 4em;
+  margin: 0 0;
+  padding: 4em 0 3em;
   color: white;
-  background-color: #D32F2F; }
+  background-color: #212121; }
+  .refsingle__quoteblock .quotefigure {
+    text-align: center;
+    margin-bottom: 1em; }
+    @media only screen and (min-width: 768px) {
+      .refsingle__quoteblock .quotefigure {
+        float: left;
+        width: 12em;
+        margin-right: 1em; } }
+    .refsingle__quoteblock .quotefigure img {
+      display: inline-block;
+      border-radius: 50%;
+      margin-bottom: 0.333em; }
+    .refsingle__quoteblock .quotefigure .name {
+      font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+      font-size: 0.666em;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1;
+      text-transform: uppercase;
+      opacity: 0.75;
+      margin-bottom: 0.25em;
+      display: block; }
+    .refsingle__quoteblock .quotefigure .titulus {
+      display: block;
+      font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+      font-size: 0.666em;
+      font-weight: 400;
+      font-variant: normal;
+      opacity: 0.75;
+      line-height: 1; }
 
 .refsingle__quote {
+  position: relative;
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.25;
   position: relative;
   margin: 0;
@@ -5365,19 +5428,35 @@ input[type="checkbox"]#nav-toggle {
     display: table; }
   .refsingle__quote:after {
     clear: both; }
+  .refsingle__quote:before {
+    content: '“';
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: -0.4em;
+    font-size: 6em;
+    line-height: 1;
+    font-family: 'Archer', 'Georgia Pro', Georgia, serif;
+    opacity: 0.333; }
+  @media only screen and (min-width: 768px) {
+    .refsingle__quote {
+      float: left;
+      width: calc( 100% - 13em); } }
+  .refsingle__quote p {
+    opacity: 0.75;
+    margin: 0.5em 0; }
   .refsingle__quote cite {
     font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     font-size: 0.75em;
     font-weight: 700;
     font-style: normal;
-    font-variant: small-caps;
     line-height: 1;
     float: right;
     margin-top: 0.5em;
     text-transform: none; }
     .refsingle__quote cite .titulus {
-      font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-      font-size: 0.75em;
+      font-family: 'Archer', 'Georgia Pro', Georgia, serif;
+      font-size: 1em;
       font-weight: 400;
       font-variant: normal;
       display: block; }
@@ -5709,7 +5788,7 @@ textarea {
   font-size: 2.125em;
   line-height: 1;
   margin: 0 0 0.25em;
-  color: rgba(255, 255, 255, 0.75); }
+  opacity: 0.75; }
 
 .hero__subtitle {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -5730,7 +5809,7 @@ textarea {
   .hero__disclaimer strong {
     font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.75); }
+    opacity: 0.75; }
   .hero__disclaimer a {
     color: inherit;
     text-decoration: none;

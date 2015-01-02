@@ -1,6 +1,15 @@
+.reflist {
+  background-color: #fff;
+
+  @include clearfix();
+}
 .refarchive__hero {
   background-color: #7b1fa2;
+  background-color: $gray-main;
+  //color:$gray-main;
 }
+
+
 .refrow {
   position: relative;
 
@@ -17,14 +26,13 @@
 
     @include bp($s2) {
       //height: 66.666vh;
-      min-height: 32em;
-      max-height: 32em;
+      min-height: 25em;
+      max-height: 25em;
     }
     @include bp($s3) {
-      //height: 100vh;
-      //max-height: 100vh;
-      //min-height: 30em;
-      //max-height: 30em;
+      //height: 66.666vh;
+      min-height: 28em;
+      max-height: 28em;
     }
   }
 }
@@ -59,15 +67,12 @@
       left: -20%;
 
       background-position: right bottom;
-      //border-right: 1.5vw solid white;
-      //border-left: none;
     }
     a img {
       visibility: hidden;
     }
   }
   @include bp($s4) {
-    //width:66.666%;
   }
   a {
     position: relative;
@@ -88,36 +93,11 @@
       width: 100%;
       height: 100%;
     }
-    &:after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-
-      display: block;
-
-      content: '';
-      transition: all .6s ease-in-out;
-
-      opacity: 0;
-      background-color: rgba(37, 37, 37, .333);
-    }
-    &:hover {
-      &:after {
-        opacity: 1;
-      }
-      img {
-        //transform: scale(1.05);
-      }
-    }
     img {
       width: auto;
       max-width: 18em;
       //max-width: 90%;
       max-height: 15em;
-
-      transition: all .6s ease-in-out;
       //width:100%;
       //display: block;
     }
@@ -135,7 +115,7 @@
 
   @include clearfix();
   @include bp($s2) {
-    //font-size: 1.125em;		
+    //font-size: 1.125em;   
   }
   @include bp($s2) {
     position: absolute;
@@ -153,10 +133,8 @@
     }
   }
   @include bp($s4) {
+    //font-size: 0.875em;
     padding: 4em 3em 4em 3em;
-    .reference:nth-of-type(2n) & {
-      padding: 4em 3em 4em 3em;
-    }
   }
   @include bp($s5) {
   }
@@ -180,6 +158,9 @@
   margin: 0 0 .125em;
 
   color: rgba(255,255,255,.75);
+  .refsingle & {
+    font-size: 1.666em;
+  }
   a {
     text-decoration: none;
 
@@ -202,14 +183,9 @@
   margin: 0 0 0 0;
 
   text-transform: uppercase;
-  // &:after {
-  //   display: block;
-  //   width: 2em;
-  //   height: 2px;
-  //   margin: .75em auto 0 0	;
-  //   content: '';
-  //   background-color: rgba(255,255,255,.75);
-  // }
+  .refsingle & {
+    font-size: 3em;
+  }
   a {
     text-decoration: none;
 
@@ -219,32 +195,34 @@
     &:focus {
       //color:gray;
       //text-decoration: underline;
-      color: rgba(255,255,255,0.75);
+      color: rgba(255,255,255,.75);
     }
   }
 }
 
 .refrow__tags {
-  font-size: .875em;
+  font-family: $sans-serif;
+  font-size: .75em;
+  //text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.25;
 
-  max-width: $s1;
-  margin: 0 0;
+  margin: .25em 0 0 0;
 
   color: rgba(255,255,255,.75);
+  //font-style: italic;
   ul {
     margin: 0;
     padding: 0;
     li {
-      font-style: italic;
-      //font-family: $sans-serif;
-      //text-transform: uppercase;
-      //font-weight: 700;	
-
       display: inline;
+
+      margin: 0;
+      padding: 0;
 
       list-style-type: none;
       &:before {
-        content: ' × ';
+        content: '\b7\a0';
         //font-style: normal;
       }
       &:first-of-type {
@@ -257,18 +235,12 @@
 }
 
 .refrow__summary {
-  margin: 1em 0;
-  //text-align: left;
-  &:before {
-    display: block;
+  margin: .75em 0;
+  padding-top: .5em;
 
-    width: .875em;
-    height: .875em;
-    margin: .75em auto .875em 0;
-
-    content: '';
-
-    background-color: rgba(255,255,255,.333);
+  border-top: 1px solid rgba(#fff,.125);
+  .refisngle & {
+    font-size: 1em;
   }
 }
 .refrow__actions {
@@ -277,7 +249,10 @@
   .btn--pseudo {
     font-size: .75em;
 
-    margin: .25em 1.5em 0 0;
+    margin: .25em 0 0 0;
+    .refsingle & {
+      font-size: 1em;
+    }
   }
 }
 
@@ -308,53 +283,78 @@
 .refsingle {
   .refrow {
     border-top: none;
-    //padding-top: 2em;
     .wrapper {
       @include bp($s2) {
-        //height: 66.666vh;
         min-height: 35em;
         max-height: 35em;
       }
       @include bp($s4) {
         height: 100vh;
         //max-height: 100vh;
-        min-height: 40em;
-        max-height: 45em;
+        min-height: 35em;
+        max-height: 40em;
       }
     }
   }
-  .refrow__header {
-    @include bp($s3) {
-      //width:66%;
-      // position: static;
-      // top: 0;
-      // transform: none;
-    }
-  }
-  .refrow__figure {
-    @include bp($s3) {
-      //width:70%;
-      //left:60%;
-      //position: fixed;
-    }
-  }
-
-  .refrow__title {
-    font-size: 1.666em;
-  }
-  .refrow__subtitle {
-    font-size: 3em;
-  }
-  .refrow__summary {
-    font-size: 1em;
-  }
 }
+
 .refsingle__header {
   @include clearfix();
-  //text-align: left;
-  //margin:0 0;
-  //padding:4em 0 0;
-  //color:#fff;
+}
+
+.refsingle__tasks {
+  margin-top: 1em;
+}
+
+.tasks__subtitle {
+  font-family: $serif;
+  font-size: 1.25em;
+
+  margin: 0;
+
+  opacity: .75;
+}
+
+.tasks__elements {
+  font-family: $sans-serif;
+  font-size: 1.125em;
+  //text-transform: uppercase;
+  font-weight: 700;
+
+  margin: .5em 0 1.5em;
+  padding: 0;
+  //font-style: italic;
+
+  color: rgba(255,255,255,.75);
+  li {
+    display: inline-block;
+
+    margin: .125em .75em .125em 0;
+
+    list-style-type: none;
+    .ion {
+      font-size: 1em;
+      line-height: 1.666;
+
+      box-sizing: border-box;
+      width: 1.666em;
+      height: 1.666em;
+      margin-right: .25em;
+      padding-top: 1px;
+      padding-left: 1px;
+
+      text-align: center;
+
+      color: rgba(white,.75);
+      border-radius: 50%;
+      //line-height: 1.5;
+      background-color: rgba(black,.125);
+    }
+  }
+}
+
+.refsingle__reallife {
+  padding: 4em 0;
 }
 
 .refsingle__infoblock {
@@ -425,65 +425,57 @@
     padding: 2em 0;
   }
 }
-.infopanel__subtitle {
-  font-family: $serif;
-  font-size: 1.5em;
 
-  margin: 0;
 
-  color: rgba(255,255,255,.333);
-}
+.refsingle__quoteblock {
+  margin: 0 0;
+  padding: 4em 0 3em;
 
-.infopanel__taskelements {
-  font-family: $sans-serif;
-  font-size: .875em;
-  //text-transform: uppercase;
-  font-weight: 700;
+  color: white;
+  background-color: $gray-main;
+  .quotefigure {
+    text-align: center;
+    margin-bottom: 1em;    
+    @include bp($s2) {
+      float:left;
+      width:12em;
+      margin-right: 1em;
 
-  margin: .5em 0 1.5em;
-  padding: 0;
-  //font-style: italic;
-
-  color: rgba(255,255,255,.75);
-  li {
-    display: inline-block;
-
-    margin: .125em .75em .125em 0;
-
-    list-style-type: none;
-    .ion {
-      font-size: 1em;
-      line-height: 1.666;
-
-      box-sizing: border-box;
-      width: 1.666em;
-      height: 1.666em;
-      margin-right: .25em;
-      padding-top: 1px;
-      padding-left: 1px;
-
-      text-align: center;
-
-      color: rgba(white,.75);
+    }
+    img {
+      display: inline-block;
       border-radius: 50%;
-      //line-height: 1.5;
-      background-color: rgba(black,.125);
+      margin-bottom: 0.333em;
+    }
+    .name {
+      font-family: $sans-serif;
+      font-size: .666em;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1;
+      text-transform: uppercase;
+      opacity: .75;
+      margin-bottom: 0.25em;
+
+      display: block;
+    }
+    .titulus {
+      display: block;
+      font-family: $sans-serif;
+      font-size: 0.666em;
+      font-weight: 400;
+      font-variant: normal;
+      opacity: .75;
+      line-height: 1;
     }
   }
 }
 
-.refsingle__quoteblock {
-  margin: 2em 0 0;
-  padding: 3em 0 4em;
-
-  color: white;
-  background-color: $secondary-color;
-}
-
 
 .refsingle__quote {
+  position: relative;
   font-family: $sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.25;
 
   position: relative;
@@ -492,15 +484,34 @@
   padding: 0;
 
   @include clearfix();
+
+  &:before {
+    content: '“';
+    position: absolute;
+    display: inline-block;
+    left:0;
+    top:-0.4em;
+    font-size: 6em;
+    line-height: 1;
+    font-family: $serif;
+    opacity: 0.333;
+  }
+  @include bp($s2){
+    float:left;
+    width: calc( 100% - 13em );
+  }
   p {
-    //opacity: 0.75;
+    opacity: .75;
+    //color:$secondary-color;
+    //text-align: center;
+    margin:0.5em 0;
   }
   cite {
     font-family: $sans-serif;
     font-size: .75em;
     font-weight: 700;
     font-style: normal;
-    font-variant: small-caps;
+    //font-variant: small-caps;
     line-height: 1;
     //display: block;
 
@@ -511,8 +522,8 @@
 
     text-transform: none;
     .titulus {
-      font-family: $sans-serif;
-      font-size: .75em;
+      font-family: $serif;
+      font-size: 1em;
       font-weight: 400;
       font-variant: normal;
 
@@ -531,6 +542,8 @@
       background-color: rgba(white,.2);
     }
   }
+
+
 }
 
 .refsingle__shareblock {
@@ -540,12 +553,12 @@
   border-top: 10px solid rgba($secondary-color,.2);
   background-color: $gray-main;
   // @include bp($s2){
-  // 	background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
+  //  background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
   // }
   // .wrapper {
-  // 	@include bp($s2){
-  // 	  background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
-  // 	}
+  //  @include bp($s2){
+  //    background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
+  //  }
   // }
 }
 
@@ -625,11 +638,11 @@
 
   background-color: $gray-main;
   // @include bp($s2) {
-  // 	margin:0;
-  // 	width:50%;
-  // 	float:right;
-  // 	padding:2em 2em 4em 1em;
-  // 	background-color: transparent;
+  //  margin:0;
+  //  width:50%;
+  //  float:right;
+  //  padding:2em 2em 4em 1em;
+  //  background-color: transparent;
   // }
   .blocktitle {
     font-size: 1.5em;

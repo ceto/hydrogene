@@ -30,20 +30,18 @@
 						</a>
 			    </h3>
 					
-			    <div class="refrow__tags">
-						<!-- <h3 class="refrow__tags__title">Alkalmazott technológiák</h3> -->
+<!-- 			    <div class="refrow__tags">
 						<ul>
 							<li>Arculattervezés</li>
 							<li>Weboldal tervezés</li>
 							<li>Responsive webdesign</li>
 							<li>Wordpress weboldalkészítés</li>    		
 						</ul>
-					</div>
+					</div> -->
 			    <div class="refrow__summary"><?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?></div>
 					
 			    <div class="refrow__actions">
-			    	<a class="btn--pseudo" href="<?php the_permalink(); ?>"><?php _e('Projekt részletek','hydrogene'); ?> <i class="ion ion-clipboard"></i></a>
-			    	<a class="btn--pseudo" target="_blank" href="#"><?php _e('Megnézem élőben','hydrogene'); ?> <i class="ion ion-monitor"></i></a>
+			    	<a class="btn--pseudo" href="<?php the_permalink(); ?>"><?php _e('Projekt részletek','hydrogene'); ?></a>
 			    </div>
 			  </div>
 			</header>

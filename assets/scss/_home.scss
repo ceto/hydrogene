@@ -24,9 +24,9 @@
 
   margin: 0 0 0.25em;
 
-  color: rgba(white,.75);
+  //color: rgba(white,.75);
   // text-transform: uppercase;
-
+  opacity: 0.75;
 }
 
 .hero__subtitle
@@ -63,7 +63,8 @@
 
     text-transform: uppercase;
 
-    color: rgba(white,.75);
+    //color: rgba(white,.75);
+    opacity: 0.75; 
   }
   a {
   	color: inherit;

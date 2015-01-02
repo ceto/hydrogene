@@ -1,0 +1,33 @@
+.sidebar {
+	@include clearfix();
+}
+.widget {
+	padding:1em 0;
+	@include bp($s2) {
+		width:33.333%;
+		float:left;
+		padding:1em;
+	}
+}
+
+.widget__title {
+
+}
+
+.widget__body {
+	font-family: $sans-serif;
+
+	ul {
+		margin:0;
+		padding: 0;
+		li {
+				font-size: 0.875em;
+				line-height: 1.125;
+				margin:0.5em 0;	
+				> a {
+					text-decoration: none;
+					color:$secondary-color;
+				}
+		}
+	}
+}

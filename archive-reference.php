@@ -9,11 +9,13 @@
     </div>
   </div>
 </header>
-<?php while (have_posts()) : the_post(); ?>
-  <article <?php post_class(); ?>>
-    <?php get_template_part('templates/reference', 'widerow'); ?>
-  </article>
-<?php endwhile; ?>
+<section class="reflist">
+  <?php while (have_posts()) : the_post(); ?>
+    <article <?php post_class('reference--listelem'); ?>>
+      <?php get_template_part('templates/reference', 'widerow'); ?>
+    </article>
+  <?php endwhile; ?>
+</section>
 
 <?php if ($wp_query->max_num_pages > 1) : ?>
   <nav class="post-nav">
