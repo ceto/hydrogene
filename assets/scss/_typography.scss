@@ -11,6 +11,7 @@
 	
 	h1,h2,h3,h4,h5,h6 {
 		font-family: $sans-serif;
+		font-weight: 900;
 		line-height: 1.2;
 		margin:1.75em 0 0;
 		color: $textcolor-light;
@@ -51,8 +52,9 @@
 	blockquote {
 		font-size: 1.25em;
 		line-height: 1.2;
-		//font-family: $sans-serif;
-		font-style: italic;
+		font-family: $sans-serif;
+		font-weight: 300;
+		//font-style: italic;
 		color:$textcolor-light;
 		margin:1.5em 0;
 		padding:1.333em 1.25em;
@@ -174,6 +176,7 @@
 .wp-caption-text {
 	font-family: $sans-serif;
 	font-size: 14px;
+	font-weight:300;
 	line-height: 1.2;
 	text-align: center;
 	color:$textcolor-light;

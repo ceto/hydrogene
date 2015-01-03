@@ -12,6 +12,7 @@ input[type='email'],
 textarea {
   font-family: $sans-serif;
   font-size: 16px;
+  font-weight:300;
   line-height: 1;
 
   width: 100%;
@@ -121,8 +122,9 @@ textarea {
 .btn--pseudo {
   font-family: $headingfont;
   font-size: 1.25em;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.125;
+  text-transform: uppercase;
 
   position: relative;
 
@@ -136,7 +138,7 @@ textarea {
   text-decoration: none;
   //text-transform: uppercase;
 
-  color: white;
+  color: rgba(#fff,.75);
   border: none;
   border-radius: 2px;
   background: none;
@@ -167,6 +169,7 @@ textarea {
   &:hover,
   &:focus {
     background-color: rgba(black,.125);
+    color: rgba(#fff,1);
     //transform:translate(9px,9px);
     &:before {
       border-color: rgba(white,.125);

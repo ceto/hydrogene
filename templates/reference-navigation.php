@@ -45,8 +45,8 @@
 				    	</div>
 							<div class="refnav__actions">
 								<a class="btn btn--pseudo" href="<?php echo get_the_permalink($next_reference->ID); ?>">
-									<?php _e('Projekt bemutatása','hydrogene'); ?> <i class="ion ion-clipboard"></i>
-									</a>
+									<?php _e('Projekt részletek','hydrogene'); ?>
+								</a>
 				    	</div>
 				  </div>
 <!-- 				  											    	<a class="backtoallref" href="<?php echo esc_url(home_url('/')); ?>?post_type=reference">

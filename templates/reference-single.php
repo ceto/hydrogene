@@ -12,6 +12,24 @@
     </div>
 
 
+    <section class="refsingle__quoteblock">
+      <div class="wrapper wrapper--wide">
+        <figure class="quotefigure">
+          <img src="http://placehold.it/80/80" alt="">
+          <figcaption>
+            <span class="name">Koczó Levente</span>
+            <span class="titulus">ügyvezető igazgatója</span>
+          </figcaption>
+        </figure>
+
+        <blockquote class="refsingle__quote">
+          <p>
+            Komolyabb ráncfelvarrással kerestük meg a Hydrogenet akiket a referenciájuk alapján választottunk ki. Központjainkba történő jelentkezések, és az ügyfélkör ugrásszerű növekedése &mdash; az új arculatnak és weblapnak köszönhetően &mdash; jócskán felülmúlta várakozásunkat.
+          </p>
+          <!-- <cite>Koczó Levente<span class="titulus">a lorem ipsum ügyvezető igazgató</span></cite> -->
+        </blockquote>
+      </div>
+    </section>
 
 
     <aside class="refsingle__shareblock">

@@ -18,12 +18,13 @@
 			}
 
 			
-			.refsingle__quoteblock {
+			/*.refsingle__quoteblock {
 				border-top: 10px solid rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
-			}
+			}*/
 			.refsingle__infoblock .btn, .refsingle__shareblock .btn  {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.875	);
 			}
+			
 			.refsingle__infoblock .btn:before,
 			.refsingle__shareblock .btn:before,
 			.refsingle__shareblock {
@@ -34,7 +35,9 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
 			}
 */
+			.refsingle .refrow:after,
 			.inverseblock,
+			.refsingle__quoteblock,
 			.refsingle__content > h1:before,
 			.refsingle__content > h2:before,
 			.refsingle__content > h3:before,
@@ -54,9 +57,9 @@
 				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 
-/*			.refsingle__contactopener {
-				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
-			}*/
+/*		.refsingle__reallife {
+			border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.5);
+		}*/
 			
 /*			.refsingle__contactopener .btn--pseudo, .refsingle__infoblock .btn--pseudo {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
@@ -102,24 +105,6 @@
 	</div>
 </div>
 
-<section class="refsingle__quoteblock">
-  <div class="wrapper wrapper--wide">
-  	<figure class="quotefigure">
-  		<img src="http://placehold.it/80/80" alt="">
-  		<figcaption>
-  			<span class="name">Koczó Levente</span>
-  			<span class="titulus">ügyvezető igazgatója</span>
-  		</figcaption>
-  	</figure>
-
-    <blockquote class="refsingle__quote">
-      <p>
-        Komolyabb ráncfelvarrással kerestük meg a Hydrogenet akiket a referenciájuk alapján választottunk ki. Központjainkba történő jelentkezések, és az ügyfélkör ugrásszerű növekedése &mdash; az új arculatnak és weblapnak köszönhetően &mdash; jócskán felülmúlta várakozásunkat.
-      </p>
-      <!-- <cite>Koczó Levente<span class="titulus">a lorem ipsum ügyvezető igazgató</span></cite> -->
-    </blockquote>
-  </div>
-</section>
 
 <section class="refsingle__reallife">
   <div class="wrapper wrapper--fullwidth">
