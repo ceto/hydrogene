@@ -14,7 +14,7 @@
 	</div>
 </header>
 <section class="whiteblock">
-	<div class="wrapper wrapper--normal">
+	<div class="wrapper wrapper--wide">
 			<h3 class="whiteblock__title"><small>Kreatív műhelymunka</small>Az üzleti sikerért</h3>
 			<p class="whiteblock__disclaimer">A <strong>HYDROGENE</strong> egy két személyes design műhely. Kiemelkedő minőségű egyedi weboldalakat tervezünk hagyományos és mobil eszközökre. Van egy jó projekted? Itt vagyunk, segítünk.</p>
 	</div>

@@ -4667,31 +4667,39 @@ body {
   padding: 2em 0; }
 
 .darkblock {
-  background-color: #212121;
-  color: white; }
+  color: white;
+  background-color: #212121; }
 
 .whiteblock, .darkblock {
   padding: 4em 0;
   text-align: center; }
 
 .whiteblock__title, .darkblock__title {
-  text-align: center;
-  display: block;
-  font-size: 2em;
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 2em;
   font-weight: 900;
-  text-transform: uppercase; }
+  display: inline-block;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.125em;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 10px solid #D32F2F; }
   .whiteblock__title small, .darkblock__title small {
-    display: block;
     font-family: 'Archer', Georgia, serif;
-    font-weight: 700;
     font-size: 0.75em;
+    font-weight: 700;
     line-height: 1;
+    display: block;
     text-transform: lowercase; }
 
 .whiteblock__disclaimer, .darkblock__disclaimer {
+  font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 1.25em;
+  font-weight: 300;
+  margin-top: 0;
   text-align: center; }
+  .whiteblock__disclaimer strong, .darkblock__disclaimer strong {
+    font-weight: 900; }
 
 .tab-content > .tab-pane {
   display: none;
@@ -4898,7 +4906,8 @@ body {
 .hero {
   padding: 8em 0 4em;
   color: #fff;
-  background-color: #212121; }
+  background-color: #212121;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.2); }
 
 /******* Video *********/
 .pageheader {
@@ -5380,7 +5389,8 @@ input[type="checkbox"]#nav-toggle {
       background-color: rgba(0, 0, 0, 0.125); }
 
 .refsingle__reallife {
-  padding: 4em 0; }
+  padding: 4em 0;
+  text-align: center; }
 
 .refsingle__infoblock {
   color: white;
@@ -5796,6 +5806,10 @@ textarea {
     .btn--pseudo:hover:before, .btn--pseudo:focus:before {
       border-color: rgba(255, 255, 255, 0.125); }
 
+.standardcontact {
+  background-color: #212121;
+  text-align: center; }
+
 .pagefooter {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   padding: 2em 0;
@@ -5885,12 +5899,6 @@ textarea {
 .contact__hero {
   color: white;
   background-color: #512DA8; }
-
-.contactopener {
-  background-color: #212121; }
-  .contactopener .wrapper {
-    padding-top: 2em;
-    padding-bottom: 2em; }
 
 .contactblock {
   padding: 3em 0;

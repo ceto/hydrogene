@@ -1,68 +1,90 @@
 .wrapper {
-	@include clearfix();
-	margin:0 auto;
-	padding:0 1em;
-	//background-color: gray;
+  margin: 0 auto;
+  padding: 0 1em;
+
+  @include clearfix();
+  //background-color: gray;
 }
 
-	.wrapper--wide {
-		max-width: 60em;
-	}
+.wrapper--wide {
+  max-width: 60em;
+}
 
-	.wrapper--normal {
-		max-width: 34em;
-		@include bp($s2) {
-			max-width: 45em;
-		}
-		@include bp($s3) {
-			max-width: 42em;
-		}
-		@include bp($s4) {
-			max-width: 36em;
-		}
-	}
+.wrapper--normal {
+  max-width: 34em;
 
-	.wrapper--narrow {
-		max-width: 32em;
-	}
+  @include bp($s2) {
+    max-width: 45em;
+  }
+  @include bp($s3) {
+    max-width: 42em;
+  }
+  @include bp($s4) {
+    max-width: 36em;
+  }
+}
+
+.wrapper--narrow {
+  max-width: 32em;
+}
 
 
 
 .page__content {
-	padding:2em 0;
+  padding: 2em 0;
 }
 
 .darkblock {
-	background-color: $gray-main;
-	color:white;
+  color: white;
+  background-color: $gray-main;
 }
 
-.whiteblock, .darkblock {
-	padding:4em 0;
-	text-align: center;
+.whiteblock,
+.darkblock {
+  padding: 4em 0;
+
+  text-align: center;
 }
 
-.whiteblock__title, .darkblock__title {
-	text-align: center;
-	display: block;
-	font-size: 2em;
-	font-family: $sans-serif;
-	font-weight: 900;
-	text-transform: uppercase;
-	small {
-		display: block;
-		font-family: $serif;
-		font-weight: 700;
-		font-size: 0.75em;
-		line-height: 1;
-		text-transform: lowercase;
+.whiteblock__title,
+.darkblock__title {
+  font-family: $sans-serif;
+  font-size: 2em;
+  font-weight: 900;
 
-	}
+  display: inline-block;
+
+  margin-bottom: .5em;
+  padding-bottom: .125em;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  border-bottom: 10px solid $secondary-color;
+  small {
+    font-family: $serif;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+
+    display: block;
+
+    text-transform: lowercase;
+  }
 }
 
-.whiteblock__disclaimer, .darkblock__disclaimer {
-	font-size:1.25em;
-	text-align:center;
+.whiteblock__disclaimer,
+.darkblock__disclaimer {
+  font-family: $sans-serif;
+  font-size: 1.25em;
+  font-weight: 300;
+
+  margin-top: 0;
+
+  text-align: center;
+  strong {
+    font-weight: 900;
+  }
 }
 
 

@@ -33,34 +33,53 @@
   <?php wp_footer(); ?>
 
   <?php if (is_page_template('template-contact.php')): ?>
+    <!-- auto-hide mobile address bar !-->
+    <script type="application/x-javascript">
+      addEventListener("load", function() {
+        setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1);
+      }
+    </script> 
+
+
     <!-- Google MAps -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script>
 
       function initialize() {
+        // var mapOptions = {
+        //   styles: [
+        //     {
+        //       "stylers": [
+        //         //{"invert_lightness": true},
+        //         { "saturation": -100 },
+        //         { "gamma": 1.94 }
+        //       ]
+        //     }
+        //   ],
+        //   zoom: 16,
+        //   disableDefaultUI: true,
+        //   mapTypeControl: false,
+        //   scrollwheel: false,
+        //   zoomControl: false,
+        //   center: new google.maps.LatLng(47.505175, 19.054692)
+        // };
         var mapOptions = {
-          styles: [
-            {
-              "stylers": [
-                //{"invert_lightness": true},
-                { "saturation": -100 },
-                { "gamma": 1.94 }
-              ]
-            }
-          ],
-          zoom: 16,
-          disableDefaultUI: true,
-          mapTypeControl: false,
-          // mapTypeControlOptions: {
-          //   style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-          // },
-          scrollwheel: false,
+          center: new google.maps.LatLng(47.505175, 19.054692),
+          zoom: 17,
           zoomControl: false,
-          // zoomControlOptions: {
-          //   style: google.maps.ZoomControlStyle.SMALL
-          // },
-          center: new google.maps.LatLng(47.505175, 19.054692)
-        };
+          zoomControlOptions: {style: google.maps.ZoomControlStyle.DEFAULT,},
+          disableDoubleClickZoom: true,
+          mapTypeControl: true,
+          mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,},
+          scaleControl: true,
+          scrollwheel: true,
+          streetViewControl: true,
+          draggable: true,
+          overviewMapControl: true,
+          overviewMapControlOptions: {opened: false,},
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          styles: [{featureType: "landscape",stylers: [{saturation: -100}, {lightness: 65}, {visibility: "on"}]}, {featureType: "poi",stylers: [{saturation: -100}, {lightness: 51}, {visibility: "simplified"}]}, {featureType: "road.highway",stylers: [{saturation: -100}, {visibility: "simplified"}]}, {featureType: "road.arterial",stylers: [{saturation: -100}, {lightness: 30}, {visibility: "on"}]}, {featureType: "road.local",stylers: [{saturation: -100}, {lightness: 40}, {visibility: "on"}]}, {featureType: "transit",stylers: [{saturation: -100}, {visibility: "simplified"}]}, {featureType: "administrative.province",stylers: [{visibility: "off"}]/** /},{featureType: "administrative.locality",stylers: [{ visibility: "off" }]},{featureType: "administrative.neighborhood",stylers: [{ visibility: "on" }]/**/}, {featureType: "water",elementType: "labels",stylers: [{visibility: "on"}, {lightness: -25}, {saturation: -100}]}, {featureType: "water",elementType: "geometry",stylers: [{hue: "#ffff00"}, {lightness: -25}, {saturation: -97}]}],
+        }
         map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
         var image = '<?php echo get_stylesheet_directory_uri(); ?>/assets/img/flag.png';
         var myLatLng = new google.maps.LatLng(62.756715, 7.274334);

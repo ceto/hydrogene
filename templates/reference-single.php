@@ -5,6 +5,23 @@
       <?php get_template_part('templates/reference', 'singlehead'); ?>
     </header>
 
+    <section class="refsingle__reallife">
+      <div class="wrapper wrapper--fullwidth">
+        <div class="wrapper wrapper--wide">
+          <h3 class="whiteblock__title"><small>lorem ipsum marika</small>helén dolor sit amet</h3>
+          <p class="whiteblock__disclaimer">
+            <?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?>
+          </p>
+        </div>
+        
+        <?php
+          $realimage = wp_get_attachment_image( get_post_meta( get_the_ID(), '_refdata_reallife_id', 1 ), 'full');
+          //var_dump($realimage);
+        ?>
+        <?php echo $realimage; ?>
+      </div>
+    </section>
+
     <div class="wrapper wrapper--normal">
       <div class="refsingle__content">
         <?php the_content(); ?>
