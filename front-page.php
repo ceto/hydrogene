@@ -3,10 +3,10 @@
 	<div class="wrapper wrapper--wide">
 		<div class="hero__textblock">
 			<h1 class="hero__title">Különleges vagy</h1>
-			<h2 class="hero__subtitle"><span>A weben</span></h2>
-			<p class="hero__disclaimer">A <strong>HYDROGENE</strong> egy két személyes design műhely. Kiemelkedő minőségű egyedi weboldalakat tervezünk hagyományos és mobil eszközökre. Van egy jó projekted? Itt vagyunk, segítünk.
+			<h2 class="hero__subtitle">Mutasd meg</h2>
+			<p class="hero__disclaimer"><strong>Egyedi honlappal és arculattal</strong> segítjük céged növekedését.  Kreatív műhelyünkben kiemelkedő minőségű web/mobil és offline termékeket tervezünk és fejlesztünk. 
 			</p>
-			<p><a href="?post_type=reference" class="btn btn--pseudo">Nézd meg a munkáinkat</a></p>
+			<p><a href="?page_id=69" class="btn btn--pseudo">Nézd meg hogyan</a></p>
 		</div>
 		<div class="heroright">
 			
@@ -16,7 +16,7 @@
 <section class="whiteblock">
 	<div class="wrapper wrapper--wide">
 			<h3 class="whiteblock__title"><small>Kreatív műhelymunka</small>Az üzleti sikerért</h3>
-			<p class="whiteblock__disclaimer">A <strong>HYDROGENE</strong> egy két személyes design műhely. Kiemelkedő minőségű egyedi weboldalakat tervezünk hagyományos és mobil eszközökre. Van egy jó projekted? Itt vagyunk, segítünk.</p>
+			<p class="whiteblock__disclaimer">Megértéssel, szakértelemmel, kreativitással jól működő megoldást nyújtunk ügyfeleinknek weben mobilon és offline, hogy még sikeresebbek lehessenek.</p>
 	</div>
 </section>
 <section class="home__references">

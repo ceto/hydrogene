@@ -2,7 +2,7 @@
   <div class="wrapper wrapper--wide">
     <div class="hero__textblock">
       <h1 class="hero__title">Egyedi munkák</h1>
-      <h2 class="hero__subtitle">weben&nbsp;mobilon és offline</h2>
+      <h2 class="hero__subtitle">weben mobilon és offline</h2>
       <p class="hero__disclaimer">
         <strong>Nézd meg miket csinálunk.</strong> A feladatok külöbözőek, akárcsak a megoldások. Több tucat sikeres projekt közül megmutatjuk a kedvenceinket. Hasonlót szeretnél? Vedd fel velünk a <a href="<?php echo get_permalink(58); ?>">kapcsolatot.</a>
       </p>
