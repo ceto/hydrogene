@@ -1,10 +1,10 @@
 <header class="contact__hero hero">
 	<div class="wrapper wrapper--wide">
 		<div class="hero__textblock">
-		  <h1 class="hero__title">Van egy jó projekted?</h1>
-		  <h2 class="hero__subtitle">Nálad a labda</h2>
+		  <h1 class="hero__title">Nálad a labda</h1>
+		  <h2 class="hero__subtitle">Beszélgessünk</h2>
 		  <p class="hero__disclaimer">
-		  	<strong>Beszélgessünk.</strong> Örömmel veszünk részt egyedi tervezési feladatokban, történjen az webre, mobilra vagy klasszikus offline felületekre. Az együttműködés kapcsolatfelvétellel kezdődik.
+		  	<strong>Van egy jó projekted?</strong> Örömmel veszünk részt egyedi tervezési feladatokban, történjen az webre, mobilra vagy klasszikus offline felületekre. Az együttműködés kapcsolatfelvétellel kezdődik.
 		  </p>
 		</div>
 	</div>
