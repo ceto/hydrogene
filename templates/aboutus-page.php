@@ -11,8 +11,49 @@
 </header>
 <section class="whiteblock">
 	<div class="wrapper wrapper--wide">
-			<h3 class="whiteblock__title"><small>Kreatív műhelymunka</small>Az üzleti sikerért</h3>
+			<h3 class="whiteblock__title"><small>webes és offline</small>szolgáltatások</h3>
 			<p class="whiteblock__disclaimer">A <strong>HYDROGENE</strong> egy két személyes design műhely. Kiemelkedő minőségű egyedi weboldalakat tervezünk hagyományos és mobil eszközökre. Van egy jó projekted? Itt vagyunk, segítünk.</p>
+
+
+			<section class="services">
+				<div class="wrapper wrapper--wide">
+					<div class="servicegroup">
+						<h4 class="servicegroup__name">Arculat</h4>
+						<ul class="servicelist">
+							<li>Arculattervezés</li>
+							<li>Logó tervezés</li>
+							<li>Csomagolás tervezés</li>
+							<li>Plakát és brossúra</li>
+							<li>Belsőépítészet</li>
+						</ul>
+					</div>
+					<div class="servicegroup">
+						<h4 class="servicegroup__name">Web/mobil</h4>
+						<ul class="servicelist">
+							<li>Webdesign</li>
+							<li>UX tervezés</li>
+							<li>Mobilbarát honlap</li>
+							<li>Tartalom kezelés</li>
+							<li>Mikroszájtok</li>
+							<li>Kampányoldal</li>
+						</ul>
+					</div>
+					<div class="servicegroup">
+						<h4 class="servicegroup__name">Marketing</h4>
+						<ul class="servicelist">
+							<li>Online marketing</li>
+							<li>Keresőoptimalizálás</li>
+							<li>Analitika</li>
+							<li>Tartalom stratégia</li>
+							<li>Hírlevél kampány</li>
+						</ul>
+					</div>
+				</div>				
+			</section>
+
+
+
+
 	</div>
 </section>
 
@@ -20,41 +61,95 @@
 <section class="whiteblock">
 	<div class="wrapper wrapper--wide">
 			<h3 class="whiteblock__title"><small>a hydrogene</small>“alkotó” elemei</h3>
-			<p class="whiteblock__disclaimer"><strong>Minden egy kézben.</strong> Ismerd meg személyesen, piciny design csapatunk éllovasait. Szenvedélyes digitális kézművesek akik, &mdash; a tervezésen és kivitelezésen túl &mdash; döntéseket hoznak és kommunikálnak veled.			</p>
+			<p class="whiteblock__disclaimer"><strong>Minden egy kézben.</strong> Ismerd meg piciny design csapatunk éllovasait. Szenvedélyes digitális kézművesek akik, &mdash; a tervezésen és kivitelezésen túl &mdash; döntéseket hoznak és kommunikálnak veled.</p>
 	</div>
-</section>
-<section class="teammember beke">
-	<figure class="teammember__figure">
-		<img src="http://placehold.it/320/320" alt="Beke Mátyás - Art Director | Hydrogene">
-	</figure>
-	<header class="teammember__head">
-		<h3 class="teammember">Beke Mátyás</h3>
-		<h4 class="teamtitulus">Art Director, Designer</h4>
-	</header>
-	<div class="teammember__desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nulla voluptas ratione ex, eos error nam, sapiente, sequi, cumque dolor eligendi quod minus quo necessitatibus fugit. Árvíztűrő tükörfúrógép amet inventore itaque quasi dolorem! Unde ducimus soluta consequatur expedita voluptatum modi tempora sed aliquam ea.</p>
-		<p>Cumque quas minima aliquid nisi a maxime, fugit facilis perspiciatis beatae magnam similique doloremque, itaque consectetur nulla tempore voluptatum adipisci ut consequuntur.</p>
-	</div>
-	<div class="teammember__footer">
-		Ikonos profil linkek
-	</div>	
 </section>
 
-<section class="teammember szabo">
-	<figure class="teammember__figure">
-		<img src="http://placehold.it/320/320" alt="Beke Mátyás - Art Director | Hydrogene">
-	</figure>
-	<header class="teammember__head">
-		<h3 class="teammember">Szabó Gábor</h3>
-		<h4 class="teamtitulus">Webfejlesztő</h4>
-	</header>
-	<div class="teammember__desc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nulla voluptas ratione ex, eos error nam, sapiente, sequi, cumque dolor eligendi quod minus quo necessitatibus fugit. Árvíztűrő tükörfúrógép amet inventore itaque quasi dolorem! Unde ducimus soluta consequatur expedita voluptatum modi tempora sed aliquam ea.</p>
-		<p>Cumque quas minima aliquid nisi a maxime, fugit facilis perspiciatis beatae magnam similique doloremque, itaque consectetur nulla tempore voluptatum adipisci ut consequuntur.</p>
+<section class="members">
+	
+		<section class="teammember beke">
+			<div class="wrapper wrapper--wide">
+				<figure class="teammember__figure">
+					<img src="http://placehold.it/1024x512" alt="Beke Mátyás - Art Director | Hydrogene">
+				</figure>
+				<div class="teammember__info">
+					<header class="teammember__head">
+						<h3 class="teammember__name">Beke Mátyás</h3>
+						<h4 class="teammember__titulus">Art Director, Designer</h4>
+					</header>
+					<div class="teammember__desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nulla voluptas ratione ex, eos error nam, sapiente, sequi, cumque dolor eligendi quod minus quo necessitatibus fugit. Árvíztűrő tükörfúrógép amet inventore itaque quasi dolorem!</p>
+						<blockquote>
+							<p>“Unde ducimus soluta consequatur expedita voluptatum modi tempora sed aliquam ea.”</p>
+						</blockquote>
+						<p>Cumque quas minima aliquid nisi a maxime, fugit facilis perspiciatis beatae magnam similique doloremque, itaque consectetur nulla tempore voluptatum adipisci ut consequuntur.</p>
+					</div>
+					<div class="teammember__footer">
+						<ul class="teammember__social">
+							<li><a target="_blank" href="#"><i class="ion ion-social-linkedin"></i></a></li>
+							<li><a target="_blank" href="#"><i class="ion ion-social-dribbble"></i></a></li>
+							<li><a href="mailto:bekematyas@hydrogene.hu"><i class="ion ion-ios-email"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="teammember szabo">
+			<div class="wrapper wrapper--wide">
+				<figure class="teammember__figure">
+					<img src="http://placehold.it/1024x512" alt="Beke Mátyás - Art Director | Hydrogene">
+				</figure>
+				<div class="teammember__info">
+					<header class="teammember__head">
+						<h3 class="teammember__name">Szabó Gábor</h3>
+						<h4 class="teammember__titulus">Webfejlesztő</h4>
+					</header>
+					<div class="teammember__desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nulla voluptas ratione ex, eos error nam, sapiente, sequi, cumque dolor eligendi quod minus quo necessitatibus fugit. Árvíztűrő tükörfúrógép amet inventore itaque quasi dolorem! Unde ducimus soluta consequatur expedita voluptatum modi tempora sed aliquam ea.</p>
+						<blockquote>
+							<p>“Darabokra szeded, megvizsgálod az alkotó részeket, majd összerakod újra. Megismerted az egészet”</p>
+						</blockquote>
+						<p>Cumque quas minima aliquid nisi a maxime, fugit facilis perspiciatis beatae magnam similique doloremque, itaque consectetur nulla tempore voluptatum adipisci ut consequuntur.</p>
+					</div>
+					<div class="teammember__footer">
+						<ul class="teammember__social">
+							<li><a target="_blank" href="https://twiiter.com/szabogabi"><i class="ion ion-social-twitter"></i></a></li>
+							<li><a target="_blank" href="#"><i class="ion ion-social-linkedin"></i></a></li>
+							<li><a target="_blank" href="https://github.com/ceto"><i class="ion ion-social-github"></i></a></li>
+							<li><a href="mailto:szabogabor@hydrogene.hu"><i class="ion ion-ios-email"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="teammember you">
+			<div class="wrapper wrapper--wide">
+				<figure class="teammember__figure">
+					<img src="http://placehold.it/1024x512" alt="Az ügyfél - Projektgazda">
+				</figure>
+				<div class="teammember__info">
+					<header class="teammember__head">
+						<h3 class="teammember__name">Te vagy a főnök</h3>
+						<h4 class="teammember__titulus">Projektgazda</h4>
+					</header>
+					<div class="teammember__desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nulla voluptas ratione ex, eos error nam, sapiente, sequi, cumque dolor eligendi quod minus quo necessitatibus fugit. Árvíztűrő tükörfúrógép amet inventore itaque quasi dolorem!</p>
+						<blockquote>
+							<p>“Unde ducimus soluta consequatur expedita voluptatum modi tempora sed aliquam ea.”</p>
+						</blockquote>
+						<p>Cumque quas minima aliquid nisi a maxime, fugit facilis perspiciatis beatae magnam similique doloremque, itaque consectetur nulla tempore voluptatum adipisci ut consequuntur.</p>
+						</div>
+					<div class="teammember__footer">
+						<a href="#" class="btn btn--pseudo">Legyél az ügyfelünk</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</div>
-	<div class="teammember__footer">
-		Ikonos profil linkek
-	</div>	
 </section>
 
 <div class="page__content">

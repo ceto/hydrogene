@@ -12,7 +12,7 @@
 <section class="whiteblock">
   <div class="wrapper wrapper--wide">
       <h3 class="whiteblock__title"><small>terézia ipsum sit amet</small>Emőke lorem pistabácsi</h3>
-      <p class="whiteblock__disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sapiente sunt quisquam minus, nesciunt consequatur. Rerum voluptatibus voluptatum, maxime minus dicta iusto aliquid enim amet ipsum laborum accusantium alias quasi!</p>
+      <p class="whiteblock__disclaimer">A <strong>HYDROGENE</strong> egy két személyes design műhely. Kiemelkedő minőségű egyedi weboldalakat tervezünk hagyományos és mobil eszközökre. Van egy jó projekted? Itt vagyunk, segítünk.</p>
   </div>
 </section>
 <section class="reflist">
