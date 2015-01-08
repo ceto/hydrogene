@@ -304,14 +304,14 @@
     // }
     .wrapper {
       @include bp($s2) {
-        min-height: 35em;
-        max-height: 35em;
+        min-height: 45em;
+        max-height: 45em;
       }
       @include bp($s4) {
         //height: 100vh;
         //max-height: 100vh;
-        min-height: 35em;
-        max-height: 40em;
+        min-height: 38em;
+        max-height: 45em;
       }
     }
   }

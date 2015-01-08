@@ -6,6 +6,7 @@
 .banner__brand {
   font-family: $sans-serif;
   font-weight: 900;
+  font-size: 1em;
 
   position: absolute;
   z-index: 10;
@@ -21,10 +22,14 @@
 
   @include bp($s3) {
     position: fixed;
-    top: 1.75em;
+    top: 1.666em;
+    font-size: 2em;
+    left: 0.5em;
 
     transition: all .4s ease;
     .scrolled & {
+      font-size: 1em;
+      left:1.5em;
       top: .75em;
 
       color: $gray-main;
@@ -39,7 +44,7 @@
 
 
 .hero {
-  padding: 8em 0 4em;
+  padding: 12em 0 4em;
 
   color: #fff;
   background-color: $gray-main;

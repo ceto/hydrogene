@@ -91,10 +91,10 @@ input[type="checkbox"]#nav-toggle {
 	}
 
 	@include bp($s3) {
-		min-height: 3.666em;
+		min-height: 8.666em;
 		height:auto;
 		background-color: rgba(white,0);
-		border-bottom: 1px solid rgba(white,0.125);
+		border-bottom: 1px solid rgba(white,0);
 		overflow: visible;
 
 
@@ -124,7 +124,7 @@ input[type="checkbox"]#nav-toggle {
 
 	@include bp($s3) {
 		text-align: right;
-		top:1em;
+		top:3em;
 		.scrolled & {
 			top:0;
 		}
@@ -164,13 +164,13 @@ input[type="checkbox"]#nav-toggle {
 			@include bp($s3) {
 				display: inline-block;
 				font-size: 0.666em;
-				border-bottom:1px solid rgba(white,0);
+				border-bottom:3px solid rgba(white,0);
 				margin:0 0 0 1.5em;
-				padding:1.666em 0 1.25em 0;
+				padding:1.666em 0 0.5em 0;
 				//background-color: red;
 				&:hover, &:focus {
 					
-					border-color: rgba(white,0.333);
+					border-color: rgba(white,0.2);
 				}
 				
 				.scrolled & {

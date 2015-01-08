@@ -1,7 +1,7 @@
 <header class="aboutus__hero hero">
 	<div class="wrapper wrapper--wide">
 		<div class="hero__textblock">
-		  <h1 class="hero__title">Webes/mobil és offline</h1>
+		  <h1 class="hero__title">Web/mobil és print</h1>
 		  <h2 class="hero__subtitle">terméket fejlesztünk</h2>
 		  <p class="hero__disclaimer">
 		  	 <strong>Szeretünk kísérletezni.</strong> Új módszereket, technológiákat kipróbálni. Valljuk, hogy az átfogó tervezés elengedhetetlen az emlékezetes és használható weboldal vagy arculat létrehozásában.
@@ -9,12 +9,82 @@
 		</div>
 	</div>
 </header>
+
 <section class="whiteblock">
 	<div class="wrapper wrapper--wide">
-			<h3 class="whiteblock__title"><small>webes és offline</small>szolgáltatások</h3>
-			<p class="whiteblock__disclaimer">A <strong>HYDROGENE</strong> egy két személyes design műhely. Kiemelkedő minőségű egyedi weboldalakat tervezünk hagyományos és mobil eszközökre. Van egy jó projekted? Itt vagyunk, segítünk.</p>
+			<h3 class="whiteblock__title"><small>hogyan dolgozunk</small>a fejlesztés menete</h3>
+			<p class="whiteblock__disclaimer">Grafikai arculatot és felhasználóbarát egyedi honlapokat tervezünk hagyományos és mobil eszközökre. Módszerünk átfogó, a tevékenységünk széleskörű.</p>
+	</div>
+</section>
 
+<section class="process">
+					
+		<div class="processitem">
+			<div class="wrapper wrapper--normal">
+				<header class="processitem__head">	
+					<h5 class="processitem__subtitle">1. lépés: Kutatás</h5>
+					<h4 class="processitem__title">A felfedezés elindul</h4>
+				</header>
+				
+				<div class="processitem__desc">
+					<p>
+					Lorem ipsum dolor sit amet. Pistabácsi ipsum emőke és rozika is dolor sit ámet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+					<p>Lorem ipsum marika ámen</p>
+				</div>
+			</div>
+		</div>
 
+		<div class="processitem">
+			<div class="wrapper wrapper--normal">
+				<header class="processitem__head">	
+					<h5 class="processitem__subtitle">2. lépés: Stratégia</h5>					
+					<h4 class="processitem__title">Biztos alapok rögzítése</h4>
+				</header>
+				<div class="processitem__desc">
+
+					<p>
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse	cillum dolore eu fugiat nulla pariatur.</p>
+					<p>Lorem ipsum marika ámen. A tejfölös doboz dolor in reprehenderit in vo.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="processitem">
+			<div class="wrapper wrapper--normal">	
+				<header class="processitem__head">
+					<h5 class="processitem__subtitle">3. lépés: Tervezés</h5>
+					<h4 class="processitem__title">Megoldást keresünk a problémára</h4>
+				</header>
+				<div class="processitem__desc">
+					<p>
+					Gusztáv ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Axcepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sint amet Ernőbácsi orem ipsum marika ámen</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="processitem">
+			<div class="wrapper wrapper--normal">
+				<header class="processitem__head">	
+					<h5 class="processitem__subtitle">4. lépés: Fejlesztés</h5>
+					<h4 class="processitem__title">Szállítjuk a megoldást</h4>
+				</header>
+				<div class="processitem__desc">
+					<p>
+				Porem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Terézia zongorázik vadul. Nálam excepteur sint occaecat cupidatat non proident. Lorem ipsum marika ámen</p>
+				</div>
+			</div>
+		</div>
+
+</section>
+
+<section class="darkblock">
+	<div class="wrapper wrapper--wide">
+			<h3 class="darkblock__title"><small>magas színvonalon</small>Tesszük a dolgunkat</h3>
+			<p class="darkblock__disclaimer">Grafikai arculatot és felhasználóbarát egyedi honlapokat tervezünk hagyományos és mobil eszközökre. Módszerünk átfogó, a tevékenységünk széleskörű.</p>
 			<section class="services">
 				<div class="wrapper wrapper--wide">
 					<div class="servicegroup">
@@ -50,10 +120,6 @@
 					</div>
 				</div>				
 			</section>
-
-
-
-
 	</div>
 </section>
 
@@ -61,7 +127,7 @@
 <section class="whiteblock">
 	<div class="wrapper wrapper--wide">
 			<h3 class="whiteblock__title"><small>a hydrogene</small>“alkotó” elemei</h3>
-			<p class="whiteblock__disclaimer"><strong>Minden egy kézben.</strong> Ismerd meg piciny design csapatunk éllovasait. Szenvedélyes digitális kézművesek akik, &mdash; a tervezésen és kivitelezésen túl &mdash; döntéseket hoznak és kommunikálnak veled.</p>
+			<p class="whiteblock__disclaimer"><strong>Minden egy kézben.</strong> Piciny design csapatunk éllovasai szenvedélyes digitális kézművesek akik, &mdash; a tervezésen és kivitelezésen túl &mdash; döntéseket hoznak és kommunikálnak veled.</p>
 	</div>
 </section>
 
@@ -143,7 +209,7 @@
 						<p>Cumque quas minima aliquid nisi a maxime, fugit facilis perspiciatis beatae magnam similique doloremque, itaque consectetur nulla tempore voluptatum adipisci ut consequuntur.</p>
 						</div>
 					<div class="teammember__footer">
-						<a href="#" class="btn btn--pseudo">Legyél az ügyfelünk</a>
+						<a href="<?php echo get_permalink(58); ?>" class="btn btn--pseudo">Legyél az ügyfelünk</a>
 					</div>
 				</div>
 			</div>
@@ -152,9 +218,9 @@
 	</div>
 </section>
 
-<div class="page__content">
+<!-- <div class="page__content">
 	<div class="wrapper wrapper--normal">
 		<?php the_content(); ?>
 		<?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
 	</div>
-</div>
+</div> -->

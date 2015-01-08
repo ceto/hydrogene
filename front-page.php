@@ -4,7 +4,7 @@
 		<div class="hero__textblock">
 			<h1 class="hero__title">Különleges vagy</h1>
 			<h2 class="hero__subtitle">Mutasd meg</h2>
-			<p class="hero__disclaimer"><strong>Egyedi honlappal és arculattal</strong> segítjük céged növekedését.  Kreatív műhelyünkben kiemelkedő minőségű web/mobil és offline termékeket tervezünk és fejlesztünk. 
+			<p class="hero__disclaimer"><strong>Egyedi honlappal és arculattal</strong> segítjük céged növekedését.  Kreatív műhelyünkben kiemelkedő minőségű web/mobil oldalakat és print termékeket tervezünk. 
 			</p>
 			<p><a href="?page_id=69" class="btn btn--pseudo">Nézd meg hogyan</a></p>
 		</div>
@@ -33,5 +33,5 @@
 	<?php endwhile; ?>
 </section>
   <?php // get_template_part('templates/page', 'header'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
+  <?php // get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>

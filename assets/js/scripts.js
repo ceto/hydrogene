@@ -572,7 +572,7 @@ $(document).ready(UTIL.loadEvents);
 var htop = $('.banner').offset().top - parseFloat($('.banner').css('marginTop').replace(/auto/, 0));
 $(window).scroll(function (event) {
   var y = $(this).scrollTop();
-  if (y-90 >= htop) {
+  if (y-40 >= htop) {
     $('.banner').addClass('scrolled');
   } else {
     $('.banner').removeClass('scrolled');
