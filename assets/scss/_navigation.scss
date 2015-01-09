@@ -102,7 +102,7 @@ input[type="checkbox"]#nav-toggle {
 
 
 		.scrolled & {
-			margin-top: 0;
+			//margin-top: 0;
 		}
 	}
 
@@ -183,11 +183,11 @@ input[type="checkbox"]#nav-toggle {
 				}
 				
 				.scrolled & {
-					color:$gray-main;
+					//color:$gray-main;
 
 					&:hover, &:focus {
-						border-color: transparent;
-						color:rgba(black,1)
+						//border-color: transparent;
+						//color:rgba(black,1)
 					}
 				}
 			}

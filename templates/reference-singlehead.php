@@ -98,8 +98,8 @@
 
 			    
  			    <div class="refrow__actions">
-						<a class="btn--pseudo" target="_blank" href="#">
-							<?php _e('Mutasd a részleteket','hydrogene'); ?>
+						<a class="btn--pseudo" href="#singletop">
+							<?php _e('Felfedezés indul','h2'); ?>
 						</a>
 			    </div>
 			  </div>

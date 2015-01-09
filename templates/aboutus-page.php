@@ -19,14 +19,14 @@
 
 <section class="process">
 					
-		<div class="processitem">
-			<div class="wrapper wrapper--normal">
-				<header class="processitem__head">	
-					<h5 class="processitem__subtitle">1. lépés: Kutatás</h5>
-					<h4 class="processitem__title">A felfedezés elindul</h4>
+		<div class="storyitem">
+			<div class="wrapper wrapper--wide">
+				<header class="storyitem__head">	
+					<h5 class="storyitem__subtitle">1. lépés: Kutatás</h5>
+					<h4 class="storyitem__title">A felfedezés elindul</h4>
 				</header>
 				
-				<div class="processitem__desc">
+				<div class="storyitem__desc">
 					<p>
 					Lorem ipsum dolor sit amet. Pistabácsi ipsum emőke és rozika is dolor sit ámet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
@@ -35,13 +35,13 @@
 			</div>
 		</div>
 
-		<div class="processitem">
-			<div class="wrapper wrapper--normal">
-				<header class="processitem__head">	
-					<h5 class="processitem__subtitle">2. lépés: Stratégia</h5>					
-					<h4 class="processitem__title">Biztos alapok rögzítése</h4>
+		<div class="storyitem">
+			<div class="wrapper wrapper--wide">
+				<header class="storyitem__head">	
+					<h5 class="storyitem__subtitle">2. lépés: Stratégia</h5>					
+					<h4 class="storyitem__title">Biztos alapok rögzítése</h4>
 				</header>
-				<div class="processitem__desc">
+				<div class="storyitem__desc">
 
 					<p>
 					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -51,13 +51,13 @@
 			</div>
 		</div>
 
-		<div class="processitem">
-			<div class="wrapper wrapper--normal">	
-				<header class="processitem__head">
-					<h5 class="processitem__subtitle">3. lépés: Tervezés</h5>
-					<h4 class="processitem__title">Megoldást keresünk a problémára</h4>
+		<div class="storyitem">
+			<div class="wrapper wrapper--wide">	
+				<header class="storyitem__head">
+					<h5 class="storyitem__subtitle">3. lépés: Tervezés</h5>
+					<h4 class="storyitem__title">Megoldást keresünk a problémára</h4>
 				</header>
-				<div class="processitem__desc">
+				<div class="storyitem__desc">
 					<p>
 					Gusztáv ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<p>Axcepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sint amet Ernőbácsi orem ipsum marika ámen</p>
@@ -65,13 +65,13 @@
 			</div>
 		</div>
 
-		<div class="processitem">
-			<div class="wrapper wrapper--normal">
-				<header class="processitem__head">	
-					<h5 class="processitem__subtitle">4. lépés: Fejlesztés</h5>
-					<h4 class="processitem__title">Szállítjuk a megoldást</h4>
+		<div class="storyitem">
+			<div class="wrapper wrapper--wide">
+				<header class="storyitem__head">	
+					<h5 class="storyitem__subtitle">4. lépés: Fejlesztés</h5>
+					<h4 class="storyitem__title">Szállítjuk a megoldást</h4>
 				</header>
-				<div class="processitem__desc">
+				<div class="storyitem__desc">
 					<p>
 				Porem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<p>Terézia zongorázik vadul. Nálam excepteur sint occaecat cupidatat non proident. Lorem ipsum marika ámen</p>
