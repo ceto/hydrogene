@@ -1,12 +1,50 @@
 .banner {
+  transition: all .4s ease;
+  // @include bp($s3) {
+  //   font-size: 21px;
+  // }
+
+  .wrapper {
+    position: relative;
+  }
+
   @include bp($s3) {
-    font-size: 21px;
+    position: fixed;
+    left:0;
+    width:100%;
+    height:8em;
+    border-bottom: 1px solid rgba(white,0);
+    z-index: 1;
+    overflow: hidden;
+
+    .wrapper {
+      height:8em;
+    }
+
+    &.scrolled {
+      font-size: 1em;
+      background-color: rgba(white,0.9);
+      border-bottom: 1px solid rgba(white,1);
+      height: 2.666em;
+      
+      .wrapper {
+        height: 2.666em;
+
+      }
+
+
+      color: $gray-main;
+    }
+
   }
 }
 .banner__brand {
   font-family: $sans-serif;
   font-weight: 900;
   font-size: 1em;
+  line-height: 1;
+
+  margin:0;
 
   position: absolute;
   z-index: 10;
@@ -19,18 +57,26 @@
   text-transform: uppercase;
 
   color: rgba(#fff,.5);
-
+  
+  @include bp($s2) {
+    left:1.5em;
+  }
   @include bp($s3) {
-    position: fixed;
-    top: 1.666em;
+    position: static;
+    float:left;
+    width:33.333;
+
+
     font-size: 2em;
-    left: 0.5em;
+    margin-top: 1.666em;
+    //left: 0.5em;
 
     transition: all .4s ease;
     .scrolled & {
+      margin-top: 0.875em;
       font-size: 1em;
-      left:1.5em;
-      top: .75em;
+      //left:1.5em;
+      //top: .75em;
 
       color: $gray-main;
     }
@@ -95,7 +141,7 @@
 
 .pageheader__content {
   position: relative;
-  z-index: 3;
+  //z-index: 3;
 
   padding: 8em 0 4em;
 }

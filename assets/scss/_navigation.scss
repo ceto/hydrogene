@@ -91,17 +91,18 @@ input[type="checkbox"]#nav-toggle {
 	}
 
 	@include bp($s3) {
-		min-height: 8.666em;
-		height:auto;
+		position: static;
+		float:right;
+		margin-top: 2.666em;
+		width:66.666%;
+		//height:2.666em;
 		background-color: rgba(white,0);
 		border-bottom: 1px solid rgba(white,0);
-		overflow: visible;
+		overflow: hidden;
 
 
 		.scrolled & {
-			background-color: rgba(white,0.9);
-			border-bottom: 1px solid rgba(white,1);
-			min-height: 2.666em;
+			margin-top: 0;
 		}
 	}
 
@@ -110,27 +111,35 @@ input[type="checkbox"]#nav-toggle {
 
 .nav--main { //ul
 	margin:0 auto;
-	padding:0 1em;
+	padding:0 0;
+	max-width: 64em;
 	width:100%;
 	transition: all .4s ease;
 	position: absolute;
   
   top: 50%;
   transform: translateY(100%);
+  @include bp($s2) {
+		padding:0 1.5em;
+
+  }
+	
 	@include bp($s3) {
+		margin:0;
+		padding:0 0;
 		top:0;
 		transform: translateY(0);
-	}
-
-	@include bp($s3) {
 		text-align: right;
+		position: static;
 		top:3em;
 		.scrolled & {
 			top:0;
 		}
-
 	}
 
+	@include bp($s4) {
+
+	}
 	li {
 		list-style-type: none;
 		margin:0;
