@@ -12,7 +12,7 @@
 
 <section class="whiteblock">
 	<div class="wrapper wrapper--wide">
-			<h3 class="whiteblock__title"><small>hogyan dolgozunk</small>a fejlesztés menete</h3>
+			<h3 class="whiteblock__title"><small>hatékony honlap és arculat</small>irányelvek és eszközök</h3>
 			<p class="whiteblock__disclaimer">Grafikai arculatot és felhasználóbarát egyedi honlapokat tervezünk hagyományos és mobil eszközökre. Módszerünk átfogó, a tevékenységünk széleskörű.</p>
 	</div>
 </section>
@@ -22,8 +22,8 @@
 		<div class="storyitem">
 			<div class="wrapper wrapper--wide">
 				<header class="storyitem__head">	
-					<h5 class="storyitem__subtitle">1. lépés: Kutatás</h5>
-					<h4 class="storyitem__title">A felfedezés elindul</h4>
+					<h5 class="storyitem__subtitle">Kutatás és felfedezés</h5>
+					<h4 class="storyitem__title">Elmélyülés a feladatban, biztos alapok rögzítése</h4>
 				</header>
 				
 				<div class="storyitem__desc">
@@ -38,8 +38,8 @@
 		<div class="storyitem">
 			<div class="wrapper wrapper--wide">
 				<header class="storyitem__head">	
-					<h5 class="storyitem__subtitle">2. lépés: Stratégia</h5>					
-					<h4 class="storyitem__title">Biztos alapok rögzítése</h4>
+					<h5 class="storyitem__subtitle">Arculat és Design</h5>					
+					<h4 class="storyitem__title">Karakteres arculat kialakítása és következetes használata</h4>
 				</header>
 				<div class="storyitem__desc">
 
@@ -54,8 +54,23 @@
 		<div class="storyitem">
 			<div class="wrapper wrapper--wide">	
 				<header class="storyitem__head">
-					<h5 class="storyitem__subtitle">3. lépés: Tervezés</h5>
-					<h4 class="storyitem__title">Megoldást keresünk a problémára</h4>
+					<h5 class="storyitem__subtitle">Reszponzív honlap</h5>
+					<h4 class="storyitem__title">Felhasználóbarát weboldal minden eszközre</h4>
+				</header>
+				<div class="storyitem__desc">
+					<p>
+					Gusztáv ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Axcepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sint amet Ernőbácsi orem ipsum marika ámen</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="storyitem">
+			<div class="wrapper wrapper--wide">	
+				<header class="storyitem__head">
+					<h5 class="storyitem__subtitle">Legújabb a technológia</h5>
+					<h4 class="storyitem__title">Jövőbarát korszerű fejlesztés és naprakész tudás</h4>
 				</header>
 				<div class="storyitem__desc">
 					<p>
@@ -68,13 +83,43 @@
 		<div class="storyitem">
 			<div class="wrapper wrapper--wide">
 				<header class="storyitem__head">	
-					<h5 class="storyitem__subtitle">4. lépés: Fejlesztés</h5>
-					<h4 class="storyitem__title">Szállítjuk a megoldást</h4>
+					<h5 class="storyitem__subtitle">Tartalomkezelés</h5>
+					<h4 class="storyitem__title">Honlapod tartalma házon belül szerkeszthető</h4>
 				</header>
 				<div class="storyitem__desc">
 					<p>
 				Porem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<p>Terézia zongorázik vadul. Nálam excepteur sint occaecat cupidatat non proident. Lorem ipsum marika ámen</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="storyitem">
+			<div class="wrapper wrapper--wide">
+				<header class="storyitem__head">	
+					<h5 class="storyitem__subtitle">Stratégia és Marketing</h5>
+					<h4 class="storyitem__title">Tudatosan a sikerért és az ügyfeleidért</h4>
+				</header>
+				<div class="storyitem__desc">
+					<p>
+				Porem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Terézia zongorázik vadul. Nálam excepteur sint occaecat cupidatat non proident. Lorem ipsum marika ámen</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="storyitem">
+			<div class="wrapper wrapper--wide">
+				<header class="storyitem__head">	
+					<h5 class="storyitem__subtitle">Személyes kapcsolat</h5>					
+					<h4 class="storyitem__title">Közvetlenül a tervezővel állsz kapcsolatban</h4>
+				</header>
+				<div class="storyitem__desc">
+
+					<p>
+					<strong>Minden egy kézben.</strong> Piciny design csapatunk éllovasai szenvedélyes digitális kézművesek akik, &mdash; a tervezésen és kivitelezésen túl &mdash; döntéseket hoznak és kommunikálnak veled. Felesleges körök nélkül. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse	cillum dolore eu fugiat nulla pariatur.</p>
+					<p>Lorem ipsum marika ámen. A tejfölös doboz dolor in reprehenderit in vo.</p>
 				</div>
 			</div>
 		</div>

@@ -17,8 +17,8 @@
 
 			<div role="tabpanel" class="tab-pane fade in active" id="contactpanel">
 				<div class="refsingle__contactopener">
-					<h3 class="blocktitle">Honlapot vagy arculatot szeretnél?<small>Szuper. Itt vagyunk, segítünk.</small></h3>
-					<a href="<?php echo get_permalink(58); ?>" class="btn btn--pseudo">Beszéljünk az üzletről</a>
+					<h3 class="blocktitle">Segítünk neked<small>Legyen ez egy virágzó kapcsolat kezdete</small></h3>
+					<a href="<?php echo get_permalink(58); ?>" class="btn btn--pseudo">Beszélgessünk</a>
 				</div>
 			</div>
 

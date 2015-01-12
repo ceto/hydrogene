@@ -185,9 +185,10 @@
 
   }
 
-  @include bp($s3) {
-    font-size: 0.875em;
+  &.whatwedo {
+    padding:4em 0;
   }
+
 }
 
 .storyitem__head {
@@ -199,6 +200,11 @@
   }
   @include bp($s3) {
     width:50%;
+    font-size: 0.875em;
+  }
+
+  @include bp($s4) {
+    font-size: 0.75em;
   }
 }
 .storyitem__subtitle {
@@ -216,7 +222,7 @@
   font-family: $sans-serif;
   //text-transform: uppercase;
   font-weight: 900;
-  margin:0 0 0.25em;
+  margin:0 0 1em;
   color:$secondary-color;
 }
 
@@ -224,6 +230,7 @@
   img {
     width:32.333%;
   }
+  margin-bottom: 1em;
 }
 
 .storyitem__desc {
@@ -236,15 +243,34 @@
   }
   @include bp($s3) {
     width:50%;
+    font-size: 0.875em;
+  }
+
+  @include bp($s4) {
+    font-size: 0.75em;
   }
 
   h5{
     margin-top: 0;
+    margin-bottom: 0.5em;
     font-size: 1.125em;
+    line-height: 1.125;
+    font-family: $sans-serif;
+    font-weight: 900;
+    color: $secondary-color;
+
+
   }
   h6 {
     margin-bottom: 0.5em;
     font-size: 1.125em;
+    line-height: 1.125;
+    font-family: $sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    &:first-child {
+      margin-top:0;
+    }
     + p {
       margin-top: 0;
     }

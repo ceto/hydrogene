@@ -5670,6 +5670,7 @@ input[type="checkbox"]#nav-toggle {
   font-weight: 900;
   line-height: 1;
   display: inline-block;
+  white-space: nowrap;
   margin: 0 0 0 0;
   padding-bottom: 0.25em;
   border-bottom: 1px solid rgba(255, 255, 255, 0.125);
@@ -6169,6 +6170,7 @@ textarea {
   text-transform: uppercase;
   position: relative;
   display: inline-block;
+  white-space: nowrap;
   max-width: 18em;
   padding: 0.75em 1em;
   transition: background-color 0.2s ease;
@@ -6254,7 +6256,7 @@ textarea {
 @media only screen and (min-width: 768px) {
   .hero__textblock {
     float: left;
-    width: 30em; } }
+    width: 31em; } }
 
 .hero__title {
   font-size: 2.125em;
@@ -6429,9 +6431,8 @@ textarea {
   @media only screen and (min-width: 768px) {
     .storyitem {
       padding: 2em 0; } }
-  @media only screen and (min-width: 1024px) {
-    .storyitem {
-      font-size: 0.875em; } }
+  .storyitem.whatwedo {
+    padding: 4em 0; }
 
 @media only screen and (min-width: 768px) {
   .storyitem__head {
@@ -6440,7 +6441,11 @@ textarea {
     padding-right: 1em; } }
 @media only screen and (min-width: 1024px) {
   .storyitem__head {
-    width: 50%; } }
+    width: 50%;
+    font-size: 0.875em; } }
+@media only screen and (min-width: 1280px) {
+  .storyitem__head {
+    font-size: 0.75em; } }
 
 .storyitem__subtitle {
   margin: 0 0 0.5em;
@@ -6453,11 +6458,13 @@ textarea {
   line-height: 1;
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: 900;
-  margin: 0 0 0.25em;
+  margin: 0 0 1em;
   color: #D32F2F; }
 
-.storyitem__icons img {
-  width: 32.333%; }
+.storyitem__icons {
+  margin-bottom: 1em; }
+  .storyitem__icons img {
+    width: 32.333%; }
 
 .storyitem__desc {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -6469,13 +6476,28 @@ textarea {
       padding-left: 1em; } }
   @media only screen and (min-width: 1024px) {
     .storyitem__desc {
-      width: 50%; } }
+      width: 50%;
+      font-size: 0.875em; } }
+  @media only screen and (min-width: 1280px) {
+    .storyitem__desc {
+      font-size: 0.75em; } }
   .storyitem__desc h5 {
     margin-top: 0;
-    font-size: 1.125em; }
+    margin-bottom: 0.5em;
+    font-size: 1.125em;
+    line-height: 1.125;
+    font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-weight: 900;
+    color: #D32F2F; }
   .storyitem__desc h6 {
     margin-bottom: 0.5em;
-    font-size: 1.125em; }
+    font-size: 1.125em;
+    line-height: 1.125;
+    font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase; }
+    .storyitem__desc h6:first-child {
+      margin-top: 0; }
     .storyitem__desc h6 + p {
       margin-top: 0; }
   .storyitem__desc p:first-of-type {
