@@ -1,7 +1,13 @@
+/****** Base Colors ******/
+$repa: saturate(#bd4932,0%);
+$kekeszold: saturate(#195c63,0%);
+$mustar: saturate(#db9e37,0%);
+$kek: saturate(#3697d6,0%);
+
 /*============= Color Definition =================*/
 
-$secondary-color: #D32F2F;
-$tertiary-color: #00796B;
+$secondary-color: $repa;
+$tertiary-color: $kekeszold;
 $textcolor: #212121;
 $textcolor-light: #454545;
 $gray-main: #212121;
@@ -9,6 +15,9 @@ $gray: #686868;
 $gray-heading: #484646;
 $gray-light: #9a9898;
 $green: #4ab84a;
+
+
+
 
 
 /*============= Fonts Definition =================*/

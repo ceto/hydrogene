@@ -344,6 +344,7 @@ tbody.collapse.in {
   transition-duration: 0.35s;
   transition-timing-function: ease; }
 
+/****** Base Colors ******/
 /*============= Color Definition =================*/
 /*============= Fonts Definition =================*/
 /****************** Breakpoints Definition ***********/
@@ -5043,7 +5044,7 @@ body {
 
 .darkblock {
   color: white;
-  background-color: #212121; }
+  background-color: #195c63; }
 
 .whiteblock, .darkblock {
   padding: 4em 0;
@@ -5060,7 +5061,7 @@ body {
   padding-bottom: 0.333em;
   text-align: center;
   text-transform: uppercase;
-  border-bottom: 10px solid #D32F2F; }
+  border-bottom: 10px solid #bd4932; }
   .whiteblock__title small, .darkblock__title small {
     font-family: 'Archer', Georgia, serif;
     font-size: 0.75em;
@@ -5090,11 +5091,11 @@ body {
 .page__content, .single__content, .refsingle__content {
   color: #212121; }
   .page__content a, .single__content a, .refsingle__content a {
-    color: #D32F2F;
+    color: #bd4932;
     text-decoration: none;
     border-bottom: 1px solid transparent; }
     .page__content a:hover, .page__content a:focus, .single__content a:hover, .single__content a:focus, .refsingle__content a:hover, .refsingle__content a:focus {
-      border-bottom: 1px solid #D32F2F; }
+      border-bottom: 1px solid #bd4932; }
   .page__content h1, .page__content h2, .page__content h3, .page__content h4, .page__content h5, .page__content h6, .single__content h1, .single__content h2, .single__content h3, .single__content h4, .single__content h5, .single__content h6, .refsingle__content h1, .refsingle__content h2, .refsingle__content h3, .refsingle__content h4, .refsingle__content h5, .refsingle__content h6 {
     font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     font-weight: 900;
@@ -5107,7 +5108,7 @@ body {
       height: 0.8em;
       width: 0.8em;
       margin-right: 0.25em;
-      background-color: #D32F2F; }
+      background-color: #bd4932; }
   .page__content ul, .single__content ul, .refsingle__content ul {
     margin: 1.25em 0;
     padding-left: 2.5em; }
@@ -5123,7 +5124,7 @@ body {
     color: #454545;
     margin: 1.5em 0;
     padding: 1.333em 1.25em;
-    border: 2px solid #D32F2F;
+    border: 2px solid #bd4932;
     border-left: none;
     border-right: none; }
     .page__content blockquote > p:first-child, .single__content blockquote > p:first-child, .refsingle__content blockquote > p:first-child {
@@ -5132,7 +5133,7 @@ body {
       margin-bottom: 0; }
 
 .inverseblock {
-  background-color: #D32F2F;
+  background-color: #bd4932;
   color: white;
   padding: 1em 0;
   margin: 1.5em -1em; }
@@ -5309,7 +5310,11 @@ body {
   padding: 12em 0 4em;
   color: #fff;
   background-color: #212121;
-  border-bottom: 10px solid rgba(255, 255, 255, 0.2); }
+  border-bottom: 10px solid rgba(255, 255, 255, 0.2);
+  background-image: url(../img/playmobil.png);
+  background-repeat: no-repeat;
+  background-size: auto 90%;
+  background-position: right center; }
 
 /******* Video *********/
 .pageheader {
@@ -5544,7 +5549,7 @@ input[type="checkbox"]#nav-toggle {
       margin: 0.5em 0; }
       .widget__body ul li > a {
         text-decoration: none;
-        color: #D32F2F; }
+        color: #bd4932; }
 
 .reflist {
   background-color: #fff; }
@@ -5555,8 +5560,7 @@ input[type="checkbox"]#nav-toggle {
     clear: both; }
 
 .refarchive__hero {
-  background-color: #7b1fa2;
-  background-color: #212121; }
+  background-color: #3697d6; }
 
 .refrow {
   position: relative;
@@ -5847,7 +5851,7 @@ input[type="checkbox"]#nav-toggle {
   margin: 0 0;
   padding: 4em 0 3em;
   color: white;
-  background-color: #D32F2F; }
+  background-color: #bd4932; }
   .refsingle__quoteblock .quotefigure {
     text-align: center;
     margin-bottom: 1em; }
@@ -5936,7 +5940,7 @@ input[type="checkbox"]#nav-toggle {
 .refsingle__shareblock {
   text-align: center;
   color: white;
-  border-top: 10px solid rgba(211, 47, 47, 0.2);
+  border-top: 10px solid rgba(189, 73, 50, 0.2);
   background-color: #212121; }
 
 .shareblock__nav {
@@ -5970,7 +5974,7 @@ input[type="checkbox"]#nav-toggle {
         width: 0.333em;
         height: 0.333em;
         content: '';
-        background-color: #D32F2F; }
+        background-color: #bd4932; }
       .shareblock__nav .nav-tabs li:first-child:before {
         display: none; }
 
@@ -6026,7 +6030,7 @@ input[type="checkbox"]#nav-toggle {
       width: 50%; } }
   .refnav__header .teteje {
     padding: 2em 2em 1.5em;
-    background-color: #D32F2F; }
+    background-color: #bd4932; }
     .refnav__header .teteje:before, .refnav__header .teteje:after {
       content: " ";
       display: table; }
@@ -6246,7 +6250,7 @@ textarea {
   margin: 0; }
 
 .home__hero {
-  background-color: #D32F2F; }
+  background-color: #bd4932; }
 
 .hero__textblock:before, .hero__textblock:after {
   content: " ";
@@ -6293,7 +6297,7 @@ textarea {
     border-bottom: 1px solid rgba(255, 255, 255, 0.75); }
 
 .aboutus__hero {
-  background-color: #303f9f; }
+  background-color: #195c63; }
 
 .teammember {
   position: relative;
@@ -6347,7 +6351,7 @@ textarea {
   line-height: 1;
   margin: 0.25em 0 0;
   text-transform: uppercase;
-  color: #D32F2F; }
+  color: #bd4932; }
 
 .teammember__desc {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -6369,7 +6373,7 @@ textarea {
     list-style-type: none; }
     .teammember__social li > a {
       text-decoration: none;
-      color: #D32F2F; }
+      color: #bd4932; }
       .teammember__social li > a:hover, .teammember__social li > a:focus {
         color: #212121; }
 
@@ -6459,7 +6463,7 @@ textarea {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: 900;
   margin: 0 0 1em;
-  color: #D32F2F; }
+  color: #bd4932; }
 
 .storyitem__icons {
   margin-bottom: 1em; }
@@ -6488,7 +6492,7 @@ textarea {
     line-height: 1.125;
     font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     font-weight: 900;
-    color: #D32F2F; }
+    color: #bd4932; }
   .storyitem__desc h6 {
     margin-bottom: 0.5em;
     font-size: 1.125em;
@@ -6505,7 +6509,7 @@ textarea {
 
 .contact__hero {
   color: white;
-  background-color: #512DA8; }
+  background-color: #db9e37; }
 
 .contactblock {
   padding: 3em 0;
@@ -6622,7 +6626,7 @@ textarea {
   margin: 1em 0;
   padding: 1em;
   color: white;
-  background-color: #212121; }
+  background-color: #3697d6; }
   .mapblock__content:before, .mapblock__content:after {
     content: " ";
     display: table; }
@@ -6634,8 +6638,8 @@ textarea {
       z-index: 1;
       margin: 4em 0;
       padding: 0 2em;
-      background-image: linear-gradient(to right, black 50%, #212121 50%);
-      box-shadow: 0 0 10px 0 #212121; } }
+      background-image: linear-gradient(to right, #3697d6 50%, #db9e37 50%);
+      box-shadow: 0 0 10px 0 black; } }
   @media only screen and (min-width: 768px) {
     .mapblock__content .balfel {
       float: left;
@@ -6646,7 +6650,7 @@ textarea {
       float: right;
       width: 50%;
       padding: 2em 1em 2em 1.5em;
-      border-left: 10px solid rgba(0, 0, 0, 0.333); } }
+      border-left: 10px solid rgba(54, 151, 214, 0.333); } }
   @media only screen and (min-width: 768px) {
     .mapblock__content .contactelement {
       margin: 0;

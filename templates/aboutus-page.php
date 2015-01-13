@@ -55,12 +55,11 @@
 			<div class="wrapper wrapper--wide">	
 				<header class="storyitem__head">
 					<h5 class="storyitem__subtitle">Reszponzív honlap</h5>
-					<h4 class="storyitem__title">Felhasználóbarát weboldal minden eszközre</h4>
+					<h4 class="storyitem__title">Weboldalad minden eszközön élményt nyújt</h4>
 				</header>
 				<div class="storyitem__desc">
-					<p>
-					Gusztáv ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>Axcepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sint amet Ernőbácsi orem ipsum marika ámen</p>
+					<p>Nem csupán formai-, hanem tartalom szervezési metodika a <em>“Mobil az első”</em> tervezési módszer. Hierarchizáljuk a tartalmat. A minimális és elégséges információ tálalásával kezdünk, majd bővítjük azt és haladunk a “nagyképernyős” egész felé.</p>
+					<p>Honlapod rugalmasan illeszkedik a végtelen számú eszköztípus kijelzőjére. Kompromisszum mentes élményt nyújt mobilon, tableten és asztali számítógépen is.</p>
 				</div>
 			</div>
 		</div>
@@ -69,12 +68,11 @@
 		<div class="storyitem">
 			<div class="wrapper wrapper--wide">	
 				<header class="storyitem__head">
-					<h5 class="storyitem__subtitle">Legújabb a technológia</h5>
+					<h5 class="storyitem__subtitle">Legújabb technológia</h5>
 					<h4 class="storyitem__title">Jövőbarát korszerű fejlesztés és naprakész tudás</h4>
 				</header>
 				<div class="storyitem__desc">
-					<p>
-					Gusztáv ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<p>Axcepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sint amet Ernőbácsi orem ipsum marika ámen</p>
 				</div>
 			</div>
@@ -87,9 +85,8 @@
 					<h4 class="storyitem__title">Honlapod tartalma házon belül szerkeszthető</h4>
 				</header>
 				<div class="storyitem__desc">
-					<p>
-				Porem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>Terézia zongorázik vadul. Nálam excepteur sint occaecat cupidatat non proident. Lorem ipsum marika ámen</p>
+					<p>Elsősorban a legnépszerűbb nyílt forrású tartalomkezelőre Wordpressre, fejlesztünk sablonmentes, teljesen egyedi megjelenésű és testreszabott funkciókkal bíró honlapokat. A tartalmak, jól ismert, könnyen kezelhető és intuitiv adminisztrációs felületen szerkeszthetők.</p>
+					<p>Az elkészített honlap teljes egészében a megrendelő tulajdonába kerül. Nincsenek további rejtett havi díjak és üzembentartási költségek.</p>
 				</div>
 			</div>
 		</div>
@@ -117,9 +114,8 @@
 				<div class="storyitem__desc">
 
 					<p>
-					<strong>Minden egy kézben.</strong> Piciny design csapatunk éllovasai szenvedélyes digitális kézművesek akik, &mdash; a tervezésen és kivitelezésen túl &mdash; döntéseket hoznak és kommunikálnak veled. Felesleges körök nélkül. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse	cillum dolore eu fugiat nulla pariatur.</p>
-					<p>Lorem ipsum marika ámen. A tejfölös doboz dolor in reprehenderit in vo.</p>
+					Gördülékeny ügymenet. Minden egy kézben. Piciny design csapatunk éllovasai szenvedélyes digitális kézművesek akik, &mdash; a tervezésen és kivitelezésen túl &mdash; döntéseket hoznak és kommunikálnak veled. </p>
+					<p>Nagy ügynökségekkel ellentétben, &mdash; az effektív munkát hátráltató &mdash; ügymeneti körök nélkül közvetlenül a tervezővel állsz kapcsolatban.</p>
 				</div>
 			</div>
 		</div>

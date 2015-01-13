@@ -1,6 +1,6 @@
 .contact__hero {
   color: white;
-  background-color: #512DA8;
+  background-color: $mustar;
 }
 
 
@@ -167,7 +167,7 @@
   padding: 1em;
 
   color: white;
-  background-color: $gray-main;
+  background-color: $kek;
 
   @include clearfix();
   //border-radius: 2px;
@@ -195,8 +195,8 @@
     margin: 4em 0;
     padding: 0 2em;
 
-    background-image: linear-gradient(to right, black 50%, $gray-main 50% );
-    box-shadow: 0 0 10px 0 $gray-main;
+    background-image: linear-gradient(to right, $kek 50%, $mustar 50% );
+    box-shadow: 0 0 10px 0 black;
   }
   .balfel {
     @include bp($s2) {
@@ -213,7 +213,7 @@
       width: 50%;
       padding: 2em 1em 2em 1.5em;
 
-      border-left: 10px solid rgba(black,.333);
+      border-left: 10px solid rgba($kek,.333);
     }
   }
   .contact__title {
