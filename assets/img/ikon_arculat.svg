@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Guides" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="200px" height="200px" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_91_" width="200" height="200"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_91_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_2_);">
+		<defs>
+			<rect id="SVGID_93_" width="200" height="200"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_93_"  style="overflow:visible;"/>
+		</clipPath>
+		<path style="clip-path:url(#SVGID_4_);fill:#77B3D4;" d="M200,100c0,55.228-44.771,100-100,100S0,155.228,0,100
+			C0,44.771,44.771,0,100,0S200,44.771,200,100"/>
+		<g style="opacity:0.2;clip-path:url(#SVGID_4_);">
+			<g>
+				<defs>
+					<rect id="SVGID_95_" x="74.999" y="43.75" width="50.001" height="137.499"/>
+				</defs>
+				<clipPath id="SVGID_6_">
+					<use xlink:href="#SVGID_95_"  style="overflow:visible;"/>
+				</clipPath>
+				<path style="clip-path:url(#SVGID_6_);fill:#231F20;" d="M115.625,43.75h-31.25c-5.179,0-9.376,4.195-9.376,9.374V68.75v3.124
+					v71.876l16.667,25L100,181.249l8.334-12.499l16.666-25V71.874V68.75V53.124C125,47.945,120.804,43.75,115.625,43.75"/>
+			</g>
+		</g>
+		<path style="clip-path:url(#SVGID_4_);fill:#C73232;" d="M125,65.625c0,5.179-4.196,9.375-9.375,9.375h-31.25
+			c-5.179,0-9.376-4.196-9.376-9.375V46.874c0-5.178,4.197-9.375,9.376-9.375h31.25c5.179,0,9.375,4.197,9.375,9.375V65.625z"/>
+		<rect x="74.999" y="62.499" style="clip-path:url(#SVGID_4_);fill:#E0995E;" width="12.502" height="75.001"/>
+		<rect x="87.501" y="62.499" style="clip-path:url(#SVGID_4_);fill:#F5CF87;" width="24.998" height="81.251"/>
+		<rect x="112.499" y="62.499" style="clip-path:url(#SVGID_4_);fill:#E0995E;" width="12.501" height="75.001"/>
+		<polygon style="clip-path:url(#SVGID_4_);fill:#4F5D73;" points="100,175 108.334,162.5 91.666,162.5 		"/>
+		<polygon style="clip-path:url(#SVGID_4_);fill:#FFFFFF;" points="74.999,137.5 91.666,162.5 108.334,162.5 125,137.5 
+			118.751,137.5 112.499,131.249 100,143.75 87.501,131.249 81.249,137.5 		"/>
+	</g>
+</g>
+</svg>

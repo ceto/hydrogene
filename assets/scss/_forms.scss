@@ -150,7 +150,7 @@ textarea {
   -webkit-font-smoothing: antialiased;
   &:before {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     top: 9px;
     left: 9px;
 

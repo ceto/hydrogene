@@ -1,10 +1,10 @@
 <header class="aboutus__hero hero">
 	<div class="wrapper wrapper--wide">
 		<div class="hero__textblock">
-		  <h1 class="hero__title">Web/mobil és print</h1>
-		  <h2 class="hero__subtitle">terméket fejlesztünk</h2>
+		  <h1 class="hero__title">Kreatív műhelyünkben</h1>
+		  <h2 class="hero__subtitle">Tervezünk és fejlesztünk</h2>
 		  <p class="hero__disclaimer">
-		  	 <strong>Szeretünk kísérletezni.</strong> Új módszereket, technológiákat kipróbálni. Valljuk, hogy az átfogó tervezés elengedhetetlen az emlékezetes és használható weboldal vagy arculat létrehozásában.
+		  	 <strong>HYDROGENE</strong> egy két személyes design műhely. Karakteres arculatú egyedi weboldalakat készítünk hagyományos és mobil eszközökre. Van egy jó projekted? Itt vagyunk, segítünk.
 		  </p>
 		</div>
 	</div>
@@ -12,7 +12,7 @@
 
 <section class="whiteblock">
 	<div class="wrapper wrapper--wide">
-			<h3 class="whiteblock__title"><small>hatékony honlap és arculat</small>irányelvek és eszközök</h3>
+			<h3 class="whiteblock__title"><small>tervezési irányelveink</small>eszközök és módszerek</h3>
 			<p class="whiteblock__disclaimer">Grafikai arculatot és felhasználóbarát egyedi honlapokat tervezünk hagyományos és mobil eszközökre. Módszerünk átfogó, a tevékenységünk széleskörű.</p>
 	</div>
 </section>
@@ -28,9 +28,8 @@
 				
 				<div class="storyitem__desc">
 					<p>
-					Lorem ipsum dolor sit amet. Pistabácsi ipsum emőke és rozika is dolor sit ámet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					</p>
-					<p>Lorem ipsum marika ámen</p>
+					A tervezés megkezdése előtt legfontosabb tájékozódni a feladat körülményeiről a környezetről. Kis esettanulmányt, kutatást végzünk, megvizsgáljuk a konkurensek piaci szereplését, megjelenését. Elmélyülünk a tevékenységben, legyen az turisztikai vagy akár egészségügyi szakterületen.</p>
+					<p>Hiszünk abban, hogy csak a megfelelő tájékozottság, tisztánlátás melett lehet elkezdeni a megalapozott tervezési munkát</p>
 				</div>
 			</div>
 		</div>
@@ -58,8 +57,9 @@
 					<h4 class="storyitem__title">Weboldalad minden eszközön élményt nyújt</h4>
 				</header>
 				<div class="storyitem__desc">
-					<p>Nem csupán formai-, hanem tartalom szervezési metodika a <em>“Mobil az első”</em> tervezési módszer. Hierarchizáljuk a tartalmat. A minimális és elégséges információ tálalásával kezdünk, majd bővítjük azt és haladunk a “nagyképernyős” egész felé.</p>
 					<p>Honlapod rugalmasan illeszkedik a végtelen számú eszköztípus kijelzőjére. Kompromisszum mentes élményt nyújt mobilon, tableten és asztali számítógépen is.</p>
+					<p>Nem csupán formai-, hanem tartalom szervezési metodika a <em>“Mobil az első”</em> tervezési módszer. Hierarchizáljuk a tartalmat. A minimális és elégséges információ tálalásával kezdünk, majd bővítjük azt és haladunk a “nagyképernyős” egész felé.</p>
+					
 				</div>
 			</div>
 		</div>
@@ -122,53 +122,12 @@
 
 </section>
 
-<section class="darkblock">
-	<div class="wrapper wrapper--wide">
-			<h3 class="darkblock__title"><small>magas színvonalon</small>Tesszük a dolgunkat</h3>
-			<p class="darkblock__disclaimer">Grafikai arculatot és felhasználóbarát egyedi honlapokat tervezünk hagyományos és mobil eszközökre. Módszerünk átfogó, a tevékenységünk széleskörű.</p>
-			<section class="services">
-				<div class="wrapper wrapper--wide">
-					<div class="servicegroup">
-						<h4 class="servicegroup__name">Arculat</h4>
-						<ul class="servicelist">
-							<li>Arculattervezés</li>
-							<li>Logó tervezés</li>
-							<li>Csomagolás tervezés</li>
-							<li>Plakát és brossúra</li>
-							<li>Belsőépítészet</li>
-						</ul>
-					</div>
-					<div class="servicegroup">
-						<h4 class="servicegroup__name">Web/mobil</h4>
-						<ul class="servicelist">
-							<li>Webdesign</li>
-							<li>UX tervezés</li>
-							<li>Mobilbarát honlap</li>
-							<li>Tartalom kezelés</li>
-							<li>Mikroszájtok</li>
-							<li>Kampányoldal</li>
-						</ul>
-					</div>
-					<div class="servicegroup">
-						<h4 class="servicegroup__name">Marketing</h4>
-						<ul class="servicelist">
-							<li>Online marketing</li>
-							<li>Keresőoptimalizálás</li>
-							<li>Analitika</li>
-							<li>Tartalom stratégia</li>
-							<li>Hírlevél kampány</li>
-						</ul>
-					</div>
-				</div>				
-			</section>
-	</div>
-</section>
 
 
 <section class="whiteblock">
 	<div class="wrapper wrapper--wide">
 			<h3 class="whiteblock__title"><small>a hydrogene</small>“alkotó” elemei</h3>
-			<p class="whiteblock__disclaimer"><strong>Minden egy kézben.</strong> Piciny design csapatunk éllovasai szenvedélyes digitális kézművesek akik, &mdash; a tervezésen és kivitelezésen túl &mdash; döntéseket hoznak és kommunikálnak veled.</p>
+			<p class="whiteblock__disclaimer"><strong>Ismerj meg minket</strong> Piciny design csapatunk éllovasai szenvedélyes digitális kézművesek akik, &mdash; a tervezésen és kivitelezésen túl &mdash; döntéseket hoznak és kommunikálnak veled.</p>
 	</div>
 </section>
 
@@ -258,6 +217,53 @@
 
 	</div>
 </section>
+
+
+<section class="darkblock">
+	<div class="wrapper wrapper--wide">
+			<h3 class="darkblock__title"><small>értjük a dolgunkat</small>Szolgáltatásaink</h3>
+			<p class="darkblock__disclaimer">Grafikai arculatot és felhasználóbarát egyedi honlapokat tervezünk hagyományos és mobil eszközökre. Módszerünk átfogó, a tevékenységünk széleskörű.</p>
+			<section class="services">
+				<div class="wrapper wrapper--wide">
+					<div class="servicegroup">
+						<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_arculat.svg';?>" alt="Arculat" class="servicegroup__ill">
+						<h4 class="servicegroup__name">Arculat</h4>
+						<ul class="servicelist">
+							<li>Arculattervezés</li>
+							<li>Logó tervezés</li>
+							<li>Csomagolás tervezés</li>
+							<li>Plakát és brossúra</li>
+							<li>Belsőépítészet</li>
+						</ul>
+					</div>
+					<div class="servicegroup">
+						<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_mobilweb.svg';?>" alt="Web/mobil" class="servicegroup__ill">
+						<h4 class="servicegroup__name">Web/mobil</h4>
+						<ul class="servicelist">
+							<li>Webdesign</li>
+							<li>UX tervezés</li>
+							<li>Mobilbarát honlap</li>
+							<li>Tartalom kezelés</li>
+							<li>Mikroszájtok</li>
+							<li>Kampányoldal</li>
+						</ul>
+					</div>
+					<div class="servicegroup">
+						<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_strategia.svg';?>" alt="Stratégia" class="servicegroup__ill">
+						<h4 class="servicegroup__name">Stratégia</h4>
+						<ul class="servicelist">
+							<li>Online marketing</li>
+							<li>Keresőoptimalizálás</li>
+							<li>Analitika</li>
+							<li>Tartalom stratégia</li>
+							<li>Hírlevél kampány</li>
+						</ul>
+					</div>
+				</div>				
+			</section>
+	</div>
+</section>
+
 
 <!-- <div class="page__content">
 	<div class="wrapper wrapper--normal">

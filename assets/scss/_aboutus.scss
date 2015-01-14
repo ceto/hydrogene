@@ -8,11 +8,14 @@
   position: relative;
 
   border-bottom: 10px solid rgba(#fff,.2);
-  background-color: $gray-light;
+  background-color: $gray-xlight;
 
   @include clearfix();
   &:nth-child(2n) {
-    background-color: lighten($gray-light,15%);
+    background-color: $gray-xxlight;
+  }
+  &:nth-child(3n) {
+    background-color: $gray-light;
   }
 }
 
@@ -128,14 +131,16 @@
 
 .servicegroup {
   @include clearfix();
-  margin:1em 0;
+  margin:3em 0;
   @include bp($s1) {
     float: left;
 
     width: 33.333%;
   }
 }
-
+.servicegroup__ill {
+  max-width: 7em;
+}
 .servicegroup__name {
   font-family: $sans-serif;
   font-weight: 900;
@@ -227,10 +232,22 @@
 }
 
 .storyitem__icons {
-  img {
-    width:32.333%;
-  }
   margin-bottom: 1em;
+}
+
+.storyitem__thirdicon {
+  text-align: center;
+  width:33.333%;
+  float:left;
+  img {
+    max-width: 70%;
+    //filter:grayscale(1);
+  }
+  h4 {
+    margin-top: 0.333em;
+    font-size: 1.25em;
+    line-height: 1;
+  }
 }
 
 .storyitem__desc {

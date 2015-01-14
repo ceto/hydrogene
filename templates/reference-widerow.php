@@ -7,28 +7,36 @@
 					background-image: url(<?php echo $imgsrc[0]; ?>);
 				}
 			}
-		</style>
-		<style>
-			.reference-<?php echo get_the_ID(); ?> .refrow{
-				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
+
+			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__title {
+				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
+			
+  
+  
 			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__figure a:after {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}
 
-
+			.reference-<?php echo get_the_ID(); ?> .refrow .btn--pseudo {
+				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
+			}
+			.reference-<?php echo get_the_ID(); ?> .refrow .btn--pseudo:before {
+				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
+			}
 		</style>
 					<figure class="refrow__figure">
 				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
 			</figure>
 			<header class="refrow__header">
 				<div class="innerwrap">
-			    <h2 class="refrow__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			    
 			    <h3 class="refrow__subtitle">
 			    	<a href="<?php the_permalink(); ?>">
 			    		<?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?>
 						</a>
 			    </h3>
+			    <h2 class="refrow__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					
 <!-- 			    <div class="refrow__tags">
 						<ul>

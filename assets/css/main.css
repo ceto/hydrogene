@@ -5310,11 +5310,7 @@ body {
   padding: 12em 0 4em;
   color: #fff;
   background-color: #212121;
-  border-bottom: 10px solid rgba(255, 255, 255, 0.2);
-  background-image: url(../img/playmobil.png);
-  background-repeat: no-repeat;
-  background-size: auto 90%;
-  background-position: right center; }
+  border-bottom: 10px solid rgba(255, 255, 255, 0.2); }
 
 /******* Video *********/
 .pageheader {
@@ -5565,9 +5561,13 @@ input[type="checkbox"]#nav-toggle {
 .refrow {
   position: relative;
   overflow: hidden;
-  color: white;
-  border-top: 10px solid rgba(255, 255, 255, 0.2);
-  background-color: #212121; }
+  color: #212121;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.2);
+  background-color: #c0bfbf; }
+  .reference--listelem:nth-child(2n) .refrow {
+    background-color: #e6e5e5; }
+  .reference--listelem:nth-child(3n) .refrow {
+    background-color: #9a9898; }
   .refrow .wrapper {
     position: relative; }
     @media only screen and (min-width: 768px) {
@@ -5635,13 +5635,13 @@ input[type="checkbox"]#nav-toggle {
       position: absolute;
       top: 50%;
       left: 0;
-      width: 55%;
+      width: 60%;
       padding: 3em 2em 3em 2em;
       -webkit-transform: translate(0, -50%);
           -ms-transform: translate(0, -50%);
               transform: translate(0, -50%); }
       .reference:nth-of-type(2n) .refrow__header {
-        left: 45%;
+        left: 40%;
         padding: 3em 2em 3em 2em; } }
   @media only screen and (min-width: 1280px) {
     .refrow__header {
@@ -5653,39 +5653,39 @@ input[type="checkbox"]#nav-toggle {
       .refrow__header .innerwrap {
         max-width: none; } }
 
-.refrow__title {
-  font-size: 1.25em;
-  font-weight: 700;
+.refrow__subtitle {
+  font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 1.125em;
+  font-weight: 900;
   line-height: 1;
   position: relative;
   margin: 0 0 0.125em;
-  color: rgba(255, 255, 255, 0.75); }
-  .refsingle .refrow__title {
-    font-size: 1.666em; }
-  .refrow__title a {
+  color: #212121;
+  text-transform: uppercase; }
+  .refsingle .refrow__subtitle {
+    font-size: 1.25em;
+    color: rgba(255, 255, 255, 0.75); }
+  .refrow__subtitle a {
     text-decoration: none;
     color: inherit; }
-    .refrow__title a:hover, .refrow__title a:focus {
-      color: white; }
 
-.refrow__subtitle {
+.refrow__title {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 2.5em;
   font-weight: 900;
   line-height: 1;
-  display: inline-block;
-  white-space: nowrap;
   margin: 0 0 0 0;
   padding-bottom: 0.25em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
-  text-transform: uppercase; }
-  .refsingle .refrow__subtitle {
-    font-size: 3em; }
-  .refrow__subtitle a {
+  color: rgba(33, 33, 33, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125); }
+  .refsingle .refrow__title {
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.75); }
+  .refrow__title a {
     text-decoration: none;
     color: inherit; }
-    .refrow__subtitle a:hover, .refrow__subtitle a:focus {
-      color: rgba(255, 255, 255, 0.75); }
+    .refrow__title a:hover, .refrow__title a:focus {
+      color: #212121; }
 
 .refrow__tags {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -5734,6 +5734,7 @@ input[type="checkbox"]#nav-toggle {
 
 /************** Reference Single Style Definitions ****************/
 .refsingle .refrow {
+  color: white;
   border-top: none;
   border-bottom: 10px solid rgba(255, 255, 255, 0.2); }
   @media only screen and (min-width: 768px) {
@@ -5747,9 +5748,6 @@ input[type="checkbox"]#nav-toggle {
 .refsingle .refrow__figure {
   background-position: left center;
   background-size: auto 90%; }
-.refsingle .refrow__subtitle {
-  border-bottom: 10px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 0.125em; }
 
 .refsingle__header:before, .refsingle__header:after {
   content: " ";
@@ -5853,8 +5851,8 @@ input[type="checkbox"]#nav-toggle {
   color: white;
   background-color: #bd4932; }
   .refsingle__quoteblock .quotefigure {
-    text-align: center;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    text-align: center; }
     @media only screen and (min-width: 768px) {
       .refsingle__quoteblock .quotefigure {
         float: left;
@@ -5862,33 +5860,33 @@ input[type="checkbox"]#nav-toggle {
         margin-right: 1em; } }
     .refsingle__quoteblock .quotefigure img {
       display: inline-block;
-      border-radius: 50%;
-      margin-bottom: 0.333em; }
+      margin-bottom: 0.333em;
+      border-radius: 50%; }
     .refsingle__quoteblock .quotefigure .name {
       font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
       font-size: 0.666em;
       font-weight: 300;
       font-style: normal;
       line-height: 1;
-      text-transform: uppercase;
-      opacity: 0.75;
-      margin-bottom: 0.25em;
-      display: block; }
-    .refsingle__quoteblock .quotefigure .titulus {
       display: block;
+      margin-bottom: 0.25em;
+      text-transform: uppercase;
+      opacity: 0.75; }
+    .refsingle__quoteblock .quotefigure .titulus {
       font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
       font-size: 0.666em;
       font-weight: 300;
       font-variant: normal;
-      opacity: 0.75;
-      line-height: 1; }
+      line-height: 1;
+      display: block;
+      opacity: 0.75; }
 
 .refsingle__quote {
-  position: relative;
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 1em;
   font-weight: 300;
   line-height: 1.25;
+  position: relative;
   position: relative;
   margin: 0;
   padding: 0; }
@@ -5897,23 +5895,23 @@ input[type="checkbox"]#nav-toggle {
     display: table; }
   .refsingle__quote:after {
     clear: both; }
-  .refsingle__quote:before {
-    content: '“';
-    position: absolute;
-    display: inline-block;
-    left: 0;
-    top: -0.4em;
-    font-size: 6em;
-    line-height: 1;
-    font-family: 'Archer', Georgia, serif;
-    opacity: 0.333; }
   @media only screen and (min-width: 768px) {
     .refsingle__quote {
       float: left;
       width: calc( 100% - 13em); } }
+  .refsingle__quote:before {
+    font-family: 'Archer', Georgia, serif;
+    font-size: 6em;
+    line-height: 1;
+    position: absolute;
+    top: -0.4em;
+    left: 0;
+    display: inline-block;
+    content: '“';
+    opacity: 0.333; }
   .refsingle__quote p {
-    opacity: 0.75;
-    margin: 0.5em 0; }
+    margin: 0.5em 0;
+    opacity: 0.75; }
   .refsingle__quote cite {
     font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     font-size: 0.75em;
@@ -5961,8 +5959,8 @@ input[type="checkbox"]#nav-toggle {
       .shareblock__nav .nav-tabs li.active > a {
         color: rgba(255, 255, 255, 0.333); }
       .shareblock__nav .nav-tabs li > a {
-        text-decoration: none;
         font-weight: 300;
+        text-decoration: none;
         color: rgba(255, 255, 255, 0.25); }
         .shareblock__nav .nav-tabs li > a:hover {
           color: rgba(255, 255, 255, 0.5); }
@@ -6190,7 +6188,7 @@ textarea {
   -webkit-font-smoothing: antialiased; }
   .btn--pseudo:before {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     top: 9px;
     left: 9px;
     width: 100%;
@@ -6250,7 +6248,11 @@ textarea {
   margin: 0; }
 
 .home__hero {
-  background-color: #bd4932; }
+  background-color: #bd4932;
+  background-image: url('../img/hero_home.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .hero__textblock:before, .hero__textblock:after {
   content: " ";
@@ -6302,14 +6304,16 @@ textarea {
 .teammember {
   position: relative;
   border-bottom: 10px solid rgba(255, 255, 255, 0.2);
-  background-color: #9a9898; }
+  background-color: #c0bfbf; }
   .teammember:before, .teammember:after {
     content: " ";
     display: table; }
   .teammember:after {
     clear: both; }
   .teammember:nth-child(2n) {
-    background-color: #c0bfbf; }
+    background-color: #e6e5e5; }
+  .teammember:nth-child(3n) {
+    background-color: #9a9898; }
 
 .teammember__figure {
   margin: 0 -1em;
@@ -6386,7 +6390,7 @@ textarea {
   max-width: 45em; }
 
 .servicegroup {
-  margin: 1em 0; }
+  margin: 3em 0; }
   .servicegroup:before, .servicegroup:after {
     content: " ";
     display: table; }
@@ -6396,6 +6400,9 @@ textarea {
     .servicegroup {
       float: left;
       width: 33.333%; } }
+
+.servicegroup__ill {
+  max-width: 7em; }
 
 .servicegroup__name {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -6467,8 +6474,17 @@ textarea {
 
 .storyitem__icons {
   margin-bottom: 1em; }
-  .storyitem__icons img {
-    width: 32.333%; }
+
+.storyitem__thirdicon {
+  text-align: center;
+  width: 33.333%;
+  float: left; }
+  .storyitem__thirdicon img {
+    max-width: 70%; }
+  .storyitem__thirdicon h4 {
+    margin-top: 0.333em;
+    font-size: 1.25em;
+    line-height: 1; }
 
 .storyitem__desc {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;

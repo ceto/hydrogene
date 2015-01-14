@@ -21,12 +21,20 @@
 			<h4 class="storyitem__title">
 				Átfogó szemlélettel állunk a feladathoz és együttes megoldást keresünk
 			</h4>
-<!-- 			<div class="storyitem__icons">
-				<img src="http://placehold.it/120x120&text=Stratégia" alt="">
-				<img src="http://placehold.it/120x120&text=Arculat" alt="">
-				<img src="http://placehold.it/120x120&text=Web+Mobil" alt="">
-				
-			</div> -->
+			<div class="storyitem__icons">
+				<div class="storyitem__thirdicon">	
+					<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_arculat.svg';?>" alt="Arculat">
+					<h4>Arculat</h4>
+				</div>
+				<div class="storyitem__thirdicon">
+					<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_mobilweb.svg';?>" alt="Web/Mobil">
+					<h4>Web/Mobil</h4>
+				</div>
+				<div class="storyitem__thirdicon">
+					<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_strategia.svg';?>" alt="Stratégia">
+					<h4>Stratégia</h4>
+				</div>
+			</div> 
 		</header>
 		<div class="storyitem__desc">
 			<h6>Stratégia</h6>

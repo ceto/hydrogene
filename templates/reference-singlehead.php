@@ -84,10 +84,10 @@
 			</figure>
 			<header class="refrow__header">
 				<div class="innerwrap">
-					<h2 class="refrow__title"><?php the_title(); ?></h2>
 			    <h3 class="refrow__subtitle">
 			    	<?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?>
 			    </h3>
+					<h2 class="refrow__title"><?php the_title(); ?></h2>
 			    <div class="refsingle__tasks">
 						<h3 class="tasks__subtitle">A feladat elemei</h3>
 						<ul class="tasks__elements">
