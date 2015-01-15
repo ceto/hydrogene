@@ -22,7 +22,7 @@
     background-color: $gray-xxlight;
   }
   .reference--listelem:nth-child(3n) & {
-    background-color: $gray-light;
+    background-color: #fff;
   }
   .wrapper {
     position: relative;
@@ -147,9 +147,9 @@
 }
 
 .refrow__subtitle {
-  font-family: $sans-serif;
-  font-size: 1.125em;
-  font-weight: 900;
+  font-family: $serif;
+  font-size: 1.25em;
+  font-weight: 700;
   line-height: 1;
 
   position: relative;
@@ -157,9 +157,9 @@
   margin: 0 0 .125em;
   color: rgba($gray-main,1);
 
-  text-transform: uppercase;
+  //text-transform: uppercase;
   .refsingle & {
-    font-size: 1.25em;
+    font-size: 1.333em;
     color: rgba(#fff,0.75);
   }
   a {
