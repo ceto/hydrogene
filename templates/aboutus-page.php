@@ -1,21 +1,10 @@
-<header class="aboutus__hero hero">
+<section class="topmenubg"></section>
+<header class="niceheading">
 	<div class="wrapper wrapper--wide">
-		<div class="hero__textblock">
-		  <h1 class="hero__title">Kreatív műhelyünkben</h1>
-		  <h2 class="hero__subtitle">Tervezünk és fejlesztünk</h2>
-		  <p class="hero__disclaimer">
-		  	 <strong>HYDROGENE</strong> egy két személyes design műhely. Karakteres arculatú egyedi weboldalakat készítünk hagyományos és mobil eszközökre. Van egy jó projekted? Itt vagyunk, segítünk.
-		  </p>
-		</div>
+			<h3 class="niceheading__title"><small>Kreatív műhelyünkben</small>Arculatot és honlapot tervezünk</h3>
+			<p class="niceheading__disclaimer"><strong>Átfogó szemlélettel.</strong> Ismerd meg tervezési irányelveinket. Bemutatjuk munka módszerünket és eszközeinket. Szeretnéd ha neked dolgoznánk? Lépj velünk <a href="<?php echo get_permalink(58); ?>">kapcsolatba.</a></p>
 	</div>
 </header>
-
-<section class="niceheading">
-	<div class="wrapper wrapper--wide">
-			<h3 class="niceheading__title"><small>tervezési irányelveink</small>eszközök és módszerek</h3>
-			<p class="niceheading__disclaimer">Grafikai arculatot és felhasználóbarát egyedi honlapokat tervezünk hagyományos és mobil eszközökre. Módszerünk átfogó, a tevékenységünk széleskörű.</p>
-	</div>
-</section>
 
 <section class="process">
 					
@@ -157,10 +146,61 @@
 
 
 
+
+<section class="niceheading niceheading--inverse">
+	<div class="wrapper wrapper--wide">
+			<h3 class="niceheading__title"><small>értjük a dolgunkat</small>Szolgáltatásaink</h3>
+			<p class="niceheading__disclaimer">Grafikai arculatot és felhasználóbarát egyedi honlapokat tervezünk hagyományos és mobil eszközökre. Módszerünk átfogó, a tevékenységünk széleskörű.</p>
+	</div>
+</section>
+
+
+<section class="services">
+	<div class="wrapper wrapper--wide">
+		<div class="servicegroup">
+			<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_arculat.svg';?>" alt="Arculat" class="servicegroup__ill">
+			<i class="ss-icon ss-mug"></i>
+			<h4 class="servicegroup__name">Arculat</h4>
+			<ul class="servicelist">
+				<li>Arculattervezés</li>
+				<li>Logó tervezés</li>
+				<li>Csomagolás tervezés</li>
+				<li>Plakát és brossúra</li>
+				<li>Belsőépítészet</li>
+			</ul>
+		</div>
+		<div class="servicegroup">
+			<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_mobilweb.svg';?>" alt="Web/mobil" class="servicegroup__ill">
+			<i class="ss-icon ss-golf"></i>
+			<h4 class="servicegroup__name">Web/mobil</h4>
+			<ul class="servicelist">
+				<li>Webdesign</li>
+				<li>UX tervezés</li>
+				<li>Mobilbarát honlap</li>
+				<li>Tartalom kezelés</li>
+				<li>Mikroszájtok</li>
+				<li>Kampányoldal</li>
+			</ul>
+		</div>
+		<div class="servicegroup">
+			<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_strategia.svg';?>" alt="Stratégia" class="servicegroup__ill">
+			<i class="ss-icon ss-crosshair"></i>
+			<h4 class="servicegroup__name">Stratégia</h4>
+			<ul class="servicelist">
+				<li>Online marketing</li>
+				<li>Keresőoptimalizálás</li>
+				<li>Analitika</li>
+				<li>Tartalom stratégia</li>
+				<li>Hírlevél kampány</li>
+			</ul>
+		</div>
+	</div>				
+</section>
+
 <section class="niceheading">
 	<div class="wrapper wrapper--wide">
-			<h3 class="niceheading__title"><small>Kik vagyunk</small>hydrogene alkotó elemei</h3>
-			<p class="niceheading__disclaimer"><strong>Ismerj meg minket</strong> Piciny design csapatunk éllovasai szenvedélyes digitális kézművesek akik, &mdash; a tervezésen és kivitelezésen túl &mdash; döntéseket hoznak és kommunikálnak veled.</p>
+			<h3 class="niceheading__title"><small>Kik vagyunk</small>az alkotó elemek</h3>
+			<p class="niceheading__disclaimer"><strong>HYDROGENE</strong> egy két személyes design műhely. Karakteres arculatú egyedi weboldalakat készítünk hagyományos és mobil eszközökre. Van egy jó projekted? Itt vagyunk, <a href="<?php echo get_permalink(58); ?>">segítünk.</a></p>
 	</div>
 </section>
 
@@ -169,7 +209,7 @@
 		<section class="teammember beke">
 			<div class="wrapper wrapper--wide">
 				<figure class="teammember__figure">
-					<img src="http://placehold.it/1024x512" alt="Beke Mátyás - Art Director | Hydrogene">
+					<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/portre_matyas.jpg';  ?>" alt="Beke Mátyás - Art Director | Hydrogene">
 				</figure>
 				<div class="teammember__info">
 					<header class="teammember__head">
@@ -197,7 +237,7 @@
 		<section class="teammember szabo">
 			<div class="wrapper wrapper--wide">
 				<figure class="teammember__figure">
-					<img src="http://placehold.it/1024x512" alt="Beke Mátyás - Art Director | Hydrogene">
+					<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/portre_gabor.jpg';  ?>" alt="Szabó Gábor - Webfejlesztő | Hydrogene">
 				</figure>
 				<div class="teammember__info">
 					<header class="teammember__head">
@@ -252,54 +292,7 @@
 </section>
 
 
-<section class="niceheading niceheading--inverse">
-	<div class="wrapper wrapper--wide">
-			<h3 class="niceheading__title"><small>értjük a dolgunkat</small>Szolgáltatásaink</h3>
-			<p class="niceheading__disclaimer">Grafikai arculatot és felhasználóbarát egyedi honlapokat tervezünk hagyományos és mobil eszközökre. Módszerünk átfogó, a tevékenységünk széleskörű.</p>
-	</div>
-</section>
 
-<section class="services">
-	<div class="wrapper wrapper--wide">
-		<div class="servicegroup">
-			<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_arculat.svg';?>" alt="Arculat" class="servicegroup__ill">
-			<i class="ss-icon ss-mug"></i>
-			<h4 class="servicegroup__name">Arculat</h4>
-			<ul class="servicelist">
-				<li>Arculattervezés</li>
-				<li>Logó tervezés</li>
-				<li>Csomagolás tervezés</li>
-				<li>Plakát és brossúra</li>
-				<li>Belsőépítészet</li>
-			</ul>
-		</div>
-		<div class="servicegroup">
-			<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_mobilweb.svg';?>" alt="Web/mobil" class="servicegroup__ill">
-			<i class="ss-icon ss-golf"></i>
-			<h4 class="servicegroup__name">Web/mobil</h4>
-			<ul class="servicelist">
-				<li>Webdesign</li>
-				<li>UX tervezés</li>
-				<li>Mobilbarát honlap</li>
-				<li>Tartalom kezelés</li>
-				<li>Mikroszájtok</li>
-				<li>Kampányoldal</li>
-			</ul>
-		</div>
-		<div class="servicegroup">
-			<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_strategia.svg';?>" alt="Stratégia" class="servicegroup__ill">
-			<i class="ss-icon ss-crosshair"></i>
-			<h4 class="servicegroup__name">Stratégia</h4>
-			<ul class="servicelist">
-				<li>Online marketing</li>
-				<li>Keresőoptimalizálás</li>
-				<li>Analitika</li>
-				<li>Tartalom stratégia</li>
-				<li>Hírlevél kampány</li>
-			</ul>
-		</div>
-	</div>				
-</section>
 
 
 

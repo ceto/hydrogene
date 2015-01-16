@@ -16,9 +16,12 @@
 		<div class="tab-content">
 
 			<div role="tabpanel" class="tab-pane fade in active" id="contactpanel">
-				<div class="refsingle__contactopener">
-					<h3 class="blocktitle">Segítünk neked<small>Legyen ez egy virágzó kapcsolat kezdete</small></h3>
-					<a href="<?php echo get_permalink(58); ?>" class="btn btn--pseudo">Beszélgessünk</a>
+				<div class="contactstart">
+					<h3 class="contactstart__title"><small>Van egy jó projekted?</small>Segítünk formába hozni</h3>
+					<div class="contactstart__action">
+						<a href="<?php echo get_permalink(58); ?>" class="btn btn--pseudo">Beszélgessünk</a>
+					</div>
+					
 				</div>
 			</div>
 

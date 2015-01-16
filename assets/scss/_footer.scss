@@ -1,8 +1,93 @@
 .standardcontact {
-  background-color: $gray-main;
+  background-color: $secondary-color;
+  background-image: url('../img/melosasztal.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  border-bottom: 10px solid rgba(#000,0.2);
   text-align: center;
 }
 
+
+.contactstart {
+  @include clearfix();
+  padding: 2em 0 3em;
+  color:#fff;
+  text-align: left;
+
+}
+
+.contactstart__title {
+  position: relative;
+  padding-left: 2.33em;
+  font-family: $sans-serif;
+  font-size: 2em;
+  line-height: 1;
+  font-weight: 900;
+  opacity: 0.666;
+
+  max-width: $s3;
+  margin-top:0;
+  margin-bottom: .25em;
+
+  text-align: left;
+  text-transform: uppercase;
+  
+  @include bp($s3) {
+    float: left;
+    width:75%;
+  }
+
+  &:before {
+    content:'';
+    background-color: $secondary-color;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0.125em;
+    width: 1.875em;
+  }
+
+
+  small {
+    font-family: $serif;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    margin:0 0 0.25em 0;
+
+    display: block;
+
+    text-transform: lowercase;
+  }
+
+
+}
+
+.contactstart__action {
+
+  @include bp($s3) {
+    float: left;
+    width:25%;
+    text-align: right;
+  }
+
+  .btn {
+    font-size: 1em;
+    background-color: rgba(#000,0.333);
+    background-clip: padding-box;
+    border:1px solid rgba(#fff,0.333);
+    //color:#fff;
+    line-height: 1.75;
+    margin-top: 0.666em;
+    &:hover,&:focus {
+      background-color: rgba(#000,0.5);
+      border:1px solid rgba(#fff,0.5);
+    }
+  }
+}
 .pagefooter {
   font-family: $sans-serif;
 

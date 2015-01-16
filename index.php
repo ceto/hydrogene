@@ -1,4 +1,10 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<section class="topmenubg"></section>
+<section class="niceheading">
+  <div class="wrapper wrapper--wide">
+      <h3 class="niceheading__title"><small>Egyedi munkák</small>weben mobilon és offline</h3>
+      <p class="niceheading__disclaimer"><strong>Nézd meg miket csinálunk.</strong> A feladatok külöbözőek, akárcsak a megoldások. Több tucat sikeres projekt közül megmutatjuk a kedvenceinket. Hasonlót szeretnél? Vedd fel velünk a <a href="<?php echo get_permalink(58); ?>">kapcsolatot.</a></p>
+  </div>
+</section>
 <div class="wrapper wrapper--normal">
   <?php if (!have_posts()) : ?>
     <div class="alert alert-warning">

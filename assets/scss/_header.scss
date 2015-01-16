@@ -102,6 +102,16 @@
   // background-position: right center;
 }
 
+
+
+.topmenubg {
+  background-color: $secondary-color;
+  height:5em;
+  border-bottom: 10px solid rgba(#fff,.2);
+  @include bp($s3) {
+    height:8em;
+  }
+}
 /******* Video *********/
 
 

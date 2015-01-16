@@ -13,8 +13,8 @@
 			}
 
 
-			.reference-<?php echo get_the_ID(); ?> .refrow{
-				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
+			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__title{
+				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__figure a:after {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
@@ -24,11 +24,12 @@
 			/*.refsingle__quoteblock {
 				border-top: 10px solid rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}*/
-			.refsingle__infoblock .btn, .refsingle__shareblock .btn  {
+			.refrow__actions .btn,
+			.refsingle__shareblock .btn  {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.875	);
 			}
 			
-			.refsingle__infoblock .btn:before,
+			.refrow__actions .btn:before,
 			.refsingle__shareblock .btn:before,
 			.refsingle__shareblock {
 				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
@@ -38,6 +39,7 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
 			}
 */
+			.topmenubg,
 			.refsingle .refrow:after,
 			.inverseblock,
 			.refsingle__quoteblock,
@@ -101,7 +103,7 @@
 
 			    
  			    <div class="refrow__actions">
-						<a class="btn--pseudo" href="#singletop">
+						<a class="btn btn--pseudo" href="#singletop">
 							<?php _e('Felfedezés indul','h2'); ?>
 						</a>
 			    </div>

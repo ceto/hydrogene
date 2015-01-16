@@ -2,43 +2,16 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Guides" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="200px" height="200px" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
-<g>
-	<defs>
-		<rect id="SVGID_91_" width="200" height="200"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_91_"  style="overflow:visible;"/>
-	</clipPath>
-	<g style="clip-path:url(#SVGID_2_);">
-		<defs>
-			<rect id="SVGID_93_" width="200" height="200"/>
-		</defs>
-		<clipPath id="SVGID_4_">
-			<use xlink:href="#SVGID_93_"  style="overflow:visible;"/>
-		</clipPath>
-		<path style="clip-path:url(#SVGID_4_);fill:#77B3D4;" d="M200,100c0,55.228-44.771,100-100,100S0,155.228,0,100
-			C0,44.771,44.771,0,100,0S200,44.771,200,100"/>
-		<g style="opacity:0.2;clip-path:url(#SVGID_4_);">
-			<g>
-				<defs>
-					<rect id="SVGID_95_" x="74.999" y="43.75" width="50.001" height="137.499"/>
-				</defs>
-				<clipPath id="SVGID_6_">
-					<use xlink:href="#SVGID_95_"  style="overflow:visible;"/>
-				</clipPath>
-				<path style="clip-path:url(#SVGID_6_);fill:#231F20;" d="M115.625,43.75h-31.25c-5.179,0-9.376,4.195-9.376,9.374V68.75v3.124
-					v71.876l16.667,25L100,181.249l8.334-12.499l16.666-25V71.874V68.75V53.124C125,47.945,120.804,43.75,115.625,43.75"/>
-			</g>
-		</g>
-		<path style="clip-path:url(#SVGID_4_);fill:#C73232;" d="M125,65.625c0,5.179-4.196,9.375-9.375,9.375h-31.25
-			c-5.179,0-9.376-4.196-9.376-9.375V46.874c0-5.178,4.197-9.375,9.376-9.375h31.25c5.179,0,9.375,4.197,9.375,9.375V65.625z"/>
-		<rect x="74.999" y="62.499" style="clip-path:url(#SVGID_4_);fill:#E0995E;" width="12.502" height="75.001"/>
-		<rect x="87.501" y="62.499" style="clip-path:url(#SVGID_4_);fill:#F5CF87;" width="24.998" height="81.251"/>
-		<rect x="112.499" y="62.499" style="clip-path:url(#SVGID_4_);fill:#E0995E;" width="12.501" height="75.001"/>
-		<polygon style="clip-path:url(#SVGID_4_);fill:#4F5D73;" points="100,175 108.334,162.5 91.666,162.5 		"/>
-		<polygon style="clip-path:url(#SVGID_4_);fill:#FFFFFF;" points="74.999,137.5 91.666,162.5 108.334,162.5 125,137.5 
-			118.751,137.5 112.499,131.249 100,143.75 87.501,131.249 81.249,137.5 		"/>
-	</g>
-</g>
+	 width="395px" height="395px" viewBox="0 0 395 395" style="enable-background:new 0 0 395 395;" xml:space="preserve">
+<circle style="fill:#A63B1C;" cx="197.5" cy="197.5" r="196"/>
+<path style="fill:#6E3222;" d="M327.157,114.582l-48.046-48.043c-7.963-7.962-20.868-7.961-28.827-0.001l-24.023,24.021
+	l19.221,19.222l38.434,38.433l19.219,19.22l24.023-24.022C335.116,135.451,335.117,122.544,327.157,114.582z"/>
+<polygon style="fill:#6E3222;" points="136.28,218.98 241.979,113.28 222.76,94.06 217.953,98.866 107.451,209.37 117.059,218.979 
+	"/>
+<polygon style="fill:#A55843;" points="136.28,218.98 136.28,257.417 174.715,257.413 280.414,151.713 241.979,113.28 "/>
+<polygon style="fill:#6E3222;" points="174.715,257.413 174.715,276.635 184.324,286.243 294.826,175.739 299.634,170.934 
+	280.414,151.713 "/>
+<polygon style="fill:#482116;" points="88.235,305.46 120.265,299.055 94.638,273.429 "/>
+<polygon style="fill:#F9B4A2;" points="174.715,257.413 136.28,257.417 136.28,218.98 117.059,218.979 107.451,209.37 
+	94.638,273.429 120.265,299.055 184.324,286.243 174.715,276.635 "/>
 </svg>
