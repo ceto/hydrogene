@@ -5331,7 +5331,7 @@ body {
       .banner .wrapper {
         height: 8em; }
       .banner.scrolled {
-        background-color: rgba(33, 33, 33, 0.95);
+        background-color: rgba(255, 255, 255, 0.95);
         color: #212121;
         top: -7.5em; }
         .banner.scrolled.ison {
@@ -5350,7 +5350,7 @@ body {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5); }
+  color: #212121; }
   @media only screen and (min-width: 768px) {
     .banner__brand {
       left: 1.5em; } }
@@ -5363,7 +5363,7 @@ body {
       margin-top: 1.666em;
       transition: all 0.4s ease; } }
   .banner__brand:hover, .banner__brand:focus {
-    color: rgba(255, 255, 255, 0.875); }
+    color: #212121; }
 
 .hero {
   padding: 12em 0 4em;
@@ -5372,12 +5372,12 @@ body {
   border-bottom: 10px solid rgba(255, 255, 255, 0.2); }
 
 .topmenubg {
-  background-color: #EDEDED;
-  height: 5em;
-  border-bottom: 10px solid rgba(255, 255, 255, 0.2); }
+  height: 5em; }
   @media only screen and (min-width: 1024px) {
     .topmenubg {
       height: 8em; } }
+  .single-reference .topmenubg {
+    background-color: #ededed; }
 
 /******* Video *********/
 .pageheader {
@@ -5447,14 +5447,14 @@ body {
   cursor: pointer;
   font-size: 1.5em;
   list-height: 1;
-  color: rgba(255, 255, 255, 0.75); }
+  color: rgba(33, 33, 33, 0.75); }
   @media only screen and (min-width: 1024px) {
     .nav-toggle {
       display: none; } }
   .nav-toggle span {
     display: none; }
   .nav-toggle:hover, .nav-toggle:focus {
-    color: white; }
+    color: #212121; }
     .nav-toggle:hover i:before, .nav-toggle:hover i:after, .nav-toggle:focus i:before, .nav-toggle:focus i:after {
       font-family: "SSGlyphish_filled"; }
 
@@ -5561,21 +5561,22 @@ input[type="checkbox"]#nav-toggle {
       font-weight: 900;
       text-transform: uppercase;
       text-decoration: none;
-      color: rgba(0, 0, 0, 0.875);
+      color: white;
       transition: all 0.4s ease; }
       .nav--main li > a:hover, .nav--main li > a:focus {
         text-decoration: none;
-        color: white;
-        border-color: white; }
+        color: #212121;
+        border-color: #212121; }
       @media only screen and (min-width: 1024px) {
         .nav--main li > a {
           display: inline-block;
           font-size: 0.666em;
-          border-bottom: 3px solid rgba(255, 255, 255, 0);
+          border-bottom: 3px solid rgba(33, 33, 33, 0);
           margin: 0 0 0 1.5em;
-          padding: 1.666em 0 0.5em 0; }
+          padding: 1.666em 0 0.5em 0;
+          color: #212121; }
           .nav--main li > a:hover, .nav--main li > a:focus {
-            border-color: rgba(255, 255, 255, 0.2); } }
+            border-color: #212121; } }
 
 .sidebar:before, .sidebar:after {
   content: " ";

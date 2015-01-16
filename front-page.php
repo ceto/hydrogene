@@ -1,4 +1,15 @@
 <?php while (have_posts()) : the_post(); ?>
+
+
+
+<section class="topmenubg"></section>
+<section class="niceheading">
+  <div class="wrapper wrapper--wide">
+      <h3 class="niceheading__title"><small>karakteres arculattal és honlappal</small>segítjük céged növekedését</h3>
+      <p class="niceheading__disclaimer"><strong>Kreatív műhelyünkben</strong>, hatékony és felhasználó barát web/mobil oldalakat és karakteres arculatot tervezünk. Nézd meg <a href="?page_id=69">hogyan dolgozunk.</a></p>
+  </div>
+</section>
+
 <header class="home__hero hero">
 	<div class="wrapper wrapper--wide">
 		<div class="hero__textblock">

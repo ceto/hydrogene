@@ -7,7 +7,7 @@
 	cursor: pointer;
 	font-size: 1.5em;
 	list-height:1;
-	color:rgba(white,0.75);
+	color:rgba($gray-main,0.75);
 	@include bp($s3) {
 		display: none;
 	}
@@ -16,7 +16,7 @@
 	}
 
 	&:hover, &:focus {
-		color:rgba(white,1);
+		color:rgba($gray-main,1);
 		i {
 			&:before, &:after {
 				font-family: "SSGlyphish_filled";
@@ -159,13 +159,13 @@ input[type="checkbox"]#nav-toggle {
 			font-weight: 900;
 			text-transform: uppercase;
 			text-decoration:none;
-			color:rgba(white,0.875);
+			color:rgba(#fff,1);
 			transition: all .4s ease;
 
 			&:hover, &:focus {
 				text-decoration:none;
-				color:rgba(white,1);
-				border-color: rgba(white,1);
+				color:rgba($gray-main,1);
+				border-color: rgba($gray-main,1);
 			}
 
 			
@@ -173,13 +173,14 @@ input[type="checkbox"]#nav-toggle {
 			@include bp($s3) {
 				display: inline-block;
 				font-size: 0.666em;
-				border-bottom:3px solid rgba(white,0);
+				border-bottom:3px solid rgba($gray-main,0);
 				margin:0 0 0 1.5em;
 				padding:1.666em 0 0.5em 0;
+				color:rgba($gray-main,1);
 				//background-color: red;
 				&:hover, &:focus {
 					
-					border-color: rgba(white,0.2);
+					border-color: rgba($gray-main,1);
 				}
 				
 				.scrolled & {

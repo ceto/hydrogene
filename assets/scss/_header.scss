@@ -9,6 +9,7 @@
   }
 
   @include bp($s3) {
+
     position: fixed;
     top:0;
     left:0;
@@ -22,12 +23,11 @@
 
     .wrapper {
       height:8em;
+
     }
 
     &.scrolled {
-      background-color: rgba($gray-main,0.95);
-        .wrapper {
-      }
+      background-color: rgba(#fff,0.95);
       color: $gray-main;
       top:-7.5em;
       &.ison {
@@ -56,7 +56,7 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  color: rgba(#fff,.5);
+  color: rgba($gray-main,1);
   
   @include bp($s2) {
     left:1.5em;
@@ -82,10 +82,8 @@
 
     }
   }
-  &:hover,
-
-  &:focus {
-    color: rgba(#fff,.875);
+  &:hover, &:focus {
+    color: rgba($gray-main,1);
   }
 }
 
@@ -105,11 +103,16 @@
 
 
 .topmenubg {
-  background-color: $secondary-color;
+  //background-color: $secondary-color;
   height:5em;
-  border-bottom: 10px solid rgba(#fff,.2);
+  //border-bottom: 10px solid rgba(#fff,.2);
   @include bp($s3) {
     height:8em;
+  }
+
+
+  .single-reference & {
+        background-color: $gray-xlight;
   }
 }
 /******* Video *********/

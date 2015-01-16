@@ -8,9 +8,7 @@
 				}
 			}
 			
-			.banner.scrolled {
-				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.95);
-			}
+
 
 
 			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__title{
@@ -39,7 +37,6 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
 			}
 */
-			.topmenubg,
 			.refsingle .refrow:after,
 			.inverseblock,
 			.refsingle__quoteblock,
