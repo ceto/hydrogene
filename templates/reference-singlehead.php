@@ -3,18 +3,21 @@
 		<?php $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'nemtudommeg');  ?>
 		<style>
 			@media only screen and (min-width: 768px) {
-				.reference-<?php echo get_the_ID(); ?> .refrow__figure {
+				.refsingle.reference-<?php echo get_the_ID(); ?> .refrow__figure {
 					background-image: url(<?php echo $imgsrc[0]; ?>);
 				}
 			}
 			
 
-
-
-			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__title{
-				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
+			.refsingle.reference-<?php echo get_the_ID(); ?> .refrow,
+			.single-reference .topmenubg {
+				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
-			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__figure a:after {
+
+		/*	.reference-<?php echo get_the_ID(); ?> .refrow .refrow__title{
+				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
+			}*/
+			.refsingle.reference-<?php echo get_the_ID(); ?> .refrow .refrow__figure a:after {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}
 
@@ -22,12 +25,12 @@
 			/*.refsingle__quoteblock {
 				border-top: 10px solid rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}*/
-			.refrow__actions .btn,
+			/*.refrow__actions .btn,*/
 			.refsingle__shareblock .btn  {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.875	);
 			}
 			
-			.refrow__actions .btn:before,
+			/*.refrow__actions .btn:before,*/
 			.refsingle__shareblock .btn:before,
 			.refsingle__shareblock {
 				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
@@ -37,7 +40,8 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
 			}
 */
-			.refsingle .refrow:after,
+			.niceheading--refheading .niceheading__title:before,
+			.refsingle.reference-<?php echo get_the_ID(); ?> .refrow:after,
 			.inverseblock,
 			.refsingle__quoteblock,
 			.refsingle__content > h1:before,

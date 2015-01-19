@@ -4,7 +4,7 @@
 		  <h1 class="hero__title">Nálad a labda</h1>
 		  <h2 class="hero__subtitle">Beszélgessünk</h2>
 		  <p class="hero__disclaimer">
-		  	<strong>Van egy jó projekted?</strong> Örömmel veszünk részt egyedi tervezési feladatokban, történjen az webre, mobilra vagy klasszikus offline felületekre. Az együttműködés kapcsolatfelvétellel kezdődik.
+		  	Örömmel veszünk részt egyedi tervezési feladatokban, történjen az webre, mobilra vagy klasszikus offline felületekre. Az együttműködés kapcsolatfelvétellel kezdődik.
 		  </p>
 		</div>
 	</div>
@@ -12,7 +12,7 @@
 
 
 <section class="contactblock">
-	<div class="wrapper wrapper--normal">
+	<div class="wrapper wrapper--wide">
 		<div class="contactdata">
 			<h3 class="contact__title">Elérhetőségek</h3>
 			<p class="contactelement__data">Ha komoly az ügy és biztosra mész, telefonon vedd fel velünk kapcsolatot.</p>

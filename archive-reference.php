@@ -1,4 +1,3 @@
-<section class="topmenubg"></section>
 <!-- <header class="refarchive__hero hero">
   <div class="wrapper wrapper--wide">
     <div class="hero__textblock">
@@ -11,10 +10,10 @@
   </div>
 </header> -->
 
-<section class="niceheading">
+<section class="niceheading niceheading--ashero">
   <div class="wrapper wrapper--wide">
-      <h3 class="niceheading__title"><small>Egyedi munkák</small>weben mobilon és offline</h3>
-      <p class="niceheading__disclaimer"><strong>Nézd meg miket csinálunk.</strong> A feladatok külöbözőek, akárcsak a megoldások. Több tucat sikeres projekt közül megmutatjuk a kedvenceinket. Hasonlót szeretnél? Vedd fel velünk a <a href="<?php echo get_permalink(58); ?>">kapcsolatot.</a></p>
+      <h3 class="niceheading__title"><small>Arculati és webdesign</small>referencia</h3>
+      <p class="niceheading__disclaimer"><strong>Egyedi munkák, weben mobilon és offline.</strong> A feladatok külöbözőek, akárcsak a megoldások. Több tucat sikeres projekt közül megmutatjuk a kedvenceinket. Hasonlót szeretnél? Vedd fel velünk a <a href="<?php echo get_permalink(58); ?>">kapcsolatot.</a></p>
   </div>
 </section>
 <section class="reflist">

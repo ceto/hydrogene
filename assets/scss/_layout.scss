@@ -114,6 +114,24 @@
   text-align: left;
 }
 
+
+.niceheading--ashero {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  @include bp($s2){
+    .wrapper {
+      padding-right: 20%;
+    }
+  }
+  @include bp($s3){
+    padding-top: 9em;
+
+  }
+}
+
 .niceheading--inverse {
   background-color: $secondary-color;
 }
@@ -183,6 +201,14 @@
     &:hover, &:focus {
       border-bottom-color: transparent;
       color:$secondary-color;
+    }
+
+    .niceheading--inverse & {
+      border-bottom: 1px solid white;
+      &:hover, &:focus {
+        border-bottom-color: transparent;
+        color:$gray-main;
+      }
     }
   }
 

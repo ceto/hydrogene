@@ -1,4 +1,8 @@
-
+.niceheading--homehero {
+  //background-image: url('../img/melosasztal_light.jpg');
+  border-bottom: 10px solid rgba(#fff,0.2);
+  background-color: $repa;
+}
 .home__hero
 {
   background-color: $secondary-color;

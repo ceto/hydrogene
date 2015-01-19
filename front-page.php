@@ -1,28 +1,10 @@
 <?php while (have_posts()) : the_post(); ?>
-
-
-
-<section class="topmenubg"></section>
-<section class="niceheading">
+<header class="niceheading niceheading--inverse niceheading--ashero niceheading--homehero">
   <div class="wrapper wrapper--wide">
-      <h3 class="niceheading__title"><small>karakteres arculattal és honlappal</small>segítjük céged növekedését</h3>
-      <p class="niceheading__disclaimer"><strong>Kreatív műhelyünkben</strong>, hatékony és felhasználó barát web/mobil oldalakat és karakteres arculatot tervezünk. Nézd meg <a href="?page_id=69">hogyan dolgozunk.</a></p>
+      <h3 class="niceheading__title"><small>Egységes megjelenés</small>weben mobilon és offline</h3>
+      <p class="niceheading__disclaimer"><strong>Karakteres honlappal és arculattal</strong> segítjük céged növekedését.  Kreatív műhelyünkben, hatékony és felhasználóbarát web/mobil oldalakat tervezünk. Válassz dizájnert referencia alapján!</p>
+      <p><a href="<?php echo get_post_type_archive_link('reference'); ?>" class="btn btn--pseudo btn--opaque ">Ugrok a munkákra</a></p>
   </div>
-</section>
-
-<header class="home__hero hero">
-	<div class="wrapper wrapper--wide">
-		<div class="hero__textblock">
-			<h1 class="hero__title">Az ügyfeleid</h1>
-			<h2 class="hero__subtitle">Szeretni fognak</h2>
-			<p class="hero__disclaimer"><strong>Felhasználóbarát honlappal és arculattal</strong> segítjük céged növekedését.  Kreatív műhelyünkben kiemelkedő minőségű és hatékony web/mobil oldalakat és print termékeket tervezünk. 
-			</p>
-			<p><a href="?page_id=69" class="btn btn--pseudo">Nézd meg hogyan</a></p>
-		</div>
-		<div class="heroright">
-			
-		</div>
-	</div>
 </header>
 
 <div class="storyitem whatwedo">
@@ -66,12 +48,12 @@
 
 
 <section class="home__references">
-<?php 
-	$the_refs = new WP_Query( array(
-		'post_type' => 'reference',
-		'posts_per_page' => 1,
-	));
-?>
+	<?php 
+		$the_refs = new WP_Query( array(
+			'post_type' => 'reference',
+			'posts_per_page' => 1,
+		));
+	?>
 	<?php while ($the_refs->have_posts()) : $the_refs->the_post(); ?>
 	  <article <?php post_class(); ?>>
 	    <?php get_template_part('templates/reference', 'widerow'); ?>

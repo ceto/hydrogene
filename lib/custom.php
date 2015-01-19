@@ -257,3 +257,22 @@ function h2_inverseblock_shortcode( $atts, $content = null ) {
 	return do_shortcode('<section class="inverseblock"><div class="wrapper wrapper--'.$a['wrapper'].'">'.$content.'</div></section>');
 }
 add_shortcode( 'inverseblock', 'h2_inverseblock_shortcode');
+
+
+
+
+
+/***** Uniqui Page title at the top header ******/
+
+function h2_pagetitle() {
+	if ( is_singular('reference') || is_post_type_archive('reference')) {
+		echo '<a class="banner__pagetitle" href="'.get_post_type_archive_link('reference').'">'.__('Munkák','h2').'</a>';
+	} elseif ( is_singular('post') || is_home() || is_category() || is_post_type_archive('post') ) {
+		echo '<a class="banner__pagetitle" href="'.get_the_permalink(67).'">'.__('Blog','h2').'</a>';
+	} elseif (false) {
+		echo '<a class="banner__pagetitle" href="#">'.__('passz','h2').'</a>';
+	} else {
+		echo '<a class="banner__pagetitle" href="#">'.get_the_title().'</a>';
+	}
+}
+

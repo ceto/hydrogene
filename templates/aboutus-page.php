@@ -1,5 +1,4 @@
-<section class="topmenubg"></section>
-<header class="niceheading">
+<header class="niceheading niceheading--ashero niceheading--aboutushero">
 	<div class="wrapper wrapper--wide">
 			<h3 class="niceheading__title"><small>Kreatív műhelyünkben</small>Arculatot és honlapot tervezünk</h3>
 			<p class="niceheading__disclaimer"><strong>Átfogó szemlélettel.</strong> Ismerd meg tervezési irányelveinket. Bemutatjuk munka módszerünket és eszközeinket. Szeretnéd ha neked dolgoznánk? Lépj velünk <a href="<?php echo get_permalink(58); ?>">kapcsolatba.</a></p>
@@ -15,13 +14,14 @@
 				</figure>
 				<div class="widestoryitem__textcontent">
 					<header class="widestoryitem__head">	
-						<h5 class="widestoryitem__subtitle">Kutatás és felfedezés</h5>
-						<h4 class="widestoryitem__title">Elmélyülés a feladatban, biztos alapok rögzítése</h4>
+						<h5 class="widestoryitem__subtitle">Stratégia és Tervezés</h5>
+						<h4 class="widestoryitem__title">Elmélyülés a feladatban, célok rögzítése</h4>
 					</header>
 					<div class="widestoryitem__desc">
 						<p>
-						A tervezés megkezdése előtt legfontosabb tájékozódni a feladat körülményeiről a környezetről. Kis esettanulmányt, kutatást végzünk, megvizsgáljuk a konkurensek piaci szereplését, megjelenését. Elmélyülünk a tevékenységben, legyen az turisztikai vagy akár egészségügyi szakterületen.</p>
+						A tervezés megkezdése előtt legfontosabb tájékozódni a feladat körülményeiről a környezetről. Kis esettanulmányt, kutatást végzünk, megvizsgáljuk a konkurensek piaci szereplését, megjelenését. 	Elmélyülünk a tevékenységben, legyen az turisztikai vagy akár egészségügyi szakterületen.</p>
 						<p>Hiszünk abban, hogy csak a megfelelő tájékozottság, tisztánlátás melett lehet elkezdeni a megalapozott tervezési munkát</p>
+						<p><strong>Inkább itt</strong> egybe kéne letudni a statégia-marketing blamát. lehet még azó a tartalom tervezésről és tartalom stratégiáról, szövegírási támpontok készítéséről. Információ építészetről. Kis onsite seorol.</p>
 					</div>
 				</div>
 			</div>
@@ -35,14 +35,14 @@
 				<div class="widestoryitem__textcontent">
 					<header class="widestoryitem__head">	
 						<h5 class="widestoryitem__subtitle">Arculat és Design</h5>					
-						<h4 class="widestoryitem__title">Karakteres arculat kialakítása és következetes használata</h4>
+						<h4 class="widestoryitem__title">Egységes megjelenés weben és offline</h4>
 					</header>
 					<div class="widestoryitem__desc">
-
-						<p>
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse	cillum dolore eu fugiat nulla pariatur.</p>
-						<p>Lorem ipsum marika ámen. A tejfölös doboz dolor in reprehenderit in vo.</p>
+						<p>Együttesen gondoljuk át és kezeljük a webes és a offline megjelenést. Tevékenységünk érinti az arculat belsőépítészeti alkalmazását is. A következetesen használt arculat, kiemeli, megkülönbözteti vállalkozását a konkurensektől, és egységet teremt minden platformon.</p>
+						<p>Az üzleti élet szereplőinek szüksége van a sikeres piaci megjelenéshez, egységes egyedi grafikai arculatra. A jó arcualt méltó módon képviseli a cég eszmeiségét értékrendjét. Egyszerre, gazdaságos, rugalmas, egyszerű és felejthetetlen.
+						</p>
+						<p>Második bekezdés helyett inkább magunkról kéne irni, sztem lehet gyakorlatiasabb, ne neveljünk.</p>
+						
 					</div>
 				</div>
 			</div>
@@ -78,8 +78,8 @@
 						<h4 class="widestoryitem__title">Jövőbarát korszerű fejlesztés és naprakész tudás</h4>
 					</header>
 					<div class="widestoryitem__desc">
-						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p>Axcepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sint amet Ernőbácsi orem ipsum marika ámen</p>
+						<p>A jövőbe tervezünk, figyeljük a trendeket és reagálunk rájuk. Ahhoz, hogy a legjobban tudjunk alkalmazkodni a változásokhoz rendelkezzünk a megújulni tudás képességével, rajta kell tartanunk a szemünket a világ technológiai újításain.</p>
+						<p><strong>Ehelyett fejezet helyett lehet inkább</strong> a weblapkészítési stilusról kéne irni, pl tipos honlap, nagy white spacek, nagy betűk használata. Tagolt tartalom és nagy headingek. Teljesen kifutó blokkok. gridek és szinhasználat. </p>
 					</div>
 				</div>
 			</div>
@@ -103,24 +103,6 @@
 			</div>
 		</div>
 
-		<div class="widestoryitem">
-			<div class="wrapper wrapper--wide">
-				<figure class="widestoryitem__figure">
-					<i class="ss-icon ss-fuel"></i>
-				</figure>
-				<div class="widestoryitem__textcontent">
-					<header class="widestoryitem__head">	
-						<h5 class="widestoryitem__subtitle">Stratégia és Marketing</h5>
-						<h4 class="widestoryitem__title">Tudatosan a sikerért és az ügyfeleidért</h4>
-					</header>
-					<div class="widestoryitem__desc">
-						<p>
-					Porem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p>Terézia zongorázik vadul. Nálam excepteur sint occaecat cupidatat non proident. Lorem ipsum marika ámen</p>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<div class="widestoryitem">
 			<div class="wrapper wrapper--wide">
@@ -282,7 +264,7 @@
 						<p>Cumque quas minima aliquid nisi a maxime, fugit facilis perspiciatis beatae magnam similique doloremque, itaque consectetur nulla tempore voluptatum adipisci ut consequuntur.</p>
 						</div>
 					<div class="teammember__footer">
-						<a href="<?php echo get_permalink(58); ?>" class="btn btn--pseudo">Legyél az ügyfelünk</a>
+						<a href="<?php echo get_permalink(58); ?>" class="btn btn--pseudo btn--opaque">Legyél az ügyfelünk</a>
 					</div>
 				</div>
 			</div>

@@ -19,7 +19,7 @@
 				<div class="contactstart">
 					<h3 class="contactstart__title"><small>Van egy jó projekted?</small>Segítünk formába hozni</h3>
 					<div class="contactstart__action">
-						<a href="<?php echo get_permalink(58); ?>" class="btn btn--pseudo">Beszélgessünk</a>
+						<a href="<?php echo get_permalink(58); ?>" class="btn btn--pseudo btn--opaque">Beszélgessünk</a>
 					</div>
 					
 				</div>

@@ -157,10 +157,10 @@
   margin: 0 0 .125em;
   color: rgba($gray-main,1);
 
-  // .refsingle & {
-  //   font-size: 1.333em;
-  //   color: rgba(#fff,0.75);
-  // }
+  .refsingle & {
+    //font-size: 1.333em;
+    color: rgba(#fff,0.75);
+  }
   a {
     text-decoration: none;
 
@@ -185,11 +185,10 @@
 
   color: rgba($gray-main,.75);
   border-bottom: 1px solid rgba(#fff,.125);
-  // .refsingle & {
-  //   font-size: 3em;
-
-  //   color: rgba(#fff,0.75);
-  // }
+  .refsingle & {
+    //font-size: 3em;
+    color: rgba(#fff,0.75);
+  }
   a {
     text-decoration: none;
 
@@ -282,11 +281,11 @@
 
 /************** Reference Single Style Definitions ****************/
 
-// .refsingle {
-//   .refrow {
-//     color: white;
+.refsingle {
+  .refrow {
+    color: white;
 //     border-top: none;
-//     border-bottom: 10px solid rgba(#fff,.2);
+    border-bottom: 10px solid rgba(#fff,.2);
 
 //     .wrapper {
 //       @include bp($s2) {
@@ -305,11 +304,8 @@
 //     background-position: left center;
 //     background-size: auto 90%;
 //   }
-//   .refrow__subtitle {
-//     //border-bottom: 10px solid rgba(#fff,0.2);
-//     //padding-bottom: 0.125em;
-//   }
-// }
+  }
+}
 
 .refsingle__header {
   @include clearfix();
@@ -343,7 +339,7 @@
   padding: 0;
   //font-style: italic;
 
-  color: rgba($gray-main,1);
+  //color: rgba($gray-main,1);
   li {
     display: inline-block;
 
@@ -370,9 +366,18 @@
     }
   }
 }
-
+.niceheading--refheading {
+  padding-bottom: 2em;  
+  @include bp($s2){
+    .wrapper {
+      //padding-right: 20%;
+    }
+  }
+  @include bp($s3){
+  }
+}
 .refsingle__reallife {
-  padding: 4em 0;
+  padding: 0 0 0;
 
   text-align: center;
   //border-top: 10px solid rgba($secondary-color,0.333);

@@ -5086,6 +5086,19 @@ body {
   padding: 4em 0;
   text-align: left; }
 
+.niceheading--ashero {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  @media only screen and (min-width: 768px) {
+    .niceheading--ashero .wrapper {
+      padding-right: 20%; }
+ }
+  @media only screen and (min-width: 1024px) {
+    .niceheading--ashero {
+      padding-top: 9em; } }
+
 .niceheading--inverse {
   background-color: #bd4932; }
 
@@ -5136,6 +5149,11 @@ body {
     .niceheading__disclaimer a:hover, .niceheading__disclaimer a:focus {
       border-bottom-color: transparent;
       color: #bd4932; }
+    .niceheading--inverse .niceheading__disclaimer a {
+      border-bottom: 1px solid white; }
+      .niceheading--inverse .niceheading__disclaimer a:hover, .niceheading--inverse .niceheading__disclaimer a:focus {
+        border-bottom-color: transparent;
+        color: #212121; }
   .niceheading__disclaimer strong {
     font-weight: 900;
     text-transform: uppercase; }
@@ -5336,6 +5354,27 @@ body {
         top: -7.5em; }
         .banner.scrolled.ison {
           top: 0; } }
+  .banner hr {
+    position: absolute;
+    left: 1em;
+    right: 1em;
+    bottom: 0;
+    height: 0px;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.333); }
+    @media only screen and (min-width: 768px) {
+      .banner hr {
+        left: 1.5em;
+        right: 1.5em; } }
+    @media only screen and (min-width: 1024px) {
+      .banner hr {
+        left: 2.5em;
+        right: 2.5em; } }
+    @media only screen and (min-width: 1280px) {
+      .banner hr {
+        left: 3em;
+        right: 3em;
+        max-width: 58em; } }
 
 .banner__brand {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -5345,8 +5384,9 @@ body {
   margin: 0;
   position: absolute;
   z-index: 10;
-  top: 1.75em;
+  top: 1em;
   left: 1em;
+  width: 2.875em;
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -5358,12 +5398,38 @@ body {
     .banner__brand {
       position: static;
       float: left;
-      width: 33.333;
-      font-size: 2em;
-      margin-top: 1.666em;
+      width: 3.5em;
+      margin-top: 2em;
       transition: all 0.4s ease; } }
   .banner__brand:hover, .banner__brand:focus {
-    color: #212121; }
+    color: #212121;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+.banner__pagetitle {
+  position: absolute;
+  left: 2.5em;
+  top: 1em;
+  text-decoration: none;
+  font-size: 1.75em;
+  line-height: 1;
+  font-family: 'Archer', Georgia, serif;
+  font-weight: normal;
+  color: #212121;
+  max-width: 5em;
+  overflow: hidden;
+  white-space: nowrap; }
+  @media only screen and (min-width: 768px) {
+    .banner__pagetitle {
+      left: 3em; } }
+  @media only screen and (min-width: 1024px) {
+    .banner__pagetitle {
+      position: static;
+      float: left;
+      font-size: 2em;
+      margin-left: 0.5em;
+      margin-top: 1.5em; } }
 
 .hero {
   padding: 12em 0 4em;
@@ -5510,7 +5576,7 @@ input[type="checkbox"]#nav-toggle {
     .navigation--main {
       position: static;
       float: right;
-      margin-top: 2.666em;
+      margin-top: 3em;
       width: 66.666%;
       background-color: rgba(255, 255, 255, 0);
       border-bottom: 1px solid rgba(255, 255, 255, 0);
@@ -5573,7 +5639,7 @@ input[type="checkbox"]#nav-toggle {
           font-size: 0.666em;
           border-bottom: 3px solid rgba(33, 33, 33, 0);
           margin: 0 0 0 1.5em;
-          padding: 1.666em 0 0.5em 0;
+          padding: 1em 0 0.5em 0;
           color: #212121; }
           .nav--main li > a:hover, .nav--main li > a:focus {
             border-color: #212121; } }
@@ -5719,6 +5785,8 @@ input[type="checkbox"]#nav-toggle {
   position: relative;
   margin: 0 0 0.125em;
   color: #212121; }
+  .refsingle .refrow__subtitle {
+    color: rgba(255, 255, 255, 0.75); }
   .refrow__subtitle a {
     text-decoration: none;
     color: inherit; }
@@ -5732,6 +5800,8 @@ input[type="checkbox"]#nav-toggle {
   padding-bottom: 0.25em;
   color: rgba(33, 33, 33, 0.75);
   border-bottom: 1px solid rgba(255, 255, 255, 0.125); }
+  .refsingle .refrow__title {
+    color: rgba(255, 255, 255, 0.75); }
   .refrow__title a {
     text-decoration: none;
     color: inherit; }
@@ -5782,6 +5852,10 @@ input[type="checkbox"]#nav-toggle {
     background-color: black; }
 
 /************** Reference Single Style Definitions ****************/
+.refsingle .refrow {
+  color: white;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.2); }
+
 .refsingle__header:before, .refsingle__header:after {
   content: " ";
   display: table; }
@@ -5804,8 +5878,7 @@ input[type="checkbox"]#nav-toggle {
   font-size: 1em;
   font-weight: 300;
   margin: 0.5em 0 1.5em;
-  padding: 0;
-  color: #212121; }
+  padding: 0; }
   .tasks__elements li {
     display: inline-block;
     margin: 0.125em 0.75em 0.125em 0;
@@ -5824,8 +5897,11 @@ input[type="checkbox"]#nav-toggle {
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.125); }
 
+.niceheading--refheading {
+  padding-bottom: 2em; }
+
 .refsingle__reallife {
-  padding: 4em 0;
+  padding: 0 0 0;
   text-align: center; }
 
 .refsingle__infoblock {
@@ -6239,6 +6315,17 @@ textarea {
     .btn--pseudo:hover:before, .btn--pseudo:focus:before {
       border-color: rgba(255, 255, 255, 0.125); }
 
+.btn--opaque {
+  font-size: 1em;
+  background-color: rgba(0, 0, 0, 0.333);
+  background-clip: padding-box;
+  border: 1px solid rgba(255, 255, 255, 0.333);
+  line-height: 1.75;
+  margin-top: 0.666em; }
+  .btn--opaque:hover, .btn--opaque:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5); }
+
 .standardcontact {
   background-color: #bd4932;
   background-image: url('../img/melosasztal.jpg');
@@ -6298,16 +6385,6 @@ textarea {
     float: left;
     width: 25%;
     text-align: right; } }
-.contactstart__action .btn {
-  font-size: 1em;
-  background-color: rgba(0, 0, 0, 0.333);
-  background-clip: padding-box;
-  border: 1px solid rgba(255, 255, 255, 0.333);
-  line-height: 1.75;
-  margin-top: 0.666em; }
-  .contactstart__action .btn:hover, .contactstart__action .btn:focus {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.5); }
 
 .pagefooter {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -6344,6 +6421,10 @@ textarea {
   font-size: 0.666em;
   font-weight: 900;
   margin: 0; }
+
+.niceheading--homehero {
+  border-bottom: 10px solid rgba(255, 255, 255, 0.2);
+  background-color: #bd4932; }
 
 .home__hero {
   background-color: #bd4932;
@@ -6394,9 +6475,6 @@ textarea {
     color: inherit;
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.75); }
-
-.aboutus__hero {
-  background-color: #bd4932; }
 
 .teammember {
   position: relative;

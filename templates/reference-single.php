@@ -6,9 +6,19 @@
       <?php get_template_part('templates/reference', 'singlehead'); ?>
     </header>
     <!-- <a name="singletop" id="singletop"></a> -->
+
+
+
+    <section class="niceheading niceheading--refheading">
+  <div class="wrapper wrapper--wide">
+      <h3 class="niceheading__title"><small>így készült</small><?php the_title(); ?></h3>
+      <p class="niceheading__disclaimer"><?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?></p>
+  </div>
+</section>
+
     <section id="singletop" class="refsingle__reallife">
       <div class="wrapper wrapper--fullwidth">
-        <div class="wrapper wrapper--wide">
+<!--         <div class="wrapper wrapper--wide">
           <h3 class="whiteblock__title">
             <small><?php the_title(); ?></small>
             <?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?>
@@ -16,7 +26,7 @@
           <p class="whiteblock__disclaimer">
             <?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?>
           </p>
-        </div>
+        </div> -->
         
         <?php
           $realimage = wp_get_attachment_image( get_post_meta( get_the_ID(), '_refdata_reallife_id', 1 ), 'full');
@@ -52,12 +62,7 @@
       </div>
     </section>
 
-
-    <aside class="refsingle__shareblock">
-      <div class="wrapper wrapper--wide">
-        <?php get_template_part('templates/reference', 'share'); ?>
-      </div>
-    </aside>
+    <?php get_template_part('templates/reference', 'share'); ?>
 
     <footer>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
@@ -65,4 +70,5 @@
     </footer>
   </article>
 <?php endwhile; ?>
+
 <?php get_template_part('templates/reference','navigation'); ?>

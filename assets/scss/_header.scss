@@ -37,6 +37,31 @@
     }
 
   }
+
+  hr {
+    position: absolute;
+    left:1em;right:1em;
+    bottom:0;
+    //width:100%;
+    height:0px;
+    border:none;
+    border-top: 1px solid rgba(#000,0.333);
+    //border-bottom: 1px solid rgba(#000,0.125);
+
+    @include bp($s2) {
+      left: 1.5em;
+      right:1.5em;
+    }
+    @include bp($s3) {
+      left: 2.5em;
+      right:2.5em;
+    }
+    @include bp($s4) {
+      left: 3em;
+      right:3em;
+      max-width: 58em;
+    }
+  }
 }
 .banner__brand {
   font-family: $sans-serif;
@@ -48,8 +73,9 @@
 
   position: absolute;
   z-index: 10;
-  top: 1.75em;
+  top: 1em;
   left: 1em;
+  width:2.875em;
 
   display: inline-block;
 
@@ -64,11 +90,12 @@
   @include bp($s3) {
     position: static;
     float:left;
-    width:33.333;
+    width:3.5em;
+    //width:33.333;
 
 
-    font-size: 2em;
-    margin-top: 1.666em;
+    //font-size: 2em;
+    margin-top: 2em;
     //left: 0.5em;
 
     transition: all .4s ease;
@@ -84,9 +111,43 @@
   }
   &:hover, &:focus {
     color: rgba($gray-main,1);
+    transform: rotate(180deg);
   }
 }
 
+
+.banner__pagetitle {
+  position: absolute;
+  left:2.5em;
+  top:1em;
+  text-decoration: none;
+  font-size: 1.75em;
+  line-height: 1;
+  
+  //text-transform: uppercase;
+  font-family: $serif;
+  font-weight: normal;
+  color:$gray-main;
+  
+  max-width: 5em;
+  overflow: hidden;
+  white-space: nowrap;
+
+  @include bp($s2) {
+    left:3em;
+
+  }
+  
+  @include bp($s3) {
+    position: static;
+    float:left;
+    font-size: 2em;
+    margin-left: 0.5em;
+    margin-top: 1.5em;
+  }
+
+
+}
 
 .hero {
   padding: 12em 0 4em;

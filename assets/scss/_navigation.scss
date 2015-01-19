@@ -93,7 +93,7 @@ input[type="checkbox"]#nav-toggle {
 	@include bp($s3) {
 		position: static;
 		float:right;
-		margin-top: 2.666em;
+		margin-top: 3em;
 		width:66.666%;
 		//height:2.666em;
 		background-color: rgba(white,0);
@@ -175,7 +175,7 @@ input[type="checkbox"]#nav-toggle {
 				font-size: 0.666em;
 				border-bottom:3px solid rgba($gray-main,0);
 				margin:0 0 0 1.5em;
-				padding:1.666em 0 0.5em 0;
+				padding:1em 0 0.5em 0;
 				color:rgba($gray-main,1);
 				//background-color: red;
 				&:hover, &:focus {
