@@ -6589,16 +6589,31 @@ textarea {
     clear: both; }
 
 .servicegroup {
-  margin: 0 0 3em 0; }
+  margin: 2em auto 2em auto;
+  max-width: 35em;
+  font-size: 0.875em; }
   .servicegroup:before, .servicegroup:after {
     content: " ";
     display: table; }
   .servicegroup:after {
     clear: both; }
-  @media only screen and (min-width: 480px) {
+  @media only screen and (min-width: 768px) {
     .servicegroup {
+      max-width: none;
       float: left;
-      width: 33.333%; } }
+      width: 48%;
+      font-size: 0.875em;
+      margin-right: 4%; }
+      .servicegroup:nth-child(2) {
+        margin-right: 0; } }
+  @media only screen and (min-width: 1024px) {
+    .servicegroup {
+      font-size: 0.75em;
+      width: 49%;
+      margin-right: 2%; } }
+  @media only screen and (min-width: 1280px) {
+    .servicegroup {
+      font-size: 0.666em; } }
   .servicegroup i {
     font-size: 4em;
     color: rgba(255, 255, 255, 0.75);
@@ -6611,22 +6626,42 @@ textarea {
 .servicegroup__name {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: 900;
-  font-size: 1.25em;
+  font-size: 1.333em;
   line-height: 1;
-  margin-bottom: 0.5em;
-  text-transform: uppercase; }
+  margin-top: 0;
+  margin-bottom: 0.666em; }
+  .servicegroup__name span {
+    background-color: #bd4932;
+    color: #fff;
+    padding: 0 0.25em 0 0.333em; }
 
 .servicelist {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: 300;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 0;
   font-size: 1.125em;
   line-height: 1; }
   .servicelist li {
+    position: relative;
     margin: 0;
-    padding: 0.25em 0;
+    padding: 0.25em 0 0.25em 0.75em;
     list-style-type: none; }
+    .servicelist li:before {
+      position: absolute;
+      content: '';
+      width: 0.333em;
+      height: 0.333em;
+      background-color: #bd4932;
+      left: 0;
+      top: 0.5em; }
+    @media only screen and (min-width: 480px) {
+      .servicelist li {
+        float: left;
+        width: 49%;
+        margin-right: 2%; }
+        .servicelist li:nth-child(2n) {
+          margin-right: 0; } }
 
 .process:before, .process:after {
   content: " ";
@@ -6662,8 +6697,6 @@ textarea {
   @media only screen and (min-width: 1024px) {
     .widestoryitem {
       padding: 5em 0; } }
-  .widestoryitem.whatwedo {
-    padding: 4em 0; }
 
 .widestoryitem__figure {
   text-align: center; }
@@ -6786,7 +6819,7 @@ textarea {
     .storyitem {
       padding: 2em 0; } }
   .storyitem.whatwedo {
-    padding: 4em 0; }
+    padding: 4em 0 2em; }
 
 @media only screen and (min-width: 768px) {
   .storyitem__head {
@@ -6852,6 +6885,10 @@ textarea {
     font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     font-weight: 900;
     color: #bd4932; }
+    .storyitem__desc h5 span {
+      background-color: #bd4932;
+      color: #fff;
+      padding: 0 0.25em 0 0.333em; }
   .storyitem__desc h6 {
     margin-bottom: 0.5em;
     font-size: 1.125em;
@@ -6861,10 +6898,17 @@ textarea {
     text-transform: uppercase; }
     .storyitem__desc h6:first-child {
       margin-top: 0; }
+    .storyitem__desc h6 span {
+      background-color: #bd4932;
+      color: #fff;
+      padding: 0 0.25em 0 0.333em; }
     .storyitem__desc h6 + p {
       margin-top: 0; }
   .storyitem__desc p:first-of-type {
     margin-top: 0; }
+
+.allwedo {
+  padding-bottom: 2em; }
 
 .contact__hero {
   color: white;

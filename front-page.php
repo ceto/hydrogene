@@ -7,6 +7,7 @@
   </div>
 </header>
 
+
 <div class="storyitem whatwedo">
 	<div class="wrapper wrapper--wide">	
 		<header class="storyitem__head">
@@ -14,37 +15,50 @@
 			<h4 class="storyitem__title">
 				Átfogó szemlélettel állunk a feladathoz és együttes megoldást keresünk
 			</h4>
-			<div class="storyitem__icons">
-				<div class="storyitem__thirdicon">	
-					<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_arculat.svg';?>" alt="Arculat">
-					<h4>Arculat</h4>
-				</div>
-				<div class="storyitem__thirdicon">
-					<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_mobilweb.svg';?>" alt="Web/Mobil">
-					<h4>Web/Mobil</h4>
-				</div>
-				<div class="storyitem__thirdicon">
-					<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_strategia.svg';?>" alt="Stratégia">
-					<h4>Stratégia</h4>
-				</div>
-			</div> 
 		</header>
 		<div class="storyitem__desc">
-			<h6>Stratégia</h6>
-			<p>Gusztáv ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Axcepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sint amet Ernőbácsi orem ipsum marika ámen</p>
-			<h6>Design</h6>
-			<p>Gusztáv ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Axcepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sint amet Ernőbácsi orem ipsum marika ámen</p>
-			<h6>Web/Mobil</h6>
+			<h6><span>1.</span> Átfogó arculat- és weboldal tervezés</h6>
 			<p>Gusztáv ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<p>Axcepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sint amet Ernőbácsi orem ipsum marika ámen</p>
 		</div>
 	</div>
 </div>
 
-
-
+<section class="allwedo">
+	<div class="wrapper wrapper--wide">	
+		<div class="servicegroup">
+			<h4 class="servicegroup__name"><span>2.</span> Grafikai és vizuális tervezés</h4>
+			<ul class="servicelist">
+				<li>Arculattervezés</li>
+				<li>Logó</li>
+				<li>Névjegykártya</li>
+				<li>Kiadvány szerkesztés</li>
+				<li>Csomagolás tervezés</li>
+				<li>Plakát és brossúra</li>
+				<li>Belsőépítészet</li>
+				<li>3D látványtervezés</li>
+				<li>Illusztráció</li>
+			</ul>
+		</div>
+		<div class="servicegroup">
+			<h4 class="servicegroup__name"><span>3.</span> Honlap és webfejlesztés</h4>
+			<ul class="servicelist">
+				<li>Webdesign</li>
+				<li>Sitebuild</li>
+				<li>Front End fejlesztés</li>				
+				<li>UX tervezés</li>
+				<li>Tartalom tervezés</li>
+				<li>Honlap stratégia</li>
+				<li>Információ építészet</li>
+				<li>Egyedi sablon készítés</li>
+				<li>Reszponzív honlap</li>
+				<li>Mikroszájtok</li>
+				<li>Kampányoldalak</li>
+				<li>Hírlevél sablon</li>
+			</ul>
+		</div>
+	</div>
+</section>
 
 
 <section class="home__references">

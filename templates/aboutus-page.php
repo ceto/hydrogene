@@ -38,11 +38,9 @@
 						<h4 class="widestoryitem__title">Egységes megjelenés weben és offline</h4>
 					</header>
 					<div class="widestoryitem__desc">
-						<p>Együttesen gondoljuk át és kezeljük a webes és a offline megjelenést. Tevékenységünk érinti az arculat belsőépítészeti alkalmazását is. A következetesen használt arculat, kiemeli, megkülönbözteti vállalkozását a konkurensektől, és egységet teremt minden platformon.</p>
-						<p>Az üzleti élet szereplőinek szüksége van a sikeres piaci megjelenéshez, egységes egyedi grafikai arculatra. A jó arcualt méltó módon képviseli a cég eszmeiségét értékrendjét. Egyszerre, gazdaságos, rugalmas, egyszerű és felejthetetlen.
+						<p>Közösen gondoljuk át és kezeljük a webes és a nyomtatott arculati anyagok megjelenését. Kollégánk bevonásával a belsőépítészeti arculatot is megtervezzük. Mert a következetesen használt arculat, kiemeli, megkülönböztet a konkurensektől, és egységet teremt minden platformon.</p>
+						<p>Arra törekszünk, hogy az általunk tervezett munkák egyszerre legyenek  gazdaságosak, rugalmasak, egyszerűek és felejthetetlenek.
 						</p>
-						<p>Második bekezdés helyett inkább magunkról kéne irni, sztem lehet gyakorlatiasabb, ne neveljünk.</p>
-						
 					</div>
 				</div>
 			</div>
@@ -74,12 +72,12 @@
 				</figure>
 				<div class="widestoryitem__textcontent">
 					<header class="widestoryitem__head">
-						<h5 class="widestoryitem__subtitle">Legújabb technológia</h5>
-						<h4 class="widestoryitem__title">Jövőbarát korszerű fejlesztés és naprakész tudás</h4>
+						<h5 class="widestoryitem__subtitle">Tervezési stílus</h5>
+						<h4 class="widestoryitem__title">Egyszerűség és használhatóság</h4>
 					</header>
 					<div class="widestoryitem__desc">
-						<p>A jövőbe tervezünk, figyeljük a trendeket és reagálunk rájuk. Ahhoz, hogy a legjobban tudjunk alkalmazkodni a változásokhoz rendelkezzünk a megújulni tudás képességével, rajta kell tartanunk a szemünket a világ technológiai újításain.</p>
-						<p><strong>Ehelyett fejezet helyett lehet inkább</strong> a weblapkészítési stilusról kéne irni, pl tipos honlap, nagy white spacek, nagy betűk használata. Tagolt tartalom és nagy headingek. Teljesen kifutó blokkok. gridek és szinhasználat. </p>
+						<p>Letisztult megjelenés, nagy olvasható betűk használata jellemző a munkáinkra. Áttekinthetően tagoljuk és súlyozzuk a tartalmat, kiemelve ezzel a lényeges információkat.</p>
+						<p>A leegyszerűsített színhasználat és a következetesen tagolt tartalom, a szellősség mindig az áttekinthetőséget szolgálja.</p>
 					</div>
 				</div>
 			</div>
@@ -127,57 +125,6 @@
 </section>
 
 
-
-
-<section class="niceheading niceheading--inverse">
-	<div class="wrapper wrapper--wide">
-			<h3 class="niceheading__title"><small>értjük a dolgunkat</small>Szolgáltatásaink</h3>
-			<p class="niceheading__disclaimer">Grafikai arculatot és felhasználóbarát egyedi honlapokat tervezünk hagyományos és mobil eszközökre. Módszerünk átfogó, a tevékenységünk széleskörű.</p>
-	</div>
-</section>
-
-
-<section class="services">
-	<div class="wrapper wrapper--wide">
-		<div class="servicegroup">
-			<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_arculat.svg';?>" alt="Arculat" class="servicegroup__ill">
-			<i class="ss-icon ss-mug"></i>
-			<h4 class="servicegroup__name">Arculat</h4>
-			<ul class="servicelist">
-				<li>Arculattervezés</li>
-				<li>Logó tervezés</li>
-				<li>Csomagolás tervezés</li>
-				<li>Plakát és brossúra</li>
-				<li>Belsőépítészet</li>
-			</ul>
-		</div>
-		<div class="servicegroup">
-			<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_mobilweb.svg';?>" alt="Web/mobil" class="servicegroup__ill">
-			<i class="ss-icon ss-golf"></i>
-			<h4 class="servicegroup__name">Web/mobil</h4>
-			<ul class="servicelist">
-				<li>Webdesign</li>
-				<li>UX tervezés</li>
-				<li>Mobilbarát honlap</li>
-				<li>Tartalom kezelés</li>
-				<li>Mikroszájtok</li>
-				<li>Kampányoldal</li>
-			</ul>
-		</div>
-		<div class="servicegroup">
-			<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_strategia.svg';?>" alt="Stratégia" class="servicegroup__ill">
-			<i class="ss-icon ss-crosshair"></i>
-			<h4 class="servicegroup__name">Stratégia</h4>
-			<ul class="servicelist">
-				<li>Online marketing</li>
-				<li>Keresőoptimalizálás</li>
-				<li>Analitika</li>
-				<li>Tartalom stratégia</li>
-				<li>Hírlevél kampány</li>
-			</ul>
-		</div>
-	</div>				
-</section>
 
 <section class="niceheading">
 	<div class="wrapper wrapper--wide">

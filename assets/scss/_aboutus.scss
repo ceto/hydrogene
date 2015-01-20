@@ -181,12 +181,28 @@
 
 .servicegroup {
   @include clearfix();
-  margin:0 0 3em 0;
-  @include bp($s1) {
+  margin:2em auto 2em auto;
+  max-width: 35em;
+  font-size: 0.875em;
+  @include bp($s2) {
+    max-width:none;
     float: left;
-
-    width: 33.333%;
+    width: 48%;
+    font-size: 0.875em;
+    margin-right: 4%;
+    &:nth-child(2) {
+      margin-right: 0;
+    }
   }
+  @include bp($s3) {
+    font-size: 0.75em;
+    width: 49%;
+    margin-right: 2%;
+  }
+  @include bp($s4) {
+    font-size: 0.666em;
+  }
+
 
   i{
     font-size: 4em;
@@ -204,25 +220,55 @@
 .servicegroup__name {
   font-family: $sans-serif;
   font-weight: 900;
-  font-size: 1.25em;
+  font-size: 1.333em;
   line-height: 1;
+  margin-top: 0;
+  margin-bottom: .666em;
 
-  margin-bottom: .5em;
+  //text-transform: uppercase;
 
-  text-transform: uppercase;
+  span {
+    background-color: $secondary-color;
+    color:#fff;
+    padding:0 0.25em 0 0.333em;
+  }
 }
 .servicelist {
   font-family: $sans-serif;
   font-weight: 300;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 0;
   font-size: 1.125em;
   line-height: 1;
   li {
+    position: relative;
     margin: 0;
-    padding: 0.25em 0;
+    padding: 0.25em 0 0.25em 0.75em;
 
     list-style-type: none;
+    &:before {
+      position: absolute;
+      content:'';
+      width:0.333em;
+      height: 0.333em;
+      background-color: $secondary-color;
+      left:0;
+      top:0.5em;
+
+    }
+    
+    @include bp($s1){
+    float:left;
+    width:49%;
+    margin-right: 2%;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+
+
+
   }
 }
 
@@ -271,7 +317,7 @@
   }
 
   &.whatwedo {
-    padding:4em 0;
+    
   }
 
 }
@@ -451,7 +497,8 @@
   }
 
   &.whatwedo {
-    padding:4em 0;
+    padding:4em 0 2em;
+
   }
 
 }
@@ -535,6 +582,11 @@
     font-family: $sans-serif;
     font-weight: 900;
     color: $secondary-color;
+    span {
+      background-color: $secondary-color;
+      color:#fff;
+      padding:0 0.25em 0 0.333em;
+    }
 
 
   }
@@ -548,6 +600,11 @@
     &:first-child {
       margin-top:0;
     }
+    span {
+      background-color: $secondary-color;
+      color:#fff;
+      padding:0 0.25em 0 0.333em;
+    }
     + p {
       margin-top: 0;
     }
@@ -558,4 +615,10 @@
       margin-top: 0;
     }
   }
+
 }
+
+.allwedo {
+  padding-bottom: 2em;
+}
+
