@@ -1,9 +1,8 @@
 <?php while (have_posts()) : the_post(); ?>
 <header class="niceheading niceheading--inverse niceheading--ashero niceheading--homehero">
   <div class="wrapper wrapper--wide">
-      <h3 class="niceheading__title"><small>Egységes megjelenés</small>weben mobilon és offline</h3>
-      <p class="niceheading__disclaimer"><strong>Karakteres honlappal és arculattal</strong> segítjük céged növekedését.  Kreatív műhelyünkben, hatékony és felhasználóbarát web/mobil oldalakat tervezünk. Válassz dizájnert referencia alapján!</p>
-      <p><a href="<?php echo get_post_type_archive_link('reference'); ?>" class="btn btn--pseudo btn--opaque ">Ugrok a munkákra</a></p>
+      <h3 class="niceheading__title"><small>Egységes arculat</small>weben mobilon és nyomtatásban</h3>
+      <p><a href="<?php echo get_post_type_archive_link('reference'); ?>" class="btn btn--pseudo btn--opaque ">Nézd meg a munkáinkat</a></p>
   </div>
 </header>
 
@@ -11,15 +10,16 @@
 <div class="storyitem whatwedo">
 	<div class="wrapper wrapper--wide">	
 		<header class="storyitem__head">
-			<h5 class="storyitem__subtitle">Szolgáltatásaink</h5>
+			<h5 class="storyitem__subtitle">Komplett tervezés</h5>
 			<h4 class="storyitem__title">
-				Átfogó szemlélettel állunk a feladathoz és együttes megoldást keresünk
+				Karakteres honlap és egységes arculat
 			</h4>
 		</header>
 		<div class="storyitem__desc">
-			<h6><span>1.</span> Átfogó arculat- és weboldal tervezés</h6>
-			<p>Gusztáv ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Segítjük céged növekedésétÁtfogó szemlélet és együttes megoldás. Kreatív műhelyünkben, hatékony és felhasználóbarát web/mobil oldalakat tervezünk.</p>
 			<p>Axcepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sint amet Ernőbácsi orem ipsum marika ámen</p>
+			<p><a href="<?php echo get_the_permalink('69'); ?>" class="btn btn--pseudo btn--opaque ">Nézd meg hogyan</a></p>
+
 		</div>
 	</div>
 </div>
@@ -27,7 +27,8 @@
 <section class="allwedo">
 	<div class="wrapper wrapper--wide">	
 		<div class="servicegroup">
-			<h4 class="servicegroup__name"><span>2.</span> Grafikai és vizuális tervezés</h4>
+			<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_arculat.svg' ?>" alt="Grafikai és vizuális tervezés" class="servicegroup__ill">
+			<h4 class="servicegroup__name"><span>2.</span> Grafikai tervezés</h4>
 			<ul class="servicelist">
 				<li>Arculattervezés</li>
 				<li>Logó</li>
@@ -41,7 +42,8 @@
 			</ul>
 		</div>
 		<div class="servicegroup">
-			<h4 class="servicegroup__name"><span>3.</span> Honlap és webfejlesztés</h4>
+		<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_mobilweb.svg' ?>" alt="Honlap és webfejlesztés" class="servicegroup__ill">
+			<h4 class="servicegroup__name"><span>3.</span> Webfejlesztés</h4>
 			<ul class="servicelist">
 				<li>Webdesign</li>
 				<li>Sitebuild</li>

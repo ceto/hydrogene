@@ -1,7 +1,16 @@
 .niceheading--homehero {
-  //background-image: url('../img/melosasztal_light.jpg');
+  background-image: url('../img/melosasztal_light.jpg');
   border-bottom: 10px solid rgba(#fff,0.2);
-  background-color: $repa;
+  //background-color: #fff;
+
+  .niceheading__title {
+    font-size: 3.5em;
+    padding-left: 0;
+    &:before {
+      display: none;
+
+    }
+  }
 }
 .home__hero
 {

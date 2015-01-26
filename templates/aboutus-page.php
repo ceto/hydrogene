@@ -1,7 +1,7 @@
 <header class="niceheading niceheading--ashero niceheading--aboutushero">
 	<div class="wrapper wrapper--wide">
 			<h3 class="niceheading__title"><small>Kreatív műhelyünkben</small>Arculatot és honlapot tervezünk</h3>
-			<p class="niceheading__disclaimer"><strong>Átfogó szemlélettel.</strong> Ismerd meg tervezési irányelveinket. Bemutatjuk munka módszerünket és eszközeinket. Szeretnéd ha neked dolgoznánk? Lépj velünk <a href="<?php echo get_permalink(58); ?>">kapcsolatba.</a></p>
+			<p class="niceheading__disclaimer">Ismerd meg átfogó tervezési módszereinket, eszközeinket és a fejlesztés menetét. Szeretnéd ha neked dolgoznánk? Lépj velünk <a href="<?php echo get_permalink(58); ?>">kapcsolatba.</a></p>
 	</div>
 </header>
 

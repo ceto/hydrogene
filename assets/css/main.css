@@ -319,7 +319,8 @@ td, th {
 
 .fade {
   opacity: 0;
-  transition: opacity 0.15s linear; }
+  -webkit-transition: opacity 0.15s linear;
+          transition: opacity 0.15s linear; }
   .fade.in {
     opacity: 1; }
 
@@ -340,9 +341,12 @@ tbody.collapse.in {
   position: relative;
   height: 0;
   overflow: hidden;
-  transition-property: height, visibility;
-  transition-duration: 0.35s;
-  transition-timing-function: ease; }
+  -webkit-transition-property: height, visibility;
+          transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+          transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease; }
 
 /****** Base Colors ******/
 /*============= Color Definition =================*/
@@ -5334,7 +5338,8 @@ body {
       bottom: 5px; }
 
 .banner {
-  transition: all 0.4s ease; }
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease; }
   .banner .wrapper {
     position: relative; }
   @media only screen and (min-width: 1024px) {
@@ -5400,7 +5405,8 @@ body {
       float: left;
       width: 3.5em;
       margin-top: 2em;
-      transition: all 0.4s ease; } }
+      -webkit-transition: all 0.4s ease;
+              transition: all 0.4s ease; } }
   .banner__brand:hover, .banner__brand:focus {
     color: #212121;
     -webkit-transform: rotate(180deg);
@@ -5565,7 +5571,8 @@ input[type="checkbox"]#nav-toggle {
   height: 100%;
   z-index: 9;
   overflow: hidden;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
   visibility: hidden;
   opacity: 0; }
   @media only screen and (min-width: 1024px) {
@@ -5587,7 +5594,8 @@ input[type="checkbox"]#nav-toggle {
   padding: 0 0;
   max-width: 64em;
   width: 100%;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(100%);
@@ -5628,7 +5636,8 @@ input[type="checkbox"]#nav-toggle {
       text-transform: uppercase;
       text-decoration: none;
       color: white;
-      transition: all 0.4s ease; }
+      -webkit-transition: all 0.4s ease;
+              transition: all 0.4s ease; }
       .nav--main li > a:hover, .nav--main li > a:focus {
         text-decoration: none;
         color: #212121;
@@ -6202,7 +6211,8 @@ input[type='text'], input[type='tel'], input[type='email'], textarea {
   line-height: 1;
   width: 100%;
   padding: 1em 1em 1em;
-  transition: background-color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease;
+          transition: background-color 0.4s ease;
   color: rgba(255, 255, 255, 0.333);
   border: none;
   border: 1px solid rgba(255, 255, 255, 0);
@@ -6283,7 +6293,8 @@ textarea {
   white-space: nowrap;
   max-width: 18em;
   padding: 0.75em 1em;
-  transition: background-color 0.2s ease;
+  -webkit-transition: background-color 0.2s ease;
+          transition: background-color 0.2s ease;
   text-align: center;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.75);
@@ -6302,7 +6313,8 @@ textarea {
     width: 100%;
     height: 100%;
     content: '';
-    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
     border-width: 8px;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.125);
@@ -6423,8 +6435,13 @@ textarea {
   margin: 0; }
 
 .niceheading--homehero {
-  border-bottom: 10px solid rgba(255, 255, 255, 0.2);
-  background-color: #bd4932; }
+  background-image: url('../img/melosasztal_light.jpg');
+  border-bottom: 10px solid rgba(255, 255, 255, 0.2); }
+  .niceheading--homehero .niceheading__title {
+    font-size: 3.5em;
+    padding-left: 0; }
+    .niceheading--homehero .niceheading__title:before {
+      display: none; }
 
 .home__hero {
   background-color: #bd4932;
@@ -6621,19 +6638,27 @@ textarea {
     display: none; }
 
 .servicegroup__ill {
-  max-width: 7em; }
+  max-width: 5em;
+  display: none;
+  margin: 0 auto; }
+  @media only screen and (min-width: 480px) {
+    .servicegroup__ill {
+      max-width: 40px; } }
 
 .servicegroup__name {
+  position: relative;
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: 900;
-  font-size: 1.333em;
+  font-size: 2em;
   line-height: 1;
   margin-top: 0;
-  margin-bottom: 0.666em; }
+  margin-bottom: 0.666em;
+  color: #bd4932; }
   .servicegroup__name span {
     background-color: #bd4932;
     color: #fff;
-    padding: 0 0.25em 0 0.333em; }
+    padding: 0 0.25em 0 0.333em;
+    display: none; }
 
 .servicelist {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -6679,17 +6704,21 @@ textarea {
     clear: both; }
   @media only screen and (min-width: 768px) {
     .widestoryitem {
+      background-image: -webkit-linear-gradient(right, transparent 66.666%, #fff 66.666%);
       background-image: linear-gradient(to left, transparent 66.666%, #fff 66.666%); } }
   @media only screen and (min-width: 1600px) {
     .widestoryitem {
+      background-image: -webkit-linear-gradient(right, transparent 50%, #fff 50%);
       background-image: linear-gradient(to left, transparent 50%, #fff 50%); } }
   .widestoryitem:nth-child(2n) {
     background-color: #e6e5e5; }
     @media only screen and (min-width: 768px) {
       .widestoryitem:nth-child(2n) {
+        background-image: -webkit-linear-gradient(left, transparent 66.666%, #fff 66.666%);
         background-image: linear-gradient(to right, transparent 66.666%, #fff 66.666%); } }
     @media only screen and (min-width: 1600px) {
       .widestoryitem:nth-child(2n) {
+        background-image: -webkit-linear-gradient(left, transparent 50%, #fff 50%);
         background-image: linear-gradient(to right, transparent 50%, #fff 50%); } }
   @media only screen and (min-width: 768px) {
     .widestoryitem {
@@ -6841,7 +6870,7 @@ textarea {
   font-weight: bold; }
 
 .storyitem__title {
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1;
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: 900;
@@ -6907,8 +6936,12 @@ textarea {
   .storyitem__desc p:first-of-type {
     margin-top: 0; }
 
+.whatwedo {
+  background-color: #ededed; }
+
 .allwedo {
-  padding-bottom: 2em; }
+  padding: 2em 0 2em;
+  background-color: #fff; }
 
 .contact__hero {
   color: white;
@@ -7041,6 +7074,7 @@ textarea {
       z-index: 1;
       margin: 4em 0;
       padding: 0 2em;
+      background-image: -webkit-linear-gradient(left, #3697d6 50%, #db9e37 50%);
       background-image: linear-gradient(to right, #3697d6 50%, #db9e37 50%);
       box-shadow: 0 0 10px 0 black; } }
   @media only screen and (min-width: 768px) {
