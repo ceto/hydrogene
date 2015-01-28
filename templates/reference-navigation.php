@@ -20,10 +20,10 @@
 					}
 				}
 
-				.reference-<?php echo $next_reference->ID; ?> .refrow .refrow__title {
+				.reference-<?php echo $next_reference->ID; ?> .refrow .refrow__title a:hover,
+				.reference-<?php echo $next_reference->ID; ?> .refrow .refrow__title a:focus {
 					color: rgba(<?php echo get_post_meta( $next_reference->ID, '_refdata_color', 1 ); ?>,1);
 				}
-				
 	  
 	  
 				.reference-<?php echo $next_reference->ID; ?> .refrow .refrow__figure a:after {

@@ -8,7 +8,8 @@
 				}
 			}
 
-			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__title {
+			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__title a:hover,
+			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__title a:focus {
 				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 			

@@ -102,7 +102,7 @@ input[type="checkbox"]#nav-toggle {
 
 
 		.scrolled & {
-			//margin-top: 0;
+			margin-top: 1.125em;
 		}
 	}
 
@@ -177,10 +177,15 @@ input[type="checkbox"]#nav-toggle {
 				margin:0 0 0 1.5em;
 				padding:1em 0 0.5em 0;
 				color:rgba($gray-main,1);
-				//background-color: red;
+				.navigation--main--whitetext &{
+					color:rgba(#fff,0.75);
+				}
 				&:hover, &:focus {
 					
 					border-color: rgba($gray-main,1);
+					.navigation--main--whitetext &{
+						border-color:rgba(#fff,0.75);
+					}
 				}
 				
 				.scrolled & {

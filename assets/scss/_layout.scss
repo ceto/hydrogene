@@ -130,6 +130,14 @@
     padding-top: 9em;
 
   }
+
+  .niceheading__title {
+    padding-left: 0;
+    &:before {
+      display: none;
+    }
+  }
+
 }
 
 .niceheading--inverse {

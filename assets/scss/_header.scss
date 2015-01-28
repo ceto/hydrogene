@@ -27,7 +27,22 @@
     }
 
     &.scrolled {
+      height:4em;
       background-color: rgba(#fff,0.95);
+      .single-reference & {
+        background-color: rgba(#000,0.95);   
+      }
+
+      .page-template-template-contact & {
+        background-color: rgba($mustar,0.95);   
+      }
+      .page-template-template-aboutus & {
+        background-color: rgba($repa,0.95);   
+      }
+      // .post-type-archive-reference & {
+      //   background-color: rgba($gray-xxlight,0.95);
+      // }
+
       color: $gray-main;
       top:-7.5em;
       &.ison {
@@ -45,8 +60,11 @@
     //width:100%;
     height:0px;
     border:none;
-    border-top: 1px solid rgba(#000,0.333);
+    border-top: 1px solid rgba(#000,0.0);
     //border-bottom: 1px solid rgba(#000,0.125);
+    .single-reference & {
+      border-top: 1px solid rgba(#fff,0);   
+    }
 
     @include bp($s2) {
       left: 1.5em;
@@ -61,6 +79,8 @@
       right:3em;
       max-width: 58em;
     }
+    
+    
   }
 }
 .banner__brand {
@@ -100,7 +120,8 @@
 
     transition: all .4s ease;
     .scrolled & {
-      //margin-top: 0.875em;
+      margin-top: 0.75em;
+      width: 2.25em;
       //font-size: 1em;
       //left:1.5em;
       //top: .75em;
@@ -113,6 +134,10 @@
     color: rgba($gray-main,1);
     transform: rotate(180deg);
   }
+}
+
+.banner__brand--white {
+  filter: invert(1);
 }
 
 
@@ -132,6 +157,8 @@
   max-width: 5em;
   overflow: hidden;
   white-space: nowrap;
+  transition: all .4s ease;
+
 
   @include bp($s2) {
     left:3em;
@@ -144,9 +171,17 @@
     font-size: 2em;
     margin-left: 0.5em;
     margin-top: 1.5em;
+    .scrolled & {
+      margin-top: 0.75em;
+      font-size: 1.666em;
+    }
   }
 
 
+}
+
+.banner__pagetitle--white {
+  color:rgba(#fff,0.75);
 }
 
 .hero {
@@ -156,9 +191,23 @@
   background-color: $gray-main;
   border-bottom: 10px solid rgba(#fff,.2);
   // background-image: url(../img/playmobil.png);
-  // background-repeat: no-repeat;
-  // background-size: auto 90%;
-  // background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.hero--inverse {
+  color: $gray-main;
+  background-color: #fff;
+  //border-bottom: 10px solid rgba(#000,.1);
+  .hero__title {
+    opacity:1;
+    //color:$gray-light;
+  }
+
+  .hero__disclaimer {
+  }
 }
 
 

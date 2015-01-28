@@ -4,7 +4,7 @@
   @include clearfix();
 }
 .refarchive__hero {
-  background-color: $kek;
+  //background-color: $gray-xxlight;
   //color:$gray-main;
 }
 
@@ -183,7 +183,7 @@
   margin: 0 0 0 0;
   padding-bottom: .25em;
 
-  color: rgba($gray-main,.75);
+  color: $gray-main;
   border-bottom: 1px solid rgba(#fff,.125);
   .refsingle & {
     //font-size: 3em;
@@ -196,7 +196,7 @@
     //color: $secondary-color;
     &:hover,
     &:focus {
-      color: $gray-main;
+      color: $secondary-color;
 
     }
   }

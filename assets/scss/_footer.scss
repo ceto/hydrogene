@@ -1,6 +1,6 @@
 .standardcontact {
-  background-color: $secondary-color;
-  background-image: url('../img/melosasztal.jpg');
+  background-color: $gray-main;
+  //background-image: url('../img/melosasztal_light.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 .contactstart {
   @include clearfix();
   padding: 2em 0 3em;
-  color:#fff;
+  color: $gray-light;
   text-align: left;
 
 }
@@ -26,7 +26,7 @@
   font-size: 2em;
   line-height: 1;
   font-weight: 900;
-  opacity: 0.666;
+  //opacity: 0.666;
 
   max-width: $s3;
   margin-top:0;

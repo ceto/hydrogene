@@ -1,9 +1,21 @@
-<header class="niceheading niceheading--ashero niceheading--aboutushero">
+<header class="aboutus__hero hero">
+  <div class="wrapper wrapper--wide">
+    <div class="hero__textblock">
+      <h1 class="hero__title">Honlapot és arculatot</h1>
+      <h2 class="hero__subtitle">Tervezünk</h2>
+      <p class="hero__disclaimer">
+        Ismerd meg átfogó tervezési módszereinket, eszközeinket és a fejlesztés menetét. Szeretnéd ha neked dolgoznánk? Lépj velünk <a href="<?php echo get_permalink(58); ?>">kapcsolatba.</a>
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- <header class="niceheading niceheading--ashero niceheading--aboutushero">
 	<div class="wrapper wrapper--wide">
 			<h3 class="niceheading__title"><small>Kreatív műhelyünkben</small>Arculatot és honlapot tervezünk</h3>
 			<p class="niceheading__disclaimer">Ismerd meg átfogó tervezési módszereinket, eszközeinket és a fejlesztés menetét. Szeretnéd ha neked dolgoznánk? Lépj velünk <a href="<?php echo get_permalink(58); ?>">kapcsolatba.</a></p>
 	</div>
-</header>
+</header> -->
 
 <section class="process">
 					

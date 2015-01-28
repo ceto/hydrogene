@@ -1,5 +1,5 @@
 <?php while (have_posts()) : the_post(); ?>
-<header class="niceheading niceheading--inverse niceheading--ashero niceheading--homehero">
+<header class="niceheading niceheading--ashero niceheading--homehero">
   <div class="wrapper wrapper--wide">
       <h3 class="niceheading__title"><small>Egységes arculat</small>weben mobilon és nyomtatásban</h3>
       <p><a href="<?php echo get_post_type_archive_link('reference'); ?>" class="btn btn--pseudo btn--opaque ">Nézd meg a munkáinkat</a></p>
