@@ -22,16 +22,17 @@
 		<div class="widestoryitem">
 			<div class="wrapper wrapper--wide">
 				<figure class="widestoryitem__figure">
-					<i class="ss-icon ss-crosshair"></i>
+					<div class="diszes">
+						<span class="number">1.</span>
+						<span class="text">Weboldal tervezés</span>						
+					</div>
 				</figure>
 				<div class="widestoryitem__textcontent">
 					<header class="widestoryitem__head">	
-						<h5 class="widestoryitem__subtitle">Stratégia és Tervezés</h5>
-						<h4 class="widestoryitem__title">Elmélyülés a feladatban, célok rögzítése</h4>
+						<h5 class="widestoryitem__subtitle">Weboldal tervezés</h5>
+						<h4 class="widestoryitem__title">Felhasználói élmény tervezése</h4>
 					</header>
 					<div class="widestoryitem__desc">
-						<p>
-						A tervezés megkezdése előtt legfontosabb tájékozódni a feladat körülményeiről a környezetről. Kis esettanulmányt, kutatást végzünk, megvizsgáljuk a konkurensek piaci szereplését, megjelenését. 	Elmélyülünk a tevékenységben, legyen az turisztikai vagy akár egészségügyi szakterületen.</p>
 						<p>Hiszünk abban, hogy csak a megfelelő tájékozottság, tisztánlátás melett lehet elkezdeni a megalapozott tervezési munkát</p>
 						<p><strong>Inkább itt</strong> egybe kéne letudni a statégia-marketing blamát. lehet még azó a tartalom tervezésről és tartalom stratégiáról, szövegírási támpontok készítéséről. Információ építészetről. Kis onsite seorol.</p>
 					</div>
@@ -42,17 +43,19 @@
 		<div class="widestoryitem">
 			<div class="wrapper wrapper--wide">
 				<figure class="widestoryitem__figure">
-					<i class="ss-icon ss-skullandcrossbones"></i>
+					<div class="diszes">
+						<span class="number">2.</span>
+						<span class="text">Design és Stílus</span>
+					</div>
 				</figure>
 				<div class="widestoryitem__textcontent">
 					<header class="widestoryitem__head">	
-						<h5 class="widestoryitem__subtitle">Arculat és Design</h5>					
-						<h4 class="widestoryitem__title">Egységes megjelenés weben és offline</h4>
+						<h5 class="widestoryitem__subtitle">Design és Stílus</h5>					
+						<h4 class="widestoryitem__title">Karakteres vizuális arculat</h4>
 					</header>
 					<div class="widestoryitem__desc">
-						<p>Közösen gondoljuk át és kezeljük a webes és a nyomtatott arculati anyagok megjelenését. Kollégánk bevonásával a belsőépítészeti arculatot is megtervezzük. Mert a következetesen használt arculat, kiemeli, megkülönböztet a konkurensektől, és egységet teremt minden platformon.</p>
-						<p>Arra törekszünk, hogy az általunk tervezett munkák egyszerre legyenek  gazdaságosak, rugalmasak, egyszerűek és felejthetetlenek.
-						</p>
+						<p>Egységes vizuális atmoszféra megteremtése a cél minden platformon. Együtt gondoljuk át a webes és nyomtatott arculati elemeket. Kollégánk bevonásával, az arculat belsőépítészeti alkalmazását is megtervezzük.</p>
+						<p>Szeretjük a letisztult, egyszerű megjelenést. Bátor betű méret, és nagy kifutó terek használata jellemző a weboldalainkra. Tagoljuk és hierarchizáljuk a tartalmat, áttekinthetővé és érthetővé téve így a lényeges információkat.</p>
 					</div>
 				</div>
 			</div>
@@ -61,49 +64,38 @@
 		<div class="widestoryitem">
 			<div class="wrapper wrapper--wide">	
 				<figure class="widestoryitem__figure">
-					<i class="ss-icon ss-mug"></i>
+					<div class="diszes">
+						<span class="number">3.</span>
+						<span class="text">Reszponzív honlap</span>
+					</div>
 				</figure>
 				<div class="widestoryitem__textcontent">
 					<header class="widestoryitem__head">
 						<h5 class="widestoryitem__subtitle">Reszponzív honlap</h5>
-						<h4 class="widestoryitem__title">Weboldalad minden eszközön élményt nyújt</h4>
+						<h4 class="widestoryitem__title">Élmény minden eszközön</h4>
 					</header>
 					<div class="widestoryitem__desc">
 						<p>Honlapod rugalmasan illeszkedik a végtelen számú eszköztípus kijelzőjére. Kompromisszum mentes élményt nyújt mobilon, tableten és asztali számítógépen is.</p>
-						<p>Nem csupán formai-, hanem tartalom szervezési metodika a <em>“Mobil az első”</em> tervezési módszer. Hierarchizáljuk a tartalmat. A minimális és elégséges információ tálalásával kezdünk, majd bővítjük azt és haladunk a “nagyképernyős” egész felé.</p>
+						<p>Nem csupán formai, hanem tartalom szervezési metodika a “Mobil az első” tervezési módszer. Hierarchizáljuk a tartalmat. A minimális és elégséges információ tálalásával kezdünk, majd bővítjük azt és haladunk a “nagyképernyős” egész felé.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
 
-		<div class="widestoryitem">
-			<div class="wrapper wrapper--wide">	
-				<figure class="widestoryitem__figure">
-					<i class="ss-icon ss-helm"></i>
-				</figure>
-				<div class="widestoryitem__textcontent">
-					<header class="widestoryitem__head">
-						<h5 class="widestoryitem__subtitle">Tervezési stílus</h5>
-						<h4 class="widestoryitem__title">Egyszerűség és használhatóság</h4>
-					</header>
-					<div class="widestoryitem__desc">
-						<p>Letisztult megjelenés, nagy olvasható betűk használata jellemző a munkáinkra. Áttekinthetően tagoljuk és súlyozzuk a tartalmat, kiemelve ezzel a lényeges információkat.</p>
-						<p>A leegyszerűsített színhasználat és a következetesen tagolt tartalom, a szellősség mindig az áttekinthetőséget szolgálja.</p>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<div class="widestoryitem">
 			<div class="wrapper wrapper--wide">
 				<figure class="widestoryitem__figure">
-					<i class="ss-icon ss-golf"></i>
+					<div class="diszes">
+						<span class="number">4.</span>
+						<span class="text">Tartalomkezelés</span>
+					</div>
 				</figure>
 				<div class="widestoryitem__textcontent">
 					<header class="widestoryitem__head">	
 						<h5 class="widestoryitem__subtitle">Tartalomkezelés</h5>
-						<h4 class="widestoryitem__title">Honlapod tartalma házon belül szerkeszthető</h4>
+						<h4 class="widestoryitem__title">Honlapod házon belül szerkeszthető	</h4>
 					</header>
 					<div class="widestoryitem__desc">
 						<p>Elsősorban a legnépszerűbb nyílt forrású tartalomkezelőre Wordpressre, fejlesztünk sablonmentes, teljesen egyedi megjelenésű és testreszabott funkciókkal bíró honlapokat. A tartalmak, jól ismert, könnyen kezelhető és intuitiv adminisztrációs felületen szerkeszthetők.</p>
@@ -117,15 +109,17 @@
 		<div class="widestoryitem">
 			<div class="wrapper wrapper--wide">
 				<figure class="widestoryitem__figure">
-					<i class="ss-icon ss-thunderstorm"></i>
+					<div class="diszes">
+						<span class="number">5.</span>
+						<span class="text">Személyes kapcsolat</span>
+					</div>
 				</figure>
 				<div class="widestoryitem__textcontent">
 					<header class="widestoryitem__head">	
 						<h5 class="widestoryitem__subtitle">Személyes kapcsolat</h5>					
-						<h4 class="widestoryitem__title">Közvetlenül a tervezővel állsz kapcsolatban</h4>
+						<h4 class="widestoryitem__title">Közvetlen kommunikáció</h4>
 					</header>
 					<div class="widestoryitem__desc">
-
 						<p>
 						Gördülékeny ügymenet. Minden egy kézben. Piciny design csapatunk éllovasai szenvedélyes digitális kézművesek akik, &mdash; a tervezésen és kivitelezésen túl &mdash; döntéseket hoznak és kommunikálnak veled. </p>
 						<p>Nagy ügynökségekkel ellentétben, &mdash; az effektív munkát hátráltató &mdash; ügymeneti körök nélkül közvetlenül a tervezővel állsz kapcsolatban.</p>

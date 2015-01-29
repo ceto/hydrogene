@@ -1,12 +1,11 @@
 .aboutus__hero {
+  border-bottom: 10px solid rgba(#000, .2);
   background-color: $repa;
   background-image: url('../img/melosasztal.jpg');
-  border-bottom: 10px solid rgba(#000, 0.2);
 }
 
 .niceheading--aboutushero {
   //background-color: $kekeszold;
-
 }
 
 
@@ -14,7 +13,6 @@
 .teammember {
   position: relative;
 
-  
   background-color: $gray-xxlight;
 
   @include clearfix();
@@ -24,8 +22,6 @@
   &:nth-child(3n) {
     background-color: $gray-xlight;
   }
-
-  
 }
 
 .teammember__figure {
@@ -34,39 +30,37 @@
 
   text-align: center;
   //max-width: 480px;
+
   @include bp($s2) {
     margin: 0 -1.5em;
   }
-
   @include bp($s3) {
     position: absolute;
+
     width: 40%;
     height: 100%;
 
-    img {
-      display: none;
-    }  
-
     background-repeat: no-repeat;
     background-size: cover;
-    .beke &{
-      background-image: url('../img/portre_matyas.jpg');
-      background-position:left center;
-      right:0;
+    img {
+      display: none;
     }
+    .beke & {
+      right: 0;
 
+      background-image: url('../img/portre_matyas.jpg');
+      background-position: left center;
+    }
     .szabo & {
+      left: 0;
+
       background-image: url('../img/portre_gabor.jpg');
-      background-position:right center;
-      left:0;
+      background-position: right center;
     }
   }
-
   @include bp($s5) {
     //width: 50%;
   }
-
-  
 }
 
 .teammember__info {
@@ -76,26 +70,26 @@
 
   @include bp($s3) {
     font-size: .875em;
-    margin:0;
-
     //float: left;
 
     width: 60%;
+    margin: 0;
     //max-width: none;
     //margin-left: 40%;
     padding: 5em 0;
     .teammember:nth-child(2n) & {
       //margin-left: 0;
-      float:right;
+      float: right;
     }
   }
-  
   @include bp($s4) {
-    font-size: 0.75em;
+    font-size: .75em;
+
     padding: 6em 0;
   }
   @include bp($s5) {
-    font-size: 0.875em;
+    font-size: .875em;
+
     padding: 7em 0;
     // width: 50%;
     // margin-left: 50%;
@@ -184,109 +178,155 @@
 
 
 .widestoryitem {
-  @include clearfix();
+  
 
-  padding:5em 0 3em 0;
   background-color: $gray-xlight;
+
+  @include clearfix();
   @include bp($s2) {
-    background-image: linear-gradient(to left, transparent 66.666%, #fff 66.666%);
+    //background-image: linear-gradient(to left, transparent 66.666%, $gray-light 66.666%);
   }
   @include bp($s5) {
-    background-image: linear-gradient(to left, transparent 50%, #fff 50%);
+    //background-image: linear-gradient(to left, transparent 50%, $gray-light 50%);
   }
 
   &:nth-child(2n) {
     background-color: $gray-xxlight;
     
     @include bp($s2) {
-      background-image: linear-gradient(to right, transparent 66.666%, #fff 66.666%);
+      //background-image: linear-gradient(to right, transparent 66.666%, $gray-light 66.666%);
     }
     @include bp($s5) {
-      background-image: linear-gradient(to right, transparent 50%, #fff 50%);
+      //background-image: linear-gradient(to right, transparent 50%, $gray-light 50%);
     }
-
+    
+    .wrapper {
+      @include bp($s2) {
+        //background-image: linear-gradient(to right, transparent 66.666%, $gray-light 66.666%);
+      }
+      @include bp($s5) {
+        //background-image: linear-gradient(to right, transparent 50%, $gray-light 50%);
+      }
+    }
   }
-  @include bp($s2) {
-    padding:4em 0;
-  }
-  @include bp($s3) {
-    padding:5em 0;
-  }
-
   .wrapper {
-    //max-width: 50em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 
+    @include bp($s2) {
+      padding-top: 4em;
+      padding-bottom: 4em;
+     //background-image: linear-gradient(to left, transparent 66.666%, $gray-light 66.666%);
+    }
+    @include bp($s3) {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+    @include bp($s5) {
+      padding-top: 7em;
+      padding-bottom: 7em;
+      //background-image: linear-gradient(to left, transparent 50%, $gray-light 50%);
+    }
   }
-
-  &.whatwedo {
-
-  }
-
 }
 
 .widestoryitem__figure {
-  text-align: center;
+  text-align: left;
   
   @include bp($s2) {
-    width:33.333%;
-    float:left;
-    .widestoryitem:nth-of-type(2n) &  {
-     float:right;
+    float: left;
+
+
+    width: 33.333%;
+    .widestoryitem:nth-of-type(2n) & {
+      float: right;
+      padding-left: 2em;
+      text-align: right;
     }
   }
   @include bp($s3) {
-    
+    font-size: .875em;
   }
-
   @include bp($s4) {
-    //width:25%;
+    //font-size: .75em;
   }
   @include bp($s5) {
-    width:50%;
+    font-size: 1em;
+    //width: 50%;
   }
+  
+}
 
-  i{
-    font-size: 8em;
+.diszes {
+  .number {
+    font-family: $sans-serif;
+    margin-top: -0.1em;
+    font-size: 16em;
+    font-weight: 900;
+    font-style: italic;
     line-height: 1;
-    color:$secondary-color;
+
+    //padding:5.25em; 
+    display: inline-block;
+
+    color: rgba($secondary-color,0.75);
+    text-shadow: -0.0333em 0.0333em 0 rgba($gray-light,0.5), 0.0333em 0.0333em 0 $gray-main;
+    //background-color: $gray-light;
+
+    //font-feature-settings: 'lnum' 1;
+    
     &:before {
       //line-height: 1;
     }
   }
+  .text {
+
+    font-size: 1em;
+    font-weight: bold;
+    display: block;
+    margin-top: 5em;
+        display: none;
+  }
 }
+
+
 .widestoryitem__textcontent {
-  @include clearfix();
   margin-top: 3em;
+
+  @include clearfix();
   @include bp($s2) {
+    float: right;
+
+    width: 66.666%;
     margin-top: 0;
-    width:66.666%;
-    float:right;
     padding-left: 1.5em;
-    .widestoryitem:nth-of-type(2n) &  {
-      float:left;
-      padding-left:0;
+    .widestoryitem:nth-of-type(2n) & {
+      float: left;
+
       padding-right: 1.5em;
+      padding-left: 0;
     }
   }
   @include bp($s3) {
+    font-size: .875em;
+
     padding-left: 2.5em;
-    font-size: 0.875em;
-    .widestoryitem:nth-of-type(2n) &  {
-      padding-left:0;
+    .widestoryitem:nth-of-type(2n) & {
       padding-right: 2.5em;
+      padding-left: 0;
     }
   }
-
   @include bp($s4) {
     //width:75%;
-    font-size: 0.75em;
+    //font-size: .75em;
   }
   @include bp($s5) {
-    width:50%;
+    //width: 50%;
+    font-size: 1em;
     padding-left: 5em;
-    .widestoryitem:nth-of-type(2n) &  {
-      padding-left:0;
+    .widestoryitem:nth-of-type(2n) & {
       padding-right: 5em;
+      padding-left: 0;
     }
   }
 }
@@ -296,27 +336,29 @@
   }
   @include bp($s3) {
   }
-
   @include bp($s4) {
   }
 }
 .widestoryitem__subtitle {
-  margin:0 0 0.5em;
   font-size: 1.125em;
-  line-height: 1;
   font-weight: bold;
-  //font-family: $sans-serif;
-  //font-weight: 300;
-  //text-transform: uppercase;
+  line-height: 1;
+
+  margin: 0 0 .5em;
+    //display: none;
 }
 .widestoryitem__title {
-  font-size: 2em;
-  line-height: 1;
   font-family: $sans-serif;
+  font-size: 2em;
   //text-transform: uppercase;
   font-weight: 900;
-  margin:0 0 0.333em;
-  color:$secondary-color;
+  line-height: 1;
+
+  margin: 0 0 .333em;
+
+  color: $secondary-color;
+
+
 }
 
 .widestoryitem__icons {
@@ -324,58 +366,56 @@
 }
 
 .widestoryitem__thirdicon {
+  float: left;
+
+  width: 33.333%;
+
   text-align: center;
-  width:33.333%;
-  float:left;
   img {
     max-width: 70%;
     //filter:grayscale(1);
   }
   h4 {
-    margin-top: 0.333em;
     font-size: 1.25em;
     line-height: 1;
+
+    margin-top: .333em;
   }
 }
 
 .widestoryitem__desc {
   font-family: $sans-serif;
   font-weight: 300;
-  
-
-  h5{
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    font-size: 1.125em;
-    line-height: 1.125;
+  h5 {
     font-family: $sans-serif;
+    font-size: 1.125em;
     font-weight: 900;
+    line-height: 1.125;
+
+    margin-top: 0;
+    margin-bottom: .5em;
+
     color: $secondary-color;
-
-
   }
   h6 {
-    margin-bottom: 0.5em;
-    font-size: 1.125em;
-    line-height: 1.125;
     font-family: $sans-serif;
+    font-size: 1.125em;
     font-weight: 900;
+    line-height: 1.125;
+
+    margin-bottom: .5em;
+
     text-transform: uppercase;
     &:first-child {
-      margin-top:0;
+      margin-top: 0;
     }
     + p {
       margin-top: 0;
     }
   }
-
   p {
     &:first-of-type {
       margin-top: 0;
     }
   }
 }
-
-
-
-

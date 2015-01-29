@@ -8,7 +8,7 @@
 	font-size: 1.5em;
 	list-height:1;
 	color:rgba($gray-main,0.75);
-	@include bp($s3) {
+	@include bp($s2) {
 		display: none;
 	}
 	span {
@@ -55,7 +55,7 @@ input[type="checkbox"]#nav-toggle {
 			top: 50%;
 			transform: translateY(-50%);
 		}
-		@include bp($s3) {
+		@include bp($s2) {
 			visibility:visible;
 			opacity:1;
 
@@ -71,7 +71,7 @@ input[type="checkbox"]#nav-toggle {
 .navigation--main { //nav
 
 	padding:0 0;
-	background-color: rgba($gray-main,1);
+	background-color: rgba(#fff,0.95);
 	min-height: 100vh;
 	position: fixed;
 	top:0;
@@ -81,16 +81,17 @@ input[type="checkbox"]#nav-toggle {
 	z-index: 9;
 	overflow: hidden;
 
+
 	transition: all .4s ease;
 
 	visibility: hidden;
 	opacity: 0;
-	@include bp($s3) {
+	@include bp($s2) {
 		visibility: visible;
 		opacity: 1
 	}
 
-	@include bp($s3) {
+	@include bp($s2) {
 		position: static;
 		float:right;
 		margin-top: 3em;
@@ -111,7 +112,7 @@ input[type="checkbox"]#nav-toggle {
 
 .nav--main { //ul
 	margin:0 auto;
-	padding:0 0;
+	padding:1em 1em;
 	max-width: 64em;
 	width:100%;
 	transition: all .4s ease;
@@ -124,7 +125,7 @@ input[type="checkbox"]#nav-toggle {
 
   }
 	
-	@include bp($s3) {
+	@include bp($s2) {
 		margin:0;
 		padding:0 0;
 		top:0;
@@ -145,34 +146,33 @@ input[type="checkbox"]#nav-toggle {
 		margin:0;
 		padding:0;
 		text-align: right;
-		@include bp($s3) {
+		@include bp($s2) {
 			display: inline-block;
+			text-align: right;
 		}
 
 		> a {
 			display: block;
-			border-bottom:0.2em solid rgba(white,0.75);
-			padding:0.75em 0 0.125em 0;
-			font-size: 2em;
+			padding:0.25em 0;
+			font-size: 2.25em;
 			line-height: 1;
 			font-family: $sans-serif;
 			font-weight: 900;
 			text-transform: uppercase;
 			text-decoration:none;
-			color:rgba(#fff,1);
+			color:rgba($gray-main,1);
 			transition: all .4s ease;
 
 			&:hover, &:focus {
 				text-decoration:none;
 				color:rgba($gray-main,1);
-				border-color: rgba($gray-main,1);
 			}
 
 			
 
-			@include bp($s3) {
+			@include bp($s2) {
 				display: inline-block;
-				font-size: 0.666em;
+				font-size: 0.75em;
 				border-bottom:3px solid rgba($gray-main,0);
 				margin:0 0 0 1.5em;
 				padding:1em 0 0.5em 0;
@@ -196,6 +196,10 @@ input[type="checkbox"]#nav-toggle {
 						//color:rgba(black,1)
 					}
 				}
+			}
+
+			@include bp($s3) {
+				font-size: 0.666em;
 			}
 
 		}

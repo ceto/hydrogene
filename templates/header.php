@@ -13,6 +13,5 @@
         endif;
       ?>
     </nav>
-    <hr>
     </div>
 </header>
