@@ -1,8 +1,8 @@
 <header class="aboutus__hero hero">
   <div class="wrapper wrapper--wide">
     <div class="hero__textblock">
-      <h1 class="hero__title">Honlapot és arculatot</h1>
-      <h2 class="hero__subtitle">Tervezünk</h2>
+      <h1 class="hero__title">okos és szép honlapokat</h1>
+      <h2 class="hero__subtitle">tervezünk</h2>
       <p class="hero__disclaimer">
         Ismerd meg átfogó tervezési módszereinket, eszközeinket és a fejlesztés menetét. Szeretnéd ha neked dolgoznánk? Lépj velünk <a href="<?php echo get_permalink(58); ?>">kapcsolatba.</a>
       </p>

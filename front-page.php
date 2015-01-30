@@ -1,7 +1,7 @@
 <?php while (have_posts()) : the_post(); ?>
 <header class="niceheading niceheading--ashero niceheading--homehero">
   <div class="wrapper wrapper--wide">
-      <h3 class="niceheading__title"><small>Egységes arculat</small>weben mobilon és nyomtatásban</h3>
+      <h3 class="niceheading__title"><small>felhasználói élményt tervezünk</small>Weben és offline</h3>
       <p><a href="<?php echo get_post_type_archive_link('reference'); ?>" class="btn btn--pseudo btn--opaque ">Nézd meg a munkáinkat</a></p>
   </div>
 </header>
@@ -10,9 +10,9 @@
 <div class="storyitem whatwedo">
 	<div class="wrapper wrapper--wide">	
 		<header class="storyitem__head">
-			<h5 class="storyitem__subtitle">Komplett tervezés</h5>
+			<h5 class="storyitem__subtitle">Átfogó arculat és karakteres honlap</h5>
 			<h4 class="storyitem__title">
-				Karakteres honlap és egységes arculat
+				Komplett tervezés
 			</h4>
 		</header>
 		<div class="storyitem__desc">

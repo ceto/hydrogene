@@ -5140,7 +5140,7 @@ body {
     line-height: 1;
     margin: 0 0 0.25em 0;
     display: block;
-    text-transform: lowercase; }
+    text-transform: none; }
 
 .niceheading__disclaimer {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -6452,8 +6452,18 @@ textarea {
   .niceheading--homehero .niceheading__title {
     font-size: 3.5em;
     padding-left: 0; }
+    .niceheading--homehero .niceheading__title small {
+      font-size: 50%; }
     .niceheading--homehero .niceheading__title:before {
       display: none; }
+    @media only screen and (min-width: 768px) {
+      .niceheading--homehero .niceheading__title {
+        font-size: 5em;
+        margin-top: 1.25em; } }
+    @media only screen and (min-width: 1024px) {
+      .niceheading--homehero .niceheading__title {
+        font-size: 5em;
+        margin-top: 0.25em; } }
 
 .home__hero {
   background-color: #bd4932;
@@ -6546,7 +6556,7 @@ textarea {
   font-weight: bold; }
 
 .storyitem__title {
-  font-size: 2.5em;
+  font-size: 1.875em;
   line-height: 1;
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: 900;
