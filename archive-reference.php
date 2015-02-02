@@ -4,7 +4,7 @@
       <h1 class="hero__title">Arculati és webdesign</h1>
       <h2 class="hero__subtitle">referencia</h2>
       <p class="hero__disclaimer">
-        Egyedi munkák, weben mobilon és offline. Több tucat sikeres projekt közül megmutatjuk a kedvenceinket. Hasonlót szeretnél? Vedd fel velünk a <a href="<?php echo get_permalink(58); ?>">kapcsolatot.</a>
+        Változatos és egyedi munkák, weben mobilon és offline. Több tucat sikeres projekt közül megmutatjuk a kedvenceinket. Hasonlót szeretnél? Vedd fel velünk a <a href="<?php echo get_permalink(58); ?>">kapcsolatot.</a>
       </p>
     </div>
   </div>

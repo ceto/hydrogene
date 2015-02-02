@@ -1,7 +1,7 @@
 .aboutus__hero {
   border-bottom: 10px solid rgba(#000, .2);
   background-color: $repa;
-  background-image: url('../img/melosasztal.jpg');
+  background-image: url('../img/hero_rolunk.jpg');
 }
 
 .niceheading--aboutushero {
@@ -181,6 +181,9 @@
   
 
   background-color: $gray-xlight;
+    background-color: $gray-xlight;
+  background-image:url('../img/noise.png');
+  background-repeat: repeat;
 
   @include clearfix();
   @include bp($s2) {

@@ -1,6 +1,8 @@
 .contact__hero {
   color: white;
-  background-color: $mustar;
+  background-color: black;
+  background-image: url('../img/hero_kapcsolat.jpg');
+  border-bottom: 10px solid rgba(#000, .2);
 }
 
 
@@ -8,7 +10,7 @@
   padding: 3em 0;
 
   color: white;
-  background-color: $gray-main;
+  background-color: $secondary-color;
 
   @include clearfix();
 }
@@ -167,7 +169,7 @@
   padding: 1em;
 
   color: white;
-  background-color: $kek;
+  background-color: $gray-main;
 
   @include clearfix();
   //border-radius: 2px;
@@ -195,7 +197,7 @@
     margin: 4em 0;
     padding: 0 2em;
 
-    background-image: linear-gradient(to right, $kek 50%, $mustar 50% );
+    background-image: linear-gradient(to right, $gray-main 50%, $secondary-color 50% );
     box-shadow: 0 0 10px 0 black;
   }
   .balfel {
@@ -213,7 +215,7 @@
       width: 50%;
       padding: 2em 1em 2em 1.5em;
 
-      border-left: 10px solid rgba($kek,.333);
+      border-left: 10px solid rgba($gray-main,.333);
     }
   }
   .contact__title {

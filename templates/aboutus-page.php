@@ -1,7 +1,7 @@
 <header class="aboutus__hero hero">
   <div class="wrapper wrapper--wide">
     <div class="hero__textblock">
-      <h1 class="hero__title">okos és szép honlapokat</h1>
+      <h1 class="hero__title">felhasználóbarát honlapokat</h1>
       <h2 class="hero__subtitle">tervezünk</h2>
       <p class="hero__disclaimer">
         Ismerd meg átfogó tervezési módszereinket, eszközeinket és a fejlesztés menetét. Szeretnéd ha neked dolgoznánk? Lépj velünk <a href="<?php echo get_permalink(58); ?>">kapcsolatba.</a>
@@ -152,11 +152,11 @@
 						<h4 class="teammember__titulus">Art Director, Designer</h4>
 					</header>
 					<div class="teammember__desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nulla voluptas ratione ex, eos error nam, sapiente, sequi, cumque dolor eligendi quod minus quo necessitatibus fugit. Árvíztűrő tükörfúrógép amet inventore itaque quasi dolorem!</p>
+						<p>Mátyás a grafikai és arculati feladatok vezetője és kivitelezője. Ő felelős a formákért, a színekért és a vizuális atmoszféráért. Kitalálja a honlapok látványvilágát. Hangulati vázlatokat és grafikai terveket készít. Illusztrációkat, ikonokat rajzol és 3D látványterveket készít</p>
 						<blockquote>
 							<p>“Unde ducimus soluta consequatur expedita voluptatum modi tempora sed aliquam ea.”</p>
 						</blockquote>
-						<p>Cumque quas minima aliquid nisi a maxime, fugit facilis perspiciatis beatae magnam similique doloremque, itaque consectetur nulla tempore voluptatum adipisci ut consequuntur.</p>
+						<p>A marketing anyagokhoz ötletekkel látja el a kommunikációs szakembert. Viszi az ügyeket. Vizuális kérdésekben segít a Gábornak és grafikai megoldásokkal támogatja munkájában.</p>
 					</div>
 					<div class="teammember__footer">
 						<ul class="teammember__social">
@@ -180,11 +180,11 @@
 						<h4 class="teammember__titulus">Webfejlesztő</h4>
 					</header>
 					<div class="teammember__desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nulla voluptas ratione ex, eos error nam, sapiente, sequi, cumque dolor eligendi quod minus quo necessitatibus fugit. Árvíztűrő tükörfúrógép amet inventore itaque quasi dolorem! Unde ducimus soluta consequatur expedita voluptatum modi tempora sed aliquam ea.</p>
+						<p>Gábor alkotja a csapat technológiai szárnyát. Drótvázakon tervezi meg a készülő honlap struktúráját, funkcióit és tartalmait. Átfogó webes ismereteire támaszkodva dolgozza ki a felhasználói élményt.</p>
 						<blockquote>
 							<p>“Darabokra szeded, megvizsgálod az alkotó részeket, majd összerakod újra. Megismerted az egészet”</p>
 						</blockquote>
-						<p>Cumque quas minima aliquid nisi a maxime, fugit facilis perspiciatis beatae magnam similique doloremque, itaque consectetur nulla tempore voluptatum adipisci ut consequuntur.</p>
+						<p>Frontend fejlesztőként, magabiztosan és tisztán épít valid HTML/CSS/JS weboldalakat. Nem jön zavarba egy kis PHP programozástól sem. A "szabványos web" elkötelezettje. Alap filozófiája: "Decide in the browser"</p>
 					</div>
 					<div class="teammember__footer">
 						<ul class="teammember__social">
