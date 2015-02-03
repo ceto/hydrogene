@@ -10,15 +10,15 @@
 <div class="storyitem whatwedo">
 	<div class="wrapper wrapper--wide">	
 		<header class="storyitem__head">
-			<h5 class="storyitem__subtitle">Átfogó arculat és karakteres honlap</h5>
+			<h5 class="storyitem__subtitle">Cégarculat és honlap tervezés egy kézben</h5>
 			<h4 class="storyitem__title">
 				Komplett tervezés
 			</h4>
 		</header>
 		<div class="storyitem__desc">
-			<p>Segítjük céged növekedésétÁtfogó szemlélet és együttes megoldás. Kreatív műhelyünkben, hatékony és felhasználóbarát web/mobil oldalakat tervezünk.</p>
-			<p>Axcepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sint amet Ernőbácsi orem ipsum marika ámen</p>
-			<p><a href="<?php echo get_the_permalink('69'); ?>" class="btn btn--pseudo btn--opaque ">Nézd meg hogyan</a></p>
+			<p>Karakteres arculattal, és — abba szervesen illeszkedő — felhasználóbarát honlappal segítjük céged növekedését. A személyes kapcsolat a tervezővel, és a kis létszámú műhelymunka lehetővé teszi, hogy nagyszerű és egyedi dolgok szülessenek weben és nyomtatásban.</p>
+			<p>Kreatív stúdiónk honlaptervezési és arculati szolgáltatásait, azon cégeknek ajánljuk, akik ügynökségi minőséget szeretnénének emberi léptékű árakkal. Legyen ez egy hosszantartó és eredményes barátság kezdete.</p>
+			<p><a href="<?php echo get_the_permalink('69'); ?>" class="btn btn--pseudo btn--opaque ">Hogyan dolgozunk</a></p>
 
 		</div>
 	</div>

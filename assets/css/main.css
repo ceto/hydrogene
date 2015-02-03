@@ -5459,7 +5459,7 @@ body {
   height: 5em;
   background-image: url('../img/noise.png');
   background-repeat: repeat; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .topmenubg {
       height: 8em; } }
   .single-reference .topmenubg {
@@ -6486,7 +6486,7 @@ textarea {
 @media only screen and (min-width: 768px) {
   .hero__textblock {
     float: left;
-    width: 31em; } }
+    width: 32em; } }
 
 .hero__title {
   font-size: 2.125em;

@@ -194,7 +194,7 @@
   //border-bottom: 10px solid rgba(#fff,.2);
           background-image:url('../img/noise.png');
   background-repeat: repeat;
-  @include bp($s3) {
+  @include bp($s2) {
     height:8em;
   }
 

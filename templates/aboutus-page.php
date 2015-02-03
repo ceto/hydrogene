@@ -1,10 +1,10 @@
 <header class="aboutus__hero hero">
   <div class="wrapper wrapper--wide">
     <div class="hero__textblock">
-      <h1 class="hero__title">felhasználóbarát honlapokat</h1>
-      <h2 class="hero__subtitle">tervezünk</h2>
+      <h1 class="hero__title">piciny műhelyünkben nagyszerű</h1>
+      <h2 class="hero__subtitle">Honlapok és arculatok készülnek</h2>
       <p class="hero__disclaimer">
-        Ismerd meg átfogó tervezési módszereinket, eszközeinket és a fejlesztés menetét. Szeretnéd ha neked dolgoznánk? Lépj velünk <a href="<?php echo get_permalink(58); ?>">kapcsolatba.</a>
+        Hydrogene egy két személyes design stúdió Budapest szívében. Ismerd meg honlaptervezési módszereinket, eszközeinket és a fejlesztés menetét. Szeretnéd ha neked dolgoznánk? Lépj velünk <a href="<?php echo get_permalink(58); ?>">kapcsolatba.</a>
       </p>
     </div>
   </div>
@@ -184,7 +184,7 @@
 						<blockquote>
 							<p>“Darabokra szeded, megvizsgálod az alkotó részeket, majd összerakod újra. Megismerted az egészet”</p>
 						</blockquote>
-						<p>Frontend fejlesztőként, magabiztosan és tisztán épít valid HTML/CSS/JS weboldalakat. Nem jön zavarba egy kis PHP programozástól sem. A "szabványos web" elkötelezettje. Alap filozófiája: "Decide in the browser"</p>
+						<p>Frontend fejlesztőként, magabiztosan és tisztán épít valid HTML/CSS/JS weboldalakat. Nem jön zavarba speciális funkciók szerveroldali programozásától sem. A "szabványos web" elkötelezettje. Fejlesztői filozófiája: "Decide in the browser"</p>
 					</div>
 					<div class="teammember__footer">
 						<ul class="teammember__social">
