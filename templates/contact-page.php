@@ -4,7 +4,7 @@
 		  <h1 class="hero__title">Nálad a labda</h1>
 		  <h2 class="hero__subtitle">Beszélgessünk</h2>
 		  <p class="hero__disclaimer">
-		  	Örömmel veszünk részt egyedi tervezési feladatokban, történjen az webre, mobilra vagy klasszikus offline felületekre. Az együttműködés kapcsolatfelvétellel kezdődik.
+		  	Örömmel veszünk részt egyedi tervezési feladatokban, történjen az webre/mobilra vagy klasszikus offline felületekre. Legyen ez egy hosszan tartó, eredményes barátság kezdete.
 		  </p>
 		</div>
 	</div>

@@ -1,5 +1,5 @@
 .niceheading--homehero {
-  border-bottom: 10px solid rgba($secondary-color,.333);
+  border-bottom: 10px solid rgba(black,.25);
   background-image: url('../img/hero_home.jpg');
   //background-color: #fff;
   .niceheading__title {
@@ -20,7 +20,6 @@
       margin-top: .25em;
     }
     small {
-      font-size: 50%;
     }
     //color:$gray-light;
     &:before {
@@ -41,14 +40,14 @@
   @include bp($s2) {
     float: left;
 
-    width: 32em;
+    width: 33em;
   }
 }
 
 .hero__title {
-  //font-family: $headingfont;
+  //font-family: $sans-serif;
   font-size: 2.125em;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
 
   margin: 0 0 .25em;
@@ -80,6 +79,8 @@
 }
 
 .hero__disclaimer {
+  //font-family: $sans-serif;
+  //font-weight: 300;
   font-size: 1.125em;
 
   margin-top: .5em;
@@ -130,65 +131,54 @@
 }
 
 .storyitem__head {
+  @include clearfix();
+  margin-bottom: 2em;
   @include bp($s2) {
     float: left;
 
-    width: 33.333%;
+    width: 50%;
     //text-align: right;
     padding-right: 1em;
+    margin-bottom: 0;
   }
   @include bp($s3) {
     font-size: .875em;
 
-    width: 50%;
+    //width: 50%;
   }
   @include bp($s4) {
     font-size: .75em;
   }
 }
 .storyitem__subtitle {
-  font-size: 1.125em;
-  font-weight: bold;
+  font-size: 1em;
   line-height: 1;
 
   margin: 0 0 .5em;
-  //font-family: $sans-serif;
-  //font-weight: 300;
+  font-family: $sans-serif;
+  font-weight: 300;
   //text-transform: uppercase;
 }
+
 .storyitem__title {
   font-family: $sans-serif;
-  font-size: 1.875em;
+  font-size: 1.666em;
   //text-transform: uppercase;
   font-weight: 900;
-  line-height: 1;
+  line-height: 1.25;
 
   margin: 0 0 1em;
 
   color: $secondary-color;
 }
-
-.storyitem__icons {
-  margin-bottom: 1em;
+.storyitem__signo {
+  max-width: 80px;
+  //float:right;
+  margin-top: -2em;
+  margin-bottom: 0.666em;
+  display: block;
 }
 
-.storyitem__thirdicon {
-  float: left;
-
-  width: 33.333%;
-
-  text-align: center;
-  img {
-    max-width: 70%;
-    //filter:grayscale(1);
-  }
-  h4 {
-    font-size: 1.25em;
-    line-height: 1;
-
-    margin-top: .333em;
-  }
-}
 
 .storyitem__desc {
   font-family: $sans-serif;
@@ -197,13 +187,13 @@
   @include bp($s2) {
     float: left;
 
-    width: 66.666%;
+    width: 50%;
     padding-left: 1em;
   }
   @include bp($s3) {
     font-size: .875em;
 
-    width: 50%;
+    //width: 50%;
   }
   @include bp($s4) {
     font-size: .75em;

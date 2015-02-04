@@ -1,10 +1,10 @@
 .standardcontact {
   background-color: $gray-main;
-  //background-image: url('../img/melosasztal_light.jpg');
+  background-image: url('../img/melosasztal.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  //background-attachment: fixed;
 
   border-bottom: 10px solid rgba(#000,0.2);
   text-align: center;
@@ -14,9 +14,13 @@
 .contactstart {
   @include clearfix();
   padding: 2em 0 3em;
-  color: $gray-light;
+  color: rgba(#fff,0.75);
   text-align: left;
 
+}
+
+.contactstart--notabs {
+  padding-top: 4em;
 }
 
 .contactstart__title {
@@ -88,10 +92,12 @@
     color: rgba($gray-main,.75);
   }
   .balfel {
+    margin-bottom: 1em;
     @include bp($s2) {
       float: left;
 
       max-width: 25%;
+      margin-bottom: 0;
     }
   }
   .jobbfel {
@@ -106,10 +112,15 @@
 }
 
 .pagefooter__brand {
+  @include hide-text();
+    background-image: url('../img/logo_full_black.png');
+    background-size: auto 100%;
+    background-position: left bottom;
+    background-repeat: no-repeat;
   font-family: $sans-serif;
   font-weight: 900;
 
-  display: inline-block;
+  display: block;
 
   text-decoration: none;
   text-transform: uppercase;
@@ -121,6 +132,8 @@
   line-height: 1;
 
   margin: 0;
+  margin-left: 1.56em;
+  margin-top: -0.333em;
 }
 
 .pagefooter__helper {
@@ -130,4 +143,5 @@
   font-weight: 900;
 
   margin: 0;
+
 }

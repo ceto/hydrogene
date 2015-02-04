@@ -1,7 +1,7 @@
 <?php while (have_posts()) : the_post(); ?>
 <header class="niceheading niceheading--inverse niceheading--ashero niceheading--homehero">
   <div class="wrapper wrapper--wide">
-      <h3 class="niceheading__title"><small>élményt tervezünk</small>Weben és offline</h3>
+      <h3 class="niceheading__title"><small>élményt tervezünk</small>Honlap és arculat</h3>
       <p><a href="<?php echo get_post_type_archive_link('reference'); ?>" class="btn btn--pseudo btn--opaque ">Nézd meg a munkáinkat</a></p>
   </div>
 </header>
@@ -10,14 +10,18 @@
 <div class="storyitem whatwedo">
 	<div class="wrapper wrapper--wide">	
 		<header class="storyitem__head">
-			<h5 class="storyitem__subtitle">Cégarculat és honlap tervezés egy kézben</h5>
+<!-- 			<h5 class="storyitem__subtitle">Legyen ez egy hosszan tartó, eredményes barátság kezdete</h5> -->
+			<img class="storyitem__signo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo_text_black.png" alt="Hydrogene">
 			<h4 class="storyitem__title">
-				Komplett tervezés
+				Kreatív stúdiónk honlaptervezési és arculati szolgáltatásait, azon cégeknek ajánljuk, akik ügynökségi minőséget szeretnének emberi léptékű árakkal.
 			</h4>
+
+
 		</header>
 		<div class="storyitem__desc">
-			<p>Karakteres arculattal, és — abba szervesen illeszkedő — felhasználóbarát honlappal segítjük céged növekedését. A személyes kapcsolat a tervezővel, és a kis létszámú műhelymunka lehetővé teszi, hogy nagyszerű és egyedi dolgok szülessenek weben és nyomtatásban.</p>
-			<p>Kreatív stúdiónk honlaptervezési és arculati szolgáltatásait, azon cégeknek ajánljuk, akik ügynökségi minőséget szeretnénének emberi léptékű árakkal. Legyen ez egy hosszantartó és eredményes barátság kezdete.</p>
+			<h5>Cégarculat és honlap tervezés egy kézben</h5>
+			<p>Karakteres arculattal, és — abba szervesen illeszkedő — felhasználóbarát honlappal segítjük céged növekedését.</p><p>A személyes kapcsolat a tervezővel, és a kis létszámú műhelymunka lehetővé teszi, hogy nagyszerű és egyedi dolgok szülessenek weben és nyomtatásban.</p>
+			<p>Legyen ez egy hosszan tartó, eredményes barátság kezdete.</p>
 			<p><a href="<?php echo get_the_permalink('69'); ?>" class="btn btn--pseudo btn--opaque ">Hogyan dolgozunk</a></p>
 
 		</div>

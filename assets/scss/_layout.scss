@@ -32,7 +32,7 @@
     max-width: 42em;
   }
   @include bp($s4) {
-    max-width: 36em;
+    max-width: 40em;
   }
 }
 
@@ -40,6 +40,10 @@
   max-width: 32em;
 }
 
+.wrapper--full {
+  padding:0;
+  width:100%;
+}
 
 
 .page__content {
@@ -110,7 +114,7 @@
 
 
 .niceheading {
-  padding: 4em 0;
+  padding: 4em 0 4em;
   text-align: left;
 }
 
@@ -119,11 +123,12 @@
   background-position: center center;
   background-size: auto 100%;
   background-repeat: no-repeat;
+  padding: 5em 0 4em;
 
   @include bp($s2){
 
     .wrapper {
-      padding-right: 20%;
+      //padding-right: 20%;
     }
   }
   @include bp($s3){
@@ -139,12 +144,30 @@
     &:before {
       display: none;
     }
+    small {
+      font-family: $sans-serif;
+      font-weight: 900;
+      font-size: 33.333%;
+      opacity: 0.75;
+    }
+  }
+
+  .niceheading__disclaimer {
+
   }
 
 }
 
 .niceheading--inverse {
   background-color: $secondary-color;
+}
+
+.niceheading__preinfo {
+  font-family: $serif;
+  font-weight: normal;
+  font-size: 1.25em;
+  margin:0 0 0.125em 0;
+  //opacity: 0.75;
 }
 .niceheading__title {
   position: relative;
@@ -153,6 +176,7 @@
   font-size: 2em;
   line-height: 1;
   font-weight: 900;
+  margin-top:0;
 
   max-width: $s3;
 
@@ -160,6 +184,7 @@
 
   text-align: left;
   text-transform: uppercase;
+  color: $textcolor-light;
 
   .niceheading--inverse & {
     color: rgba(#fff,1);

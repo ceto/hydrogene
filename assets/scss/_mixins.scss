@@ -17,6 +17,13 @@
   }
 }
 
+
+@mixin hide-text() {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }

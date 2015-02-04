@@ -1,8 +1,8 @@
 <header class="aboutus__hero hero">
   <div class="wrapper wrapper--wide">
     <div class="hero__textblock">
-      <h1 class="hero__title">piciny műhelyünkben nagyszerű</h1>
-      <h2 class="hero__subtitle">Honlapok és arculatok készülnek</h2>
+      <h1 class="hero__title">Digitális műhelymunka</h1>
+      <h2 class="hero__subtitle">Weben és offline</h2>
       <p class="hero__disclaimer">
         Hydrogene egy két személyes design stúdió Budapest szívében. Ismerd meg honlaptervezési módszereinket, eszközeinket és a fejlesztés menetét. Szeretnéd ha neked dolgoznánk? Lépj velünk <a href="<?php echo get_permalink(58); ?>">kapcsolatba.</a>
       </p>

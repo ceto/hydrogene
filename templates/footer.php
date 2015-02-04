@@ -3,7 +3,7 @@
   	<div class="balfel">
   		<a class="pagefooter__brand" href="<?php echo esc_url(home_url('/')); ?>">Hydrogene</a>
   		<p class="pagefooter__slogan">
-  			Web, mobil és offline tervezés
+  			Honlap és arculat tervezés
   		</p>
   	</div>
   	<div class="jobbfel">
