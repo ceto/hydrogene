@@ -1,4 +1,4 @@
-.page__content, .single__content, .refsingle__content {
+.singlepage__content, .singlepost__content, .refsingle__content {
 	color:$textcolor;
 	a {
 		color: $secondary-color;
@@ -32,17 +32,49 @@
 		
 	}
 
-	ul {
+	ul,ol {
 		margin: 1.25em 0;
-		padding-left: 2.5em;
+		padding-left: 1.333em;
+
+		@include bp($s2) {
+			padding-left: 3.5em;
+		}
 		li {
-			list-style-type: square;
+			list-style-type: none;
 			padding-left: 0;
 			margin:0.5em 0;
+			position: relative;
+			&:before {
+				position: absolute;
+				left:-1.25em;
+				top:0.4em;
+
+				content:'';
+				display: block;
+				width:0.5em;
+				height: 0.5em;
+				background-color: $secondary-color;
+			}
 		}
 	}
 	ol {
+		counter-reset: my-awesome-counter;
 		li {
+			counter-increment: my-awesome-counter;
+			&:before {
+				content: counter(my-awesome-counter) '.';
+				background-color: transparent;
+				width:auto;
+				height:auto;
+				font-family: $sans-serif;
+				font-size: 0.875em;
+				font-weight: 900;
+				line-height: 1;
+				top:0.333em;
+				left:-1.5em;
+				color:$secondary-color;
+				text-align: right;
+			}
 
 		}
 	}

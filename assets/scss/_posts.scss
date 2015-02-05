@@ -36,24 +36,35 @@
 
 
 	
-.singlepost__header.niceheading--ashero {
-	padding-bottom: 2em;
-	hr {
-		margin-top: 3em;
-		height:1px;
-		border:none;
-		background-color: $gray-light;
+.singlepost__header, .singlepage__header {
+	&.niceheading--ashero {
+		padding-bottom: 2em;
+		hr {
+			margin-top: 3em;
+			height:1px;
+			border:none;
+			background-color: $gray-light;
+		}
 	}
+
 }
-.singlepost__title {
-	//text-transform: none;
+
+.singlepost__title, .singlepage__title {
 	font-size: 2.5em;
 }
 
+.singlepost__content, .singlepage__content  {
+	padding-bottom: 4em;
+}
 
 
-
-
+.archiveentry {
+	.readmore {
+		font-size: 0.75em;
+		// font-family: $serif;
+		//font-weight: 300;
+	}
+}
 .archiveentry__header {
 	padding:2em 0;
 }
@@ -87,4 +98,25 @@
 
 
 
+.readmore {
+	font-family: $sans-serif;
+	font-weight: 900;
+	font-size: 0.875em;
+	line-height: 1;
 
+
+	text-decoration: none;
+	color:$textcolor-light;	
+	border-bottom: 2px solid transparent;
+	&:hover,&:focus {
+  	color:$secondary-color;
+  	border-bottom-color: currentColor;
+
+  }
+}
+
+
+
+.postlist {
+	padding-bottom: 4em;
+}

@@ -16,29 +16,16 @@
 
   color: $gray-main;
   border-bottom: 10px solid rgba(#fff,.2);
-  //border-bottom:1.5vw solid white;
   background-color: $gray-xlight;
   background-image:url('../img/noise.png');
   background-repeat: repeat;
   .reference--listelem:nth-child(2n) & {
-    background-color: $gray-xxlight;
-  }
-  .reference--listelem:nth-child(3n) & {
     background-color: #fff;
   }
+
   .wrapper {
     position: relative;
 
-    @include bp($s2) {
-      //height: 66.666vh;
-      min-height: 25em;
-      max-height: 25em;
-    }
-    @include bp($s3) {
-      //height: 66.666vh;
-      min-height: 28em;
-      max-height: 28em;
-    }
   }
 }
 
@@ -51,7 +38,7 @@
 
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: auto 95%;
+  background-size: auto 100%;
 
   backface-visibility: hidden;
   //margin-top: -2em;
@@ -59,20 +46,26 @@
   @include bp($s2) {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 60%;
 
-    width: 50%;
+    width: 40%;
     height: 100%;
     margin: 0;
     //transform: translate(0, -50%);
     .reference:nth-of-type(2n) & {
       left: 0;
+      background-position: center center;
     }
     a img {
       visibility: hidden;
     }
   }
-  @include bp($s4) {
+  @include bp($s5) {
+    left: 50%;
+    width:50%;
+    .reference:nth-of-type(2n) & {
+      left: 0;
+    }
   }
   a {
     position: relative;
@@ -95,9 +88,9 @@
     }
     img {
       width: auto;
-      max-width: 18em;
+      max-width: 75%;
       //max-width: 90%;
-      max-height: 15em;
+      max-height: 25em;
       //width:100%;
       //display: block;
     }
@@ -118,25 +111,24 @@
     //font-size: 1.125em;   
   }
   @include bp($s2) {
-    position: absolute;
-    top: 50%;
-    left: 0;
-
     width: 60%;
-    padding: 3em 2em 3em 2em;
+    padding: 4em 0 3em;
 
-    transform: translate(0, -50%);
     .reference:nth-of-type(2n) & {
-      left: 40%;
-
-      padding: 3em 2em 3em 2em;
+      float:right;
     }
   }
+  @include bp($s3) {
+    //padding: 3em 0;
+  }
+
   @include bp($s4) {
     //font-size: 0.875em;
-    padding: 4em 3em 4em 3em;
+    //padding: 4em 0 3em;
   }
   @include bp($s5) {
+    width:50%;
+    padding: 5em 0 4em;
   }
   .innerwrap {
     max-width: 32em;
@@ -183,7 +175,7 @@
   //white-space: nowrap;
 
   margin: 0 0 0 0;
-  padding-bottom: .25em;
+  //padding-bottom: .25em;
 
   color: $gray-main;
   border-bottom: 1px solid rgba(#fff,.125);
@@ -286,32 +278,32 @@
 .refsingle {
   .refrow {
     color: white;
-//     border-top: none;
-    border-bottom: 10px solid rgba(#fff,.2);
+    border-bottom: 10px solid rgba(#000,.125);
 
-//     .wrapper {
-//       @include bp($s2) {
-//         min-height: 45em;
-//         max-height: 45em;
-//       }
-//       @include bp($s4) {
-//         //height: 100vh;
-//         //max-height: 100vh;
-//         min-height: 38em;
-//         max-height: 45em;
-//       }
-//     }
-//   }
-//   .refrow__figure {
-//     background-position: left center;
-//     background-size: auto 90%;
-//   }
+    
+  
+    .refrow__header {
+      @include bp($s2) {
+        padding: 9em 0 4em;
+      }
+      @include bp($s3) {
+        padding: 10em 0 4em;
+      }
+      @include bp($s4) {
+        padding: 9em 0 4em;
+      }
+      @include bp($s5) {
+        padding: 11em 0 5em;
+      }
+    }
+
+    .refrow__title {
+      padding-bottom: 0.25em;
+    }
   }
 }
 
-.refsingle__header {
-  @include clearfix();
-}
+
 
 .refsingle__tasks {
   margin-top: .75em;
@@ -454,7 +446,9 @@
   }
 }
 
-
+.refsingle__content {
+  padding-bottom: 4em;
+}
 .refsingle__quoteblock {
   margin: 0 0;
   padding: 4em 0 3em;

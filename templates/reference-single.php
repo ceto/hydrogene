@@ -1,4 +1,4 @@
-<section class="topmenubg"></section>
+<!-- <section class="topmenubg"></section> -->
 <?php while (have_posts()) : the_post(); ?>
 
   <article <?php post_class('refsingle'); ?>>
@@ -17,7 +17,7 @@
 </section>
 
     <section id="singletop" class="refsingle__reallife">
-      <div class="wrapper wrapper--fullwidth">
+      <div class="wrapper wrapper--full">
 <!--         <div class="wrapper wrapper--wide">
           <h3 class="whiteblock__title">
             <small><?php the_title(); ?></small>

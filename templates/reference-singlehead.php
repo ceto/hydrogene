@@ -47,6 +47,7 @@
 			.refsingle.reference-<?php echo get_the_ID(); ?> .refrow:after,
 			.inverseblock,
 			.refsingle__quoteblock,
+			.refsingle__content ul li:before,
 			.refsingle__content > h1:before,
 			.refsingle__content > h2:before,
 			.refsingle__content > h3:before,
@@ -57,6 +58,7 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 
+			.refsingle__content ol li:before,
 			.refsingle__content a,
 			.refsingle__quote:before {
 				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);

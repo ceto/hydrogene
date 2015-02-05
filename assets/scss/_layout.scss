@@ -186,6 +186,8 @@
   text-transform: uppercase;
   color: $textcolor-light;
 
+
+
   .niceheading--inverse & {
     color: rgba(#fff,1);
   }
@@ -200,6 +202,14 @@
     width: 1.875em;
     .niceheading--inverse & {
       background-color: rgba(#fff,0.5);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color:inherit;
+    &:hover, &:focus {
+      color:$secondary-color;
     }
   }
 
@@ -223,6 +233,7 @@
   font-weight: 300;
 
   margin-top: 0;
+  margin-bottom: 0.5em;
 
 
   text-align: left;
