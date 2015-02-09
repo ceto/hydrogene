@@ -5123,6 +5123,14 @@ body {
   font-weight: normal;
   font-size: 1.25em;
   margin: 0 0 0.125em 0; }
+  .niceheading__preinfo .feat {
+    font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-size: 75%;
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #bd4932; }
 
 .niceheading__title {
   position: relative;
@@ -5778,6 +5786,9 @@ input[type="checkbox"]#nav-toggle {
   .reflist:after {
     clear: both; }
 
+.refarchive__header {
+  padding-bottom: 4em; }
+
 .refrow {
   position: relative;
   overflow: hidden;
@@ -5797,7 +5808,7 @@ input[type="checkbox"]#nav-toggle {
   margin: 2em auto 1em;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: auto 100%;
+  background-size: cover;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
   @media only screen and (min-width: 768px) {

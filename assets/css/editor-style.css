@@ -1,3 +1,13 @@
+
+.mce-content-body img {
+  max-width: 100%;
+  height:auto;
+}
+
+.wp-caption {
+  max-width: 100%;
+}
+
 /**
  * Updating this file with Bootstrap changes:
  *

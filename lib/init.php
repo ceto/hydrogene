@@ -32,6 +32,8 @@ function roots_setup() {
 }
 add_action('after_setup_theme', 'roots_setup');
 
+
+
 /**
  * Register sidebars
  */

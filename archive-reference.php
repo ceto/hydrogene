@@ -1,21 +1,17 @@
-<header class="refarchive__hero hero hero--inverse">
-  <div class="wrapper wrapper--wide">
-    <div class="hero__textblock">
-      <h1 class="hero__title">Arculati és webdesign</h1>
-      <h2 class="hero__subtitle">referencia</h2>
-      <p class="hero__disclaimer">
-        Változatos és egyedi munkák, weben mobilon és offline. Több tucat sikeres projekt közül megmutatjuk a kedvenceinket. Hasonlót szeretnél? Vedd fel velünk a <a href="<?php echo get_permalink(58); ?>">kapcsolatot.</a>
+  <header class="refarchive__header niceheading niceheading--ashero">
+    <div class="wrapper wrapper--wide">
+      <section class="niceheading__preinfo">
+        <span class="feat">Egyedi munkák, weben és nyomtatásban</span>          
+      </section>
+      <h1 class="singlepost__title niceheading__title">Arculati és webdesign referencia</h1>
+      <p class="niceheading__disclaimer">
+        Több tucat sikeres projekt áll a hátunk mögött. Számos vállalkozást segítettünk honlappal vagy arculattal. Változatos feladataink közül megmutatjuk a kedvenceinket. Hasonlót szeretnél?
       </p>
+      <a class="readmore" href="<?php echo get_permalink(58); ?>">Lépj velünk a kapcsolatba…</a>
+      <!-- <hr> -->
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- <header class="niceheading niceheading--ashero">
-  <div class="wrapper wrapper--wide">
-      <h3 class="niceheading__title"><small>Arculati és webdesign</small>referencia</h3>
-      <p class="niceheading__disclaimer">Egyedi munkák, weben mobilon és offline. Több tucat sikeres projekt közül megmutatjuk a kedvenceinket. Hasonlót szeretnél? Vedd fel velünk a <a href="<?php echo get_permalink(58); ?>">kapcsolatot.</a></p>
-  </div>
-</header> -->
 <section class="reflist">
   <?php while (have_posts()) : the_post(); ?>
     <article <?php post_class('reference--listelem'); ?>>

@@ -17,7 +17,7 @@
 </section>
 
     <section id="singletop" class="refsingle__reallife">
-      <div class="wrapper wrapper--full">
+      <div class="wrapper wrapper--wide">
 <!--         <div class="wrapper wrapper--wide">
           <h3 class="whiteblock__title">
             <small><?php the_title(); ?></small>
