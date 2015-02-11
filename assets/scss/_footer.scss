@@ -1,12 +1,13 @@
 .standardcontact {
   background-color: $gray-main;
-  background-image: url('../img/melosasztal.jpg');
+  //background-image: url('../img/melosasztal.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   //background-attachment: fixed;
 
   border-bottom: 10px solid rgba(#000,0.2);
+  //border-top: 10px solid rgba(#000,0.2);
   text-align: center;
 }
 
@@ -14,20 +15,22 @@
 .contactstart {
   @include clearfix();
   padding: 2em 0 3em;
-  color: rgba(#fff,0.75);
+  color: $gray-light;
+
   text-align: left;
 
 }
 
 .contactstart--notabs {
-  padding-top: 4em;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
 }
 
 .contactstart__title {
   position: relative;
-  padding-left: 2.33em;
+  //padding-left: 2.33em;
   font-family: $sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1;
   font-weight: 900;
   //opacity: 0.666;
@@ -39,20 +42,20 @@
   text-align: left;
   text-transform: uppercase;
   
-  @include bp($s3) {
+  @include bp($s2) {
     float: left;
     width:75%;
   }
 
-  &:before {
-    content:'';
-    background-color: $secondary-color;
-    position: absolute;
-    top:0;
-    left:0;
-    bottom:0.125em;
-    width: 1.875em;
-  }
+  // &:before {
+  //   content:'';
+  //   background-color: $secondary-color;
+  //   position: absolute;
+  //   top:0;
+  //   left:0;
+  //   bottom:0.125em;
+  //   width: 1.875em;
+  // }
 
 
   small {
@@ -65,20 +68,37 @@
     display: block;
 
     text-transform: lowercase;
+    color:$secondary-color;
   }
 
 
 }
 
 .contactstart__action {
-
-  @include bp($s3) {
+  margin-top: 1em;
+  @include bp($s2) {
+    margin-top: 0.25em;
     float: left;
     width:25%;
     text-align: right;
   }
 
 }
+.btn--contactstart {
+  padding:0.75em 1.5em;
+  font-size:1em;
+  text-transform: none;
+  background-color: #000;
+  color:$gray-light;
+  border-radius: 2px;
+
+  &:hover, &:focus {
+    background-color: $secondary-color;
+    color:$gray-main;
+  } 
+}
+
+
 .pagefooter {
   font-family: $sans-serif;
 

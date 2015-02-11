@@ -1,7 +1,7 @@
 <aside class="standardcontact">
 	<div class="wrapper wrapper--wide">
 
-		<div class="shareblock__nav">
+<!-- 		<div class="shareblock__nav">
 			<ul class="nav nav-tabs" role="tablist">
 				<li role="presentation" class="active">
 					<a href="#contactpanel" aria-controls="contactpanel" role="tab" data-toggle="tab">Lépj kapcsolatba velünk</a>
@@ -11,14 +11,14 @@
 				</li>
 
 			</ul>
-		</div>
+		</div> -->
 		<div class="tab-content">
 
 			<div role="tabpanel" class="tab-pane fade in active" id="contactpanel">
-				<div class="contactstart">
+				<div class="contactstart contactstart--notabs">
 					<h3 class="contactstart__title"><small>Hasonlót szeretnél?</small>Segítünk neked</h3>
 					<div class="contactstart__action">
-						<a href="<?php echo get_permalink(58); ?>" class="btn btn--pseudo btn--opaque">Beszélgessünk</a>
+						<a href="<?php echo get_permalink(58); ?>" class="btn btn--contactstart">Beszélgessünk</a>
 					</div>
 					
 				</div>

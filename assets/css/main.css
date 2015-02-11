@@ -481,6 +481,7 @@ html:hover [class^="ss-"] {
   -moz-font-feature-settings: "liga=1";
   -moz-font-feature-settings: "liga";
   -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
   -webkit-font-feature-settings: "liga";
           font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
@@ -1610,6 +1611,7 @@ html:hover [class^="ss-"] {
   -moz-font-feature-settings: "liga=1";
   -moz-font-feature-settings: "liga";
   -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
   -webkit-font-feature-settings: "liga";
           font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
@@ -6067,8 +6069,7 @@ input[type="checkbox"]#nav-toggle {
 .refsingle__quoteblock {
   margin: 0 0;
   padding: 4em 0 3em;
-  color: white;
-  background-color: #bd4932; }
+  color: #bd4932; }
   .refsingle__quoteblock .quotefigure {
     margin-bottom: 1em;
     text-align: center; }
@@ -6102,7 +6103,7 @@ input[type="checkbox"]#nav-toggle {
 
 .refsingle__quote {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: 300;
   line-height: 1.25;
   position: relative;
@@ -6114,10 +6115,6 @@ input[type="checkbox"]#nav-toggle {
     display: table; }
   .refsingle__quote:after {
     clear: both; }
-  @media only screen and (min-width: 768px) {
-    .refsingle__quote {
-      float: left;
-      width: calc( 100% - 13em); } }
   .refsingle__quote:before {
     font-family: 'Archer', Georgia, serif;
     font-size: 6em;
@@ -6134,7 +6131,7 @@ input[type="checkbox"]#nav-toggle {
   .refsingle__quote cite {
     font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     font-size: 0.75em;
-    font-weight: bold;
+    font-weight: 900;
     font-style: normal;
     line-height: 1;
     float: right;
@@ -6143,7 +6140,7 @@ input[type="checkbox"]#nav-toggle {
     .refsingle__quote cite .titulus {
       font-family: 'Archer', Georgia, serif;
       font-size: 1em;
-      font-weight: normal;
+      font-weight: 400;
       font-variant: normal;
       display: block; }
     .refsingle__quote cite:before {
@@ -6383,32 +6380,32 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
 
-.btn--pseudo {
+.btn {
+  position: relative;
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 1.25em;
   font-weight: 900;
   line-height: 1.125;
   text-transform: uppercase;
-  position: relative;
   display: inline-block;
   white-space: nowrap;
-  max-width: 18em;
   padding: 0.75em 1em;
   -webkit-transition: background-color 0.2s ease;
           transition: background-color 0.2s ease;
   text-align: center;
   text-decoration: none;
+  -webkit-appearance: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+.btn--pseudo {
   color: rgba(255, 255, 255, 0.75);
   border: none;
   border-radius: 2px;
   background: none;
-  background-color: rgba(255, 255, 255, 0.333);
-  -webkit-appearance: none;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
+  background-color: rgba(255, 255, 255, 0.333); }
   .btn--pseudo:before {
     position: absolute;
-    z-index: -1;
     top: 9px;
     left: 9px;
     width: 100%;
@@ -6441,7 +6438,6 @@ textarea {
 
 .standardcontact {
   background-color: #212121;
-  background-image: url('../img/melosasztal.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -6450,7 +6446,7 @@ textarea {
 
 .contactstart {
   padding: 2em 0 3em;
-  color: rgba(255, 255, 255, 0.75);
+  color: #9a9898;
   text-align: left; }
   .contactstart:before, .contactstart:after {
     content: " ";
@@ -6459,13 +6455,13 @@ textarea {
     clear: both; }
 
 .contactstart--notabs {
-  padding-top: 4em; }
+  padding-top: 2em;
+  padding-bottom: 1.5em; }
 
 .contactstart__title {
   position: relative;
-  padding-left: 2.33em;
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1;
   font-weight: 900;
   max-width: 1024px;
@@ -6473,18 +6469,10 @@ textarea {
   margin-bottom: 0.25em;
   text-align: left;
   text-transform: uppercase; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .contactstart__title {
       float: left;
       width: 75%; } }
-  .contactstart__title:before {
-    content: '';
-    background-color: #bd4932;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0.125em;
-    width: 1.875em; }
   .contactstart__title small {
     font-family: 'Archer', Georgia, serif;
     font-size: 0.75em;
@@ -6492,13 +6480,28 @@ textarea {
     line-height: 1;
     margin: 0 0 0.25em 0;
     display: block;
-    text-transform: lowercase; }
+    text-transform: lowercase;
+    color: #bd4932; }
 
-@media only screen and (min-width: 1024px) {
-  .contactstart__action {
-    float: left;
-    width: 25%;
-    text-align: right; } }
+.contactstart__action {
+  margin-top: 1em; }
+  @media only screen and (min-width: 768px) {
+    .contactstart__action {
+      margin-top: 0.25em;
+      float: left;
+      width: 25%;
+      text-align: right; } }
+
+.btn--contactstart {
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  text-transform: none;
+  background-color: #000;
+  color: #9a9898;
+  border-radius: 2px; }
+  .btn--contactstart:hover, .btn--contactstart:focus {
+    background-color: #bd4932;
+    color: #212121; }
 
 .pagefooter {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;

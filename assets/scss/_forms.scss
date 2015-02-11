@@ -119,24 +119,32 @@ textarea {
 }
 
 
-.btn--pseudo {
+.btn {
+  position: relative;
   font-family: $headingfont;
   font-size: 1.25em;
   font-weight: 900;
   line-height: 1.125;
   text-transform: uppercase;
-
-  position: relative;
-
   display: inline-block;
   white-space: nowrap;
 
-  max-width: 18em;
   padding: .75em 1em;
 
   transition: background-color .2s ease;
   text-align: center;
   text-decoration: none;
+    -webkit-appearance: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn--pseudo {
+
+
+  
+
+
   //text-transform: uppercase;
 
   color: rgba(#fff,.75);
@@ -145,12 +153,10 @@ textarea {
   background: none;
   background-color: rgba(white,.333);
 
-  -webkit-appearance: none;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+
   &:before {
     position: absolute;
-    z-index: -1;
+    //z-index: -1;
     top: 9px;
     left: 9px;
 

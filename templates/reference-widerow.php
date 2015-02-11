@@ -50,7 +50,7 @@
 			    <div class="refrow__summary"><?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?></div>
 					
 			    <div class="refrow__actions">
-			    	<a class="btn--pseudo" href="<?php the_permalink(); ?>"><?php _e('Projekt részletek','hydrogene'); ?></a>
+			    	<a class="btn btn--pseudo" href="<?php the_permalink(); ?>"><?php _e('Projekt részletek','hydrogene'); ?></a>
 			    </div>
 			  </div>
 			</header>
