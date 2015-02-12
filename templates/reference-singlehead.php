@@ -13,6 +13,7 @@
 			}
 
 			.refsingle.reference-<?php echo get_the_ID(); ?> .refrow,
+			.refsingle__quote cite:before,
 			.single-reference .topmenubg {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
@@ -57,7 +58,7 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 			
-			.refsingle__quoteblock,
+			/*.refsingle__quoteblock cite .titulus,*/
 			.refsingle__content ol li:before,
 			.refsingle__content a,
 			.refsingle__quote:before {

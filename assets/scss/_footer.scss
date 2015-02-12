@@ -1,36 +1,42 @@
 .standardcontact {
-  background-color: $gray-main;
-  //background-image: url('../img/melosasztal.jpg');
+  background-color: #fff;
+  background-image:url('../img/noise.png');
   background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  //background-attachment: fixed;
-
-  border-bottom: 10px solid rgba(#000,0.2);
-  //border-top: 10px solid rgba(#000,0.2);
+  background-repeat: repeat;
+  border-bottom: 1px solid $gray-xxlight;
   text-align: center;
+  .single-reference & {
+    background-color: transparent;
+    background-image: none;
+    .contactstart--notabs {
+      padding-top: 6em;
+      padding-bottom: 2em;
+    }
+  }
 }
 
 
 .contactstart {
   @include clearfix();
   padding: 2em 0 3em;
-  color: $gray-light;
+  color: $gray-heading;
 
   text-align: left;
+
 
 }
 
 .contactstart--notabs {
-  padding-top: 2em;
-  padding-bottom: 1.5em;
+  padding-top: 1.666em;
+  padding-bottom: 3em;
+  //border-top:1px solid $gray-xlight;
 }
 
 .contactstart__title {
   position: relative;
   //padding-left: 2.33em;
   font-family: $sans-serif;
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1;
   font-weight: 900;
   //opacity: 0.666;
@@ -68,7 +74,7 @@
     display: block;
 
     text-transform: lowercase;
-    color:$secondary-color;
+    //color:$secondary-color;
   }
 
 
@@ -85,15 +91,17 @@
 
 }
 .btn--contactstart {
-  padding:0.75em 1.5em;
-  font-size:1em;
+  font-weight: 900;
+  padding:0.75em 1.25em;
+  font-size:0.75em;
   text-transform: none;
-  background-color: #000;
-  color:$gray-light;
+  background-color: transparent;
+  color:$gray-heading;
   border-radius: 2px;
+  border : 1px solid $gray-light;
 
   &:hover, &:focus {
-    background-color: $secondary-color;
+    //background-color: $secondary-color;
     color:$gray-main;
   } 
 }

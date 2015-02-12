@@ -5566,32 +5566,29 @@ body {
   position: relative;
   text-align: center;
   color: #fff;
-  border-bottom: 10px solid rgba(255, 255, 255, 0.125);
   background-color: #212121; }
 
 .pageheader__content {
   position: relative;
-  padding: 8em 0 4em; }
+  padding: 4em 0 4em; }
 
 .pageheader__title {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 900;
   line-height: 1.25;
   display: inline-block;
   margin: 0.25em 0 0;
   padding: 0.125em 0;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.75);
-  border-top: 1px solid rgba(255, 255, 255, 0.333); }
+  text-transform: uppercase; }
 
 .pageheader__subtitle {
   font-family: 'Archer', Georgia, serif;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: bold;
   line-height: 1.25;
-  margin: 0 0;
-  color: rgba(255, 255, 255, 0.75); }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.333);
+  margin: 0 0; }
 
 .pageheader__intro {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -6068,44 +6065,13 @@ input[type="checkbox"]#nav-toggle {
 
 .refsingle__quoteblock {
   margin: 0 0;
-  padding: 4em 0 3em;
-  color: #bd4932; }
-  .refsingle__quoteblock .quotefigure {
-    margin-bottom: 1em;
-    text-align: center; }
-    @media only screen and (min-width: 768px) {
-      .refsingle__quoteblock .quotefigure {
-        float: left;
-        width: 12em;
-        margin-right: 1em; } }
-    .refsingle__quoteblock .quotefigure img {
-      display: inline-block;
-      margin-bottom: 0.333em;
-      border-radius: 50%; }
-    .refsingle__quoteblock .quotefigure .name {
-      font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-      font-size: 0.666em;
-      font-weight: 300;
-      font-style: normal;
-      line-height: 1;
-      display: block;
-      margin-bottom: 0.25em;
-      text-transform: uppercase;
-      opacity: 0.75; }
-    .refsingle__quoteblock .quotefigure .titulus {
-      font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-      font-size: 0.666em;
-      font-weight: 300;
-      font-variant: normal;
-      line-height: 1;
-      display: block;
-      opacity: 0.75; }
+  padding: 2em 0 1em; }
 
 .refsingle__quote {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 1.25em;
   font-weight: 300;
-  line-height: 1.25;
+  line-height: 1.4;
   position: relative;
   position: relative;
   margin: 0;
@@ -6115,41 +6081,31 @@ input[type="checkbox"]#nav-toggle {
     display: table; }
   .refsingle__quote:after {
     clear: both; }
-  .refsingle__quote:before {
-    font-family: 'Archer', Georgia, serif;
-    font-size: 6em;
-    line-height: 1;
-    position: absolute;
-    top: -0.4em;
-    left: 0;
-    display: inline-block;
-    content: '“';
-    opacity: 0.333; }
   .refsingle__quote p {
-    margin: 0.5em 0;
-    opacity: 0.75; }
+    margin: 0.5em 0; }
   .refsingle__quote cite {
     font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     font-size: 0.75em;
     font-weight: 900;
     font-style: normal;
     line-height: 1;
-    float: right;
+    display: block;
     margin-top: 0.5em;
-    text-transform: none; }
+    text-transform: uppercase;
+    color: #484646; }
     .refsingle__quote cite .titulus {
-      font-family: 'Archer', Georgia, serif;
-      font-size: 1em;
-      font-weight: 400;
+      font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+      font-weight: 300;
       font-variant: normal;
-      display: block; }
+      display: inline;
+      text-transform: none; }
     .refsingle__quote cite:before {
       display: block;
       width: 1em;
       height: 2px;
-      margin: 0 0 0.333em;
+      margin: 0 0 0.75em;
       content: '';
-      background-color: rgba(255, 255, 255, 0.2); }
+      background-color: #484646; }
 
 .refsingle__shareblock {
   text-align: center;
@@ -6437,16 +6393,22 @@ textarea {
     border: 1px solid rgba(255, 255, 255, 0.5); }
 
 .standardcontact {
-  background-color: #212121;
+  background-color: #fff;
+  background-image: url('../img/noise.png');
   background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-bottom: 10px solid rgba(0, 0, 0, 0.2);
+  background-repeat: repeat;
+  border-bottom: 1px solid #e6e5e5;
   text-align: center; }
+  .single-reference .standardcontact {
+    background-color: transparent;
+    background-image: none; }
+    .single-reference .standardcontact .contactstart--notabs {
+      padding-top: 6em;
+      padding-bottom: 2em; }
 
 .contactstart {
   padding: 2em 0 3em;
-  color: #9a9898;
+  color: #484646;
   text-align: left; }
   .contactstart:before, .contactstart:after {
     content: " ";
@@ -6455,13 +6417,13 @@ textarea {
     clear: both; }
 
 .contactstart--notabs {
-  padding-top: 2em;
-  padding-bottom: 1.5em; }
+  padding-top: 1.666em;
+  padding-bottom: 3em; }
 
 .contactstart__title {
   position: relative;
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1;
   font-weight: 900;
   max-width: 1024px;
@@ -6480,8 +6442,7 @@ textarea {
     line-height: 1;
     margin: 0 0 0.25em 0;
     display: block;
-    text-transform: lowercase;
-    color: #bd4932; }
+    text-transform: lowercase; }
 
 .contactstart__action {
   margin-top: 1em; }
@@ -6493,14 +6454,15 @@ textarea {
       text-align: right; } }
 
 .btn--contactstart {
-  padding: 0.75em 1.5em;
-  font-size: 1em;
+  font-weight: 900;
+  padding: 0.75em 1.25em;
+  font-size: 0.75em;
   text-transform: none;
-  background-color: #000;
-  color: #9a9898;
-  border-radius: 2px; }
+  background-color: transparent;
+  color: #484646;
+  border-radius: 2px;
+  border: 1px solid #9a9898; }
   .btn--contactstart:hover, .btn--contactstart:focus {
-    background-color: #bd4932;
     color: #212121; }
 
 .pagefooter {

@@ -65,7 +65,7 @@
 		</div>
 	</div>
 </section>
-
+  <?php get_template_part('templates/footer','contact'); ?>
 
 <section class="home__references">
 	<?php 

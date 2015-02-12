@@ -49,10 +49,12 @@
           <p>
             Komolyabb ráncfelvarrással kerestük meg a Hydrogenet akiket a referenciájuk alapján választottunk ki. Központjainkba történő jelentkezések, és az ügyfélkör ugrásszerű növekedése &mdash; az új arculatnak és weblapnak köszönhetően &mdash; jócskán felülmúlta várakozásunkat.
           </p>
-          <cite>Koczó Levente<span class="titulus">a lorem ipsum ügyvezető igazgató</span></cite>
+          <cite>Koczó Levente, <span class="titulus">Somnocenter ügyvezető igazgató</span></cite>          
         </blockquote>
       </div>
     </section>
+
+
 
     <?php get_template_part('templates/reference', 'share'); ?>
 
@@ -62,5 +64,12 @@
     </footer>
   </article>
 <?php endwhile; ?>
+<section class="pageheader">
+  <div class="wrapper wrapper--wide">
+    <div class="pageheader__content">
+      <h3 class="pageheader__title">nézd meg a következőt</h3>
+    </div>
+  </div>
+</section>
 
 <?php get_template_part('templates/reference','navigation'); ?>

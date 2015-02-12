@@ -1,806 +1,754 @@
 .reflist {
-  background-color: #fff;
+    background-color: #fff;
 
-  @include clearfix();
+    @include clearfix();
 }
 .refarchive__header {
-  padding-bottom: 4em;
+    padding-bottom: 4em;
 }
 
 
 .refrow {
-  position: relative;
-
-  overflow: hidden;
-
-  color: $gray-main;
-  border-bottom: 10px solid rgba(#fff,.2);
-  background-color: $gray-xlight;
-  background-image:url('../img/noise.png');
-  background-repeat: repeat;
-  .reference--listelem:nth-child(2n) & {
-    background-color: #fff;
-  }
-
-  .wrapper {
     position: relative;
 
-  }
+    overflow: hidden;
+
+    color: $gray-main;
+    border-bottom: 10px solid rgba(#fff,.2);
+    background-color: $gray-xlight;
+    background-image: url('../img/noise.png');
+    background-repeat: repeat;
+    .reference--listelem:nth-child(2n) & {
+        background-color: #fff;
+    }
+    .wrapper {
+        position: relative;
+    }
 }
 
 .refrow__figure {
-  position: relative;
-
-  overflow: hidden;
-
-  margin: 2em auto 1em;
-
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-
-  backface-visibility: hidden;
-  //margin-top: -2em;
-  //z-index: -1;
-  @include bp($s2) {
-    position: absolute;
-    top: 0;
-    left: 60%;
-
-    width: 40%;
-    height: 100%;
-    margin: 0;
-    //transform: translate(0, -50%);
-    .reference:nth-of-type(2n) & {
-      left: 0;
-      background-position: center center;
-    }
-    a img {
-      visibility: hidden;
-    }
-  }
-  @include bp($s5) {
-    left: 50%;
-    width:50%;
-    .reference:nth-of-type(2n) & {
-      left: 0;
-    }
-  }
-  a {
     position: relative;
 
-    display: block;
     overflow: hidden;
 
-    padding: 0 0 0;
+    margin: 2em auto 1em;
 
-    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 
     backface-visibility: hidden;
+    //margin-top: -2em;
+    //z-index: -1;
     @include bp($s2) {
-      position: absolute;
-      top: 0;
-      left: 0;
+        position: absolute;
+        top: 0;
+        left: 60%;
 
-      width: 100%;
-      height: 100%;
+        width: 40%;
+        height: 100%;
+        margin: 0;
+        //transform: translate(0, -50%);
+        .reference:nth-of-type(2n) & {
+            left: 0;
+
+            background-position: center center;
+        }
+        a img {
+            visibility: hidden;
+        }
     }
-    img {
-      width: auto;
-      max-width: 75%;
-      //max-width: 90%;
-      max-height: 25em;
-      //width:100%;
-      //display: block;
+    @include bp($s5) {
+        left: 50%;
+
+        width: 50%;
+        .reference:nth-of-type(2n) & {
+            left: 0;
+        }
     }
-  }
+    a {
+        position: relative;
+
+        display: block;
+        overflow: hidden;
+
+        padding: 0 0 0;
+
+        text-align: center;
+
+        backface-visibility: hidden;
+        @include bp($s2) {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            width: auto;
+            max-width: 75%;
+            //max-width: 90%;
+            max-height: 25em;
+            //width:100%;
+            //display: block;
+        }
+    }
 }
 
 
 .refrow__header {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 
-  padding: 0 0 3em;
+    padding: 0 0 3em;
 
-  text-align: left;
+    text-align: left;
 
-  @include clearfix();
-  @include bp($s2) {
-    //font-size: 1.125em;   
-  }
-  @include bp($s2) {
-    width: 60%;
-    padding: 4em 0 3em;
-
-    .reference:nth-of-type(2n) & {
-      float:right;
+    @include clearfix();
+    @include bp($s2) {
+        //font-size: 1.125em;   
     }
-  }
-  @include bp($s3) {
-    //padding: 3em 0;
-  }
-
-  @include bp($s4) {
-    //font-size: 0.875em;
-    //padding: 4em 0 3em;
-  }
-  @include bp($s5) {
-    width:50%;
-    padding: 5em 0 4em;
-  }
-  .innerwrap {
-    max-width: 32em;
-    margin: 0 auto;
-
+    @include bp($s2) {
+        width: 60%;
+        padding: 4em 0 3em;
+        .reference:nth-of-type(2n) & {
+            float: right;
+        }
+    }
     @include bp($s3) {
-      max-width: none;
+        //padding: 3em 0;
     }
-  }
+    @include bp($s4) {
+        //font-size: 0.875em;
+        //padding: 4em 0 3em;
+    }
+    @include bp($s5) {
+        width: 50%;
+        padding: 5em 0 4em;
+    }
+    .innerwrap {
+        max-width: 32em;
+        margin: 0 auto;
+
+        @include bp($s3) {
+            max-width: none;
+        }
+    }
 }
 
 .refrow__subtitle {
-  font-family: $serif;
-  font-size: 1.25em;
-  font-weight: 700;
-  line-height: 1;
+    font-family: $serif;
+    font-size: 1.25em;
+    font-weight: 700;
+    line-height: 1;
 
-  position: relative;
+    position: relative;
 
-  margin: 0 0 .125em;
-  color: rgba($gray-main,1);
+    margin: 0 0 .125em;
 
-  .refsingle & {
-    //font-size: 1.333em;
-    color: rgba(#fff,0.75);
-  }
-  a {
-    text-decoration: none;
-
-    color: inherit;
-    &:hover,
-    &:focus {
-
+    color: rgba($gray-main,1);
+    .refsingle & {
+        //font-size: 1.333em;
+        color: rgba(#fff,.75);
     }
-  }
+    a {
+        text-decoration: none;
+
+        color: inherit;
+    }
 }
 
 .refrow__title {
-  font-family: $headingfont;
-  font-size: 2.5em;
-  font-weight: 900;
-  line-height: 1;
-  //display: inline-block;
-  //white-space: nowrap;
+    font-family: $headingfont;
+    font-size: 2.5em;
+    font-weight: 900;
+    line-height: 1;
+    //display: inline-block;
+    //white-space: nowrap;
 
-  margin: 0 0 0 0;
-  //padding-bottom: .25em;
+    margin: 0 0 0 0;
+    //padding-bottom: .25em;
 
-  color: $gray-main;
-  border-bottom: 1px solid rgba(#fff,.125);
-  .refsingle & {
-    //font-size: 3em;
-    color: rgba(#fff,0.75);
-  }
-  a {
-    text-decoration: none;
-
-    color: inherit;
-    //color: $secondary-color;
-    &:hover,
-    &:focus {
-      color: $secondary-color;
-
+    color: $gray-main;
+    border-bottom: 1px solid rgba(#fff,.125);
+    .refsingle & {
+        //font-size: 3em;
+        color: rgba(#fff,.75);
     }
-  }
+    a {
+        text-decoration: none;
+
+        color: inherit;
+        //color: $secondary-color;
+        &:hover,
+        &:focus {
+            color: $secondary-color;
+        }
+    }
 }
 
 .refrow__tags {
-  font-family: $sans-serif;
-  font-size: .75em;
-  //text-transform: uppercase;
-  font-weight: bold;
-  line-height: 1.25;
+    font-family: $sans-serif;
+    font-size: .75em;
+    //text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.25;
 
-  margin: .25em 0 0 0;
+    margin: .25em 0 0 0;
 
-  color: rgba(255,255,255,.75);
-  //font-style: italic;
-  ul {
-    margin: 0;
-    padding: 0;
-    li {
-      display: inline;
+    color: rgba(255,255,255,.75);
+    //font-style: italic;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline;
 
-      margin: 0;
-      padding: 0;
+            margin: 0;
+            padding: 0;
 
-      list-style-type: none;
-      &:before {
-        content: '\b7\a0';
-        //font-style: normal;
-      }
-      &:first-of-type {
-        &:before {
-          content: '';
+            list-style-type: none;
+            &:before {
+                content: '\b7\a0';
+                //font-style: normal;
+            }
+            &:first-of-type {
+                &:before {
+                    content: '';
+                }
+            }
         }
-      }
     }
-  }
 }
 
 .refrow__summary {
-  margin: .75em 0;
-  //padding-top: .5em;
-  //border-top: 10px solid rgba(#fff,.125);
-  .refisngle & {
-    font-size: 1em;
-  }
+    margin: .75em 0;
+    //padding-top: .5em;
+    //border-top: 10px solid rgba(#fff,.125);
+    .refisngle & {
+        font-size: 1em;
+    }
 }
 .refrow__actions {
-  margin: 1.5em 0;
-  //text-align: left;
-  .btn--pseudo {
-    font-size: .75em;
+    margin: 1.5em 0;
+    //text-align: left;
+    .btn--pseudo {
+        font-size: .75em;
 
-    margin: .25em 0 0 0;
-    // .refsingle & {
-    //   font-size: 1em;
-    // }
-  }
+        margin: .25em 0 0 0;
+        // .refsingle & {
+        //   font-size: 1em;
+        // }
+    }
 }
 
 
 
 .refrow__tags__title {
-  font-size: 1em;
+    font-size: 1em;
 
-  position: relative;
+    position: relative;
 
-  margin: .75em 0;
-  &:after {
-    display: block;
+    margin: .75em 0;
+    &:after {
+        display: block;
 
-    width: 2em;
-    height: 1px;
-    margin: .75em auto 0 auto;
+        width: 2em;
+        height: 1px;
+        margin: .75em auto 0 auto;
 
-    content: '';
+        content: '';
 
-    background-color: black;
-  }
+        background-color: black;
+    }
 }
 
 
 /************** Reference Single Style Definitions ****************/
 
 .refsingle {
-  .refrow {
-    color: white;
-    border-bottom: 10px solid rgba(#000,.125);
-
-    
-  
-    .refrow__header {
-      @include bp($s2) {
-        padding: 9em 0 4em;
-      }
-      @include bp($s3) {
-        padding: 10em 0 4em;
-      }
-      @include bp($s4) {
-        padding: 9em 0 4em;
-      }
-      @include bp($s5) {
-        padding: 11em 0 5em;
-      }
+    .refrow {
+        color: white;
+        border-bottom: 10px solid rgba(#000,.125);
+        .refrow__header {
+            @include bp($s2) {
+                padding: 9em 0 4em;
+            }
+            @include bp($s3) {
+                padding: 10em 0 4em;
+            }
+            @include bp($s4) {
+                padding: 9em 0 4em;
+            }
+            @include bp($s5) {
+                padding: 11em 0 5em;
+            }
+        }
+        .refrow__title {
+            padding-bottom: .25em;
+        }
     }
-
-    .refrow__title {
-      padding-bottom: 0.25em;
-    }
-  }
 }
 
 
 
 .refsingle__tasks {
-  margin-top: .75em;
-  //padding-top: 0.25em;
-  //border-top: 10px solid rgba(#fff,0.2);
+    margin-top: .75em;
+    //padding-top: 0.25em;
+    //border-top: 10px solid rgba(#fff,0.2);
 }
 
 .tasks__subtitle {
-  font-family: $sans-serif;
-  font-size: 1.25em;
-  font-weight: 300;
+    font-family: $sans-serif;
+    font-size: 1.25em;
+    font-weight: 300;
 
-  display: none;
+    display: none;
 
-  margin: 0;
+    margin: 0;
 
-  opacity: .75;
+    opacity: .75;
 }
 
 .tasks__elements {
-  font-family: $sans-serif;
-  font-size: 1em;
-  //text-transform: uppercase;
-  font-weight: 300;
+    font-family: $sans-serif;
+    font-size: 1em;
+    //text-transform: uppercase;
+    font-weight: 300;
 
-  margin: .5em 0 1.5em;
-  padding: 0;
-  //font-style: italic;
+    margin: .5em 0 1.5em;
+    padding: 0;
+    //font-style: italic;
+    //color: rgba($gray-main,1);
+    li {
+        display: inline-block;
 
-  //color: rgba($gray-main,1);
-  li {
-    display: inline-block;
+        margin: .125em .75em .125em 0;
 
-    margin: .125em .75em .125em 0;
+        list-style-type: none;
+        .ion {
+            font-size: 1em;
+            line-height: 1.666;
 
-    list-style-type: none;
-    .ion {
-      font-size: 1em;
-      line-height: 1.666;
+            box-sizing: border-box;
+            width: 1.666em;
+            height: 1.666em;
+            margin-right: .25em;
+            padding-top: 1px;
+            padding-left: 1px;
 
-      box-sizing: border-box;
-      width: 1.666em;
-      height: 1.666em;
-      margin-right: .25em;
-      padding-top: 1px;
-      padding-left: 1px;
+            text-align: center;
 
-      text-align: center;
-
-      color: rgba(white,.75);
-      border-radius: 50%;
-      //line-height: 1.5;
-      background-color: rgba(black,.125);
+            color: rgba(white,.75);
+            border-radius: 50%;
+            //line-height: 1.5;
+            background-color: rgba(black,.125);
+        }
     }
-  }
 }
 .niceheading--refheading {
-  padding-bottom: 2em;  
-  @include bp($s2){
-    .wrapper {
-      //padding-right: 20%;
+    padding-bottom: 2em;
+
+    @include bp($s2) {
+        .wrapper {
+            //padding-right: 20%;
+        }
     }
-  }
-  @include bp($s3){
-  }
+    @include bp($s3) {
+    }
 }
 .refsingle__reallife {
-  padding: 0 0 0;
+    padding: 0 0 0;
 
-  text-align: center;
-  //border-top: 10px solid rgba($secondary-color,0.333);
+    text-align: center;
+    //border-top: 10px solid rgba($secondary-color,0.333);
 }
 
 .refsingle__infoblock {
-  color: white;
-  border-top: 10px solid rgba(white, .333);
-  background-color: rgba($gray-main,1);
-  .wrapper {
-    position: relative;
-  }
-  .inner {
-    max-width: 32em;
-    margin: 0 auto;
+    color: white;
+    border-top: 10px solid rgba(white, .333);
+    background-color: rgba($gray-main,1);
+    .wrapper {
+        position: relative;
+    }
+    .inner {
+        max-width: 32em;
+        margin: 0 auto;
 
-    @include bp($s2) {
-      max-width: none;
-      padding: 0 1em;
+        @include bp($s2) {
+            max-width: none;
+            padding: 0 1em;
+        }
+        @include bp($s4) {
+            padding: 0 2em;
+        }
     }
-    @include bp($s4) {
-      padding: 0 2em;
+    .btn {
+        font-size: .875em;
     }
-  }
-  .btn {
-    font-size: .875em;
-  }
 }
 
 .infoblock__detailspanel {
-  padding: 2em 0;
+    padding: 2em 0;
 
-  @include bp($s2) {
-    float: left;
+    @include bp($s2) {
+        float: left;
 
-    width: 66.666%;
-    padding: 2em 1em 2.5em 0;
-  }
+        width: 66.666%;
+        padding: 2em 1em 2.5em 0;
+    }
 }
 
 
 .infoblock__textpanel {
-  padding: 1.5em 0;
+    padding: 1.5em 0;
 
-  text-align: left;
+    text-align: left;
 
-  @include bp($s2) {
-    float: left;
+    @include bp($s2) {
+        float: left;
 
-    width: 33.333%;
-    padding: 2em 0 2.5em 1em;
-  }
-  .blocktitle {
-    font-size: 1.5em;
+        width: 33.333%;
+        padding: 2em 0 2.5em 1em;
+    }
+    .blocktitle {
+        font-size: 1.5em;
 
-    margin-top: .333em;
-    margin-bottom: .5em;
-  }
-  .uglybuttons {
-    margin: 0 0 0 -15px;
-  }
+        margin-top: .333em;
+        margin-bottom: .5em;
+    }
+    .uglybuttons {
+        margin: 0 0 0 -15px;
+    }
 }
 
 .infoblock__harmadik {
-  padding: 2em 0;
-
-  @include bp($s3) {
-    float: left;
-
-    width: 33.333%;
     padding: 2em 0;
-  }
+
+    @include bp($s3) {
+        float: left;
+
+        width: 33.333%;
+        padding: 2em 0;
+    }
 }
 
 .refsingle__content {
-  padding-bottom: 4em;
+    padding-bottom: 4em;
 }
 .refsingle__quoteblock {
-  margin: 0 0;
-  padding: 4em 0 3em;
-
-  color: $secondary-color;
-  //background-color: $secondary-color;
-  .quotefigure {
-    margin-bottom: 1em;
-
-    text-align: center;
-
-    @include bp($s2) {
-      float: left;
-
-      width: 12em;
-      margin-right: 1em;
-    }
-    img {
-      display: inline-block;
-
-      margin-bottom: .333em;
-
-      border-radius: 50%;
-    }
-    .name {
-      font-family: $sans-serif;
-      font-size: .666em;
-      font-weight: 300;
-      font-style: normal;
-      line-height: 1;
-
-      display: block;
-
-      margin-bottom: .25em;
-
-      text-transform: uppercase;
-
-      opacity: .75;
-    }
-    .titulus {
-      font-family: $sans-serif;
-      font-size: .666em;
-      font-weight: 300;
-      font-variant: normal;
-      line-height: 1;
-
-      display: block;
-
-      opacity: .75;
-    }
-  }
+    //background-color: $gray-xlight;
+    margin: 0 0;
+    padding: 2em 0 1em;
+    //color: $secondary-color;
+    //background-color: $secondary-color;
 }
 
 
 .refsingle__quote {
-  font-family: $sans-serif;
-  font-size: 1.25em;
-  font-weight: 300;
-  line-height: 1.25;
-
-  position: relative;
-  position: relative;
-
-  margin: 0;
-  padding: 0;
-
-  @include clearfix();
-
-  &:before {
-    font-family: $serif;
-    font-size: 6em;
-    line-height: 1;
-
-    position: absolute;
-    top: -.4em;
-    left: 0;
-
-    display: inline-block;
-
-    content: '“';
-
-    opacity: .333;
-  }
-  p {
-    //color:$secondary-color;
-    //text-align: center;
-    margin: .5em 0;
-
-    opacity: .75;
-  }
-  cite {
     font-family: $sans-serif;
-    font-size: .75em;
-    font-weight: 900;
-    font-style: normal;
-    //font-variant: small-caps;
-    line-height: 1;
-    //display: block;
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.4;
+    //text-transform: uppercase;
+    //border-top: 1px solid $gray-xlight;
 
-    float: right;
 
-    margin-top: .5em;
-    //opacity: 0.75;
+    position: relative;
+    position: relative;
 
-    text-transform: none;
-    .titulus {
-      font-family: $serif;
-      font-size: 1em;
-      font-weight: 400;
-      font-variant: normal;
+    margin: 0;
+    padding: 0;
 
-      display: block;
-      //font-style: italic;
+
+    @include clearfix();
+    // &:before {
+    //   font-family: $serif;
+    //   font-size: 6em;
+    //   line-height: 1;
+    //   font-weight:400;
+    //   position: absolute;
+    //   top: -.75em;
+    //   left: 0;
+    //   display: inline-block;
+    //   content: '“';
+    //   opacity: .333;
+    // }
+    p {
+        //color:$secondary-color;
+        margin: .5em 0;
+        //width:75%;
+        //float:left;
+        //padding-right:2em;
     }
-    &:before {
-      display: block;
+    cite {
+        font-family: $sans-serif;
+        font-size: 0.75em;
+        font-weight: 900;
+        font-style: normal;
+        //font-variant: small-caps;
 
-      width: 1em;
-      height: 2px;
-      margin: 0 0 .333em;
+        line-height: 1;
 
-      content: '';
+        display: block;
 
-      background-color: rgba(white,.2);
+        margin-top: .5em;
+
+        text-transform: uppercase;
+        //width:25%;
+        
+        color: $gray-heading;
+        //opacity: 0.75;
+        .titulus {
+            font-family: $sans-serif;
+            //font-size: 75%;
+            font-weight: 300;
+            font-variant: normal;
+
+            display: inline;
+
+            text-transform: none;
+            //font-style: italic;
+        }
+        &:before {
+            display: block;
+
+            width: 1em;
+            height: 2px;
+            margin: 0 0 0.75em;
+
+            content: '';
+
+            background-color: $gray-heading;
+        }
     }
-  }
 }
 
 .refsingle__shareblock {
-  text-align: center;
+    text-align: center;
 
-  color: white;
-  border-top: 10px solid rgba($secondary-color,.2);
-  background-color: $gray-main;
-  // @include bp($s2){
-  //  background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
-  // }
-  // .wrapper {
-  //  @include bp($s2){
-  //    background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
-  //  }
-  // }
+    color: white;
+    border-top: 10px solid rgba($secondary-color,.2);
+    background-color: $gray-main;
+    // @include bp($s2){
+    //  background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
+    // }
+    // .wrapper {
+    //  @include bp($s2){
+    //    background-image: linear-gradient(to right, transparent 0, transparent 50%, $gray-main 50% );
+    //  }
+    // }
 }
 
 .shareblock__nav {
-  font-family: $sans-serif;
-  font-size: .875em;
+    font-family: $sans-serif;
+    font-size: .875em;
 
-  padding: 4em 0 0;
+    padding: 4em 0 0;
 
-  text-align: center;
-  //font-weight: 300;
-  //text-transform: uppercase;
-  text-align: center;
+    text-align: center;
+    //font-weight: 300;
+    //text-transform: uppercase;
+    text-align: center;
 
-  color: rgba(white,.333);
-  .nav-tabs {
-    margin: 0;
-    padding: 0;
-    li {
-      position: relative;
+    color: rgba(white,.333);
+    .nav-tabs {
+        margin: 0;
+        padding: 0;
+        li {
+            position: relative;
 
-      display: inline;
+            display: inline;
 
-      padding: 0 .5em;
+            padding: 0 .5em;
 
-      list-style-type: none;
-      &.active {
-        > a {
-          color: rgba(white,.333);
+            list-style-type: none;
+            &.active {
+                > a {
+                    color: rgba(white,.333);
+                }
+            }
+            > a {
+                font-weight: 300;
+
+                text-decoration: none;
+
+                color: rgba(white,.25);
+                &:hover {
+                    color: rgba(white,.5);
+                }
+            }
+            &:before {
+                position: absolute;
+                top: .5em;
+                left: -.25em;
+
+                display: inline-block;
+
+                width: .333em;
+                height: .333em;
+
+                content: '';
+
+                background-color: $secondary-color;
+            }
+            &:first-child:before {
+                display: none;
+            }
         }
-      }
-      > a {
-        font-weight: 300;
-
-        text-decoration: none;
-
-        color: rgba(white,.25);
-        &:hover {
-          color: rgba(white,.5);
-        }
-      }
-      &:before {
-        position: absolute;
-        top: .5em;
-        left: -.25em;
-
-        display: inline-block;
-
-        width: .333em;
-        height: .333em;
-
-        content: '';
-
-        background-color: $secondary-color;
-      }
-      &:first-child:before {
-        display: none;
-      }
     }
-  }
 }
 .refsingle__share {
-  padding: 0 0 4em;
-  .blocktitle {
-    font-size: 1.5em;
-    //margin-bottom: 1em;
-  }
-  .btn {
-    font-size: 1em;
+    padding: 0 0 4em;
+    .blocktitle {
+        font-size: 1.5em;
+        //margin-bottom: 1em;
+    }
+    .btn {
+        font-size: 1em;
 
-    display: none;
+        display: none;
 
-    margin-right: .75em;
-  }
+        margin-right: .75em;
+    }
 }
 
 .refsingle__contactopener {
-  padding: 0 0 4em;
+    padding: 0 0 4em;
+    //background-color: $gray-main;
+    // @include bp($s2) {
+    //  margin:0;
+    //  width:50%;
+    //  float:right;
+    //  padding:2em 2em 4em 1em;
+    //  background-color: transparent;
+    // }
+    .blocktitle {
+        font-size: 1.5em;
+    }
+    .btn {
+        font-size: 1em;
 
-  //background-color: $gray-main;
-  // @include bp($s2) {
-  //  margin:0;
-  //  width:50%;
-  //  float:right;
-  //  padding:2em 2em 4em 1em;
-  //  background-color: transparent;
-  // }
-  .blocktitle {
-    font-size: 1.5em;
-  }
-  .btn {
-    font-size: 1em;
-
-    margin-right: .75em;
-  }
+        margin-right: .75em;
+    }
 }
 
 
 
 .refnav {
-  padding: 4em 0;
+    padding: 4em 0;
 
-  @include clearfix();
+    @include clearfix();
 }
 
 
 .refnav__blocktitle {
-  font-family: $sans-serif;
-  font-size: 2em;
-  font-weight: 900;
+    font-family: $sans-serif;
+    font-size: 2em;
+    font-weight: 900;
 
-  margin: 0 0 2em;
+    margin: 0 0 2em;
 
-  text-align: center;
-  span {
-    font-family: $serif;
-    font-size: .666em;
-    font-weight: 700;
+    text-align: center;
+    span {
+        font-family: $serif;
+        font-size: .666em;
+        font-weight: 700;
 
-    display: block;
-  }
+        display: block;
+    }
 }
 
 .refnav__item {
-  @include clearfix();
-  //background-color: $gray-main;
-  //color:white;
+    @include clearfix();
+    //background-color: $gray-main;
+    //color:white;
 }
 
 .refnav__header {
-  color: white;
+    color: white;
 
-  @include bp($s2) {
-    float: right;
+    @include bp($s2) {
+        float: right;
 
-    width: 50%;
-    //padding:1em 1em;
-  }
-  .teteje {
-    //border-radius: 0 0 0 0;
-    padding: 2em 2em 1.5em;
+        width: 50%;
+        //padding:1em 1em;
+    }
+    .teteje {
+        //border-radius: 0 0 0 0;
+        padding: 2em 2em 1.5em;
 
-    background-color: $secondary-color;
+        background-color: $secondary-color;
 
-    @include clearfix();
-  }
-  .alja {
-    //border-radius: 0 0 0 0;
-    padding: 1em 2em 2em 2em;
+        @include clearfix();
+    }
+    .alja {
+        //border-radius: 0 0 0 0;
+        padding: 1em 2em 2em 2em;
 
-    border-top: 10px solid rgba(orange,.2);
-    background-color: $gray-main ;
+        border-top: 10px solid rgba(orange,.2);
+        background-color: $gray-main ;
 
-    @include clearfix();
-  }
+        @include clearfix();
+    }
 }
 
 .refnav__figure {
-  @include bp($s2) {
-    float: left;
+    @include bp($s2) {
+        float: left;
 
-    width: 50%;
-    padding: 1em 2em;
-  }
+        width: 50%;
+        padding: 1em 2em;
+    }
 }
 
 .refnav__summary {
-  //font-family: $sans-serif;
-  font-size: .875em;
+    //font-family: $sans-serif;
+    font-size: .875em;
 
-  margin: .5em 0 1em;
+    margin: .5em 0 1em;
 }
 .refnav__subtitle {
-  font-size: 1em;
+    font-size: 1em;
 
-  margin: 0 0;
+    margin: 0 0;
 
-  color: rgba(white,.333);
+    color: rgba(white,.333);
 }
 
 .refnav__title {
-  font-family: $sans-serif;
-  font-size: 1.25em;
-  font-weight: 900;
-  line-height: 1;
+    font-family: $sans-serif;
+    font-size: 1.25em;
+    font-weight: 900;
+    line-height: 1;
 
-  margin: .25em 0 .5em;
+    margin: .25em 0 .5em;
 
-  text-transform: uppercase;
-  a {
-    text-decoration: none;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
 
-    color: inherit;
-  }
+        color: inherit;
+    }
 }
 
 .refnav__actions {
-  //background-color: $gray-main;
-  //padding:2em 0;
-  .btn {
-    font-size: .75em;
-  }
+    //background-color: $gray-main;
+    //padding:2em 0;
+    .btn {
+        font-size: .75em;
+    }
 }
 .backtoallref {
-  font-family: $sans-serif;
-  font-size: .666em;
+    font-family: $sans-serif;
+    font-size: .666em;
 
-  display: inline-block;
+    display: inline-block;
 
-  margin-top: 1.5em;
+    margin-top: 1.5em;
 
-  text-decoration: none;
+    text-decoration: none;
 
-  color: rgba(black,.5);
+    color: rgba(black,.5);
 }

@@ -24,7 +24,6 @@
         </aside><!-- /.sidebar -->
       <?php endif; ?>
   </div><!-- /.wrap -->
-  <?php get_template_part('templates/footer','contact'); ?>
   
   <?php get_template_part('templates/footer'); ?>
 
