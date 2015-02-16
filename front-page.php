@@ -22,7 +22,7 @@
 			<h5>Cégarculat és honlap tervezés egy kézben</h5>
 			<p>Karakteres arculattal, és — abba szervesen illeszkedő — felhasználóbarát honlappal segítjük céged növekedését.</p><p>A személyes kapcsolat a tervezővel, és a kis létszámú műhelymunka lehetővé teszi, hogy nagyszerű és egyedi dolgok szülessenek weben és nyomtatásban.</p>
 			<p>Legyen ez egy hosszan tartó, eredményes barátság kezdete.</p>
-			<p><a href="<?php echo get_the_permalink('69'); ?>" class="btn btn--pseudo btn--opaque ">Hogyan dolgozunk</a></p>
+			<p><a href="<?php echo get_the_permalink('69'); ?>" class="btn btn--sima">Hogyan dolgozunk</a></p>
 
 		</div>
 	</div>
@@ -65,7 +65,7 @@
 		</div>
 	</div>
 </section>
-  <?php get_template_part('templates/footer','contact'); ?>
+  <?php // get_template_part('templates/footer','contact'); ?>
 
 <section class="home__references">
 	<?php 

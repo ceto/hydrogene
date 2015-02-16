@@ -1,7 +1,7 @@
 <aside class="reference__connect">
 	<div class="connect__head">
 		<div class="wrapper wrapper--normal">
-			<h3 class="connect__bigtitle">Tetszik amit csinálunk?<span>Neked is segítünk</span></h3>
+			<h3 class="connect__bigtitle">Tetszik amit csinálunk?<span>Lépj kapcsolatba velünk</span></h3>
 			<div class="connect__toggle">
 				<a class="btn btn--circle" data-toggle="collapse" href="#cumoka" aria-expanded="false" aria-controls="cumoka"><i class="ion ion-ios-arrow-thin-down"></i></a>
 			</div>
@@ -13,7 +13,7 @@
 		<div class="wrapper wrapper--wide">
 			<div class="connect__left">
 				<h3>Szeretnénk neked dolgozni</h3>
-				<p>Örömmel veszünk részt egyedi tervezési feladatokban. Legyen ez egy eredményes barátság kezdete. <a href="<?php echo get_permalink(58); ?>">Lépj velünk kapcsolatba!</a></p>
+				<p>Örömmel veszünk részt egyedi tervezési feladatokban. Legyen ez egy eredményes barátság kezdete. <a href="<?php echo get_permalink(58); ?>">Lépj kapcsolatba velünk</a></p>
 			</div>
 
 			<div class="connect__right">

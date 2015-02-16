@@ -61,6 +61,10 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 			
+			.pagenav a,
+			/*.refsingle__content h1, .refsingle__content h2, .refsingle__content h3,*/
+			.datahead__title,
+			.datahead__url a,
 			.refsingle__quoteblock cite,
 			/*.connect__bigtitle,*/
 			.refsingle__content ol li:before,
@@ -102,18 +106,9 @@
 			    	<?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?>
 			    </h3>
 					<h2 class="refrow__title"><?php the_title(); ?></h2>
-			    <div class="refsingle__tasks">
-						<h3 class="tasks__subtitle">A feladat elemei</h3>
-						<ul class="tasks__elements">
-							<li><i class="ion ion-lightbulb"></i>Arculattervezés</li>
-							<li><i class="ion ion-pinpoint"></i>Tartalom stratégia</li>
-							<li><i class="ion ion-monitor"></i>Weboldal tervezés</li>
-							<li><i class="ion ion-iphone"></i>Mobil verzió</li>
-							<li><i class="ion ion-social-wordpress"></i>Wordpress</li>    		
-						</ul>
+					<div class="refsingle__lead">
+						<?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?>
 					</div>
-
-			    
  			    <div class="refrow__actions">
 						<a class="btn btn--pseudo" href="#singletop">
 							<?php _e('Felfedezés indul','h2'); ?>

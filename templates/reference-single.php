@@ -9,14 +9,24 @@
 
 
 
-    <section class="niceheading niceheading--refheading">
-  <div class="wrapper wrapper--wide">
-      <h3 class="niceheading__title"><small>így készült</small><?php the_title(); ?></h3>
-      <p class="niceheading__disclaimer"><?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?></p>
-  </div>
-</section>
+  <section id="singletop" class="refsingle__datahead">
+    <div class="wrapper wrapper--normal">
+      <h3 class="datahead__title">A feladat elemei</h3>
 
-    <section id="singletop" class="refsingle__reallife">
+
+      <ul class="tasks__elements">
+        <li>Arculattervezés</li>
+        <li>Tartalom stratégia</li>
+        <li>Weboldal tervezés</li>
+        <li>Mobil verzió</li>
+        <li>Wordpress</li>        
+      </ul>
+      <p class="datahead__year">Készült: <span>2013</span></p>
+  
+    </div>
+  </section>
+
+    <section class="refsingle__reallife">
       <div class="wrapper wrapper--wide">
 <!--         <div class="wrapper wrapper--wide">
           <h3 class="whiteblock__title">
@@ -33,6 +43,8 @@
           //var_dump($realimage);
         ?>
         <?php echo $realimage; ?>
+      
+        <p class="datahead__url"><i class="ion ion-link"></i> Nézd meg élesben: <a href="#">somnocenter.hu</a></p>
       </div>
     </section>
 
@@ -55,8 +67,9 @@
     </section>
 
 
-
+        <?php get_template_part('templates/reference', 'pagenav'); ?>
     <?php get_template_part('templates/reference', 'connect'); ?>
+
 
     <footer>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
@@ -72,4 +85,4 @@
   </div>
 </section> -->
 
-<?php get_template_part('templates/reference','navigation'); ?>
+<?php //get_template_part('templates/reference','navigation'); ?>

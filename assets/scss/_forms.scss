@@ -198,4 +198,17 @@ textarea {
   }
 }
 
+.btn--sima {
+  margin-top: 1em;
+  padding:0 0;
+  text-transform: none;
+  //font-size:1em;
+  color:$gray-heading;
+  border-bottom: 2px solid currentColor;
+  &:hover,&:focus {
+    color: $secondary-color;
+  }
+
+}
+
 

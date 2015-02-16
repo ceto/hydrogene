@@ -222,5 +222,61 @@ input[type="checkbox"]#nav-toggle {
 		// }
 	}
 
+}
 
+
+
+
+.pagenav {
+
+
+
+	.wrapper {
+		text-align: justify;
+		
+		&:after {
+			content: '';
+			width:100%;
+			display: inline-block;
+		}
+	}
+	
+	hr {
+		border:none;
+		height:1px;
+		background-color: $gray-xxlight;
+	}
+	a {
+		
+		display: inline-block;
+		color:$gray-light;
+		line-height: 1;
+
+		&:hover,&:focus {
+			color: $gray-heading;
+			text-decoration: none;
+		}
+
+		i {
+			font-size: 4em;
+		}
+		.navtext {
+			margin:0;
+			padding:0;
+			display: inline-block;
+			display: none;
+			max-width: 20em;
+			text-align: left;
+			line-height: 1;
+			font-size: 0.75em;
+			font-family: $sans-serif;
+			font-weight: 300;
+			span {
+				text-transform: uppercase;
+				font-weight: 900;
+				display: block;
+			}
+
+		}
+	}
 }
