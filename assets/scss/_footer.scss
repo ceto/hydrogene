@@ -1,15 +1,15 @@
 .standardcontact {
-  background-color: #fff;
+  background-color: $gray-main;
   background-image:url('../img/noise.png');
   background-position: center center;
   background-repeat: repeat;
   border-bottom: 1px solid $gray-xxlight;
   text-align: center;
   .single-reference & {
-    background-color: transparent;
+    //background-color: transparent;
     background-image: none;
     .contactstart--notabs {
-      padding-top: 6em;
+      padding-top: 2em;
       padding-bottom: 2em;
     }
   }

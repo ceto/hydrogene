@@ -12,6 +12,7 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>, 0.95);
 			}
 
+			.connect__cumo,
 			.refsingle.reference-<?php echo get_the_ID(); ?> .refrow,
 			.refsingle__quote cite:before,
 			.single-reference .topmenubg {
@@ -35,6 +36,7 @@
 			}
 			
 			/*.refrow__actions .btn:before,*/
+			.connect__bigtitle span,
 			.refsingle__shareblock .btn:before,
 			.refsingle__shareblock {
 				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
@@ -44,6 +46,7 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
 			}
 */
+			.btn--circle, 
 			.niceheading--refheading .niceheading__title:before,
 			.refsingle.reference-<?php echo get_the_ID(); ?> .refrow:after,
 			.inverseblock,
@@ -58,12 +61,14 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 			
-			/*.refsingle__quoteblock cite .titulus,*/
+			.refsingle__quoteblock cite,
+			/*.connect__bigtitle,*/
 			.refsingle__content ol li:before,
 			.refsingle__content a,
 			.refsingle__quote:before {
 				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
+
 
 			.whiteblock__title,
 			.darkblock__title,

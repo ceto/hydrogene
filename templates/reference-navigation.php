@@ -47,7 +47,8 @@
 				    
 				    <h3 class="refrow__subtitle">
 				    	<a href="<?php echo get_the_permalink($next_reference->ID); ?>">
-				    		<?php echo get_post_meta( $next_reference->ID, '_refdata_subtitle', 1 ); ?>
+				    		<?php //echo get_post_meta( $next_reference->ID, '_refdata_subtitle', 1 ); ?>
+				    		Nézd meg ezt a munkánkat is
 							</a>
 				    </h3>
 				    <h2 class="refrow__title"><a href="<?php echo get_the_permalink($next_reference->ID); ?>">

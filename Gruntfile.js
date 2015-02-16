@@ -21,7 +21,7 @@ module.exports = function(grunt) {
     'assets/js/plugins/*.js',
     'assets/js/_*.js'
   ];
-
+  
   grunt.initConfig({
     jshint: {
       options: {
