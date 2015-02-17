@@ -13,38 +13,41 @@
     <div class="wrapper wrapper--normal">
       <h3 class="datahead__title">A feladat elemei</h3>
 
-
       <ul class="tasks__elements">
-        <li>Arculattervezés</li>
-        <li>Tartalom stratégia</li>
-        <li>Weboldal tervezés</li>
-        <li>Mobil verzió</li>
-        <li>Wordpress</li>        
+        <?php 
+          $the_tasks=get_the_terms( get_the_ID(), 'tasks');
+          foreach ( $the_tasks as $task ) {  ?>
+            <li>
+              <a href="<?php echo get_term_link( $task ); ?>">
+                <?php echo $task->name; ?>
+              </a>
+            </li>
+        <?php } ?>
       </ul>
-      <p class="datahead__year">Készült: <span>2013</span></p>
+
+      <p class="datahead__year">Készült: <span><?php echo get_post_meta( get_the_ID(), '_refdata_year', 1 ); ?></span></p>
   
     </div>
   </section>
 
     <section class="refsingle__reallife">
-      <div class="wrapper wrapper--wide">
-<!--         <div class="wrapper wrapper--wide">
-          <h3 class="whiteblock__title">
-            <small><?php the_title(); ?></small>
-            <?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?>
-            </h3>
-          <p class="whiteblock__disclaimer">
-            <?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?>
-          </p>
-        </div> -->
-        
+      <div class="wrapper wrapper--wide wrapper--nopadding">
         <?php
           $realimage = wp_get_attachment_image( get_post_meta( get_the_ID(), '_refdata_reallife_id', 1 ), 'full');
           //var_dump($realimage);
         ?>
         <?php echo $realimage; ?>
-      
-        <p class="datahead__url"><i class="ion ion-link"></i> Nézd meg élesben: <a href="#">somnocenter.hu</a></p>
+        
+        <?php if (strlen(get_post_meta( get_the_ID(), '_refdata_url', 1 ))>1) : ?>
+          <p class="datahead__url">
+            <i class="ion ion-link"></i>
+            Nézd meg élesben:
+            <a href="<?php echo get_post_meta( get_the_ID(), '_refdata_url', 1 ); ?>" target="_blank">
+              <?php echo substr(get_post_meta( get_the_ID(), '_refdata_url', 1 ),7); ?>
+            </a>
+          </p>
+        <?php endif; ?>
+
       </div>
     </section>
 
@@ -54,18 +57,23 @@
       </div>
     </div>
 
+    <?php if (get_post_meta( get_the_ID(), '_refdata_quotetext', 1 )) : ?>
 
     <section class="refsingle__quoteblock">
       <div class="wrapper wrapper--wide">
         <blockquote class="refsingle__quote">
           <p>
-            Referenciájuk alapján választottunk ki a Hydrogenet. A online jelentkezések száma, és az ügyfélkör ugrásszerű növekedése &mdash; az új arculatnak és weblapnak köszönhetően &mdash; jócskán felülmúlta várakozásunkat.
+            <?php echo get_post_meta( get_the_ID(), '_refdata_quotetext', 1 ); ?>
           </p>
-          <cite>Koczó Levente, <span class="titulus">Somnocenter ügyvezető igazgató</span></cite>          
+          <cite><?php echo get_post_meta( get_the_ID(), '_refdata_quotename', 1 ); ?>
+            <span class="titulus">
+              <?php echo get_post_meta( get_the_ID(), '_refdata_quotetitle', 1 ); ?>
+            </span>
+          </cite>          
         </blockquote>
       </div>
     </section>
-
+    <?php endif; ?>
 
         <?php get_template_part('templates/reference', 'pagenav'); ?>
     <?php get_template_part('templates/reference', 'connect'); ?>

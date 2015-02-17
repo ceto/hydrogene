@@ -61,6 +61,8 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 			
+			.tasks__elements li a:hover,
+			.tasks__elements li a:focus,
 			.pagenav a,
 			/*.refsingle__content h1, .refsingle__content h2, .refsingle__content h3,*/
 			.datahead__title,
@@ -69,6 +71,7 @@
 			/*.connect__bigtitle,*/
 			.refsingle__content ol li:before,
 			.refsingle__content a,
+			/*.refsingle__quote,*/
 			.refsingle__quote:before {
 				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
@@ -107,7 +110,8 @@
 			    </h3>
 					<h2 class="refrow__title"><?php the_title(); ?></h2>
 					<div class="refsingle__lead">
-						<?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?>
+						<?php echo get_the_excerpt();	 ?>
+						<?php // echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?>
 					</div>
  			    <div class="refrow__actions">
 						<a class="btn btn--pseudo" href="#singletop">

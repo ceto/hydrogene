@@ -1,4 +1,4 @@
-<div class="refrow">
+<div id="reference-<?php echo get_the_ID(); ?>" class="refrow">
 	<div class="wrapper wrapper--wide">
 		<?php $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'nemtudommeg');  ?>
 		<style>
@@ -47,7 +47,10 @@
 							<li>Wordpress weboldalkészítés</li>    		
 						</ul>
 					</div> -->
-			    <div class="refrow__summary"><?php echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?></div>
+			    <div class="refrow__summary">
+			    	<?php echo get_the_excerpt();	 ?>
+			    	<?php //echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?>
+			    </div>
 					
 			    <div class="refrow__actions">
 			    	<a class="btn btn--pseudo" href="<?php the_permalink(); ?>/#singletop"><?php _e('Projekt részletek','hydrogene'); ?></a>

@@ -33,8 +33,8 @@
 						<h4 class="widestoryitem__title">Felhasználói élmény tervezése</h4>
 					</header>
 					<div class="widestoryitem__desc">
-						<p>Hiszünk abban, hogy csak a megfelelő tájékozottság, tisztánlátás melett lehet elkezdeni a megalapozott tervezési munkát</p>
-						<p><strong>Inkább itt</strong> egybe kéne letudni a statégia-marketing blamát. lehet még azó a tartalom tervezésről és tartalom stratégiáról, szövegírási támpontok készítéséről. Információ építészetről. Kis onsite seorol.</p>
+						<p>A fejlesztést, minden esetben átfogó tervezés előz meg. Tájékozodunk az adott szakterületen, megvizsgáljuk a konkurenciát. Tanácsokkal látjuk el a megrendelőt, a keresési szokások, a felhasználói viselkedés és az elérendő cél figyelembevételével.</p>
+						<p>Szövegírási támpontokat és online stratégiát dolgozunk ki. Drótvázakon tervezzük meg a leendő honlap tartalmát és funkcióit. Hiszünk abban, hogy az előkészítés és tervezés megkerülhetetlen a minőségi végeredmény előállításában.</p>
 					</div>
 				</div>
 			</div>
@@ -153,9 +153,6 @@
 					</header>
 					<div class="teammember__desc">
 						<p>Mátyás a grafikai és arculati feladatok vezetője és kivitelezője. Ő felelős a formákért, a színekért és a vizuális atmoszféráért. Kitalálja a honlapok látványvilágát. Hangulati vázlatokat és grafikai terveket készít. Illusztrációkat, ikonokat rajzol és 3D látványterveket készít</p>
-						<blockquote>
-							<p>“Unde ducimus soluta consequatur expedita voluptatum modi tempora sed aliquam ea.”</p>
-						</blockquote>
 						<p>A marketing anyagokhoz ötletekkel látja el a kommunikációs szakembert. Viszi az ügyeket. Vizuális kérdésekben segít a Gábornak és grafikai megoldásokkal támogatja munkájában.</p>
 					</div>
 					<div class="teammember__footer">
@@ -225,16 +222,3 @@
 
 	</div>
 </section>
-
-
-
-
-
-
-
-<!-- <div class="page__content">
-	<div class="wrapper wrapper--normal">
-		<?php the_content(); ?>
-		<?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
-	</div>
-</div> -->

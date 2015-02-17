@@ -107,6 +107,20 @@ $(window).scroll(function (event) {
 
 
 
+$(document).ready(function(){
+
+
+// var waypoint = new Waypoint({
+//   element: document.getElementById('reference-17'),
+//   offset: '75%',
+//   handler: function(direction) {
+//     console.log('Scrolled '+ direction + ' to waypoint!');
+//     $(this.element).addClass('is-inview');
+//   }
+// });
+
+
+});
 
 
 

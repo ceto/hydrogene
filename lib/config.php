@@ -17,6 +17,12 @@ if (!defined('WP_ENV')) {
   define('WP_ENV', 'production');  // scripts.php checks for values 'production' or 'development'
 }
 
+
+function h2_excerpt_length( $length ) {
+  return 30;
+}
+add_filter( 'excerpt_length', 'h2_excerpt_length' );
+
 /**
  * Add body class if sidebar is active
  */

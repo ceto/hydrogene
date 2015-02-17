@@ -17,6 +17,10 @@
   }
 }
 
+.wrapper--nopadding {
+  padding:0;
+}
+
 .wrapper--wide {
   max-width: 64em;
 }
@@ -150,6 +154,12 @@
       font-size: 33.333%;
       opacity: 0.75;
     }
+  
+
+
+    
+
+
   }
 
   .niceheading__disclaimer {
@@ -167,7 +177,8 @@
   font-weight: normal;
   font-size: 1.25em;
   margin:0 0 0.125em 0;
-  //opacity: 0.75;
+
+
   .feat {
     font-family: $sans-serif;
     font-size: 75%;
@@ -194,6 +205,8 @@
   text-align: left;
   text-transform: uppercase;
   color: $textcolor-light;
+
+
 
 
 
@@ -242,10 +255,12 @@
   font-weight: 300;
 
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 
 
   text-align: left;
+
+
   .niceheading--inverse & {
     color:#fff;
   }

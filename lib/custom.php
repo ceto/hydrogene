@@ -70,6 +70,35 @@ function h2_refrences_taxonomies() {
 }
 
 
+add_action( 'init', 'h2_refrences_tasks', 0 );
+function h2_refrences_tasks() {
+	$labels = array(
+		'name'              => _x( 'Reference Tasks', 'taxonomy general name','hydrogene' ),
+		'singular_name'     => _x( 'Reference Task', 'taxonomy singular name','hydrogene' ),
+		'search_items'      => __( 'Search Reference Tasks','hydrogene' ),
+		'all_items'         => __( 'All Reference Tasks','hydrogene' ),
+		'parent_item'       => __( 'Parent Reference Task','hydrogene' ),
+		'parent_item_colon' => __( 'Parent Reference Task:','hydrogene' ),
+		'edit_item'         => __( 'Edit Reference Task','hydrogene' ),
+		'update_item'       => __( 'Update Reference Task','hydrogene' ),
+		'add_new_item'      => __( 'Add New Reference Task','hydrogene' ),
+		'new_item_name'     => __( 'New Reference Task Name','hydrogene' ),
+		'menu_name'         => __( 'Tasks','hydrogene' ),
+	);
+
+	$args = array(
+		'hierarchical'      => false,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'reference-task' ),
+	);
+
+	register_taxonomy( 'tasks', array( 'reference' ), $args );
+}
+
+
 /************ MetaBoxes **********/
 
 if ( file_exists(  __DIR__ .'/CMB2/init.php' ) ) { require_once  __DIR__ .'/CMB2/init.php';};
@@ -101,13 +130,6 @@ function h2_metaboxes( array $meta_boxes ) {
 				'type' => 'text',
 				// 'repeatable' => true,
 			),
-			array(
-				'name'    => __( 'Excerpt', 'cmb2' ),
-				'desc'    => __( 'short excerpt', 'cmb2' ),
-				'id'      => $prefix . 'excerpt',
-				'type'    => 'wysiwyg',
-				'options' => array( 'textarea_rows' => 5, ),
-			),
 
 			array(
 				'name' => __( 'Year', 'cmb2' ),
@@ -138,6 +160,26 @@ function h2_metaboxes( array $meta_boxes ) {
 				'id' => $prefix . 'reallife',
 				'type' => 'file',
 				// 'allow' => array( 'url', 'attachment' ) // limit to just attachments with array( 'attachment' )
+			),
+
+
+			array(
+				'name'    => __( 'Quote', 'cmb2' ),
+				'desc'    => __( 'add some qoute here', 'cmb2' ),
+				'id'      => $prefix . 'quotetext',
+				'type'    => 'textarea',
+			),
+			array(
+				'name'    => __( 'Clients name', 'cmb2' ),
+				'desc'    => __( 'add the name of the client', 'cmb2' ),
+				'id'      => $prefix . 'quotename',
+				'type'    => 'text_small',
+			),
+			array(
+				'name'    => __( 'Clients title', 'cmb2' ),
+				'desc'    => __( 'titulus kell ide', 'cmb2' ),
+				'id'      => $prefix . 'quotetitle',
+				'type'    => 'text_small',
 			),
 		
 			array(

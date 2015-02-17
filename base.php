@@ -1,7 +1,19 @@
 <?php get_template_part('templates/head'); ?>
 <body <?php body_class(); ?>>
 
-  <!--[if lt IE 8]>
+<?php if ( WP_ENV !== 'development' && !current_user_can('manage_options')) : ?>
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NDCBRN"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NDCBRN');</script>
+  <!-- End Google Tag Manager -->
+<?php endif; ?>
+
+  <!--[if lt IE 9]>
     <div class="alert alert-warning">
       <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?>
     </div>
@@ -28,88 +40,13 @@
   <?php get_template_part('templates/footer'); ?>
 
   <?php wp_footer(); ?>
-
-  <?php if (is_page_template('template-contact.php')): ?>
-    <!-- auto-hide mobile address bar !-->
-    <script type="application/x-javascript">
-      addEventListener("load", function() {
-        setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1);
-      }
-    </script> 
-
-
-    <!-- Google MAps -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script>
-
-      function initialize() {
-        // var mapOptions = {
-        //   styles: [
-        //     {
-        //       "stylers": [
-        //         //{"invert_lightness": true},
-        //         { "saturation": -100 },
-        //         { "gamma": 1.94 }
-        //       ]
-        //     }
-        //   ],
-        //   zoom: 16,
-        //   disableDefaultUI: true,
-        //   mapTypeControl: false,
-        //   scrollwheel: false,
-        //   zoomControl: false,
-        //   center: new google.maps.LatLng(47.505175, 19.054692)
-        // };
-        var mapOptions = {
-          center: new google.maps.LatLng(47.505175, 19.054692),
-          zoom: 17,
-          zoomControl: false,
-          zoomControlOptions: {style: google.maps.ZoomControlStyle.DEFAULT,},
-          disableDoubleClickZoom: true,
-          mapTypeControl: true,
-          mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,},
-          scaleControl: true,
-          scrollwheel: true,
-          streetViewControl: true,
-          draggable: true,
-          overviewMapControl: true,
-          overviewMapControlOptions: {opened: false,},
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          styles: [{featureType: "landscape",stylers: [{saturation: -100}, {lightness: 65}, {visibility: "on"}]}, {featureType: "poi",stylers: [{saturation: -100}, {lightness: 51}, {visibility: "simplified"}]}, {featureType: "road.highway",stylers: [{saturation: -100}, {visibility: "simplified"}]}, {featureType: "road.arterial",stylers: [{saturation: -100}, {lightness: 30}, {visibility: "on"}]}, {featureType: "road.local",stylers: [{saturation: -100}, {lightness: 40}, {visibility: "on"}]}, {featureType: "transit",stylers: [{saturation: -100}, {visibility: "simplified"}]}, {featureType: "administrative.province",stylers: [{visibility: "off"}]/** /},{featureType: "administrative.locality",stylers: [{ visibility: "off" }]},{featureType: "administrative.neighborhood",stylers: [{ visibility: "on" }]/**/}, {featureType: "water",elementType: "labels",stylers: [{visibility: "on"}, {lightness: -25}, {saturation: -100}]}, {featureType: "water",elementType: "geometry",stylers: [{hue: "#ffff00"}, {lightness: -25}, {saturation: -97}]}],
-        }
-        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-        var image = '<?php echo get_stylesheet_directory_uri(); ?>/assets/img/flag.png';
-        var myLatLng = new google.maps.LatLng(62.756715, 7.274334);
-        var beachMarker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          icon: image
-        });
-      }
-
-      google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
-  <?php endif; ?>
-  <div id="fb-root"></div>
-  <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.async=true;
-      js.src = "//connect.facebook.net/hu_HU/sdk.js#xfbml=1&appId=171677096215391&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-  <script src="https://apis.google.com/js/platform.js" async defer>
-    {lang: 'hu'}
-  </script>
-
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
+  
+  <!-- auto-hide mobile address bar !-->
+  <script type="application/x-javascript">
+    addEventListener("load", function() {
+      setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1);
+    }
+  </script> 
 
 </body>
 </html>

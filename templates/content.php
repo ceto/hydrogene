@@ -1,7 +1,7 @@
 <?php if (is_sticky()) : ?>
   <?php get_template_part('templates/content', 'sticky'); ?>
 <?php else : ?>
-<article <?php post_class('archiveentry'); ?>>
+<article <?php post_class('archiveentry animated fadeInUp'); ?>>
     <header class="archiveentry__header niceheading">
       <div class="wrapper wrapper--normal">
 
