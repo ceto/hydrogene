@@ -34,37 +34,40 @@
   margin: 2em auto 1em;
 
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto 100%;
+  background-position: center bottom;
+  background-size: auto 95%;
 
   backface-visibility: hidden;
-  //margin-top: -2em;
-  //z-index: -1;
+  
+
+  .refsingle & {
+    background-size: auto 90%;
+  }
   @include bp($s2) {
     position: absolute;
     top: 0;
-    left: 60%;
+    left: 58%;
 
-    width: 40%;
+    width: 45%;
     height: 100%;
     margin: 0;
     //transform: translate(0, -50%);
     .reference:nth-of-type(2n) & {
-      left: 0;
+      left: -3%;
 
-      background-position: center center;
+      background-position: center bottom;
     }
     a img {
       visibility: hidden;
     }
   }
   @include bp($s5) {
-    background-position: center center;
+    background-position: center bottom;
     left: 50%;
 
     width: 50%;
     .reference:nth-of-type(2n) & {
-      background-position: center center;
+      background-position: center bottom;
       left: 0;
     }
   }
@@ -89,7 +92,7 @@
     }
     img {
       width: auto;
-      max-width: 75%;
+      max-width: 16em;
       //max-width: 90%;
       max-height: 25em;
       //width:100%;
@@ -130,10 +133,10 @@
     padding: 5em 0 4em;
   }
   .innerwrap {
-    max-width: 32em;
+    //max-width: 32em;
     margin: 0 auto;
-
-    @include bp($s3) {
+    max-width: 32em;
+    @include bp($s2) {
       max-width: none;
     }
   }
@@ -144,7 +147,7 @@
   font-size: 1.25em;
   font-weight: 700;
   line-height: 1;
-
+  
   position: relative;
 
   margin: 0 0 .125em;
@@ -163,7 +166,7 @@
 
 .refrow__title {
   font-family: $headingfont;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 900;
   line-height: 1;
   //display: inline-block;
@@ -174,6 +177,13 @@
 
   color: $gray-heading;
   border-bottom: 1px solid rgba(#fff,.125);
+
+  @include bp($s2) {
+    font-size: 2.25em;
+  }
+  @include bp($s3) {
+    font-size: 2.5em;
+  }
   .refsingle & {
     //font-size: 3em;
     color: rgba(#fff,.75);
@@ -295,9 +305,7 @@
     }
   }
 
-  .refrow__figure {
-    background-size: auto 95%;
-  }
+  
 }
 
 .refsingle__lead {

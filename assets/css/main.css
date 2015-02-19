@@ -7593,7 +7593,7 @@ body {
     clear: both; }
   @media only screen and (min-width: 768px) {
     .wrapper {
-      padding: 0 1.5em; } }
+      padding: 0 2.5em; } }
   @media only screen and (min-width: 1024px) {
     .wrapper {
       padding: 0 2.5em; } }
@@ -7677,7 +7677,10 @@ body {
   background-position: center center;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  padding: 5em 0 4em; }
+  padding: 6em 0 4em; }
+  @media only screen and (min-width: 768px) {
+    .niceheading--ashero {
+      padding: 8em 0 4em; } }
   @media only screen and (min-width: 1024px) {
     .niceheading--ashero {
       padding-top: 9em; } }
@@ -8566,30 +8569,32 @@ input[type="checkbox"]#nav-toggle {
   overflow: hidden;
   margin: 2em auto 1em;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto 100%;
+  background-position: center bottom;
+  background-size: auto 95%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
+  .refsingle .refrow__figure {
+    background-size: auto 90%; }
   @media only screen and (min-width: 768px) {
     .refrow__figure {
       position: absolute;
       top: 0;
-      left: 60%;
-      width: 40%;
+      left: 58%;
+      width: 45%;
       height: 100%;
       margin: 0; }
       .reference:nth-of-type(2n) .refrow__figure {
-        left: 0;
-        background-position: center center; }
+        left: -3%;
+        background-position: center bottom; }
       .refrow__figure a img {
         visibility: hidden; } }
   @media only screen and (min-width: 1600px) {
     .refrow__figure {
-      background-position: center center;
+      background-position: center bottom;
       left: 50%;
       width: 50%; }
       .reference:nth-of-type(2n) .refrow__figure {
-        background-position: center center;
+        background-position: center bottom;
         left: 0; } }
   .refrow__figure a {
     position: relative;
@@ -8608,7 +8613,7 @@ input[type="checkbox"]#nav-toggle {
         height: 100%; } }
     .refrow__figure a img {
       width: auto;
-      max-width: 75%;
+      max-width: 16em;
       max-height: 25em; }
 
 .refrow__header {
@@ -8632,9 +8637,9 @@ input[type="checkbox"]#nav-toggle {
       width: 50%;
       padding: 5em 0 4em; } }
   .refrow__header .innerwrap {
-    max-width: 32em;
-    margin: 0 auto; }
-    @media only screen and (min-width: 1024px) {
+    margin: 0 auto;
+    max-width: 32em; }
+    @media only screen and (min-width: 768px) {
       .refrow__header .innerwrap {
         max-width: none; } }
 
@@ -8654,12 +8659,18 @@ input[type="checkbox"]#nav-toggle {
 
 .refrow__title {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 900;
   line-height: 1;
   margin: 0 0 0 0;
   color: #484646;
   border-bottom: 1px solid rgba(255, 255, 255, 0.125); }
+  @media only screen and (min-width: 768px) {
+    .refrow__title {
+      font-size: 2.25em; } }
+  @media only screen and (min-width: 1024px) {
+    .refrow__title {
+      font-size: 2.5em; } }
   .refsingle .refrow__title {
     color: rgba(255, 255, 255, 0.75); }
   .refrow__title a {
@@ -8731,8 +8742,6 @@ input[type="checkbox"]#nav-toggle {
       padding: 11em 0 5em; } }
   .refsingle .refrow .refrow__title {
     padding-bottom: 0.25em; }
-.refsingle .refrow__figure {
-  background-size: auto 95%; }
 
 .refsingle__lead {
   margin-top: 0.75em; }
