@@ -42,13 +42,18 @@
 
   .refsingle & {
     background-size: auto 90%;
+    background-position: left bottom;
+    @include bp($s5) {
+      background-position: center bottom;
+    }
+
   }
   @include bp($s2) {
     position: absolute;
     top: 0;
     left: 58%;
 
-    width: 45%;
+    width: 48%;
     height: 100%;
     margin: 0;
     //transform: translate(0, -50%);

@@ -1,8 +1,15 @@
 <?php while (have_posts()) : the_post(); ?>
-<header class="niceheading niceheading--inverse niceheading--ashero niceheading--homehero">
+<header class="niceheading niceheading--ashero niceheading--homehero">
   <div class="wrapper wrapper--wide">
-      <h3 class="niceheading__title"><small>élményt tervezünk</small>Honlap és arculat</h3>
-      <p><a href="<?php echo get_post_type_archive_link('reference'); ?>" class="btn btn--pseudo btn--opaque ">Nézd meg a munkáinkat</a></p>
+  		<section class="niceheading__preinfo">
+        <span class="feat">Piciny műhelyünkben élményt tervezünk</span>          
+      </section>
+      <h3 class="niceheading__title">Honlap és arculat</h3>
+      <p class="niceheading__disclaimer">
+        Karakteres arculattal, és — abba szervesen illeszkedő — felhasználóbarát honlappal segítjük céged növekedését. Felfedezés indul.
+      </p>
+      <a href="<?php echo get_post_type_archive_link('reference'); ?>" class="readmore">Nézd meg a munkáinkat</a>
+      <hr>
   </div>
 </header>
 
@@ -20,7 +27,7 @@
 		</header>
 		<div class="storyitem__desc">
 			<h5>Cégarculat és honlap tervezés egy kézben</h5>
-			<p>Karakteres arculattal, és — abba szervesen illeszkedő — felhasználóbarát honlappal segítjük céged növekedését.</p><p>A személyes kapcsolat a tervezővel, és a kis létszámú műhelymunka lehetővé teszi, hogy nagyszerű és egyedi dolgok szülessenek weben és nyomtatásban.</p>
+			<p>A személyes kapcsolat a tervezővel, és a kis létszámú műhelymunka lehetővé teszi, hogy nagyszerű és egyedi dolgok szülessenek weben és nyomtatásban.</p>
 			<p>Legyen ez egy hosszan tartó, eredményes barátság kezdete.</p>
 			<p><a href="<?php echo get_the_permalink('69'); ?>" class="btn btn--sima">Hogyan dolgozunk</a></p>
 

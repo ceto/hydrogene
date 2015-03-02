@@ -1,8 +1,18 @@
 .niceheading--homehero {
-  border-bottom: 10px solid rgba(black,.25);
-  background-image: url('../img/hero_home.jpg');
-  //background-color: #fff;
-  .niceheading__title {
+  //background-image: url('../img/hero_home_light.jpg');
+  //background-size: auto 100%;
+  //background-position: center bottom;
+  //border-bottom: 1px solid $secondary-color;
+  padding-bottom: 2em;
+  hr {
+    margin-top: 3em;
+    height:1px;
+    border:none;
+    background-color: $gray-light;
+    //background-color: transparent;
+  }
+
+  .aniceheading__title {
     font-size: 3.5em;
 
     padding-left: 0;
@@ -26,13 +36,6 @@
       display: none;
     }
   }
-}
-.home__hero {
-  background-color: $secondary-color;
-  background-repeat: no-repeat;
-  //background-image: url('../img/hero_home.jpg');
-  background-position: center center;
-  background-size: cover;
 }
 
 .hero__textblock {
@@ -162,7 +165,7 @@
 
 .storyitem__title {
   font-family: $sans-serif;
-  font-size: 1.666em;
+  font-size: 1.5em;
   //text-transform: uppercase;
   font-weight: 900;
   line-height: 1.25;
@@ -177,6 +180,7 @@
   margin-top: -2em;
   margin-bottom: 0.666em;
   display: block;
+  display: none;
 }
 
 
@@ -322,7 +326,7 @@
 }
 .servicegroup__name {
   font-family: $sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 900;
   line-height: 1;
 
