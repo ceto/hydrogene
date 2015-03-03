@@ -114,8 +114,8 @@
 						<?php // echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?>
 					</div>
  			    <div class="refrow__actions">
-						<a class="btn btn--pseudo" href="#singletop">
-							<?php _e('Felfedezés indul','h2'); ?>
+						<a class="btn btn--sima" href="#singletop">
+							<?php _e('Felfedezés indul','h2'); ?>…
 						</a>
 			    </div>
 			  </div>

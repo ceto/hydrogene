@@ -1,20 +1,20 @@
 <?php while (have_posts()) : the_post(); ?>
 <header class="niceheading niceheading--ashero niceheading--homehero">
   <div class="wrapper wrapper--wide">
-  		<section class="niceheading__preinfo">
-        <span class="feat">Piciny műhelyünkben élményt tervezünk</span>          
+  		<section class="niceheading__preinfo animated fadeInUp">
+        <span class="feat">Élményt tervezünk</span>          
       </section>
-      <h3 class="niceheading__title">Honlap és arculat</h3>
-      <p class="niceheading__disclaimer">
-        Karakteres arculattal, és — abba szervesen illeszkedő — felhasználóbarát honlappal segítjük céged növekedését. Felfedezés indul.
+      <h3 class="niceheading__title animated fadeInUp">Honlap és arculat</h3>
+      <p class="niceheading__disclaimer animated fadeInUp">
+        Piciny digitális műhelyünk, karakteres arculattal, és — abba szervesen illeszkedő — felhasználóbarát honlappal segíti céged növekedését. 
       </p>
-      <a href="<?php echo get_post_type_archive_link('reference'); ?>" class="readmore">Nézd meg a munkáinkat</a>
-      <hr>
+      <a href="<?php echo get_post_type_archive_link('reference'); ?>" class="readmore animated fadeInUp">Nézd meg a munkáinkat…</a>
+      <hr class="animated fadeInUp">
   </div>
 </header>
 
 
-<div class="storyitem whatwedo">
+<div class="storyitem whatwedo animated fadeInUp">
 	<div class="wrapper wrapper--wide">	
 		<header class="storyitem__head">
 <!-- 			<h5 class="storyitem__subtitle">Legyen ez egy hosszan tartó, eredményes barátság kezdete</h5> -->
@@ -29,13 +29,13 @@
 			<h5>Cégarculat és honlap tervezés egy kézben</h5>
 			<p>A személyes kapcsolat a tervezővel, és a kis létszámú műhelymunka lehetővé teszi, hogy nagyszerű és egyedi dolgok szülessenek weben és nyomtatásban.</p>
 			<p>Legyen ez egy hosszan tartó, eredményes barátság kezdete.</p>
-			<p><a href="<?php echo get_the_permalink('69'); ?>" class="btn btn--sima">Hogyan dolgozunk</a></p>
+			<p><a href="<?php echo get_the_permalink('69'); ?>" class="btn btn--sima">Hogyan dolgozunk…</a></p>
 
 		</div>
 	</div>
 </div>
 
-<section class="allwedo">
+<section class="allwedo animated fadeInUp">
 	<div class="wrapper wrapper--wide">	
 		<div class="servicegroup">
 			<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/ikon_arculat.svg' ?>" alt="Grafikai és vizuális tervezés" class="servicegroup__ill">

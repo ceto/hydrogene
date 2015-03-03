@@ -13,7 +13,8 @@
 		<div class="wrapper wrapper--wide">
 			<div class="connect__left">
 				<h3>Szeretnénk neked dolgozni</h3>
-				<p>Örömmel veszünk részt egyedi honlap tervezési és/vagy arculati feladatokban. Legyen ez egy eredményes barátság kezdete. <a href="<?php echo get_permalink(58); ?>">Lépj kapcsolatba velünk</a></p>
+				<p>Örömmel veszünk részt egyedi honlap tervezési és/vagy arculati feladatokban. Legyen ez egy eredményes barátság kezdete.</p>
+				<p><a href="<?php echo get_permalink(58); ?>">Lépj kapcsolatba velünk</a></p>
 			</div>
 
 			<div class="connect__right">

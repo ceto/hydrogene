@@ -1,40 +1,37 @@
+.home .main {
+  // background-image: url('../img/hero_home_light.jpg');
+  // background-size: 100% auto;
+  // background-position: center top;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+}
+
 .niceheading--homehero {
   //background-image: url('../img/hero_home_light.jpg');
   //background-size: auto 100%;
   //background-position: center bottom;
   //border-bottom: 1px solid $secondary-color;
   padding-bottom: 2em;
+  text-align: center;
+  .readmore {
+    margin-top: 1em;
+    display: inline-block;
+  }
   hr {
     margin-top: 3em;
     height:1px;
     border:none;
-    background-color: $gray-light;
+    background-color: $gray-xxlight;
     //background-color: transparent;
   }
 
-  .aniceheading__title {
-    font-size: 3.5em;
-
-    padding-left: 0;
-
-    
-
-    @include bp($s2) {
-      font-size: 5em;
-
-      margin-top: 1.25em;
-    }
-    @include bp($s3) {
-      font-size: 5em;
-
-      margin-top: .25em;
-    }
-    small {
-    }
-    //color:$gray-light;
-    &:before {
-      display: none;
-    }
+  .niceheading__title {
+    margin:0 auto .25em auto;
+    max-width: $s3;
+  }
+  .niceheading__disclaimer {
+    margin: 0 auto 1em auto;
+    max-width: $s3; 
   }
 }
 
@@ -118,6 +115,7 @@
   @include clearfix();
   //background-color: $gray-light;
   // border-top: 10px solid rgba($secondary-color,.2);
+  //border-top: 1px solid $gray-xxlight; 
   @include clearfix();
   @include bp($s2) {
     padding: 2em 0;
@@ -129,7 +127,7 @@
     //max-width: 50em;
   }
   &.whatwedo {
-    padding: 4em 0 2em;
+    //padding: 4em 0 2em;
   }
 }
 
@@ -394,4 +392,8 @@
       background-color: $secondary-color;
     }
   }
+}
+
+.home__references {
+  border-top: 1px solid $gray-xxlight; 
 }

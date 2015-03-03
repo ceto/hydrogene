@@ -117,20 +117,51 @@
   }
   .balfel {
     margin-bottom: 1em;
-    @include bp($s2) {
+    @include bp($s1) {
       float: left;
 
-      max-width: 25%;
+      max-width: 28%;
       margin-bottom: 0;
     }
   }
   .jobbfel {
-    @include bp($s2) {
+    @include bp($s1) {
       float: right;
 
-      width: 75%;
+      width: 55%;
 
       text-align: right;
+    }
+  }
+  .legszel {
+    margin: 1em 0;
+    @include bp($s1) {
+      float: right;
+      margin: 0 0 0 0.25em;
+
+      //width: 11%;
+
+      text-align: right;
+      a {
+        font-size: 1em;
+        display: inline-block;
+        margin:0 0 0.25em 0.25em;
+        padding:0.333em 0.25em 0;
+        width:1.75em;
+        height: 1.75em;
+        text-align: center;
+        background-color: $gray-xxlight;
+        //color:#fff;
+        //border-radius:50%;
+        line-height: 1;
+        i {
+          line-height: 1;
+        }
+        &:hover, &:focus {
+          background-color: $textcolor-light;
+          color:#fff;
+        }
+      }
     }
   }
 }

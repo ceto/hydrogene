@@ -40,6 +40,14 @@
     			Honlap és arculat tervezés
     		</p>
     	</div>
+      <div class="legszel">
+          <a href="https://www.facebook.com/hydrogenedesign" target="_blank">
+            <i class="ion-social-facebook"></i>
+          </a>
+          <a href="https://www.twitter.com/hydrogenedesign" target="_blank">
+            <i class="ion-social-twitter"></i>
+          </a>
+      </div>
     	<div class="jobbfel">
     	<p class="pagefooter__helper">
         <!-- Küldj emailt <a href="mailto:office@hydrogene.hu">office@hydrogene.hu</a> &middot; Hívj telefonon <a href="tel:+36 70 770 5653">(0036) 70.770.5653</a><br> -->
@@ -47,6 +55,7 @@
   	
   		</p>  		
     	</div>
+      
     </div>  
 
   </div>

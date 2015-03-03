@@ -7537,7 +7537,7 @@ hr {
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s; }
 
-.archiveentry {
+.archiveentry, .storyitem, .allwedo, .reflist {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-delay: 0.75s;
@@ -7721,10 +7721,8 @@ body {
   font-size: 2.5em;
   line-height: 1;
   font-weight: 900;
-  margin-top: 0;
-  max-width: 1024px;
-  margin-bottom: 0.25em;
-  text-align: left;
+  margin: 0 0 0.25em 0;
+  max-width: 1280px;
   text-transform: uppercase;
   color: #454545; }
   .niceheading--inverse .niceheading__title {
@@ -7757,9 +7755,8 @@ body {
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 1.25em;
   font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 1em;
-  text-align: left; }
+  max-width: 1280px;
+  margin: 0 0 1em 0; }
   .niceheading--inverse .niceheading__disclaimer {
     color: #fff; }
   .niceheading__disclaimer a {
@@ -8124,13 +8121,15 @@ textarea {
     border: 1px solid rgba(255, 255, 255, 0.5); }
 
 .btn--sima {
+  font-size: 1em;
   margin-top: 1em;
   padding: 0 0;
   text-transform: none;
   color: #484646;
-  border-bottom: 2px solid currentColor; }
+  border-bottom: 2px solid transparent; }
   .btn--sima:hover, .btn--sima:focus {
-    color: #bd4932; }
+    color: #bd4932;
+    border-bottom: 2px solid currentColor; }
 
 .banner {
   -webkit-transition: all 0.4s ease;
@@ -8160,8 +8159,6 @@ textarea {
         .page-template-template-contact .banner.scrolled {
           background-color: rgba(189, 73, 50, 0.95); }
         .page-template-template-aboutus .banner.scrolled {
-          background-color: rgba(189, 73, 50, 0.95); }
-        .home .banner.scrolled {
           background-color: rgba(189, 73, 50, 0.95); }
         .banner.scrolled:hover, .banner.scrolled.ison {
           top: 0; } }
@@ -8325,12 +8322,12 @@ textarea {
 
 .nav-toggle {
   position: absolute;
-  right: 1em;
-  top: 1em;
+  right: 0.666em;
+  top: 0.6em;
   z-index: 10;
   display: inline-block;
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 2em;
   list-height: 1;
   color: rgba(33, 33, 33, 0.75); }
   @media only screen and (min-width: 768px) {
@@ -8340,13 +8337,15 @@ textarea {
     display: none; }
   .nav-toggle:hover, .nav-toggle:focus {
     color: #212121; }
-    .nav-toggle:hover i:before, .nav-toggle:hover i:after, .nav-toggle:focus i:before, .nav-toggle:focus i:after {
-      font-family: "SSGlyphish_filled"; }
+  .single-reference .nav-toggle, .page-template-template-contact .nav-toggle, .page-template-template-aboutus .nav-toggle {
+    color: rgba(255, 255, 255, 0.75); }
+    .single-reference .nav-toggle:hover, .single-reference .nav-toggle:focus, .page-template-template-contact .nav-toggle:hover, .page-template-template-contact .nav-toggle:focus, .page-template-template-aboutus .nav-toggle:hover, .page-template-template-aboutus .nav-toggle:focus {
+      color: white; }
 
-input[type="checkbox"]#nav-toggle + .nav-toggle i:before {
-  content: '\EE06'; }
-input[type="checkbox"]#nav-toggle:checked + .nav-toggle i:before {
-  content: '\1F3C3'; }
+input[type="checkbox"]#nav-toggle:checked + .nav-toggle i {
+  color: #212121; }
+  input[type="checkbox"]#nav-toggle:checked + .nav-toggle i:before {
+    content: '\f405'; }
 
 input[type="checkbox"]#nav-toggle {
   position: absolute;
@@ -8556,11 +8555,12 @@ input[type="checkbox"]#nav-toggle {
   position: relative;
   overflow: hidden;
   color: #212121;
-  background-color: #ededed;
+  border-top: 1px solid #e6e5e5;
+  background-color: #fff;
   background-image: url('../img/noise.png');
   background-repeat: repeat; }
   .reference--listelem:nth-child(2n) .refrow {
-    background-color: #fff; }
+    background-color: #ededed; }
   .refrow .wrapper {
     position: relative; }
 
@@ -8707,14 +8707,24 @@ input[type="checkbox"]#nav-toggle {
   margin: 0.75em 0; }
   .refrow__summary a {
     display: none; }
-  .refisngle .refrow__summary {
-    font-size: 1em; }
 
 .refrow__actions {
-  margin: 1.5em 0; }
+  margin: 0 0 1.5em 0; }
   .refrow__actions .btn--pseudo {
+    background-color: #bd4932;
     font-size: 0.75em;
     margin: 0.25em 0 0 0; }
+    .refrow__actions .btn--pseudo:before {
+      border-color: rgba(189, 73, 50, 0.5); }
+  .refrow__actions .btn--sima {
+    font-size: 0.875em; }
+    .refsingle .refrow__actions .btn--sima {
+      display: none;
+      font-size: 1em;
+      margin-top: 2em;
+      color: rgba(255, 255, 255, 0.75); }
+      .refsingle .refrow__actions .btn--sima:hover, .refsingle .refrow__actions .btn--sima:focus {
+        color: rgba(255, 255, 255, 0.75); }
 
 .refrow__tags__title {
   font-size: 1em;
@@ -8731,7 +8741,8 @@ input[type="checkbox"]#nav-toggle {
 /************** Reference Single Style Definitions ****************/
 .refsingle .refrow {
   color: white;
-  border-bottom: 10px solid rgba(0, 0, 0, 0.125); }
+  border-bottom: 10px solid rgba(0, 0, 0, 0.125);
+  border-top: none; }
   @media only screen and (min-width: 768px) {
     .refsingle .refrow .refrow__header {
       padding: 9em 0 4em; } }
@@ -9321,16 +9332,38 @@ input[type="checkbox"]#nav-toggle {
       clear: both; }
   .pagefooter .balfel {
     margin-bottom: 1em; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 480px) {
       .pagefooter .balfel {
         float: left;
-        max-width: 25%;
+        max-width: 28%;
         margin-bottom: 0; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) {
     .pagefooter .jobbfel {
       float: right;
-      width: 75%;
+      width: 55%;
       text-align: right; } }
+  .pagefooter .legszel {
+    margin: 1em 0; }
+    @media only screen and (min-width: 480px) {
+      .pagefooter .legszel {
+        float: right;
+        margin: 0 0 0 0.25em;
+        text-align: right; }
+        .pagefooter .legszel a {
+          font-size: 1em;
+          display: inline-block;
+          margin: 0 0 0.25em 0.25em;
+          padding: 0.333em 0.25em 0;
+          width: 1.75em;
+          height: 1.75em;
+          text-align: center;
+          background-color: #e6e5e5;
+          line-height: 1; }
+          .pagefooter .legszel a i {
+            line-height: 1; }
+          .pagefooter .legszel a:hover, .pagefooter .legszel a:focus {
+            background-color: #454545;
+            color: #fff; } }
 
 .pagefooter__brand {
   text-indent: 100%;
@@ -9360,25 +9393,22 @@ input[type="checkbox"]#nav-toggle {
   margin: 0; }
 
 .niceheading--homehero {
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+  text-align: center; }
+  .niceheading--homehero .readmore {
+    margin-top: 1em;
+    display: inline-block; }
   .niceheading--homehero hr {
     margin-top: 3em;
     height: 1px;
     border: none;
-    background-color: #9a9898; }
-  .niceheading--homehero .aniceheading__title {
-    font-size: 3.5em;
-    padding-left: 0; }
-    @media only screen and (min-width: 768px) {
-      .niceheading--homehero .aniceheading__title {
-        font-size: 5em;
-        margin-top: 1.25em; } }
-    @media only screen and (min-width: 1024px) {
-      .niceheading--homehero .aniceheading__title {
-        font-size: 5em;
-        margin-top: 0.25em; } }
-    .niceheading--homehero .aniceheading__title:before {
-      display: none; }
+    background-color: #e6e5e5; }
+  .niceheading--homehero .niceheading__title {
+    margin: 0 auto 0.25em auto;
+    max-width: 1024px; }
+  .niceheading--homehero .niceheading__disclaimer {
+    margin: 0 auto 1em auto;
+    max-width: 1024px; }
 
 .hero__textblock:before, .hero__textblock:after {
   content: " ";
@@ -9442,8 +9472,6 @@ input[type="checkbox"]#nav-toggle {
   @media only screen and (min-width: 768px) {
     .storyitem {
       padding: 2em 0; } }
-  .storyitem.whatwedo {
-    padding: 4em 0 2em; }
 
 .storyitem__head {
   margin-bottom: 2em; }
@@ -9629,6 +9657,9 @@ input[type="checkbox"]#nav-toggle {
       height: 0.333em;
       content: '';
       background-color: #bd4932; }
+
+.home__references {
+  border-top: 1px solid #e6e5e5; }
 
 .aboutus__hero {
   border-bottom: 10px solid rgba(0, 0, 0, 0.2);

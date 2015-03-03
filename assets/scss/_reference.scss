@@ -1,6 +1,7 @@
 .reflist {
   background-color: #fff;
 
+
   @include clearfix();
 }
 .refarchive__header {
@@ -14,12 +15,13 @@
   overflow: hidden;
 
   color: $gray-main;
+    border-top: 1px solid $gray-xxlight; 
   //border-bottom: 10px solid rgba(#fff,.2);
-  background-color: $gray-xlight;
+  background-color: #fff;
   background-image: url('../img/noise.png');
   background-repeat: repeat;
   .reference--listelem:nth-child(2n) & {
-    background-color: #fff;
+    background-color: $gray-xlight;
   }
   .wrapper {
     position: relative;
@@ -246,20 +248,41 @@
   a {
    display: none;
   }
-  .refisngle & {
-    font-size: 1em;
+  .refsingle & {
+    //font-size: 1em;
   }
 }
 .refrow__actions {
-  margin: 1.5em 0;
+  margin: 0 0 1.5em 0;
   //text-align: left;
   .btn--pseudo {
+    background-color: $secondary-color;
     font-size: .75em;
 
     margin: .25em 0 0 0;
     // .refsingle & {
     //   font-size: 1em;
     // }
+
+    &:before {
+      border-color:rgba($secondary-color,0.5);
+    }
+  }
+
+  .btn--sima {
+    //margin-top: 0;
+    font-size: 0.875em;
+    //color:$secondary-color;
+    .refsingle & {
+      display: none;
+      font-size: 1em;
+      margin-top: 2em;
+      color:rgba(#fff,0.75);
+      &:hover, &:focus {
+        color:rgba(#fff,0.75);
+      }
+    }
+
   }
 }
 
@@ -291,6 +314,7 @@
   .refrow {
     color: white;
     border-bottom: 10px solid rgba(#000,.125);
+    border-top:none;
     .refrow__header {
       @include bp($s2) {
         padding: 9em 0 4em;

@@ -7,24 +7,28 @@
 					background-image: url(<?php echo $imgsrc[0]; ?>);
 				}
 			}
-
+/*
 			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__title a:hover,
 			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__title a:focus {
 				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
-			
+*/			
   
-  
+  		/*
 			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__figure a:after {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}
 
+			*/
+/*
 			.reference-<?php echo get_the_ID(); ?> .refrow .btn--pseudo {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 			.reference-<?php echo get_the_ID(); ?> .refrow .btn--pseudo:before {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}
+
+			*/
 		</style>
 					<figure class="refrow__figure">
 				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
@@ -53,7 +57,7 @@
 			    </div>
 					
 			    <div class="refrow__actions">
-			    	<a class="btn btn--pseudo" href="<?php the_permalink(); ?>/#singletop"><?php _e('Projekt részletek','hydrogene'); ?></a>
+			    	<a class="btn btn--sima" href="<?php the_permalink(); ?>/#singletop"><?php _e('Projekt részletek','hydrogene'); ?>…</a>
 			    </div>
 			  </div>
 			</header>
