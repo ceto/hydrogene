@@ -258,9 +258,11 @@
 .hero__textblock {
   @include clearfix();
   @include bp($s2) {
-    float: left;
-
     width: 33em;
+  }
+
+  @include bp($s5) {
+    font-size: 1.125em;
   }
 }
 

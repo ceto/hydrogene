@@ -110,6 +110,12 @@ $(window).scroll(function (event) {
 $(document).ready(function(){
 
 
+$('.mapinfo__close').click(function(e){
+  e.preventDefault();
+  $('.mapblock__content').removeClass('is_show');
+  $('.map-overlay').removeClass('is_show');
+});
+
 // var waypoint = new Waypoint({
 //   element: document.getElementById('reference-17'),
 //   offset: '75%',

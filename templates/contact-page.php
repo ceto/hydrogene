@@ -13,6 +13,7 @@
 
 <section class="contactblock">
 	<div class="wrapper wrapper--wide">
+	<div class="contactblock__inner">
 		<div class="contactdata">
 			<h3 class="contact__title">Elérhetőségek</h3>
 			<p class="contactelement__data">Ha komoly az ügy és biztosra mész, telefonon vedd fel velünk kapcsolatot.</p>
@@ -42,24 +43,20 @@
 			<form id="contactform" class="contactform">
 				<h3 class="contact__title">Küldj üzenetet</h3>
 				<p class="contactelement__data">Érdeklődhetsz az alábbi űrlap kitöltésével is. Két munkanapon belül válaszolunk.</p>
-					<div class="formitem">
-						<label for="name">Név</label>
-						<input type="text" name="name" id="name" required placeholder="Add meg a nevedet*">
-					</div>
-					<div class="formitem">
-						<label for="email">Email</label>
-						<input type="text" name="email" id="email" required placeholder="E-mail címedet*">
-					</div>
-					<div class="formitem">
-						<label for="tel">Telefon</label>
-						<input type="text" name="tel" id="tel" placeholder="Telefonszámot">
-					</div>
-		<!-- 			<div class="formitem">
-						<label for="budget">Büdzsé</label>
-						<input type="range" name="budget" id="range" placeholder="Mennyin szán a projektre">
-					</div> -->
+				<div class="formitem">
+					<label for="name">Név</label>
+					<input type="text" name="name" id="name" required placeholder="Add meg a nevedet*">
+				</div>
+				<div class="formitem">
+					<label for="email">Email</label>
+					<input type="text" name="email" id="email" required placeholder="E-mail címedet*">
+				</div>
+				<div class="formitem">
+					<label for="tel">Telefon</label>
+					<input type="text" name="tel" id="tel" placeholder="Telefonszámot">
+				</div>
 
-					<div class="formitem">
+				<div class="formitem">
 					<label for="tmeassage">Telefon</label>
 					<textarea name="message" id="message" placeholder="Feladat leírása">Bele van már írva, így néz ki a bötű</textarea>
 				</div>
@@ -68,16 +65,14 @@
 				</div>
 			</form>
 		</div>
+	</div><!-- /.contactblock__inner -->
 	</div>
 </section>
 
-<section id="mapblock" class="mapblock">
-	<div class="wrapper wrapper-fullwidth">
-		<div id="map-canvas"></div>
-	</div>
-	<div class="wrapper wrapper--normal">
-		<div class="mapblock__content">
-			
+<section id="mapblock" class="mapblock">	
+	<div class="mapblock__content">
+		<div class="wrapper wrapper--normal">
+			<a href="#" class="mapinfo__close"><i class="ion ion-close"></i></a>
 			<div class="balfel">
 				<?php //the_content(); ?>
 				<?php //wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
@@ -96,6 +91,14 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="map-overlay"></div>
+
+	<div class="wrapper wrapper-fullwidth">
+		<div id="map-canvas"></div>
+	</div>
+
+
 </section>
 
 
@@ -125,12 +128,20 @@
     }
     map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     var image = '<?php echo get_stylesheet_directory_uri(); ?>/assets/img/flag.png';
-    var myLatLng = new google.maps.LatLng(62.756715, 7.274334);
-    var beachMarker = new google.maps.Marker({
+    var myLatLng = new google.maps.LatLng(47.505175, 19.054692);
+    var officeMarker = new google.maps.Marker({
       position: myLatLng,
       map: map,
-      icon: image
+      icon: image,
+      animation: google.maps.Animation.DROP,
     });
+    officeMarker.setAnimation(google.maps.Animation.BOUNCE);
+
+    google.maps.event.addListener(officeMarker, 'click', function() {
+	    officeMarker.setAnimation(null);
+    	$('.mapblock__content').addClass('is_show');
+    	$('.map-overlay').addClass('is_show');
+  	});
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
