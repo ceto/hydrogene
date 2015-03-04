@@ -118,8 +118,15 @@
 
 
 .niceheading {
+  margin:0 auto;
   padding: 4em 0 4em;
   text-align: left;
+  @include bp($s4){
+    font-size: 1.125em;
+  }
+  @include bp($s5){
+    font-size: 1.25em;
+  }
 }
 
 
@@ -154,12 +161,6 @@
       font-size: 33.333%;
       opacity: 0.75;
     }
-  
-
-
-    
-
-
   }
 
 }
@@ -194,7 +195,7 @@
   font-weight: 900;
   margin:0 0 .25em 0;
 
-  max-width: $s4;
+  //max-width: $s4;
 
   text-transform: uppercase;
   color: $textcolor-light;
@@ -246,8 +247,9 @@
   font-family: $sans-serif;
   font-size: 1.25em;
   font-weight: 300;
-  max-width: $s4;
+  //max-width: $s4;
   margin: 0 0 1em 0;
+
 
 
   .niceheading--inverse & {

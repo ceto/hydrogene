@@ -1,5 +1,7 @@
 <div id="reference-<?php echo get_the_ID(); ?>" class="refrow">
 	<div class="wrapper wrapper--wide">
+	<div class="bele">
+
 		<?php $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'nemtudommeg');  ?>
 		<style>
 			@media only screen and (min-width: 768px) {
@@ -43,14 +45,6 @@
 			    </h3>
 			    <h2 class="refrow__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					
-<!-- 			    <div class="refrow__tags">
-						<ul>
-							<li>Arculattervezés</li>
-							<li>Weboldal tervezés</li>
-							<li>Responsive webdesign</li>
-							<li>Wordpress weboldalkészítés</li>    		
-						</ul>
-					</div> -->
 			    <div class="refrow__summary">
 			    	<?php echo get_the_excerpt();	 ?>
 			    	<?php //echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?>
@@ -61,6 +55,6 @@
 			    </div>
 			  </div>
 			</header>
-
+		</div>
 	</div>
 </div>

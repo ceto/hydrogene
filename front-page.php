@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
-<header class="niceheading niceheading--ashero niceheading--homehero">
-  <div class="wrapper wrapper--wide">
+<div class="wrapper wrapper--wide">
+	<header class="niceheading niceheading--ashero niceheading--homehero">
   		<section class="niceheading__preinfo animated fadeInUp">
         <span class="feat">Élményt tervezünk</span>          
       </section>
@@ -10,9 +10,8 @@
       </p>
       <a href="<?php echo get_post_type_archive_link('reference'); ?>" class="readmore animated fadeInUp">Nézd meg a munkáinkat…</a>
       <hr class="animated fadeInUp">
-  </div>
-</header>
-
+	</header>
+</div>
 
 <div class="storyitem whatwedo animated fadeInUp">
 	<div class="wrapper wrapper--wide">	

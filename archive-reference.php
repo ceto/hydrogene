@@ -1,5 +1,6 @@
+<div class="wrapper wrapper--wide">
   <header class="refarchive__header niceheading niceheading--ashero">
-    <div class="wrapper wrapper--wide">
+
       <section class="niceheading__preinfo animated fadeInUp">
         <span class="feat">Egyedi munkák, weben és nyomtatásban</span>          
       </section>
@@ -9,9 +10,8 @@
       </p>
       <a class="readmore animated fadeInUp" href="<?php echo get_permalink(58); ?>">Lépj velünk a kapcsolatba…</a>
       <!-- <hr> -->
-    </div>
   </header>
-
+</div>
 <section class="reflist animated fadeInUp">
   <?php while (have_posts()) : the_post(); ?>
     <article <?php post_class('reference--listelem'); ?>>

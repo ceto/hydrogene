@@ -10,11 +10,17 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	@include bp($s2) {
+		//font-size: 1.125em;
+	}
 	@include bp($s3) {
 		font-size: 1.25em;
 	}
 	@include bp($s4) {
 		font-size: 1.5em;
+	}
+	@include bp($s5) {
+		font-size: 1.666em;
 	}
 }
 body {

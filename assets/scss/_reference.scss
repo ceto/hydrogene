@@ -26,6 +26,15 @@
   .wrapper {
     position: relative;
   }
+
+  .bele {
+    @include bp($s4) {
+      font-size: 1.125em;
+    }
+    @include bp($s5) {
+      font-size: 1.25em;
+    }
+  }
 }
 
 .refrow__figure {
@@ -68,16 +77,16 @@
       visibility: hidden;
     }
   }
-  @include bp($s5) {
-    background-position: center bottom;
-    left: 50%;
+  // @include bp($s5) {
+  //   background-position: center bottom;
+  //   left: 50%;
 
-    width: 50%;
-    .reference:nth-of-type(2n) & {
-      background-position: center bottom;
-      left: 0;
-    }
-  }
+  //   width: 50%;
+  //   .reference:nth-of-type(2n) & {
+  //     background-position: center bottom;
+  //     left: 0;
+  //   }
+  // }
   a {
     position: relative;
 
@@ -135,10 +144,10 @@
     //font-size: 0.875em;
     //padding: 4em 0 3em;
   }
-  @include bp($s5) {
-    width: 50%;
-    padding: 5em 0 4em;
-  }
+  // @include bp($s5) {
+  //   width: 50%;
+  //   padding: 5em 0 4em;
+  // }
   .innerwrap {
     //max-width: 32em;
     margin: 0 auto;

@@ -250,6 +250,81 @@
 }
 /******* End of Video *********/
 
+
+
+
+
+
+.hero__textblock {
+  @include clearfix();
+  @include bp($s2) {
+    float: left;
+
+    width: 33em;
+  }
+}
+
+.hero__title {
+  //font-family: $sans-serif;
+  font-size: 1.75em;
+  font-weight: 700;
+  line-height: 1;
+
+  margin: 0 0 .25em;
+  //color: rgba(white,.75);
+  // text-transform: uppercase;
+
+  opacity: .75;
+  @include bp($s1) {
+    font-size: 2.125em;
+  }
+}
+
+.hero__subtitle {
+  font-family: $headingfont;
+  font-size: 2.25em;
+  font-weight: 900;
+  line-height: 1;
+
+  margin: 0 0;
+
+  text-transform: uppercase;
+
+  @include bp($s1) {
+    font-size: 3.25em;
+  }
+}
+
+.hero__disclaimer {
+  //font-family: $sans-serif;
+  //font-weight: 300;
+  font-size: 1.125em;
+
+  margin-top: .5em;
+  //text-align: center;
+  strong {
+    font-family: $sans-serif;
+    font-weight: 900;
+
+    text-transform: uppercase;
+    //color: rgba(white,.75);
+
+    opacity: .75;
+  }
+  a {
+    text-decoration: none;
+
+    color: inherit;
+    border-bottom: 1px solid currentColor;
+    &:hover,
+    &:focus {
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+
+
 .pageheader {
   position: relative;
 

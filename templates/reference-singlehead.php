@@ -1,5 +1,6 @@
 <div class="refrow">
 	<div class="wrapper wrapper--wide">
+	<div class="bele">
 		<?php $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'nemtudommeg');  ?>
 		<style>
 			@media only screen and (min-width: 768px) {
@@ -121,7 +122,7 @@
 			  </div>
 			</header>
 
-
+	</div><!-- /.bele -->
 	</div>
 </div>
 
