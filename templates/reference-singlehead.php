@@ -13,6 +13,7 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>, 0.95);
 			}
 
+			.pagefooter--dark,
 			.connect__cumo,
 			.refsingle.reference-<?php echo get_the_ID(); ?> .refrow,
 			.refsingle__quote cite:before,

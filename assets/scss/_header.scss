@@ -315,12 +315,17 @@
   }
   a {
     text-decoration: none;
+    font-family: $sans-serif;
+    font-weight: 900;
+    font-size: 0.875em;
 
-    color: inherit;
-    border-bottom: 1px solid currentColor;
+
+    color: rgba(#fff,0.75);
+    border-bottom: 2px solid transparent;
     &:hover,
     &:focus {
-      border-bottom-color: transparent;
+      color:#fff;
+      border-bottom-color: currentColor;
     }
   }
 }

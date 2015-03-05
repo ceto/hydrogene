@@ -4,20 +4,16 @@
       <h1 class="hero__title">Digitális műhelymunka</h1>
       <h2 class="hero__subtitle">Weben és offline</h2>
       <p class="hero__disclaimer">
-        Hydrogene egy két személyes design stúdió Budapest szívében. Ismerd meg honlaptervezési módszereinket, eszközeinket és a fejlesztés menetét. Szeretnéd ha neked dolgoznánk? Lépj velünk <a href="<?php echo get_permalink(58); ?>">kapcsolatba.</a>
+        <a href="#members">KÉT SZEMÉLYES DESIGN STÚDIÓ</a> Budapest szívében. Kreatív műhelyünkben, arculatot és egyedi honlapokat tervezünk. Ismerd meg a fejlesztés menetét és a munka módszerünket.
+			</p>
+			<p class="hero__disclaimer">
+        <a href="#process">A fejlesztés menete…</a>
       </p>
     </div>
   </div>
 </header>
 
-<!-- <header class="niceheading niceheading--ashero niceheading--aboutushero">
-	<div class="wrapper wrapper--wide">
-			<h3 class="niceheading__title"><small>Kreatív műhelyünkben</small>Arculatot és honlapot tervezünk</h3>
-			<p class="niceheading__disclaimer">Ismerd meg átfogó tervezési módszereinket, eszközeinket és a fejlesztés menetét. Szeretnéd ha neked dolgoznánk? Lépj velünk <a href="<?php echo get_permalink(58); ?>">kapcsolatba.</a></p>
-	</div>
-</header> -->
-
-<section class="process">
+<section id="process" class="process">
 					
 		<div class="widestoryitem">
 			<div class="wrapper wrapper--wide">
@@ -132,7 +128,7 @@
 
 
 
-<section class="niceheading">
+<section id="members" class="niceheading">
 	<div class="wrapper wrapper--wide">
 			<h3 class="niceheading__title"><small>Kik vagyunk</small>az alkotó elemek</h3>
 			<p class="niceheading__disclaimer"><strong>HYDROGENE</strong> egy két személyes design műhely. Karakteres arculatú egyedi weboldalakat készítünk hagyományos és mobil eszközökre. Van egy jó projekted? Itt vagyunk, <a href="<?php echo get_permalink(58); ?>">segítünk.</a></p>
@@ -214,7 +210,7 @@
 						<p>Cumque quas minima aliquid nisi a maxime, fugit facilis perspiciatis beatae magnam similique doloremque, itaque consectetur nulla tempore voluptatum adipisci ut consequuntur.</p>
 						</div>
 					<div class="teammember__footer">
-						<a href="<?php echo get_permalink(58); ?>" class="btn btn--pseudo btn--opaque">Legyél az ügyfelünk</a>
+						<a href="<?php echo get_permalink(58); ?>" class="readmore">Legyél az ügyfelünk…</a>
 					</div>
 				</div>
 			</div>

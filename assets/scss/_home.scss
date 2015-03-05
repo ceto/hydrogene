@@ -7,12 +7,17 @@
 }
 
 .niceheading--homehero {
+  font-size: 1.125em;
   //background-image: url('../img/hero_home_light.jpg');
   //background-size: auto 100%;
   //background-position: center bottom;
   //border-bottom: 1px solid $secondary-color;
   padding-bottom: 2em;
   text-align: center;
+  max-width: 30em;
+  @include bp($s2) {
+    max-width: 40em;
+  }
   .readmore {
     margin-top: 1em;
     display: inline-block;
@@ -21,17 +26,17 @@
     margin-top: 3em;
     height:1px;
     border:none;
-    background-color: $gray-xxlight;
+    background-color: $gray-xlight;
     //background-color: transparent;
   }
 
   .niceheading__title {
     margin:0 auto .25em auto;
-    max-width: $s3;
+    //max-width: $s4;
   }
   .niceheading__disclaimer {
     margin: 0 auto 1em auto;
-    max-width: $s3; 
+    //max-width: $s4; 
   }
 }
 
@@ -40,6 +45,8 @@
 
 .storyitem {
   padding: 1em 0;
+  margin:0 auto;
+  max-width: 35em;
 
   @include clearfix();
   //background-color: $gray-light;
@@ -48,6 +55,7 @@
   @include clearfix();
   @include bp($s2) {
     padding: 2em 0;
+    max-width: none;
   }
   &:nth-child(2n+1) {
     //  background-color: lighten($gray-light,15%);
@@ -179,7 +187,7 @@
   //background-color: $gray-xlight;
 }
 .allwedo {
-  padding: 2em 0 2em;
+  padding: 0 0 2em;
 
   background-color: #fff;
 }
@@ -206,7 +214,7 @@
 .servicegroup {
   font-size: .875em;
 
-  max-width: 35em;
+  max-width: 38em;
   margin: 2em auto 2em auto;
 
   @include clearfix();
@@ -324,5 +332,5 @@
 }
 
 .home__references {
-  border-top: 1px solid $gray-xxlight; 
+  //border-top: 1px solid $gray-xxlight; 
 }
