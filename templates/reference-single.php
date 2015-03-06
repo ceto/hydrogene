@@ -84,12 +84,5 @@
     </footer>
   </article>
 <?php endwhile; ?>
-<!-- <section class="pageheader">
-  <div class="wrapper wrapper--wide">
-    <div class="pageheader__content">
-      <h3 class="pageheader__title">nézd meg a következőt</h3>
-    </div>
-  </div>
-</section> -->
 
 <?php //get_template_part('templates/reference','navigation'); ?>

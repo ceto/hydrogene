@@ -7883,7 +7883,7 @@ body {
       margin-left: calc( 50% - 50vw); } }
 
 .wp-caption {
-  margin: 1em 0; }
+  margin: 2em 0; }
   .wp-caption:before, .wp-caption:after {
     content: " ";
     display: table; }
@@ -8583,29 +8583,38 @@ input[type="checkbox"]#nav-toggle {
   height: 1px;
   background-color: #fbfbfb; }
 .pagenav a {
+  position: relative;
   display: inline-block;
   color: #9a9898;
   line-height: 1; }
   .pagenav a:hover, .pagenav a:focus {
     color: #484646;
     text-decoration: none; }
+    .pagenav a:hover .navtext, .pagenav a:focus .navtext {
+      display: inline-block; }
   .pagenav a i {
     font-size: 4em; }
   .pagenav a .navtext {
+    position: absolute;
+    top: 102%;
+    left: 0;
+    width: 12em;
     margin: 0;
     padding: 0;
-    display: inline-block;
     display: none;
     max-width: 20em;
     text-align: left;
     line-height: 1;
     font-size: 0.75em;
     font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-    font-weight: 300; }
-    .pagenav a .navtext span {
-      text-transform: uppercase;
-      font-weight: 900;
-      display: block; }
+    font-weight: 300;
+    text-transform: uppercase; }
+  .pagenav a.pagenav__all .navtext {
+    left: -1em; }
+.pagenav a[rel="prev"] .navtext {
+  text-align: right;
+  left: auto;
+  right: 0; }
 
 .sidebar:before, .sidebar:after {
   content: " ";
@@ -9755,6 +9764,12 @@ input[type="checkbox"]#nav-toggle {
   .teammember:nth-child(3n) {
     background-color: #fbfbfb; }
 
+.teammember__footer {
+  margin-top: 2em; }
+  .teammember__footer .readmore {
+    font-size: 1.125em;
+    color: #bd4932; }
+
 .teammember__figure {
   margin: 0 -1em;
   padding: 0;
@@ -9853,7 +9868,7 @@ input[type="checkbox"]#nav-toggle {
   clear: both; }
 
 .widestoryitem {
-  background-color: #ececec;
+  background-color: #fbfbfb;
   background-image: url('../img/noise.png');
   background-repeat: repeat;
   border-bottom: 10px solid rgba(255, 255, 255, 0.2); }
@@ -9863,7 +9878,7 @@ input[type="checkbox"]#nav-toggle {
   .widestoryitem:after {
     clear: both; }
   .widestoryitem:nth-child(2n) {
-    background-color: #fbfbfb; }
+    background-color: #ececec; }
   .widestoryitem .wrapper {
     padding-top: 3em;
     padding-bottom: 3em; }

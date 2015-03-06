@@ -1,7 +1,7 @@
 <?php get_template_part('templates/head'); ?>
 <body <?php body_class(); ?>>
 
-<?php if ( WP_ENV !== 'development' && !current_user_can('manage_options')) : ?>
+<?php if ( WP_ENV == 'production' && !current_user_can('manage_options')) : ?>
   <!-- Google Tag Manager -->
   <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NDCBRN"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

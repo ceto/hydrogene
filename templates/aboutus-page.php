@@ -173,7 +173,7 @@
 						<h4 class="teammember__titulus">Webfejlesztő</h4>
 					</header>
 					<div class="teammember__desc">
-						<p>Gábor alkotja a csapat technológiai szárnyát. Drótvázakon tervezi meg a készülő honlap struktúráját, funkcióit és tartalmait. Átfogó webes ismereteire támaszkodva dolgozza ki a felhasználói élményt.</p>
+						<p>Gábor alkotja a csapat technológiai szárnyát. Drótvázakon tervezi meg a készülő honlap struktúráját, funkcióit és tartalmait. Átfogó webes ismereteire támaszkodva tervezi a felhasználói élményt.</p>
 						<blockquote>
 							<p>“Darabokra szeded, megvizsgálod az alkotó részeket, majd összerakod újra. Megismerted az egészet”</p>
 						</blockquote>
@@ -199,15 +199,15 @@
 				</figure>
 				<div class="teammember__info">
 					<header class="teammember__head">
-						<h3 class="teammember__name">Te vagy a főnök</h3>
-						<h4 class="teammember__titulus">Projektgazda</h4>
+						<h3 class="teammember__name">Ideális ügyfél</h3>
+						<h4 class="teammember__titulus">A megbízó</h4>
 					</header>
 					<div class="teammember__desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nulla voluptas ratione ex, eos error nam, sapiente, sequi, cumque dolor eligendi quod minus quo necessitatibus fugit. Árvíztűrő tükörfúrógép amet inventore itaque quasi dolorem!</p>
+						<p>Olyan céltudatos vállalkozó, aki felkészült és határozott céljai vannak. Érti és értékeli a minőségi munkát. Bízik a szakértelmünkben és szakmai kérdésekben szabadkezet ad.</p>
 						<blockquote>
-							<p>“Unde ducimus soluta consequatur expedita voluptatum modi tempora sed aliquam ea.”</p>
+							<p>“Tudom, hogy tartalom nélkül nincsen forma…”</p>
 						</blockquote>
-						<p>Cumque quas minima aliquid nisi a maxime, fugit facilis perspiciatis beatae magnam similique doloremque, itaque consectetur nulla tempore voluptatum adipisci ut consequuntur.</p>
+						<p>Tisztában van vele, hogy az együttműködés kétirányú. Nyitott a közös munkára, szereti a kreatív megoldásokat. Nem kalandor, hanem hosszútávú elképzelései vannak.</p>
 						</div>
 					<div class="teammember__footer">
 						<a href="<?php echo get_permalink(58); ?>" class="readmore">Legyél az ügyfelünk…</a>

@@ -29,7 +29,7 @@
     	<div class="jobbfel">
     	<p class="pagefooter__helper">
         <a class="pagefooter__brand" href="<?php echo get_permalink(58); ?>">Hydrogene | honlap és arculat</a> 
-        &copy; 2015 <a href="<?php echo get_permalink(58); ?>">Hydrogene Design</a> &middot; All rights is reserved <br> Handmade with Love in Budapest<br>
+        &copy; 2015 <a href="<?php echo get_permalink(58); ?>">Hydrogene Design</a> &middot; All rights are reserved <br> Handmade with Love in Budapest<br>
         <a class="szoci" href="https://www.facebook.com/hydrogenedesign" target="_blank">
             <i class="ion ion-social-facebook"></i>
           </a>

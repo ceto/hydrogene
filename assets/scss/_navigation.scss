@@ -251,7 +251,7 @@ input[type="checkbox"]#nav-toggle {
 		background-color: $gray-xxlight;
 	}
 	a {
-		
+		position: relative;
 		display: inline-block;
 		color:$gray-light;
 		line-height: 1;
@@ -259,15 +259,23 @@ input[type="checkbox"]#nav-toggle {
 		&:hover,&:focus {
 			color: $gray-heading;
 			text-decoration: none;
+			.navtext {
+				display: inline-block;
+			}
 		}
 
 		i {
 			font-size: 4em;
 		}
 		.navtext {
+			position: absolute;
+			top:102%;
+			left:0;
+			width:12em;
+
 			margin:0;
 			padding:0;
-			display: inline-block;
+			//display: inline-block;
 			display: none;
 			max-width: 20em;
 			text-align: left;
@@ -275,12 +283,21 @@ input[type="checkbox"]#nav-toggle {
 			font-size: 0.75em;
 			font-family: $sans-serif;
 			font-weight: 300;
-			span {
-				text-transform: uppercase;
-				font-weight: 900;
-				display: block;
-			}
+			text-transform: uppercase;
+		}
 
+		&.pagenav__all {
+			.navtext {
+				left:-1em;
+			}
+		}
+	}
+
+	a[rel="prev"] {
+		.navtext {
+			text-align: right;
+			left:auto;
+			right:0;
 		}
 	}
 }
