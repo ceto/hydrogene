@@ -29,7 +29,7 @@ function h2_reference_init() {
 		'show_ui'            => true,
 		'show_in_menu'       => true,
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'reference' ),
+		'rewrite'            => array( 'slug' => 'referencia' ),
 		'capability_type'    => 'post',
 		'has_archive'        => 'references',
 		'hierarchical'       => false,
