@@ -1,7 +1,12 @@
 .aboutus__hero {
-  border-bottom: 10px solid rgba(#000, .2);
-  background-color: $secondary-color;
-  background-image: url('../img/hero_rolunk.jpg');
+  border-bottom: 10px solid rgba($kek, .5);
+  //background-color: $secondary-color;
+  background-image: url('../img/noise.png');
+  background-repeat: repeat, no-repeat;
+  background-position: center center;
+  background-size: auto, cover;
+  //background-attachment: fixed;
+  background-image: url('../img/noise.png'), url('../img/hero_csonak.jpg');
 }
 
 .niceheading--aboutushero {
@@ -14,13 +19,16 @@
   position: relative;
 
   background-color: $gray-xxlight;
+  background-image:url('../img/noise.png');
+  background-position: center center;
+  background-repeat: repeat;
 
   @include clearfix();
   &:nth-child(2n) {
     background-color: #fff;
   }
   &:nth-child(3n) {
-    background-color: $gray-xlight;
+    background-color: $gray-xxlight;
   }
 }
 
@@ -56,6 +64,12 @@
 
       background-image: url('../img/portre_gabor.jpg');
       background-position: right center;
+    }
+    .partner & {
+      right: 0;
+
+      background-image: url('../img/portre_partner.jpg');
+      background-position: left center;
     }
   }
   @include bp($s5) {
@@ -179,7 +193,6 @@
 
 .widestoryitem {
   
-
   background-color: $gray-xlight;
 
   background-image:url('../img/noise.png');
@@ -195,7 +208,7 @@
   }
 
   &:nth-child(2n) {
-    background-color: #fff;
+    background-color: $gray-xxlight;
     
     @include bp($s2) {
       //background-image: linear-gradient(to right, transparent 66.666%, $gray-light 66.666%);
@@ -262,6 +275,7 @@
 }
 
 .diszes {
+
   .number {
     font-family: $sans-serif;
     margin-top: -0.1em;
@@ -273,7 +287,7 @@
     //padding:5.25em; 
     display: inline-block;
 
-    color: rgba($secondary-color,0.75);
+    color: rgba($kek,0.75);
     text-shadow: -0.025em 0.025em 0 rgba($gray-light,0.5),
                   0.025em 0.025em 0 rgba($gray-main,0.75);
     //background-color: $gray-light;
@@ -290,10 +304,53 @@
     font-weight: bold;
     display: block;
     margin-top: 5em;
-        display: none;
+    display: none;
   }
 }
 
+
+.diszes2 {
+  font-size: 1.25em;
+  //text-align: right;
+  border-left: .5em solid $secondary-color;
+  padding:0 0.5em;
+  color:$gray-heading;
+  
+  .widestoryitem:nth-child(2n) & {
+    border-left: none;
+    border-right: .5em solid $secondary-color;
+    text-align: right;
+  }
+  .number {
+    font-family: $sans-serif;
+    margin-top: -0.1em;
+    font-size: 1.75em;
+    font-weight: 900;
+    //font-style: italic;
+    line-height: 1;
+
+    //padding:5.25em; 
+    display: inline-block;
+
+    //color: $secondary-color;
+
+    //font-feature-settings: 'lnum' 1;
+    
+    &:before {
+      //line-height: 1;
+    }
+  }
+  .text {
+    font-family: $serif;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1;
+    //text-transform: uppercase;
+
+    display: block;
+    //display: none;
+  }
+}
 
 .widestoryitem__textcontent {
   margin-top: 3em;
@@ -350,7 +407,7 @@
   line-height: 1;
 
   margin: 0 0 .5em;
-    //display: none;
+  display: none;
 }
 .widestoryitem__title {
   font-family: $sans-serif;
@@ -361,7 +418,7 @@
 
   margin: 0 0 .333em;
 
-  color: $secondary-color;
+  color: $gray-heading;
 
 
 }

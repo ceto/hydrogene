@@ -1,12 +1,12 @@
 <header class="aboutus__hero hero">
   <div class="wrapper wrapper--wide">
     <div class="hero__textblock">
-      <h1 class="hero__title">Digitális műhelymunka</h1>
-      <h2 class="hero__subtitle">Weben és offline</h2>
-      <p class="hero__disclaimer">
+      <h1 class="hero__title fadeInUp animated">Digitális műhelymunka</h1>
+      <h2 class="hero__subtitle fadeInUp animated">Weben és offline</h2>
+      <p class="hero__disclaimer fadeInUp animated">
         <a href="#members">KÉT SZEMÉLYES DESIGN STÚDIÓ</a> Budapest szívében. Kreatív műhelyünkben, arculatot és egyedi honlapokat tervezünk. Ismerd meg a fejlesztés menetét és a munka módszerünket.
 			</p>
-			<p class="hero__disclaimer">
+			<p class="hero__disclaimer fadeInUp animated">
         <a href="#process">A fejlesztés menete…</a>
       </p>
     </div>
@@ -16,10 +16,10 @@
 <section id="process" class="process">
 					
 		<div class="widestoryitem">
-			<div class="wrapper wrapper--wide">
+			<div class="wrapper wrapper--wide fadeInUp animated">
 				<figure class="widestoryitem__figure">
-					<div class="diszes">
-						<span class="number">1.</span>
+					<div class="diszes2">
+						<span class="number">01.</span>
 						<span class="text">Weboldal tervezés</span>						
 					</div>
 				</figure>
@@ -39,8 +39,8 @@
 		<div class="widestoryitem">
 			<div class="wrapper wrapper--wide">
 				<figure class="widestoryitem__figure">
-					<div class="diszes">
-						<span class="number">2.</span>
+					<div class="diszes2">
+						<span class="number">02.</span>
 						<span class="text">Design és Stílus</span>
 					</div>
 				</figure>
@@ -60,8 +60,8 @@
 		<div class="widestoryitem">
 			<div class="wrapper wrapper--wide">	
 				<figure class="widestoryitem__figure">
-					<div class="diszes">
-						<span class="number">3.</span>
+					<div class="diszes2">
+						<span class="number">03.</span>
 						<span class="text">Reszponzív honlap</span>
 					</div>
 				</figure>
@@ -83,8 +83,8 @@
 		<div class="widestoryitem">
 			<div class="wrapper wrapper--wide">
 				<figure class="widestoryitem__figure">
-					<div class="diszes">
-						<span class="number">4.</span>
+					<div class="diszes2">
+						<span class="number">04.</span>
 						<span class="text">Tartalomkezelés</span>
 					</div>
 				</figure>
@@ -105,8 +105,8 @@
 		<div class="widestoryitem">
 			<div class="wrapper wrapper--wide">
 				<figure class="widestoryitem__figure">
-					<div class="diszes">
-						<span class="number">5.</span>
+					<div class="diszes2">
+						<span class="number">05.</span>
 						<span class="text">Személyes kapcsolat</span>
 					</div>
 				</figure>
@@ -131,7 +131,7 @@
 <section id="members" class="niceheading">
 	<div class="wrapper wrapper--wide">
 			<h3 class="niceheading__title"><small>Kik vagyunk</small>az alkotó elemek</h3>
-			<p class="niceheading__disclaimer"><strong>HYDROGENE</strong> egy két személyes design műhely. Karakteres arculatú egyedi weboldalakat készítünk hagyományos és mobil eszközökre. Van egy jó projekted? Itt vagyunk, <a href="<?php echo get_permalink(58); ?>">segítünk.</a></p>
+			<!--p class="niceheading__disclaimer"><strong>HYDROGENE</strong> egy két személyes design műhely. Karakteres arculatú egyedi weboldalakat készítünk hagyományos és mobil eszközökre. Van egy jó projekted? Itt vagyunk, <a href="<?php echo get_permalink(58); ?>">segítünk.</a></p-->
 	</div>
 </section>
 
@@ -140,7 +140,7 @@
 		<section class="teammember beke">
 			<div class="wrapper wrapper--wide">
 				<figure class="teammember__figure">
-					<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/portre_matyas.jpg';  ?>" alt="Beke Mátyás - Art Director | Hydrogene">
+					<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/portre_matyas_k.jpg';  ?>" alt="Beke Mátyás - Art Director | Hydrogene">
 				</figure>
 				<div class="teammember__info">
 					<header class="teammember__head">
@@ -165,7 +165,7 @@
 		<section class="teammember szabo">
 			<div class="wrapper wrapper--wide">
 				<figure class="teammember__figure">
-					<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/portre_gabor.jpg';  ?>" alt="Szabó Gábor - Webfejlesztő | Hydrogene">
+					<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/portre_gabor_k.jpg';  ?>" alt="Szabó Gábor - Webfejlesztő | Hydrogene">
 				</figure>
 				<div class="teammember__info">
 					<header class="teammember__head">
@@ -192,10 +192,10 @@
 		</section>
 
 
-		<section class="teammember you">
+		<section class="teammember partner">
 			<div class="wrapper wrapper--wide">
 				<figure class="teammember__figure">
-					<img src="http://placehold.it/1024x512" alt="Az ügyfél - Projektgazda">
+					<img src="<?php echo get_stylesheet_directory_uri().'/assets/img/portre_partner_k.jpg'; ?>" alt="Az ügyfél - Projektgazda">
 				</figure>
 				<div class="teammember__info">
 					<header class="teammember__head">

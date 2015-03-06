@@ -1,6 +1,21 @@
 .formitem {
   margin: .75em 0;
+
+  &.formitem--actions {
+    display: inline-block;
+    background-color: rgba(#000,.125);
+    border-radius: 2px;
+    margin-top:1.25em;
+    margin-left: .5em;
+    padding-right: .5em;
+    padding-bottom: .5em;
+    .btn {
+      margin:-.5em 0 0 -.5em;
+    }
+  }
 }
+
+
 
 label {
   display: none;
@@ -11,28 +26,28 @@ input[type='tel'],
 input[type='email'],
 textarea {
   font-family: $sans-serif;
-  font-size: 16px;
+  font-size: 0.875em;
   font-weight:300;
   line-height: 1;
 
   width: 100%;
-  padding: 1em 1em 1em;
+  padding: .75em .875em .75em;
 
   transition: background-color .4s ease;
 
-  color: rgba(white,.333);
+  color: rgba(white,.5);
   border: none;
-  border: 1px solid rgba(white,.0);
+  border: 1px solid rgba(white,0);
   border-radius: 2px;
   outline: none;
-  background-color: rgba(white,.05);
+  background-color: rgba(#fff,.05);
 
   -webkit-appearance: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   &:focus {
-    color: rgba(white,.5);
-    background-color: rgba(white,.1);
+    color: rgba(white,.666);
+    background-color: rgba(white,.15);
     &::-webkit-input-placeholder {
       visibility: hidden;
 
@@ -61,17 +76,20 @@ textarea {
 }
 
 textarea {
-  min-height: 11em;
+  min-height: 9em;
 }
 
 ::-webkit-input-placeholder {
   font-family: $sans-serif;
-
+  font-size: .875em;
+  line-height: 1;
   padding-top: .25em;
+
+  //padding-top: .25em;
 
   text-transform: uppercase;
 
-  color: rgba(white,.333);
+  color: rgba(white,.5);
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -81,11 +99,12 @@ textarea {
   font-family: $sans-serif;
   font-size: .875em;
   line-height: 1;
+  padding-top: .25em;
 
   text-transform: uppercase;
   /* Firefox 18- */
 
-  color: rgba(white,.333);
+  color: rgba(white,.5);
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -95,11 +114,12 @@ textarea {
   font-family: $sans-serif;
   font-size: .875em;
   line-height: 1;
+  padding-top: .25em;
 
   text-transform: uppercase;
   /* Firefox 19+ */
 
-  color: rgba(white,.333);
+  color: rgba(white,.5);
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -109,10 +129,11 @@ textarea {
   font-family: $sans-serif;
   font-size: .875em;
   line-height: 1;
+  padding-top: .25em;
 
   text-transform: uppercase;
 
-  color: rgba(white,.333);
+  color: rgba(white,.5);
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -181,6 +202,37 @@ textarea {
     &:before {
       border-color: rgba(white,.125);
     }
+  }
+}
+
+
+.btn--dark {
+
+
+  
+
+
+  //text-transform: uppercase;
+  position: relative;
+  color: rgba(#fff,.5);
+  border: none;
+  border-radius: 2px;
+  background: none;
+  background-color: lighten($secondary-color,5%);
+  font-size: 1em;
+  border:2px solid $secondary-color;
+  border-radius: 4px;
+  text-transform: none;
+
+
+  &:after {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    background-color: lighten($secondary-color,8%);
+    color: rgba(#fff,1);
+    //transform:translate(9px,9px);
   }
 }
 

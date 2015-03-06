@@ -60,6 +60,12 @@
 
 }
 .banner__brand {
+  @include hide-text();
+  background-image: url('../img/logo_black.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  opacity:0.75;
   font-family: $sans-serif;
   font-weight: 900;
   font-size: 1em;
@@ -69,9 +75,10 @@
 
   position: absolute;
   z-index: 10;
-  top: 0.666em;
+  top: 0.875em;
   left: 1em;
-  width:2em;
+  width:1.75em;
+  height: 3.333em;
 
   display: inline-block;
 
@@ -87,18 +94,20 @@
     opacity:0.75;
     position: static;
     float:left;
-    width:2.5em;
+    width:2.25em;
+    height:4em;
     //width:33.333;
 
 
     //font-size: 2em;
-    margin-top: 1.333em;
+    margin-top: 1.666em;
     //left: 0.5em;
 
     transition: all .4s ease;
     .scrolled & {
-      margin-top: 0.75em;
-      width: 1.25em;
+      margin-top: 0.5em;
+      height:2.875em;
+      width: 1.5em;
       //font-size: 1em;
       //left:1.5em;
       //top: .75em;
@@ -108,19 +117,20 @@
     }
   }
   &:hover, &:focus {
-    color: rgba($gray-main,1);
+    
   }
 }
 
 .banner__brand--white {
-  filter: invert(1);
+  background-image: url('../img/logo_white.png');
+  opacity:1;
 }
 
 
 .banner__pagetitle {
   position: absolute;
   z-index: 10;
-  left:2.25em;
+  left:2em;
   top:0.875em;
   text-decoration: none;
   font-size: 1.75em;
@@ -147,11 +157,12 @@
     position: static;
     float:left;
     font-size: 2em;
-    margin-left: 0.5em;
+    margin-left: 0.333em;
     margin-top: 1.25em;
     .scrolled & {
-      margin-top: 0.5em;
-      font-size: 1.666em;
+      margin-top: 0.58em;
+      margin-left: 0.4em;
+      font-size: 1.75em;
     }
   }
   
@@ -160,7 +171,7 @@
     @include hide-text();
     background-image: url('../img/logo_text_black.png');
     background-size: auto 85%;
-    background-position: left bottom;
+    background-position: left center;
     background-repeat: no-repeat;
     opacity:0.75;
     &.banner__pagetitle--white {
@@ -273,6 +284,7 @@
   line-height: 1;
 
   margin: 0 0 .25em;
+
   //color: rgba(white,.75);
   // text-transform: uppercase;
 
@@ -283,6 +295,7 @@
 }
 
 .hero__subtitle {
+  //color:rgba($secondary-color,.75);
   font-family: $headingfont;
   font-size: 2.25em;
   font-weight: 900;

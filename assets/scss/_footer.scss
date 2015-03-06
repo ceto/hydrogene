@@ -129,7 +129,7 @@
   }
 
   a.szoci {
-    font-size: 1em;
+    font-size: 1.5em;
     display: inline-block;
     margin:1em 0 0.25em 0.25em;
     padding:0.333em 0.25em 0;
@@ -157,7 +157,8 @@
   background-size: auto 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 8em;
+  height: 7em;
+  font-size: 2em;
   margin:0 auto 1em auto;
   display: block;
   text-decoration: none;
@@ -165,7 +166,7 @@
 
 
 .pagefooter__helper {
-  font-size: .666em;
+  font-size: .5em;
   //line-height: 1;
   //text-transform: uppercase;
   font-weight: 500;
@@ -182,10 +183,12 @@
   background-image:url('../img/noise.png');
   background-position: center center;
   background-repeat: repeat;
+  .page-template-template-aboutus & {
+    background-color: $kek;   
+  }
   color:rgba(#fff,.75);
   .pagefooter__brand {
-    filter:invert(1) brightness(10);
-    opacity: .75;
+    background-image: url('../img/logo_footer_white.png');
   }
 
   a.szoci {
@@ -195,6 +198,8 @@
       color:#fff;
     }
   }
+
+
 }
 
 

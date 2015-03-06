@@ -6,7 +6,7 @@
       </section>
       <h3 class="niceheading__title animated fadeInUp">Honlap és arculat</h3>
       <p class="niceheading__disclaimer animated fadeInUp">
-        Piciny digitális műhelyünk, karakteres arculattal, és — abba szervesen illeszkedő — felhasználóbarát honlappal segíti céged növekedését. 
+        Piciny digitális műhelyünk, karakteres arculattal, és — szervesen illeszkedő — felhasználóbarát honlappal segíti céged növekedését. 
       </p>
       <a href="<?php echo get_post_type_archive_link('reference'); ?>" class="readmore animated fadeInUp">Nézd meg a munkáinkat…</a>
       <hr class="animated fadeInUp">

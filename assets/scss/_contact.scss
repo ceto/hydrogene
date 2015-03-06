@@ -1,16 +1,23 @@
 .contact__hero {
-  color: white;
-  background-color: black;
-  background-image: url('../img/hero_kapcsolat.jpg');
-  border-bottom: 10px solid rgba(#000, .2);
+  color: #fff;
+  //background-color: black;
+  background-repeat: repeat, no-repeat;
+  background-position: center center;
+  background-size: auto, cover;
+  background-image: url('../img/noise.png'), url('../img/hero_kapcsolat.jpg');
+
+  border-bottom: 10px solid rgba($secondary-color, .75);
 }
 
 
 .contactblock {
   padding: 3em 0;
 
-  color: white;
+  color: #fff;
   background-color: $secondary-color;
+  background-repeat: repeat;
+  background-position: center center;
+  background-image: url('../img/noise.png');
 
   @include clearfix();
 }
@@ -35,7 +42,7 @@
 
   margin: 0;
 
-  color: rgba(white,.5);
+  color: rgba(#fff,.666);
 }
 .contactdata {
   padding: 2em 0;
@@ -56,14 +63,17 @@
   margin: 1em 0;
   padding: 1em 0 0;
 
-  border-top: 5px solid rgba(white,.125);
+  border-top: 2px solid rgba(#fff,.125);
   a {
     text-decoration: none;
 
     color: inherit;
     &:hover,
     &:focus {
-      color: white;
+      color: #fff;
+      .ion {
+        color:#fff;
+      }
     }
   }
   .ion {
@@ -78,7 +88,7 @@
     padding-left: 1px;
 
     text-align: center;
-    //color:white;
+    color:rgba(#fff,.666);
 
     border-radius: 50%;
     //line-height: 1.5;
@@ -95,7 +105,7 @@
 
   text-transform: uppercase;
 
-  color: rgba(white,.666);
+  color: rgba(#fff,.666);
 }
 
 .contactelement__data {
@@ -107,7 +117,7 @@
   margin: .333em 0;
   //font-weight: 700;
 
-  color: rgba(white,.333);
+  color: rgba(#fff,.5);
 }
 
 .contactformwrap {
@@ -129,7 +139,7 @@
 
   margin: 0;
 
-  color: white;
+  color: #fff;
 
   @include clearfix();
 }
@@ -148,7 +158,7 @@
   font-size: .875em;
   line-height: 1.25;
 
-  color: rgba(white,.333);
+  color: rgba(#fff,.333);
 }
 
 .mapblock {
@@ -185,7 +195,7 @@
   margin: 0 auto;
   padding: 4em 0;
 
-  color: white;
+  color: #fff;
   background-color: $gray-main;
 
   @include clearfix();
@@ -270,6 +280,9 @@
     width:100%;
     height:100%;
     background-color: transparent;
+      background-repeat: repeat;
+  background-position: center center;
+  background-image: url('../img/noise.png');
     z-index: 1;
     opacity: 0;
     visibility: hidden;

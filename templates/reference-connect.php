@@ -20,7 +20,7 @@
 
 	      <div class="connect__right">
 	        <ul class="connect__list">
-	          <li><i class="ion ion-iphone"></i><a href="tel:+36707705653">Hívd Mátyást +36 707705653</a></li>
+	          <li><i class="ion ion-iphone"></i><a href="tel:+36309768698">Hívd Mátyást (0036) 30.976.8698</a></li>
 	          <li><i class="ion ion-email"></i><a href="mailto:office@hydrogene.hu">Küldj emailt office@hydrogene.hu</a></li>
 	          <li><i class="ion ion-ios-location"></i><a href="<?php echo get_permalink(58).'/#mapblock'; ?>">Ugorj be hozzánk egy kávéra</a></li>
 	          <li><i class="ion ion-compose"></i><a href="<?php echo get_permalink(58).'/#contactform'; ?>">Kérdezz ürlapunkon keresztül</a></li>

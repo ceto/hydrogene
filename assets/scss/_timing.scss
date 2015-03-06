@@ -1,19 +1,19 @@
-.niceheading__preinfo {
+.niceheading__preinfo, .hero__title {
 	animation-duration: 1s;
 	animation-delay: .25s;
 }
 
-.niceheading__title {
+.niceheading__title, .hero__subtitle {
 	animation-duration: 1s;
 	animation-delay: .5s;
 }
 
-.niceheading__disclaimer {
+.niceheading__disclaimer, .hero__disclaimer {
 	animation-duration: 1s;
 	animation-delay: .75s;
 }
 
-.readmore {
+.readmore, .hero__disclaimer:nth-of-type(2) {
 		animation-duration: .5s;
 		animation-delay: 1.5s;	
 	}
@@ -28,7 +28,7 @@ hr {
 	animation-delay: .75s;	
 }
 
-.archiveentry, .storyitem, .allwedo, .reflist {
+.archiveentry, .storyitem, .allwedo, .reflist, .contactblock > .wrapper,  .widestoryitem > .wrapper {
 	animation-duration: 1s;
 	animation-delay: .75s;	
 }
