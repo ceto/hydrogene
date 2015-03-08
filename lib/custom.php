@@ -31,7 +31,7 @@ function h2_reference_init() {
 		'query_var'          => true,
 		'rewrite'            => array( 'slug' => 'referencia' ),
 		'capability_type'    => 'post',
-		'has_archive'        => 'references',
+		'has_archive'        => 'referencia',
 		'hierarchical'       => false,
 		'menu_position'      => null,
 		'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' )
