@@ -1,4 +1,3 @@
-<?php define(WP_ENV, 'development'); ?>
 <?php
 /**
  * Roots includes

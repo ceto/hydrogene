@@ -302,7 +302,7 @@ add_shortcode( 'inverseblock', 'h2_inverseblock_shortcode');
 
 
 
-
+remove_filter('term_description','wpautop');
 
 /***** Uniqui Page title at the top header ******/
 
