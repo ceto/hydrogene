@@ -1,4 +1,4 @@
-<navigation class="pagenav">
+<nav class="pagenav">
 	<div class="wrapper wrapper--wide">
 	<hr>
 
@@ -13,4 +13,4 @@
 <?php previous_post_link('%link','<p class="navtext">%title</p><i class="ion ion-ios-arrow-thin-right"></i>'); ?>
 
 	</div>
-</navigation>
+</nav>

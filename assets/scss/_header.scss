@@ -39,7 +39,8 @@
         background-color: rgba($secondary-color,0.95);   
       }
       .page-template-template-aboutus & {
-        background-color: rgba($secondary-color,0.95);   
+        //background-color: rgba($secondary-color,0.95);
+        background-color: rgba($gray-main,0.95);   
       }
       // .home & {
       //   background-color: rgba($repa,0.95);   
@@ -75,10 +76,10 @@
 
   position: absolute;
   z-index: 10;
-  top: 0.875em;
+  top: 1em;
   left: 1em;
-  width:1.75em;
-  height: 3.333em;
+  width:1.666em;
+  height: 3em;
 
   display: inline-block;
 
@@ -94,20 +95,20 @@
     opacity:0.75;
     position: static;
     float:left;
-    width:2.25em;
-    height:4em;
+    width:1.5em;
+    height:2.75em;
     //width:33.333;
 
 
     //font-size: 2em;
-    margin-top: 1.666em;
+    margin-top: 2.25em;
     //left: 0.5em;
 
     transition: all .4s ease;
     .scrolled & {
-      margin-top: 0.5em;
-      height:2.875em;
-      width: 1.5em;
+      margin-top: 0.75em;
+      height:2.5em;
+      width: 1.333em;
       //font-size: 1em;
       //left:1.5em;
       //top: .75em;
@@ -130,17 +131,17 @@
 .banner__pagetitle {
   position: absolute;
   z-index: 10;
-  left:2em;
-  top:0.875em;
+  left:2.5em;
+  top:1.666em;
   text-decoration: none;
-  font-size: 1.75em;
-  line-height: 1.333;
+  font-size: 1.25em;
+  line-height: 1;
   //background-color: green;
   
   //text-transform: uppercase;
-  font-family: $serif;
-  font-weight: normal;
-  color:$gray-main;
+  font-family: $sans-serif;
+  font-weight: 300;
+  color:$textcolor-light;
   
   max-width: 6em;
   overflow: hidden;
@@ -156,13 +157,13 @@
   @include bp($s2) {
     position: static;
     float:left;
-    font-size: 2em;
-    margin-left: 0.333em;
-    margin-top: 1.25em;
+    font-size: 1em;
+    margin-left: .5em;
+    margin-top: 3.3em;
     .scrolled & {
-      margin-top: 0.58em;
-      margin-left: 0.4em;
-      font-size: 1.75em;
+      margin-top: 1.65em;
+      //margin-left: 0.4em;
+      font-size: 1em;
     }
   }
   

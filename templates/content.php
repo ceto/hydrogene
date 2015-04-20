@@ -1,4 +1,4 @@
-<?php if (is_sticky()) : ?>
+<?php if (is_home() && is_sticky()) : ?>
   <?php get_template_part('templates/content', 'sticky'); ?>
 <?php else : ?>
 <article <?php post_class('archiveentry animated fadeInUp'); ?>>
