@@ -122,6 +122,23 @@ module.exports = function(grunt) {
         title: "Project Name" // defaults to the name in package.json, or will use project directory's name
       }
     },
+    browserSync: {
+      dev: {
+          bsFiles: {
+              src : [
+                  'assets/css/main.css',
+                  'assets/js/scripts.js',
+                  'assets/img/*',
+                  '*/*.php'
+              ]
+          },
+          options: {
+              watchTask: true,
+              host: 'ceto.no-ip.org',
+              proxy: 'ceto.no-ip.org/hydrogene'
+          }
+      }
+    },
     watch: {
       sass: {
         files: [
@@ -144,7 +161,7 @@ module.exports = function(grunt) {
         // Browser live reloading
         // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
         options: {
-          livereload: true
+          livereload: false
         },
         files: [
           'assets/css/main.css',
@@ -156,6 +173,8 @@ module.exports = function(grunt) {
     }
   });
 
+  //grunt.loadNpmTasks('grunt-browser-sync');
+
   // Register tasks
   grunt.registerTask('default', [
     'dev'
@@ -165,6 +184,8 @@ module.exports = function(grunt) {
     'sass:dev',
     'autoprefixer:dev',
     'concat',
+    'browserSync',
+    'watch',
     'notify'
   ]);
   grunt.registerTask('build', [
