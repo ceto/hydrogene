@@ -13,7 +13,7 @@
 		<style>
 			@media only screen and (min-width: 768px) {
 				.refsingle.reference-<?php echo get_the_ID(); ?> .refrow__figure {
-					background-image: url(<?php echo $imgsrc['small'][0]; ?>);
+					background-image: url(<?php echo $imgsrc['thumbnail'][0]; ?>);
 				}
 			}
 			@media only screen and (min-width: 1024px) {
@@ -23,12 +23,12 @@
 			}
 			@media only screen and (min-width: 1280px) {
 				.refsingle.reference-<?php echo get_the_ID(); ?> .refrow__figure {
-					background-image: url(<?php echo $imgsrc['medium'][0]; ?>);
+					background-image: url(<?php echo $imgsrc['small'][0]; ?>);
 				}
 			}
 			@media only screen and (min-width: 1600px) {
 				.refsingle.reference-<?php echo get_the_ID(); ?> .refrow__figure {
-					background-image: url(<?php echo $imgsrc['large'][0]; ?>);
+					background-image: url(<?php echo $imgsrc['medium'][0]; ?>);
 				}
 			}
 			@media only screen and (min-width: 1920px) {
