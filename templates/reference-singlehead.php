@@ -1,7 +1,6 @@
 <div class="refrow">
 	<div class="wrapper wrapper--wide">
 	<div class="bele">
-
 		<?php 
 			$imgsrc['small'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'small_11_nc');
 			$imgsrc['med'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium_11_nc');
@@ -93,26 +92,25 @@
 
 
 		</style>
-			<figure class="refrow__figure">
-				<a href="#"><?php the_post_thumbnail('large'); ?></a>
-			</figure>
-			<header class="refrow__header">
-				<div class="innerwrap">
-			    <h3 class="refrow__subtitle">
-			    	<?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?>
-			    </h3>
-					<h2 class="refrow__title"><?php the_title(); ?></h2>
-					<div class="refsingle__lead">
-						<?php echo get_the_excerpt();	 ?>
-					</div>
- 			    <div class="refrow__actions">
-						<a class="btn btn--sima" href="#singletop">
-							<?php _e('Felfedezés indul','h2'); ?>…
-						</a>
-			    </div>
-			  </div>
-			</header>
-
+		<figure class="refrow__figure">
+			<a href="#"><?php the_post_thumbnail('large'); ?></a>
+		</figure>
+		<header class="refrow__header">
+			<div class="innerwrap">
+		    <h3 class="refrow__subtitle">
+		    	<?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?>
+		    </h3>
+				<h2 class="refrow__title"><?php the_title(); ?></h2>
+				<div class="refsingle__lead">
+					<?php echo get_the_excerpt();	 ?>
+				</div>
+			    <div class="refrow__actions">
+					<a class="btn btn--sima" href="#singletop">
+						<?php _e('Felfedezés indul','h2'); ?>…
+					</a>
+		    </div>
+		  </div>
+		</header>
 	</div><!-- /.bele -->
 	</div>
 </div>
