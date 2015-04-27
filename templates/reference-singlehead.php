@@ -1,13 +1,29 @@
 <div class="refrow">
 	<div class="wrapper wrapper--wide">
 	<div class="bele">
-		<?php $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'nemtudommeg');  ?>
+
+		<?php 
+			$imgsrc['small'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'small_11_nc');
+			$imgsrc['med'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium_11_nc');
+			$imgsrc['large'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large_11_nc');
+		?>
 		<style>
 			@media only screen and (min-width: 768px) {
 				.refsingle.reference-<?php echo get_the_ID(); ?> .refrow__figure {
-					background-image: url(<?php echo $imgsrc[0]; ?>);
+					background-image: url(<?php echo $imgsrc['small'][0]; ?>);
 				}
 			}
+			@media only screen and (min-width: 1280px) {
+				.refsingle.reference-<?php echo get_the_ID(); ?> .refrow__figure {
+					background-image: url(<?php echo $imgsrc['med'][0]; ?>);
+				}
+			}
+			@media only screen and (min-width: 1600px) {
+				.refsingle.reference-<?php echo get_the_ID(); ?> .refrow__figure {
+					background-image: url(<?php echo $imgsrc['large'][0]; ?>);
+				}
+			}
+
 			
 			.single-reference .banner.scrolled {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>, 0.95);
@@ -21,33 +37,24 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 
-		/*	.reference-<?php echo get_the_ID(); ?> .refrow .refrow__title{
-				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
-			}*/
 			.refsingle.reference-<?php echo get_the_ID(); ?> .refrow .refrow__figure a:after {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}
 
 			
-			/*.refsingle__quoteblock {
-				border-top: 10px solid rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
-			}*/
-			/*.refrow__actions .btn,*/
+
 			.refsingle__shareblock .btn  {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.875	);
 			}
 			
-			/*.refrow__actions .btn:before,*/
+
 			.connect__bigtitle span,
 			.refsingle__shareblock .btn:before,
 			.refsingle__shareblock {
 				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
 			}
 
-			/*.infopanel__taskelements li .ion {
-				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
-			}
-*/
+
 			.btn--circle, 
 			.niceheading--refheading .niceheading__title:before,
 			.refsingle.reference-<?php echo get_the_ID(); ?> .refrow:after,
@@ -66,14 +73,11 @@
 			.tasks__elements li a:hover,
 			.tasks__elements li a:focus,
 			.pagenav a,
-			/*.refsingle__content h1, .refsingle__content h2, .refsingle__content h3,*/
 			.datahead__title,
 			.datahead__url a,
 			.refsingle__quoteblock cite,
-			/*.connect__bigtitle,*/
 			.refsingle__content ol li:before,
 			.refsingle__content a,
-			/*.refsingle__quote,*/
 			.refsingle__quote:before {
 				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
@@ -86,19 +90,6 @@
 			.refsingle__content a:hover {
 				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
-
-/*		.refsingle__reallife {
-			border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.5);
-		}*/
-			
-/*			.refsingle__contactopener .btn--pseudo, .refsingle__infoblock .btn--pseudo {
-				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
-			}*/
-
-			/*.refsingle__shareblock {
-				border-left: 10px solid rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
-			}
-*/
 
 
 		</style>
@@ -113,7 +104,6 @@
 					<h2 class="refrow__title"><?php the_title(); ?></h2>
 					<div class="refsingle__lead">
 						<?php echo get_the_excerpt();	 ?>
-						<?php // echo get_post_meta( get_the_ID(), '_refdata_excerpt', 1 ); ?>
 					</div>
  			    <div class="refrow__actions">
 						<a class="btn btn--sima" href="#singletop">
