@@ -19,6 +19,7 @@ module.exports = function(grunt) {
     'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js',
     // 'assets/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js',
     'assets/vendor/waypoints/lib/jquery.waypoints.min.js',
+    'assets/vendor/picturefill/dist/picturefill.min.js',
     'assets/js/plugins/*.js',
     'assets/js/_*.js'
   ];

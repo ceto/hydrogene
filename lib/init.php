@@ -19,10 +19,27 @@ function roots_setup() {
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
 
+  set_post_thumbnail_size( 480, 0, false );
+  update_option('thumbnail_size_w', 480);
+  update_option('thumbnail_size_h', 0);
+  update_option('thumbnail_crop', 0);
 
-  add_image_size( 'small_11_nc', 480, 480, false );
-  add_image_size( 'medium_11_nc', 768, 768, false );
-  add_image_size( 'large_11_nc', 1024, 1024, false );
+  add_image_size( 'small', 768, 0, false );
+
+  update_option('medium_size_w', 1024);
+  update_option('medium_size_h', 0);
+  update_option('medium_crop', 0);
+  
+  update_option('large_size_w', 1280);
+  update_option('large_size_h', 0);
+  update_option('large_crop', 0);
+
+  add_image_size( 'xlarge', 1600, 0, false );
+
+
+
+
+
 
   // Add post formats
   // http://codex.wordpress.org/Post_Formats

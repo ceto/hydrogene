@@ -18,6 +18,7 @@
     "bootstrap-sass-official": "3.3.1",
     "respond": "1.4.2",
     "normalize.css": "3.0.2",
-    "waypoints": "3.1.1"
+    "waypoints": "3.1.1",
+    "picturefill": "https://github.com/scottjehl/picturefill.git#~2.3.1"
   }
 }

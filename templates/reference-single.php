@@ -32,11 +32,13 @@
     <section class="refsingle__reallife">
       <div class="wrapper wrapper--wide wrapper--nopadding">
         <?php
-          $realimage = wp_get_attachment_image( get_post_meta( get_the_ID(), '_refdata_reallife_id', 1 ), 'full');
-          //var_dump($realimage);
+          $realimage_id = get_post_meta( get_the_ID(), '_refdata_reallife_id', 1 );
+          $realimage = wp_get_attachment_image_src( $realimage_id , 'thumbnail');
+          //$fullrealimage = wp_get_attachment_image_src( $realimage_id , 'full');
         ?>
-        <?php echo $realimage; ?>
-        
+
+        <img src="<?php echo $realimage[0]; ?>" width="<?php echo $realimage[1]; ?>" height="<?php echo $realimage[2]; ?>" alt="<?php the_title(); ?>" sizes="<?php echo tevkori_get_sizes( $realimage_id, 'full' ); ?>" <?php echo tevkori_get_srcset_string( $realimage_id, 'full' ); ?> >
+
         <?php if (strlen(get_post_meta( get_the_ID(), '_refdata_url', 1 ))>1) : ?>
           <p class="datahead__url">
             <i class="ion ion-link"></i>

@@ -1,25 +1,39 @@
 <div class="refrow">
 	<div class="wrapper wrapper--wide">
 	<div class="bele">
-		<?php 
-			$imgsrc['small'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'small_11_nc');
-			$imgsrc['med'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium_11_nc');
-			$imgsrc['large'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large_11_nc');
-		?>
+
+		<?php
+			$imgsrc['thumbnail'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail'); 
+			$imgsrc['small'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'small');
+			$imgsrc['medium'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium');
+			$imgsrc['large'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large');
+			$imgsrc['xlarge'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'xlarge');
+			$imgsrc['full'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full');
+	?>
 		<style>
 			@media only screen and (min-width: 768px) {
 				.refsingle.reference-<?php echo get_the_ID(); ?> .refrow__figure {
 					background-image: url(<?php echo $imgsrc['small'][0]; ?>);
 				}
 			}
+			@media only screen and (min-width: 1024px) {
+				.refsingle.reference-<?php echo get_the_ID(); ?> .refrow__figure {
+					background-image: url(<?php echo $imgsrc['small'][0]; ?>);
+				}
+			}
 			@media only screen and (min-width: 1280px) {
 				.refsingle.reference-<?php echo get_the_ID(); ?> .refrow__figure {
-					background-image: url(<?php echo $imgsrc['med'][0]; ?>);
+					background-image: url(<?php echo $imgsrc['medium'][0]; ?>);
 				}
 			}
 			@media only screen and (min-width: 1600px) {
 				.refsingle.reference-<?php echo get_the_ID(); ?> .refrow__figure {
 					background-image: url(<?php echo $imgsrc['large'][0]; ?>);
+				}
+			}
+			@media only screen and (min-width: 1920px) {
+				.refsingle.reference-<?php echo get_the_ID(); ?> .refrow__figure {
+					background-image: url(<?php echo $imgsrc['full'][0]; ?>);
 				}
 			}
 

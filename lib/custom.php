@@ -318,3 +318,13 @@ function h2_pagetitle($classmod) {
 	}
 }
 
+
+function h2_dequeue_some_scripts() {
+  wp_dequeue_script('picturefill');
+}
+
+add_action('wp_enqueue_scripts', 'h2_dequeue_some_scripts');
+
+
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
