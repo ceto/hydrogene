@@ -2,38 +2,32 @@
 	<div class="wrapper wrapper--wide">
 	<div class="bele">
 
-		<?php $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'nemtudommeg');  ?>
+		<?php 
+			$imgsrc['small'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'small_11_nc');
+			$imgsrc['med'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium_11_nc');
+			$imgsrc['large'] = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large_11_nc');
+
+		?>
 		<style>
 			@media only screen and (min-width: 768px) {
 				.reference-<?php echo get_the_ID(); ?> .refrow__figure {
-					background-image: url(<?php echo $imgsrc[0]; ?>);
+					background-image: url(<?php echo $imgsrc['small'][0]; ?>);
 				}
 			}
-/*
-			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__title a:hover,
-			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__title a:focus {
-				color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
+			@media only screen and (min-width: 1280px) {
+				.reference-<?php echo get_the_ID(); ?> .refrow__figure {
+					background-image: url(<?php echo $imgsrc['med'][0]; ?>);
+				}
 			}
-*/			
-  
-  		/*
-			.reference-<?php echo get_the_ID(); ?> .refrow .refrow__figure a:after {
-				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
-			}
-
-			*/
-/*
-			.reference-<?php echo get_the_ID(); ?> .refrow .btn--pseudo {
-				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
-			}
-			.reference-<?php echo get_the_ID(); ?> .refrow .btn--pseudo:before {
-				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
+			@media only screen and (min-width: 1600px) {
+				.reference-<?php echo get_the_ID(); ?> .refrow__figure {
+					background-image: url(<?php echo $imgsrc['large'][0]; ?>);
+				}
 			}
 
-			*/
 		</style>
-					<figure class="refrow__figure">
-				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
+			<figure class="refrow__figure">
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small_11_nc'); ?></a>
 			</figure>
 			<header class="refrow__header">
 				<div class="innerwrap">

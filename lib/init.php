@@ -19,6 +19,11 @@ function roots_setup() {
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
 
+
+  add_image_size( 'small_11_nc', 480, 480, false );
+  add_image_size( 'medium_11_nc', 768, 768, false );
+  add_image_size( 'large_11_nc', 1024, 1024, false );
+
   // Add post formats
   // http://codex.wordpress.org/Post_Formats
   add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio'));
