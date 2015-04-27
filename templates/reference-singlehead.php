@@ -107,7 +107,7 @@
 
 		</style>
 		<figure class="refrow__figure">
-			<a href="#"><?php the_post_thumbnail('large'); ?></a>
+			<a href="#"><?php the_post_thumbnail('thumbnail'); ?></a>
 		</figure>
 		<header class="refrow__header">
 			<div class="innerwrap">
