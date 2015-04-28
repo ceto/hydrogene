@@ -79,7 +79,7 @@
 		</style>
 		<figure class="refrow__figure">
 			<a href="<?php the_permalink(); ?>">
-				<img src="<?php echo $imgsrc['thumbnail'][0]; ?>" width="<?php echo $imgsrc['thumbnail'][1]; ?>" height="<?php echo $imgsrc['thumbnail'][2]; ?>" alt="<?php the_title(); ?>" sizes="15em, (min-width: 768px) 48vw, (min-width: 1600px) 768px" <?php echo tevkori_get_srcset_string( $post_thumb_id, 'full' ); ?> >
+				<img src="<?php echo $imgsrc['thumbnail'][0]; ?>" width="<?php echo $imgsrc['thumbnail'][1]; ?>" height="<?php echo $imgsrc['thumbnail'][2]; ?>" alt="<?php the_title(); ?>" sizes="(min-width: 768px) 48vw, (min-width: 1600px) 768px, 15em" <?php echo tevkori_get_srcset_string( $post_thumb_id, 'full' ); ?> >
 			</a>
 		</figure>
 		<header class="refrow__header">
