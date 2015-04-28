@@ -19,6 +19,8 @@ function roots_setup() {
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
 
+  add_image_size( 'tiny', 320, 0, false );
+
   set_post_thumbnail_size( 480, 0, false );
   update_option('thumbnail_size_w', 480);
   update_option('thumbnail_size_h', 0);

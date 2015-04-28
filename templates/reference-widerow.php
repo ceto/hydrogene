@@ -4,7 +4,7 @@
 
 		<?php
 			$post_thumb_id = get_post_thumbnail_id( $post->ID );
-			$imgsrc['thumbnail'] = wp_get_attachment_image_src( $post_thumb_id, 'thumbnail'); 
+			$imgsrc['thumbnail'] = wp_get_attachment_image_src( $post_thumb_id, 'tiny'); 
 		?>
 
 			<figure class="refrow__figure">
