@@ -5,11 +5,11 @@
 		<?php
 			$post_thumb_id = get_post_thumbnail_id( $post->ID );
 			$imgsrc['thumbnail'] = wp_get_attachment_image_src( $post_thumb_id, 'thumbnail'); 
-			$imgsrc['small'] = wp_get_attachment_image_src( $post_thumb_id, 'small');
-			$imgsrc['medium'] = wp_get_attachment_image_src( $post_thumb_id, 'medium');
-			$imgsrc['large'] = wp_get_attachment_image_src( $post_thumb_id, 'large');
-			$imgsrc['xlarge'] = wp_get_attachment_image_src( $post_thumb_id, 'xlarge');
-			$imgsrc['full'] = wp_get_attachment_image_src( $post_thumb_id, 'full');
+			// $imgsrc['small'] = wp_get_attachment_image_src( $post_thumb_id, 'small');
+			// $imgsrc['medium'] = wp_get_attachment_image_src( $post_thumb_id, 'medium');
+			// $imgsrc['large'] = wp_get_attachment_image_src( $post_thumb_id, 'large');
+			// $imgsrc['xlarge'] = wp_get_attachment_image_src( $post_thumb_id, 'xlarge');
+			// $imgsrc['full'] = wp_get_attachment_image_src( $post_thumb_id, 'full');
 	?>
 
 			<figure class="refrow__figure">
