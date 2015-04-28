@@ -12,11 +12,10 @@
 .refrow {
   position: relative;
 
-  overflow: hidden;
+  //overflow: hidden;
 
   color: $gray-main;
   border-top: 1px solid $gray-xlight; 
-  //border-bottom: 10px solid rgba(#fff,.2);
   background-color: #fff;
   background-image: url('../img/noise.png');
   background-repeat: repeat;
@@ -45,75 +44,40 @@
 
   margin: 2em auto 1em;
 
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: auto 95%;
-
-  backface-visibility: hidden;
-  
-
   .refsingle & {
-    background-size: auto 90%;
-    background-position: center bottom;
-    @include bp($s5) {
-      background-position: center bottom;
+    margin-top: 5em;
+    @include bp($s2) {
+      margin:4em 0 0;
     }
-
   }
+
   @include bp($s2) {
     position: absolute;
     top: 0;
-    left: 58%;
-
+    left: 56%;
     width: 48%;
-    height: 100%;
-    margin: 0;
-    //transform: translate(0, -50%);
+    bottom:0;
+    //height: 100%;
+    margin: .5em 0;
     .reference:nth-of-type(2n) & {
       left: -3%;
-
-      background-position: center bottom;
-    }
-    a img {
-      visibility: hidden;
     }
   }
-  // @include bp($s5) {
-  //   background-position: center bottom;
-  //   left: 50%;
 
-  //   width: 50%;
-  //   .reference:nth-of-type(2n) & {
-  //     background-position: center bottom;
-  //     left: 0;
-  //   }
-  // }
   a {
-    position: relative;
+  }
 
+  img {
+    max-width: 15em;
     display: block;
-    overflow: hidden;
-
-    padding: 0 0 0;
-
-    text-align: center;
-
-    backface-visibility: hidden;
+    margin:0 auto;
+    
     @include bp($s2) {
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      width: 100%;
+      max-width: none;
+      width:auto;
       height: 100%;
-    }
-    img {
-      width: auto;
-      max-width: 16em;
-      //max-width: 90%;
-      max-height: 25em;
-      //width:100%;
-      //display: block;
+      max-height: 100%;
+
     }
   }
 }
@@ -139,18 +103,11 @@
     }
   }
   @include bp($s3) {
-    //padding: 3em 0;
   }
   @include bp($s4) {
-    //font-size: 0.875em;
-    //padding: 4em 0 3em;
   }
-  // @include bp($s5) {
-  //   width: 50%;
-  //   padding: 5em 0 4em;
-  // }
+
   .innerwrap {
-    //max-width: 32em;
     margin: 0 auto;
     max-width: 33em;
     @include bp($s2) {
