@@ -205,7 +205,7 @@
 					<div class="teammember__desc">
 						<p>Olyan céltudatos vállalkozó, aki felkészült és határozott céljai vannak. Érti és értékeli a minőségi munkát. Bízik a szakértelmünkben és szakmai kérdésekben szabadkezet ad.</p>
 						<blockquote>
-							<p>“Tudom, hogy tartalom nélkül nincsen forma…”</p>
+							<p>“Céljaim eléréséhez, minőségi munkára van szükségem…”</p>
 						</blockquote>
 						<p>Tisztában van vele, hogy az együttműködés kétirányú. Nyitott a közös munkára, szereti a kreatív megoldásokat. Nem kalandor, hanem hosszútávú elképzelései vannak.</p>
 						</div>

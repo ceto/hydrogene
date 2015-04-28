@@ -25,19 +25,9 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.333);
 			}
 
-			
-
-			.refsingle__shareblock .btn  {
-				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.875	);
-			}
-			
-
-			.connect__bigtitle span,
-			.refsingle__shareblock .btn:before,
-			.refsingle__shareblock {
+			.connect__bigtitle span {
 				border-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,0.2	);
 			}
-
 
 			.btn--circle, 
 			.niceheading--refheading .niceheading__title:before,
@@ -49,8 +39,7 @@
 			.refsingle__content > h3:before,
 			.refsingle__content > h4:before,
 			.refsingle__content > h5:before,
-			.refsingle__content > h6:before,
-			.shareblock__nav .nav-tabs li:before {
+			.refsingle__content > h6:before {
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 			
