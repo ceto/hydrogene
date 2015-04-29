@@ -332,24 +332,30 @@
   }
 
   a.szoci {
-    font-size: 1.5em;
+    font-size:2em;
     display: inline-block;
     margin:1em 0 0.25em 0.25em;
-    padding:0.333em 0.25em 0;
-    width:1.75em;
-    height: 1.75em;
+    padding:0.25em 0.25em 0;
+    width:1.5em;
+    height: 1.5em;
     text-align: center;
-    background-color: $gray-xlight;
-    //color:#fff;
-    //border-radius:50%;
+    //background-color: $textcolor-light;
+    color:$secondary-color;
+    //background-color: transparent;
+    //display: none;
     line-height: 1;
     i {
       line-height: 1;
     }
     &:hover, &:focus {
-      background-color: $textcolor-light;
+      background-color: $secondary-color;
       color:#fff;
     }
+  
+    @include bp($s2) {
+      display: none;
+    }
+
   }
   
 }
@@ -393,10 +399,12 @@
   }
 
   a.szoci {
-    background-color: rgba(#fff,.125);
+    //background-color: rgba(#fff,.125);
+    color: rgba(#fff,.75);
     &:hover, &:focus {
-      background-color: rgba(#fff,.333);
-      color:#fff;
+      background-color: rgba(#000,.2);
+      //background-color: rgba(#fff,.333);
+      //color:#fff;
     }
   }
 

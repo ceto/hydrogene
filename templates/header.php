@@ -1,4 +1,4 @@
-<header class="banner" role="banner">
+<header id="top" class="banner" role="banner">
     <div class="wrapper wrapper--wide">
     <a class="banner__brand <?php echo (is_singular('reference') || is_page(array(58,69)))?'banner__brand--white':''; ?>" href="<?php echo esc_url(home_url('/')); ?>">hydrogene</a>
     <?php h2_pagetitle((is_singular('reference') || is_page(array(58,69)))?'banner__pagetitle--white':''); ?>

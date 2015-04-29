@@ -9388,20 +9388,23 @@ input[type="checkbox"]#nav-toggle {
   .pagefooter .jobbfel {
     text-align: center; }
   .pagefooter a.szoci {
-    font-size: 1.5em;
+    font-size: 2em;
     display: inline-block;
     margin: 1em 0 0.25em 0.25em;
-    padding: 0.333em 0.25em 0;
-    width: 1.75em;
-    height: 1.75em;
+    padding: 0.25em 0.25em 0;
+    width: 1.5em;
+    height: 1.5em;
     text-align: center;
-    background-color: #ececec;
+    color: #bd4932;
     line-height: 1; }
     .pagefooter a.szoci i {
       line-height: 1; }
     .pagefooter a.szoci:hover, .pagefooter a.szoci:focus {
-      background-color: #454545;
+      background-color: #bd4932;
       color: #fff; }
+    @media only screen and (min-width: 768px) {
+      .pagefooter a.szoci {
+        display: none; } }
 
 .pagefooter__brand {
   text-indent: 100%;
@@ -9434,10 +9437,9 @@ input[type="checkbox"]#nav-toggle {
   .pagefooter--dark .pagefooter__brand {
     background-image: url('../img/logo_footer_white.png'); }
   .pagefooter--dark a.szoci {
-    background-color: rgba(255, 255, 255, 0.125); }
+    color: rgba(255, 255, 255, 0.75); }
     .pagefooter--dark a.szoci:hover, .pagefooter--dark a.szoci:focus {
-      background-color: rgba(255, 255, 255, 0.333);
-      color: #fff; }
+      background-color: rgba(0, 0, 0, 0.2); }
 
 .niceheading--homehero {
   font-size: 1.125em;
