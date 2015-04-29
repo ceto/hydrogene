@@ -90,16 +90,16 @@ if(!$contact_human == 0){
 			<div class="contactelement">
 				<h4 class="contactelement__title">Írj emailt</h4>
 				<p class="contactelement__data">
-					<a href="mailto:office@hydrogene.hu"><i class="ion ion-email"></i>office@hydrogene.hu</a>
+					<a href="mailto:office@hydrogene.hu"><i class="icon icon--email"></i>office@hydrogene.hu</a>
 				</p>
 			</div>
 			<div class="contactelement">
 				<h4 class="contactelement__title">Kövess minket</h4>
 				<p class="contactelement__data">
-					<a href="https://www.facebook.com/hydrogenedesign" target="_blank"><i class="ion ion-social-facebook"></i>fb.me/hydrogenedesign</a>
+					<a href="https://www.facebook.com/hydrogenedesign" target="_blank"><i class="icon icon--facebook"></i>fb.me/hydrogenedesign</a>
 				</p>
 				<p class="contactelement__data">
-					<a href="https://twitter.com/hydrogenedesign" target="_blank"><i class="ion ion-social-twitter"></i>@hydrogenedesign</a>
+					<a href="https://twitter.com/hydrogenedesign" target="_blank"><i class="icon icon--twitter"></i>@hydrogenedesign</a>
 				</p>
 				
 			</div>
@@ -140,7 +140,7 @@ if(!$contact_human == 0){
 <section id="mapblock" class="mapblock">	
 	<div class="mapblock__content">
 		<div class="wrapper wrapper--normal">
-			<a href="#" class="mapinfo__close"><i class="ion ion-close"></i></a>
+			<a href="#" class="mapinfo__close"><i class="icon ion--close"></i></a>
 			<div class="balfel">
 				<h2 class="contact__title">Személyesen*</h2>
 				<p class="contactelement__data">Együtt gondolkodni jó. Gyakori vendégünk leszel, ha beindul a projekted.<br>
@@ -148,7 +148,7 @@ if(!$contact_human == 0){
 			</div>
 			<div class="jobbfel">
 				<div class="contactelement">
-					<h4 class="contactelement__title"><!-- <i class="ion ion-location"></i> -->Hydrogene Design</h4>
+					<h4 class="contactelement__title"><!-- <i class="icon icon--location"></i> -->Hydrogene Design</h4>
 					<p class="contactelement__data behuz">BZS 50 műterem<br>
 					Bajcsy-Zsilinszky út 50.<br>
 					1054 Budapest</p>

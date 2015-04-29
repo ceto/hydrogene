@@ -38,7 +38,7 @@ input[type="checkbox"]#nav-toggle {
 	&:checked + .nav-toggle i {
 		color:$gray-main;
 		&:before {
-			content:'\f405';
+			content:'\e602';
 		}
 	}
 }

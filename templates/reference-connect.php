@@ -3,7 +3,7 @@
 		<div class="wrapper wrapper--normal">
 			<h3 class="connect__bigtitle">Tetszik amit csinálunk?<span>Lépj kapcsolatba velünk</span></h3>
 			<div class="connect__toggle">
-				<a class="btn btn--circle" data-toggle="collapse" href="#cumoka" aria-expanded="false" aria-controls="cumoka"><i class="ion ion-ios-arrow-thin-down"></i></a>
+				<a class="btn btn--circle" data-toggle="collapse" href="#cumoka" aria-expanded="false" aria-controls="cumoka"><i class="icon icon--arrow-thin-down"></i></a>
 			</div>
 		</div>
 	</div>
@@ -20,11 +20,10 @@
 
 	      <div class="connect__right">
 	        <ul class="connect__list">
-            <li><i class="ion ion-iphone"></i><a href="tel:+36309768698">Hívd Mátyást (0036) 30.976.8698</a></li>
-            <li><i class="ion ion-email"></i><a href="mailto:office@hydrogene.hu">Küldj emailt office@hydrogene.hu</a></li>
-            <!-- <li><i class="ion ion-ios-location"></i><a href="<?php echo get_permalink(58).'/#mapblock'; ?>">Ugorj be hozzánk egy kávéra</a></li> -->
-            <li><i class="ion ion-compose"></i><a href="<?php echo get_permalink(58).'/#contactform'; ?>">Kérdezz űrlapunkon keresztül</a></li>
-            <li><i class="ion ion-social-facebook"></i><a href="https://www.facebook.com/hydrogenedesign" target="_blank">Megtalálsz minket a Facebookon</a></li>
+            <li><i class="icon icon--iphone"></i><a href="tel:+36309768698">Hívd Mátyást (0036) 30.976.8698</a></li>
+            <li><i class="icon icon--email"></i><a href="mailto:office@hydrogene.hu">Küldj emailt office@hydrogene.hu</a></li>
+            <li><i class="icon icon--compose"></i><a href="<?php echo get_permalink(58).'/#contactform'; ?>">Kérdezz űrlapunkon keresztül</a></li>
+            <li><i class="icon icon--facebook"></i><a href="https://www.facebook.com/hydrogenedesign" target="_blank">Megtalálsz minket a Facebookon</a></li>
           </ul>
 	      </div>
 
