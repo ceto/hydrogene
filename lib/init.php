@@ -13,6 +13,8 @@ function roots_setup() {
     'primary_navigation' => __('Primary Navigation', 'roots')
   ));
 
+  add_filter('jpeg_quality', function($arg){return 100;});
+  
   // Add post thumbnails
   // http://codex.wordpress.org/Post_Thumbnails
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
