@@ -1,6 +1,6 @@
 <header id="top" class="banner" role="banner">
     <div class="wrapper wrapper--wide">
-    <a class="banner__brand <?php echo (is_singular('reference') || is_page(array(58,69)))?'banner__brand--white':''; ?>" href="<?php echo esc_url(home_url('/')); ?>">hydrogene</a>
+    <a class="banner__brand <?php echo (is_singular('reference') || is_page(array(58,69)))?'banner__brand--white':''; ?>" href="<?php echo esc_url(home_url('/')); ?>"><i class="icon icon--hydrogene"></i></a>
     <?php h2_pagetitle((is_singular('reference') || is_page(array(58,69)))?'banner__pagetitle--white':''); ?>
     <input type="checkbox" id="nav-toggle">
     <label class="nav-toggle" for="nav-toggle"><i class="icon icon--navicon"></i><span>Menü</span></label>

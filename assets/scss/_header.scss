@@ -1,11 +1,13 @@
 .banner {
   transition: all .4s ease;
-  // @include bp($s3) {
-  //   font-size: 21px;
-  // }
+  color:$gray-main;
 
   .wrapper {
     position: relative;
+  }
+
+  .single-reference &, .page-template-template-contact &, .page-template-template-aboutus & {
+    color:rgba(#fff,.75);
   }
 
   @include bp($s2) {
@@ -26,31 +28,27 @@
 
     }
 
+
+
+
     &.scrolled {
       height:4em;
       background-color: rgba(#fff,0.95);
       background-image:url('../img/noise.png');
       background-repeat: repeat;
       .single-reference & {
-        background-color: rgba(#000,0.95);   
+        background-color: rgba(#000,0.95);
       }
 
       .page-template-template-contact & {
-        background-color: rgba($secondary-color,0.95);   
+        background-color: rgba($secondary-color,0.95);
       }
       .page-template-template-aboutus & {
-        //background-color: rgba($secondary-color,0.95);
-        background-color: rgba($gray-main,0.95);   
+        background-color: rgba($gray-main,0.95); 
       }
-      // .home & {
-      //   background-color: rgba($repa,0.95);   
-      // }
-      // .post-type-archive-reference & {
-      //   background-color: rgba($gray-xxlight,0.95);
-      // }
 
-      color: $gray-main;
       top:-3.5em;
+
       &:hover, &.ison {
         top:0;  
       }
@@ -61,14 +59,7 @@
 
 }
 .banner__brand {
-  @include hide-text();
-  background-image: url('../img/logo_black.png');
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  opacity:0.75;
-  font-family: $sans-serif;
-  font-weight: 900;
+
   font-size: 1em;
   line-height: 1;
 
@@ -86,45 +77,34 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  color: rgba($gray-main,1);
-  
-  // @include bp($s2) {
-  //   left:1.5em;
-  // }
+  color: inherit;
+
   @include bp($s2) {
-    opacity:0.75;
     position: static;
     float:left;
     width:1.5em;
     height:2.75em;
-    //width:33.333;
-
-
-    //font-size: 2em;
     margin-top: 2.25em;
-    //left: 0.5em;
 
     transition: all .4s ease;
     .scrolled & {
-      margin-top: 0.75em;
+      margin-top: 0.666em;
       height:2.5em;
       width: 1.333em;
-      //font-size: 1em;
-      //left:1.5em;
-      //top: .75em;
-
-      //color: $gray-main;
-
     }
   }
   &:hover, &:focus {
     
   }
-}
 
-.banner__brand--white {
-  background-image: url('../img/logo_white.png');
-  opacity:1;
+  i { 
+    font-size: 3em;
+    margin-left: -.25em;   
+    @include bp($s2) {
+      font-size: 2.75em;
+      margin-left: -.25em;
+    }
+  }
 }
 
 
@@ -136,23 +116,16 @@
   text-decoration: none;
   font-size: 1.25em;
   line-height: 1;
-  //background-color: green;
-  
-  //text-transform: uppercase;
+
   font-family: $sans-serif;
   font-weight: 300;
-  color:$textcolor-light;
+  color:inherit;
   
   max-width: 6em;
   overflow: hidden;
   white-space: nowrap;
   transition: all .4s ease;
 
-
-  // @include bp($s2) {
-  //   left:3em;
-
-  // }
   
   @include bp($s2) {
     position: static;
@@ -174,9 +147,9 @@
     background-size: auto 85%;
     background-position: left center;
     background-repeat: no-repeat;
-    opacity:0.75;
     &.banner__pagetitle--white {
       filter: invert(1);
+      opacity:0.75;
     }
 
   }
@@ -184,7 +157,7 @@
 }
 
 .banner__pagetitle--white {
-  color:rgba(#fff,0.75);
+  //color:rgba(#fff,0.75);
 }
 
 .hero {
@@ -193,7 +166,6 @@
   color: #fff;
   background-color: $gray-main;
   border-bottom: 10px solid rgba(#fff,.2);
-  // background-image: url(../img/playmobil.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -296,7 +268,6 @@
 }
 
 .hero__subtitle {
-  //color:rgba($secondary-color,.75);
   font-family: $headingfont;
   font-size: 2.25em;
   font-weight: 900;
@@ -312,8 +283,7 @@
 }
 
 .hero__disclaimer {
-  //font-family: $sans-serif;
-  //font-weight: 300;
+
   font-size: 1.125em;
 
   margin-top: .5em;
@@ -352,13 +322,13 @@
   text-align: center;
 
   color: #fff;
-  //border-top: 10px solid rgba(#fff,.125);
+
   background-color: $gray-main;
 }
 
 .pageheader__content {
   position: relative;
-  //z-index: 3;
+
 
   padding: 4em 0 4em;
 }

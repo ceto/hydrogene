@@ -4,9 +4,13 @@
   background-repeat: repeat, no-repeat;
   background-position: center center;
   background-size: auto, cover;
-  background-image: url('../img/noise.png'), url('../img/hero_kapcsolat.jpg');
+  background-image: url('../img/noise.png'), url('../img/hero_kapcsolat_med.jpg');
 
   border-bottom: 10px solid rgba($secondary-color, .75);
+
+  @include bp($s2) {
+    background-image: url('../img/noise.png'), url('../img/hero_kapcsolat.jpg');
+  }
 }
 
 

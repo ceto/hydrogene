@@ -6,7 +6,10 @@
   background-position: center center;
   background-size: auto, cover;
   //background-attachment: fixed;
-  background-image: url('../img/noise.png'), url('../img/hero_csonak.jpg');
+  background-image: url('../img/noise.png'), url('../img/hero_csonak_med.jpg');
+  @include bp($s2) {
+    background-image: url('../img/noise.png'), url('../img/hero_csonak.jpg');
+  }
 }
 
 .niceheading--aboutushero {
@@ -49,7 +52,7 @@
   //max-width: 480px;
 
   @include bp($s2) {
-    margin: 0 -1.5em;
+    margin: 0 -2.5em;
   }
   @include bp($s3) {
     position: absolute;

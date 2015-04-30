@@ -3277,7 +3277,7 @@ body {
 /******** LEft Aligned heading block ******/
 .niceheading {
   margin: 0 auto;
-  padding: 4em 0 4em;
+  padding: 2em 0 2em;
   text-align: left; }
   @media only screen and (min-width: 1600px) {
     .niceheading {
@@ -3298,7 +3298,8 @@ body {
     .niceheading--ashero {
       background-size: cover; } }
   .niceheading--ashero .niceheading__title {
-    padding-left: 0; }
+    padding-left: 0;
+    font-size: 2.5em; }
     .niceheading--ashero .niceheading__title:before {
       display: none; }
     .niceheading--ashero .niceheading__title small {
@@ -3328,7 +3329,7 @@ body {
   position: relative;
   padding-left: 2.33em;
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-  font-size: 2.5em;
+  font-size: 1.75em;
   line-height: 1;
   font-weight: 900;
   margin: 0 0 .25em 0;
@@ -3773,9 +3774,12 @@ textarea {
 
 .banner {
   -webkit-transition: all .4s ease;
-          transition: all .4s ease; }
+          transition: all .4s ease;
+  color: #212121; }
   .banner .wrapper {
     position: relative; }
+  .single-reference .banner, .page-template-template-contact .banner, .page-template-template-aboutus .banner {
+    color: rgba(255, 255, 255, 0.75); }
   @media only screen and (min-width: 768px) {
     .banner {
       position: fixed;
@@ -3792,7 +3796,6 @@ textarea {
         background-color: rgba(255, 255, 255, 0.95);
         background-image: url('../img/noise.png');
         background-repeat: repeat;
-        color: #212121;
         top: -3.5em; }
         .single-reference .banner.scrolled {
           background-color: rgba(0, 0, 0, 0.95); }
@@ -3804,16 +3807,6 @@ textarea {
           top: 0; } }
 
 .banner__brand {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  background-image: url('../img/logo_black.png');
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  opacity: 0.75;
-  font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-  font-weight: 900;
   font-size: 1em;
   line-height: 1;
   margin: 0;
@@ -3826,10 +3819,9 @@ textarea {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  color: #212121; }
+  color: inherit; }
   @media only screen and (min-width: 768px) {
     .banner__brand {
-      opacity: 0.75;
       position: static;
       float: left;
       width: 1.5em;
@@ -3838,13 +3830,16 @@ textarea {
       -webkit-transition: all .4s ease;
               transition: all .4s ease; }
       .scrolled .banner__brand {
-        margin-top: 0.75em;
+        margin-top: 0.666em;
         height: 2.5em;
         width: 1.333em; } }
-
-.banner__brand--white {
-  background-image: url('../img/logo_white.png');
-  opacity: 1; }
+  .banner__brand i {
+    font-size: 3em;
+    margin-left: -.25em; }
+    @media only screen and (min-width: 768px) {
+      .banner__brand i {
+        font-size: 2.75em;
+        margin-left: -.25em; } }
 
 .banner__pagetitle {
   position: absolute;
@@ -3856,7 +3851,7 @@ textarea {
   line-height: 1;
   font-family: 'Museo Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: 300;
-  color: #454545;
+  color: inherit;
   max-width: 6em;
   overflow: hidden;
   white-space: nowrap;
@@ -3879,14 +3874,11 @@ textarea {
     background-image: url('../img/logo_text_black.png');
     background-size: auto 85%;
     background-position: left center;
-    background-repeat: no-repeat;
-    opacity: 0.75; }
+    background-repeat: no-repeat; }
     .home .banner__pagetitle.banner__pagetitle--white, .page-template-default .banner__pagetitle.banner__pagetitle--white {
       -webkit-filter: invert(1);
-              filter: invert(1); }
-
-.banner__pagetitle--white {
-  color: rgba(255, 255, 255, 0.75); }
+              filter: invert(1);
+      opacity: 0.75; }
 
 .hero {
   padding: 12em 0 4em;
@@ -4030,18 +4022,12 @@ textarea {
   cursor: pointer;
   font-size: 2em;
   list-height: 1;
-  color: rgba(33, 33, 33, 0.75); }
+  color: inherit; }
   @media only screen and (min-width: 768px) {
     .nav-toggle {
       display: none; } }
   .nav-toggle span {
     display: none; }
-  .nav-toggle:hover, .nav-toggle:focus {
-    color: #212121; }
-  .single-reference .nav-toggle, .page-template-template-contact .nav-toggle, .page-template-template-aboutus .nav-toggle {
-    color: rgba(255, 255, 255, 0.75); }
-    .single-reference .nav-toggle:hover, .single-reference .nav-toggle:focus, .page-template-template-contact .nav-toggle:hover, .page-template-template-contact .nav-toggle:focus, .page-template-template-aboutus .nav-toggle:hover, .page-template-template-aboutus .nav-toggle:focus {
-      color: white; }
 
 input[type="checkbox"]#nav-toggle:checked + .nav-toggle i {
   color: #212121; }
@@ -4062,7 +4048,8 @@ input[type="checkbox"]#nav-toggle {
       top: 50%;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
-              transform: translateY(-50%); }
+              transform: translateY(-50%);
+      color: #212121; }
     @media only screen and (min-width: 768px) {
       input[type="checkbox"]#nav-toggle:checked + .nav-toggle + .navigation--main {
         visibility: visible;
@@ -4071,7 +4058,8 @@ input[type="checkbox"]#nav-toggle {
           top: 0;
           -webkit-transform: translateY(0);
               -ms-transform: translateY(0);
-                  transform: translateY(0); } }
+                  transform: translateY(0);
+          color: inherit; } }
 
 .navigation--main {
   padding: 0 0;
@@ -4098,8 +4086,8 @@ input[type="checkbox"]#nav-toggle {
       float: right;
       margin-top: 3em;
       width: 66.666%;
-      background-color: rgba(255, 255, 255, 0);
-      border-bottom: 1px solid rgba(255, 255, 255, 0);
+      background-color: transparent;
+      border-bottom: 1px solid #fff;
       overflow: hidden; }
       .scrolled .navigation--main {
         margin-top: 1.125em; } }
@@ -4109,8 +4097,8 @@ input[type="checkbox"]#nav-toggle {
   padding: 1em 1em;
   max-width: 64em;
   width: 100%;
-  -webkit-transition: all .4s ease;
-          transition: all .4s ease;
+  -webkit-transition: -webkit-transform .4s ease;
+          transition: transform .4s ease;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(100%);
@@ -4150,26 +4138,22 @@ input[type="checkbox"]#nav-toggle {
       font-weight: 900;
       text-transform: uppercase;
       text-decoration: none;
-      color: #212121;
+      color: inherit;
       -webkit-transition: all .4s ease;
               transition: all .4s ease; }
       .nav--main li > a:hover, .nav--main li > a:focus {
-        text-decoration: none;
-        color: #212121; }
+        text-decoration: none; }
       @media only screen and (min-width: 768px) {
         .nav--main li > a {
           display: inline-block;
           font-size: 0.75em;
-          border-bottom: 3px solid rgba(33, 33, 33, 0);
+          border-bottom: 3px solid transparent;
           margin: 0 0 0 1.5em;
-          padding: 1em 0 0.5em 0;
-          color: #212121; }
-          .navigation--main--whitetext .nav--main li > a {
-            color: rgba(255, 255, 255, 0.75); }
+          padding: 1em 0 0.333em 0; }
           .nav--main li > a:hover, .nav--main li > a:focus {
-            border-color: #212121; }
+            border-color: currentColor; }
             .navigation--main--whitetext .nav--main li > a:hover, .navigation--main--whitetext .nav--main li > a:focus {
-              border-color: rgba(255, 255, 255, 0.75); } }
+              border-color: currentColor; } }
       @media only screen and (min-width: 1024px) {
         .nav--main li > a {
           font-size: 0.666em; } }
@@ -5274,7 +5258,10 @@ input[type="checkbox"]#nav-toggle {
   background-repeat: repeat, no-repeat;
   background-position: center center;
   background-size: auto, cover;
-  background-image: url('../img/noise.png'), url('../img/hero_csonak.jpg'); }
+  background-image: url('../img/noise.png'), url('../img/hero_csonak_med.jpg'); }
+  @media only screen and (min-width: 768px) {
+    .aboutus__hero {
+      background-image: url('../img/noise.png'), url('../img/hero_csonak.jpg'); } }
 
 .teammember {
   position: relative;
@@ -5304,7 +5291,7 @@ input[type="checkbox"]#nav-toggle {
   text-align: center; }
   @media only screen and (min-width: 768px) {
     .teammember__figure {
-      margin: 0 -1.5em; } }
+      margin: 0 -2.5em; } }
   @media only screen and (min-width: 1024px) {
     .teammember__figure {
       position: absolute;
@@ -5571,8 +5558,11 @@ input[type="checkbox"]#nav-toggle {
   background-repeat: repeat, no-repeat;
   background-position: center center;
   background-size: auto, cover;
-  background-image: url('../img/noise.png'), url('../img/hero_kapcsolat.jpg');
+  background-image: url('../img/noise.png'), url('../img/hero_kapcsolat_med.jpg');
   border-bottom: 10px solid rgba(189, 73, 50, 0.75); }
+  @media only screen and (min-width: 768px) {
+    .contact__hero {
+      background-image: url('../img/noise.png'), url('../img/hero_kapcsolat.jpg'); } }
 
 .contactblock {
   padding: 3em 0;

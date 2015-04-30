@@ -7,7 +7,7 @@
 	cursor: pointer;
 	font-size: 2em;
 	list-height:1;
-	color:rgba($gray-main,0.75);
+	color:inherit;
 	@include bp($s2) {
 		display: none;
 	}
@@ -19,18 +19,18 @@
 	}
 
 	&:hover, &:focus {
-		color:rgba($gray-main,1);
+		//color:rgba($gray-main,1);
 	}
 
 
-	.single-reference &,
-	.page-template-template-contact &,
-	.page-template-template-aboutus & {
-    color:rgba(#fff,0.75);
-		&:hover, &:focus {
-			color:rgba(#fff,1);
-		}
-  }
+	// .single-reference &,
+	// .page-template-template-contact &,
+	// .page-template-template-aboutus & {
+ //    color:rgba(#fff,0.75);
+	// 	&:hover, &:focus {
+	// 		color:rgba(#fff,1);
+	// 	}
+ //  }
 }
 
 
@@ -55,17 +55,21 @@ input[type="checkbox"]#nav-toggle {
 		visibility:visible;
 		opacity:1;
 
+
 		.nav--main {
 			top: 50%;
 			transform: translateY(-50%);
+			color:$gray-main;
 		}
 		@include bp($s2) {
 			visibility:visible;
 			opacity:1;
 
+
 			.nav--main {
 				top: 0;
 				transform: translateY(0);
+				color:inherit;
 			}
 		}
 	}
@@ -101,8 +105,8 @@ input[type="checkbox"]#nav-toggle {
 		margin-top: 3em;
 		width:66.666%;
 		//height:2.666em;
-		background-color: rgba(white,0);
-		border-bottom: 1px solid rgba(white,0);
+		background-color: transparent;
+		border-bottom: 1px solid #fff;
 		overflow: hidden;
 
 
@@ -119,7 +123,7 @@ input[type="checkbox"]#nav-toggle {
 	padding:1em 1em;
 	max-width: 64em;
 	width:100%;
-	transition: all .4s ease;
+	transition: transform .4s ease;
 	position: absolute;
   
   top: 50%;
@@ -164,12 +168,12 @@ input[type="checkbox"]#nav-toggle {
 			font-weight: 900;
 			text-transform: uppercase;
 			text-decoration:none;
-			color:rgba($gray-main,1);
+			color:inherit;
 			transition: all .4s ease;
 
 			&:hover, &:focus {
 				text-decoration:none;
-				color:rgba($gray-main,1);
+				//color:#000;
 			}
 
 			
@@ -177,27 +181,13 @@ input[type="checkbox"]#nav-toggle {
 			@include bp($s2) {
 				display: inline-block;
 				font-size: 0.75em;
-				border-bottom:3px solid rgba($gray-main,0);
+				border-bottom: 3px solid transparent;
 				margin:0 0 0 1.5em;
-				padding:1em 0 0.5em 0;
-				color:rgba($gray-main,1);
-				.navigation--main--whitetext &{
-					color:rgba(#fff,0.75);
-				}
+				padding:1em 0 0.333em 0;
 				&:hover, &:focus {
-					
-					border-color: rgba($gray-main,1);
+					border-color: currentColor;
 					.navigation--main--whitetext &{
-						border-color:rgba(#fff,0.75);
-					}
-				}
-				
-				.scrolled & {
-					//color:$gray-main;
-
-					&:hover, &:focus {
-						//border-color: transparent;
-						//color:rgba(black,1)
+						border-color:currentColor;
 					}
 				}
 			}
@@ -208,22 +198,7 @@ input[type="checkbox"]#nav-toggle {
 
 		}
 
-		// &.contactstart > a {
-		// 	background-color: rgba(black,0.666);
-		// 	//color:rgba(black,0.5);
-		// 	border:1px solid rgba(black,0.333);
-		// 	border-radius:2px;
-		// 	padding:0.666em 0.5em 0.5em;
-		// 	&:hover, &:focus {
-		// 		border-color: rgba(black,1);
-		// 		background-color: rgba(black,1);
-		// 		//color: black;
-		// 	}
-		// 	.scrolled & {
-		// 		color:white;
-		// 	}
 
-		// }
 	}
 
 }
