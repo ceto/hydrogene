@@ -455,8 +455,8 @@ tbody.collapse.in {
 
 @font-face {
   font-family: 'hydroicons';
-  src: url('../fonts/hydroicons.eot?-pkuzj');
-  src: url('../fonts/hydroicons.eot?#iefix-pkuzj') format('embedded-opentype'), url('../fonts/hydroicons.woff2') format('woff2'), url('../fonts/hydroicons.woff?-pkuzj') format('woff'), url('../fonts/hydroicons.ttf?-pkuzj') format('truetype'), url('fonts/hydroicons.svg?-pkuzj#hydroicons') format('svg');
+  src: url('../fonts/hydroicons.eot');
+  src: url('../fonts/hydroicons.eot?#iefix') format('embedded-opentype'), url('../fonts/hydroicons.woff2') format('woff2'), url('../fonts/hydroicons.woff') format('woff'), url('../fonts/hydroicons.ttf') format('truetype'), url('fonts/hydroicons.svg#hydroicons') format('svg');
   font-weight: normal;
   font-style: normal; }
 

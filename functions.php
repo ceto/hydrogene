@@ -21,7 +21,8 @@ $roots_includes = array(
   'lib/gallery.php',         // Custom [gallery] modifications
   'lib/scripts.php',         // Scripts and stylesheets
   'lib/extras.php',          // Custom functions
-  'lib/custom.php'           // Custom hydrogene functions
+  'lib/custom.php',          // Custom hydrogene functions
+  'lib/ricg-responsive-images/wp-tevko-responsive-images.php' // RICG - Responsive Images
 );
 
 foreach ($roots_includes as $file) {

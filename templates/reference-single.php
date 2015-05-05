@@ -36,7 +36,7 @@
           $realimage = wp_get_attachment_image_src( $realimage_id , 'thumbnail');
         ?>
 
-        <img src="<?php echo $realimage[0]; ?>" width="<?php echo $realimage[1]; ?>" height="<?php echo $realimage[2]; ?>" alt="<?php the_title(); ?>" sizes="<?php echo tevkori_get_sizes( $realimage_id, 'full' ); ?>" <?php echo tevkori_get_srcset_string( $realimage_id, 'full' ); ?> >
+        <img src="<?php echo $realimage[0]; ?>" width="<?php echo $realimage[1]; ?>" height="<?php echo $realimage[2]; ?>" alt="<?php the_title(); ?>" <?php echo tevkori_get_srcset_string( $realimage_id, 'full' ); ?> sizes="<?php echo tevkori_get_sizes( $realimage_id, 'thumbnail' ); ?>">
 
         <?php if (strlen(get_post_meta( get_the_ID(), '_refdata_url', 1 ))>1) : ?>
           <p class="datahead__url">
