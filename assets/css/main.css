@@ -4389,12 +4389,36 @@ input[type="checkbox"]#nav-toggle {
   .refrow__actions .btn--sima {
     font-size: 0.875em; }
     .refsingle .refrow__actions .btn--sima {
-      display: none;
       font-size: 1em;
       margin-top: 2em;
       color: rgba(255, 255, 255, 0.75); }
       .refsingle .refrow__actions .btn--sima:hover, .refsingle .refrow__actions .btn--sima:focus {
         color: rgba(255, 255, 255, 0.75); }
+  .refrow__actions .lenyil {
+    display: none;
+    font-size: 1.5em;
+    color: #212121;
+    margin-top: 1em;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.75); }
+    @media only screen and (min-width: 768px) {
+      .refrow__actions .lenyil {
+        position: absolute;
+        left: 0;
+        bottom: 1.5em; } }
+    @media only screen and (min-width: 1280px) {
+      .refrow__actions .lenyil {
+        display: inline-block; } }
+    .refrow__actions .lenyil:hover, .refrow__actions .lenyil:focus {
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.75); }
+    .refrow__actions .lenyil i {
+      line-height: 1.5; }
 
 .refrow__tags__title {
   font-size: 1em;
@@ -4410,21 +4434,23 @@ input[type="checkbox"]#nav-toggle {
 
 /************** Reference Single Style Definitions ****************/
 .refsingle .refrow {
-  color: white;
+  color: #fff;
   border-bottom: 10px solid rgba(0, 0, 0, 0.125);
   border-top: none; }
   @media only screen and (min-width: 768px) {
     .refsingle .refrow .refrow__header {
-      padding: 9em 0 4em; } }
+      padding: 12em 0 5em; } }
   @media only screen and (min-width: 1024px) {
     .refsingle .refrow .refrow__header {
-      padding: 10em 0 4em; } }
+      padding: 12em 0 5em; } }
   @media only screen and (min-width: 1280px) {
     .refsingle .refrow .refrow__header {
-      padding: 9em 0 4em; } }
+      padding: 11em 0 4em;
+      min-height: calc(100vh - 10px);
+      max-height: 1200px; } }
   @media only screen and (min-width: 1600px) {
     .refsingle .refrow .refrow__header {
-      padding: 11em 0 5em; } }
+      padding: 10em 0 5em; } }
   .refsingle .refrow .refrow__title {
     padding-bottom: .25em; }
 

@@ -43,6 +43,7 @@
 				background-color: rgba(<?php echo get_post_meta( get_the_ID(), '_refdata_color', 1 ); ?>,1);
 			}
 			
+			.refrow__actions .lenyil,
 			.tasks__elements li a:hover,
 			.tasks__elements li a:focus,
 			.pagenav a,
@@ -81,8 +82,11 @@
 					<?php echo get_the_excerpt();	 ?>
 				</div>
 			    <div class="refrow__actions">
-					<a class="btn btn--sima" href="#singletop">
+					<!-- <a class="btn btn--sima" href="#singletop">
 						<?php _e('Felfedezés indul','h2'); ?>…
+					</a> -->
+					<a class="lenyil" href="#singletop">
+						<i class="icon  icon--arrow-thin-down"></i>
 					</a>
 		    </div>
 		  </div>
