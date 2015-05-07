@@ -5523,7 +5523,6 @@ input[type="checkbox"]#nav-toggle {
         padding-left: 0; } }
   @media only screen and (min-width: 1600px) {
     .widestoryitem__textcontent {
-      font-size: 1em;
       padding-left: 5em; }
       .widestoryitem:nth-of-type(2n) .widestoryitem__textcontent {
         padding-right: 5em;
