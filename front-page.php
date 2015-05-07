@@ -1,10 +1,10 @@
 <?php while (have_posts()) : the_post(); ?>
 <div class="wrapper wrapper--wide">
 	<header class="niceheading niceheading--ashero niceheading--homehero">
-  		<section class="niceheading__preinfo animated fadeInUp">
+  		<div class="niceheading__preinfo animated fadeInUp">
         <span class="feat">Élményt tervezünk</span>          
-      </section>
-      <h3 class="niceheading__title animated fadeInUp">Honlap és arculat</h3>
+      </div>
+      <h1 class="niceheading__title animated fadeInUp">Honlap és arculat</h1>
       <p class="niceheading__disclaimer animated fadeInUp">
         Piciny digitális műhelyünk, karakteres arculattal, és — szervesen illeszkedő — felhasználóbarát honlappal segíti céged növekedését. 
       </p>

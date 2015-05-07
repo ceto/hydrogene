@@ -13,7 +13,7 @@
           <ul class="connect__list">
             <li><i class="icon icon--iphone"></i><a href="tel:+36309768698">Hívd Mátyást (0036) 30.976.8698</a></li>
             <li><i class="icon icon--email"></i><a href="mailto:office@hydrogene.hu">Küldj emailt office@hydrogene.hu</a></li>
-            <li><i class="icon icon--compose"></i><a href="<?php echo get_permalink(58).'/#contactform'; ?>">Kérdezz űrlapunkon keresztül</a></li>
+            <li><i class="icon icon--compose"></i><a href="<?php echo get_permalink(58); ?>">Kérdezz űrlapunkon keresztül</a></li>
             <li><i class="icon icon--facebook"></i><a href="https://www.facebook.com/hydrogenedesign" target="_blank">Megtalálsz minket a Facebookon</a></li>
           </ul>
         </div>

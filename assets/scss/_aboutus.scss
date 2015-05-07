@@ -27,10 +27,10 @@
   background-repeat: repeat;
 
   @include clearfix();
-  &:nth-child(2n) {
+  &:nth-of-type(2n) {
     background-color: #fff;
   }
-  &:nth-child(3n) {
+  &:nth-of-type(3n) {
     background-color: $gray-xxlight;
   }
 
@@ -103,7 +103,7 @@
     //max-width: none;
     //margin-left: 40%;
     padding: 5em 0;
-    .teammember:nth-child(2n) & {
+    .teammember:nth-of-type(2n) & {
       //margin-left: 0;
       float: right;
     }

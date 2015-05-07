@@ -1,9 +1,9 @@
 <article <?php post_class('singlepost'); ?>>
   <div class="wrapper wrapper--wide">
     <header class="singlepost__header niceheading niceheading--ashero">
-        <section class="niceheading__preinfo animated fadeInUp">
+        <div class="niceheading__preinfo animated fadeInUp">
           <?php get_template_part('templates/entry-meta'); ?>          
-        </section>
+        </div>
         <h2 class="singlepost__title niceheading__title animated fadeInUp">
           <a href="<?php the_permalink(); ?>">
             <?php the_title(); ?>

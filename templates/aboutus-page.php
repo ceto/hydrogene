@@ -126,20 +126,18 @@
 
 </section>
 
+<section id="members" class="members">
+		<div class="wrapper wrapper--wide">
+			<header class="niceheading">
+				<h3 class="niceheading__title"><small>Designer és webfejlesztő</small>alkotó elemek</h3>
+			</header>
+		</div>
 
-
-<section id="members" class="niceheading">
-	<div class="wrapper wrapper--wide">
-			<h3 class="niceheading__title"><small>Itt vagyunk segítünk</small>az alkotó elemek</h3>
-	</div>
-</section>
-
-<section class="members">
-	<?php $ss_uri=get_stylesheet_directory_uri(); ?>
+		<?php $ss_uri=get_stylesheet_directory_uri(); ?>
 		<section class="teammember beke">
 			<div class="wrapper wrapper--wide">
 				<figure class="teammember__figure">
-					<img src="<?php echo $ss_uri; ?>/assets/img/portre_k_matyas_small.jpg" alt="Beke Mátyás - Art Director | Hydrogene" srcset="<?php echo $ss_uri; ?>/assets/img/portre_k_matyas_med.jpg 768w, <?php echo $ss_uri; ?>/assets/img/portre_k_matyas.jpg 1200w">
+					<img src="<?php echo $ss_uri; ?>/assets/img/portre_k_matyas_small.jpg" alt="Beke Mátyás - Art Director | Hydrogene" srcset="<?php echo $ss_uri; ?>/assets/img/portre_k_matyas_med.jpg 768w, <?php echo $ss_uri; ?>/assets/img/portre_k_matyas.jpg 1200w" sizes="(min-width:1024px) 0, 100vw">
 				</figure>
 				<div class="teammember__info">
 					<header class="teammember__head">
@@ -164,7 +162,7 @@
 		<section class="teammember szabo">
 			<div class="wrapper wrapper--wide">
 				<figure class="teammember__figure">
-					<img src="<?php echo $ss_uri; ?>/assets/img/portre_k_gabor_small.jpg" alt="Szabó Gábor - Webfejlesztő | Hydrogene" srcset="<?php echo $ss_uri; ?>/assets/img/portre_k_gabor_med.jpg 768w, <?php echo $ss_uri; ?>/assets/img/portre_k_gabor.jpg 1200w">
+					<img src="<?php echo $ss_uri; ?>/assets/img/portre_k_gabor_small.jpg" alt="Szabó Gábor - Webfejlesztő | Hydrogene" srcset="<?php echo $ss_uri; ?>/assets/img/portre_k_gabor_med.jpg 768w, <?php echo $ss_uri; ?>/assets/img/portre_k_gabor.jpg 1200w" sizes="(min-width:1024px) 0, 100vw">
 				</figure>
 				<div class="teammember__info">
 					<header class="teammember__head">
@@ -194,7 +192,7 @@
 		<section class="teammember partner">
 			<div class="wrapper wrapper--wide">
 				<figure class="teammember__figure">
-					<img src="<?php echo $ss_uri; ?>/assets/img/portre_k_partner_small.jpg" alt="Az ügyfél - Projektgazda" srcset="<?php echo $ss_uri; ?>/assets/img/portre_k_partner_med.jpg 768w, <?php echo $ss_uri; ?>/assets/img/portre_k_partner.jpg 1200w">
+					<img src="<?php echo $ss_uri; ?>/assets/img/portre_k_partner_small.jpg" alt="Az ügyfél - Projektgazda" srcset="<?php echo $ss_uri; ?>/assets/img/portre_k_partner_med.jpg 768w, <?php echo $ss_uri; ?>/assets/img/portre_k_partner.jpg 1200w" sizes="(min-width:1024px) 0, 100vw">
 				</figure>
 				<div class="teammember__info">
 					<header class="teammember__head">
@@ -215,5 +213,4 @@
 			</div>
 		</section>
 
-	</div>
 </section>

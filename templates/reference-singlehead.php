@@ -72,7 +72,7 @@
 				<img src="<?php echo $imgsrc['thumbnail'][0]; ?>" width="<?php echo $imgsrc['thumbnail'][1]; ?>" height="<?php echo $imgsrc['thumbnail'][2]; ?>" alt="<?php the_title(); ?>" <?php echo tevkori_get_srcset_string( $post_thumb_id, 'full' ); ?> sizes="(min-width: 768px) 48vw, (min-width: 1600px) 768px, 15em">
 			</a>
 		</figure>
-		<header class="refrow__header">
+		<div class="refrow__header">
 			<div class="innerwrap">
 		    <h3 class="refrow__subtitle">
 		    	<?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?>
@@ -81,16 +81,13 @@
 				<div class="refsingle__lead">
 					<?php echo get_the_excerpt();	 ?>
 				</div>
-			    <div class="refrow__actions">
-					<!-- <a class="btn btn--sima" href="#singletop">
-						<?php _e('Felfedezés indul','h2'); ?>…
-					</a> -->
+			  <div class="refrow__actions">
 					<a class="lenyil" href="#singletop">
 						<i class="icon  icon--arrow-thin-down"></i>
 					</a>
 		    </div>
 		  </div>
-		</header>
+		</div>
 	</div><!-- /.bele -->
 	</div>
 </div>

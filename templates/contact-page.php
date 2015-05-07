@@ -105,7 +105,7 @@ if(!$contact_human == 0){
 			</div>
 		</div>
 		
-		<div class="contactformwrap" aria-labelledby="contactformwrap">
+		<div class="contactformwrap">
 			<form id="contactform" class="contactform" action="<?php the_permalink(); ?>#contacresponse" method="post">
 				<h3 class="contact__title">Küldj üzenetet</h3>
 				<p class="contactelement__data">Érdeklődhetsz az alábbi űrlap kitöltésével is. Két munkanapon belül válaszolunk.</p>
@@ -148,7 +148,7 @@ if(!$contact_human == 0){
 			</div>
 			<div class="jobbfel">
 				<div class="contactelement">
-					<h4 class="contactelement__title"><!-- <i class="icon icon--location"></i> -->Hydrogene Design</h4>
+					<h4 class="contactelement__title">Hydrogene Design</h4>
 					<p class="contactelement__data behuz">BZS 50 műterem<br>
 					Bajcsy-Zsilinszky út 50.<br>
 					1054 Budapest</p>

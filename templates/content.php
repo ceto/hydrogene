@@ -10,9 +10,9 @@
       		<?php the_title(); ?>
       	</a>
       </h2>
-      <section class="niceheading__preinfo archiveentry__meta">
+      <div class="niceheading__preinfo archiveentry__meta">
         <?php get_template_part('templates/entry-meta'); ?>          
-      </section>
+      </div>
 
       <p class="archiveentry__summary niceheading__disclaimer">
         <?php echo get_the_excerpt(); ?>

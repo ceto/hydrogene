@@ -1,10 +1,9 @@
 <article <?php post_class('singlepost'); ?>>
   <div class="wrapper wrapper--wide">
     <header class="singlepost__header niceheading niceheading--ashero">
-
-        <section class="niceheading__preinfo animated fadeInUp">
+        <div class="niceheading__preinfo animated fadeInUp">
           <?php get_template_part('templates/entry-meta'); ?>          
-        </section>
+        </div>
         <h1 class="singlepost__title niceheading__title animated fadeInUp"><?php the_title(); ?></h1>
         <p class="niceheading__disclaimer animated fadeInUp">
           <?php echo get_the_excerpt(); ?>

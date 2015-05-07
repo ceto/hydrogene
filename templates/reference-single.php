@@ -1,12 +1,8 @@
-<!-- <section class="topmenubg"></section> -->
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class('refsingle'); ?>>
     <header class="refsingle__header">
       <?php get_template_part('templates/reference', 'singlehead'); ?>
     </header>
-    <!-- <a name="singletop" id="singletop"></a> -->
-
-
 
   <section id="singletop" class="refsingle__datahead">
     <div class="wrapper wrapper--normal">
@@ -29,14 +25,14 @@
     </div>
   </section>
 
-    <section class="refsingle__reallife">
+    <figure class="refsingle__reallife">
       <div class="wrapper wrapper--wide wrapper--nopadding">
         <?php
           $realimage_id = get_post_meta( get_the_ID(), '_refdata_reallife_id', 1 );
-          $realimage = wp_get_attachment_image_src( $realimage_id , 'thumbnail');
+          $realimage = wp_get_attachment_image_src( $realimage_id , 'tiny');
         ?>
 
-        <img src="<?php echo $realimage[0]; ?>" width="<?php echo $realimage[1]; ?>" height="<?php echo $realimage[2]; ?>" alt="<?php the_title(); ?>" <?php echo tevkori_get_srcset_string( $realimage_id, 'full' ); ?> sizes="<?php echo tevkori_get_sizes( $realimage_id, 'thumbnail' ); ?>">
+        <img src="<?php echo $realimage[0]; ?>" width="<?php echo $realimage[1]; ?>" height="<?php echo $realimage[2]; ?>" alt="<?php the_title(); ?>" <?php echo tevkori_get_srcset_string( $realimage_id, 'full' ); ?> sizes="<?php echo tevkori_get_sizes( $realimage_id, 'tiny' ); ?>">
 
         <?php if (strlen(get_post_meta( get_the_ID(), '_refdata_url', 1 ))>1) : ?>
           <p class="datahead__url">
@@ -49,7 +45,7 @@
         <?php endif; ?>
 
       </div>
-    </section>
+    </figure>
 
     <div class="wrapper wrapper--normal">
       <div class="refsingle__content">
@@ -85,5 +81,3 @@
     </footer>
   </article>
 <?php endwhile; ?>
-
-<?php //get_template_part('templates/reference','navigation'); ?>

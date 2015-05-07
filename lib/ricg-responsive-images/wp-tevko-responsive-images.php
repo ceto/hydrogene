@@ -174,6 +174,10 @@ function tevkori_get_srcset_array( $id, $size = 'thumbnail' ) {
 		'file'		=> $image_meta['file']
 	);
 
+	// Added by ceto - removing thumbnail form the list
+	unset($default_sizes['thumbnail']);
+	unset($default_sizes['tiny']);
+
 	// Remove any hard-crops
 	foreach ( $default_sizes as $key => $image_size ) {
 

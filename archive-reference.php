@@ -1,9 +1,9 @@
 <div class="wrapper wrapper--wide">
   <header class="refarchive__header niceheading niceheading--ashero">
 
-      <section class="niceheading__preinfo animated fadeInUp">
+      <div class="niceheading__preinfo animated fadeInUp">
         <span class="feat">Egyedi munkák, weben és nyomtatásban</span>          
-      </section>
+      </div>
       <h1 class="singlepost__title niceheading__title animated fadeInUp">Arculati és webdesign referencia</h1>
       <p class="niceheading__disclaimer animated fadeInUp">
         Több tucat sikeres projekt áll a hátunk mögött. Számos vállalkozást segítettünk honlappal vagy arculattal. Változatos feladataink közül megmutatjuk a kedvenceinket. Hasonlót szeretnél?

@@ -1,9 +1,9 @@
 <div class="wrapper wrapper--wide">
   <header class="refarchive__header niceheading niceheading--ashero">
 
-      <section class="niceheading__preinfo animated fadeInUp">
+      <div class="niceheading__preinfo animated fadeInUp">
         <span class="feat"><?php echo roots_subtitle(); ?></span>          
-      </section>
+      </div>
       <h1 class="singlepost__title niceheading__title animated fadeInUp">
         <?php echo roots_title(); ?>
       </h1>
@@ -18,17 +18,7 @@
   <?php while (have_posts()) : the_post(); ?>
     <?php get_template_part('templates/content', get_post_format()); ?>
   <?php endwhile; ?>
-
-  <?php /* while (have_posts()) : the_post(); ?>
-    <article <?php post_class('reference--listelem'); ?>>
-      <?php get_template_part('templates/reference', 'widerow'); ?>
-    </article>
-  <?php endwhile; */?>
-
-
 </section>
-
-
 
 <?php if ($wp_query->max_num_pages > 1) : ?>
   <nav class="post-nav">
