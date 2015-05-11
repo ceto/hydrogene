@@ -178,7 +178,7 @@
 					</div>
 					<div class="teammember__footer">
 						<ul class="teammember__social">
-							<li><a target="_blank" href="https://twiiter.com/szabogabi"><i class="icon icon--twitter"></i></a></li>
+							<li><a target="_blank" href="https://twitter.com/szabogabi"><i class="icon icon--twitter"></i></a></li>
 							<li><a target="_blank" href="#"><i class="icon icon--linkedin"></i></a></li>
 							<li><a target="_blank" href="https://github.com/ceto"><i class="icon icon--github"></i></a></li>
 							<li><a href="mailto:szabogabor@hydrogene.hu"><i class="icon icon--email"></i></a></li>

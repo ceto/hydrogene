@@ -67,12 +67,12 @@
 
 
 		</style>
-		<figure class="refrow__figure">
+		<figure class="refrow__figure animated fadeInRight">
 			<a href="<?php the_permalink(); ?>">
 				<img src="<?php echo $imgsrc['thumbnail'][0]; ?>" width="<?php echo $imgsrc['thumbnail'][1]; ?>" height="<?php echo $imgsrc['thumbnail'][2]; ?>" alt="<?php the_title(); ?>" <?php echo tevkori_get_srcset_string( $post_thumb_id, 'full' ); ?> sizes="(min-width: 768px) 48vw, (min-width: 1600px) 768px, 15em">
 			</a>
 		</figure>
-		<div class="refrow__header">
+		<div class="refrow__header animated fadeInDown">
 			<div class="innerwrap">
 		    <h3 class="refrow__subtitle">
 		    	<?php echo get_post_meta( get_the_ID(), '_refdata_subtitle', 1 ); ?>
@@ -82,7 +82,7 @@
 					<?php echo get_the_excerpt();	 ?>
 				</div>
 			  <div class="refrow__actions">
-					<a class="lenyil" href="#singletop">
+					<a class="lenyil animated fadeInUp" href="#singletop">
 						<i class="icon  icon--arrow-thin-down"></i>
 					</a>
 		    </div>

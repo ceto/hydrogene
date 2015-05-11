@@ -640,24 +640,29 @@ $(window).scroll(function (event) {
 $(document).ready(function(){
 
 
-$('.mapinfo__close').click(function(e){
-  e.preventDefault();
-  $('.mapblock__content').removeClass('is_show');
-  $('.map-overlay').removeClass('is_show');
+  $('.mapinfo__close').click(function(e){
+    e.preventDefault();
+    $('.mapblock__content').removeClass('is_show');
+    $('.map-overlay').removeClass('is_show');
+  });
+
+  // var waypoint = new Waypoint({
+  //   element: document.getElementById('reference-17'),
+  //   offset: '75%',
+  //   handler: function(direction) {
+  //     console.log('Scrolled '+ direction + ' to waypoint!');
+  //     $(this.element).addClass('is-inview');
+  //   }
+  // });
+
+  $('a:not([href*=#])').click(function(e) {
+    //e.preventDefault();
+    $('.body').removeClass('animated');
+    $('.body').removeClass('fadeIn');
+    $('.body').addClass('fade');
+  });
+
 });
-
-// var waypoint = new Waypoint({
-//   element: document.getElementById('reference-17'),
-//   offset: '75%',
-//   handler: function(direction) {
-//     console.log('Scrolled '+ direction + ' to waypoint!');
-//     $(this.element).addClass('is-inview');
-//   }
-// });
-
-
-});
-
 
 
 

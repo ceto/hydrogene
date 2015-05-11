@@ -3107,44 +3107,82 @@ Copyright (c) 2014 Daniel Eden
 .niceheading__preinfo, .hero__title {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: .25s;
-          animation-delay: .25s; }
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s; }
 
 .niceheading__title, .hero__subtitle {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s; }
+  -webkit-animation-delay: .75s;
+          animation-delay: .75s; }
 
 .niceheading__disclaimer, .hero__disclaimer {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: .75s;
-          animation-delay: .75s; }
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s; }
 
-.readmore, .hero__disclaimer:nth-of-type(2) {
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s; }
+.readmore, .hero__disclaimer:nth-of-type(2n) {
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s; }
+
+.refrow__header {
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s; }
+
+.refrow__figure {
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s; }
+
+.lenyil {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s; }
 
 hr {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 1.25s;
-          animation-delay: 1.25s; }
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s; }
 
 .singlepost__content {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: .75s;
-          animation-delay: .75s; }
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s; }
 
 .archiveentry, .storyitem, .allwedo, .reflist, .contactblock > .wrapper, .widestoryitem > .wrapper {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: .75s;
-          animation-delay: .75s; }
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s; }
+
+@media only screen and (min-width: 768px) {
+  .banner {
+    -webkit-animation-duration: .75s;
+            animation-duration: .75s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-delay: 1.75s;
+            animation-delay: 1.75s;
+    -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown; } }
+
+body {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+  body.fade {
+    -webkit-transition: opacity .5s linear;
+            transition: opacity .5s linear; }
 
 html {
   font-family: 'Archer', Georgia, serif;
@@ -3774,11 +3812,11 @@ textarea {
     border-bottom: 2px solid currentColor; }
 
 .banner {
-  -webkit-transition: all .4s ease;
-          transition: all .4s ease;
   color: #212121; }
   .banner .wrapper {
-    position: relative; }
+    position: relative;
+    -webkit-transition: all .4s ease;
+            transition: all .4s ease; }
   .single-reference .banner, .page-template-template-contact .banner, .page-template-template-aboutus .banner {
     color: rgba(255, 255, 255, 0.75); }
   @media only screen and (min-width: 768px) {

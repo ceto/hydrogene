@@ -1,34 +1,72 @@
 .niceheading__preinfo, .hero__title {
 	animation-duration: 1s;
-	animation-delay: .25s;
+	animation-delay: .5s;
 }
 
 .niceheading__title, .hero__subtitle {
 	animation-duration: 1s;
-	animation-delay: .5s;
+	animation-delay: .75s;
 }
 
 .niceheading__disclaimer, .hero__disclaimer {
 	animation-duration: 1s;
-	animation-delay: .75s;
+	animation-delay: 1s;
 }
 
-.readmore, .hero__disclaimer:nth-of-type(2) {
-		animation-duration: .5s;
-		animation-delay: 1.5s;	
+.readmore, .hero__disclaimer:nth-of-type(2n) {
+		animation-duration: .75s;
+		animation-delay: 1.75s;	
 	}
+
+
+
+.refrow__header {
+	animation-duration: 1.25s;
+	animation-delay: .5s;
+}
+
+
+.refrow__figure {
+	animation-duration: 1.25s;
+	animation-delay: 1s;
+}
+
+.lenyil {
+	animation-duration: 1s;
+	animation-delay: 2s;
+}
+
+
 
 hr {
 	animation-duration: 1s;
-	animation-delay: 1.25s;	
+	animation-delay: 1.5s;	
 }
 
 .singlepost__content {
 	animation-duration: 1s;
-	animation-delay: .75s;	
+	animation-delay: 1.5s;	
 }
 
 .archiveentry, .storyitem, .allwedo, .reflist, .contactblock > .wrapper,  .widestoryitem > .wrapper {
 	animation-duration: 1s;
-	animation-delay: .75s;	
+	animation-delay: 1.5s;	
+}
+
+.banner {
+	@include bp($s2) {
+	  animation-duration: .75s;
+    animation-fill-mode: both;
+
+		animation-delay: 1.75s;
+		animation-name: fadeInDown;
+	}
+}
+
+body {
+	animation-duration: .5s;
+	animation-delay: 0s;
+	&.fade {
+		transition: opacity .5s linear;
+	} 
 }

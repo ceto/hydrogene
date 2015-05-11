@@ -1,9 +1,10 @@
 .banner {
-  transition: all .4s ease;
+  
   color:$gray-main;
 
   .wrapper {
     position: relative;
+    transition: all .4s ease;
   }
 
   .single-reference &, .page-template-template-contact &, .page-template-template-aboutus & {

@@ -1,5 +1,5 @@
 <?php get_template_part('templates/head'); ?>
-<body <?php body_class(); ?>>
+<body <?php body_class('fadeIn animated'); ?>>
 
 <?php if ( WP_ENV == 'production' && !current_user_can('manage_options')) : ?>
   <!-- Google Tag Manager -->
