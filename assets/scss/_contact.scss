@@ -239,8 +239,8 @@
     @include bp($s2) {
       display: inline-block;
       position: absolute;
-      right:1rem;
-      top:1rem;
+      right: 1rem;
+      top: 1rem;
       color:rgba(#fff,.75);
       font-size: 1.5em;
       &:hover,&:focus {
