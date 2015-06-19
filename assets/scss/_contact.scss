@@ -171,6 +171,11 @@
   //min-height: 75vh;
   position: relative;
   overflow: hidden;
+  > .wrapper {
+    @include bp($s2) {
+      min-height: 5em;
+    }
+  }
 }
 
 #map-canvas {
@@ -205,24 +210,28 @@
   @include clearfix();
 
   @include bp($s2) {
+
     opacity: 0;
     visibility: hidden;
-    transform:translateY(500px) scale(0.333);
+    transform:translateY(100%) scale(0.333);
     transition: all .4s ease-in;
 
 
-  .wrapper {
-      padding:0 2em;
-    }
+
     max-width:33em;
     position: relative;
     z-index: 2;
 
-    margin: 4em auto 4em;
+    margin: 7em auto 0;
     padding: 0 0;
 
     background-image: linear-gradient(to right, $gray-main 50%, $secondary-color 50% );
     box-shadow: 0 0 10px 0 black;
+
+    .wrapper {
+      padding:0 2em;
+    }
+
   }
 
   .mapinfo__close {
@@ -230,9 +239,13 @@
     @include bp($s2) {
       display: inline-block;
       position: absolute;
-      right:1em;
-      top:1em;
-      color:#fff;
+      right:1rem;
+      top:1rem;
+      color:rgba(#fff,.75);
+      font-size: 1.5em;
+      &:hover,&:focus {
+        color:rgba(#fff,1);
+      }
     }
   }
   .balfel {

@@ -5751,6 +5751,9 @@ input[type="checkbox"]#nav-toggle {
     display: table; }
   .mapblock:after {
     clear: both; }
+  @media only screen and (min-width: 768px) {
+    .mapblock > .wrapper {
+      min-height: 5em; } }
 
 #map-canvas {
   height: 300px;
@@ -5780,15 +5783,15 @@ input[type="checkbox"]#nav-toggle {
     .mapblock__content {
       opacity: 0;
       visibility: hidden;
-      -webkit-transform: translateY(500px) scale(0.333);
-          -ms-transform: translateY(500px) scale(0.333);
-              transform: translateY(500px) scale(0.333);
+      -webkit-transform: translateY(100%) scale(0.333);
+          -ms-transform: translateY(100%) scale(0.333);
+              transform: translateY(100%) scale(0.333);
       -webkit-transition: all .4s ease-in;
               transition: all .4s ease-in;
       max-width: 33em;
       position: relative;
       z-index: 2;
-      margin: 4em auto 4em;
+      margin: 7em auto 0;
       padding: 0 0;
       background-image: -webkit-linear-gradient(left, #212121 50%, #bd4932 50%);
       background-image: linear-gradient(to right, #212121 50%, #bd4932 50%);
@@ -5801,9 +5804,12 @@ input[type="checkbox"]#nav-toggle {
       .mapblock__content .mapinfo__close {
         display: inline-block;
         position: absolute;
-        right: 1em;
-        top: 1em;
-        color: #fff; } }
+        right: 1rem;
+        top: 1rem;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 1.5em; }
+        .mapblock__content .mapinfo__close:hover, .mapblock__content .mapinfo__close:focus {
+          color: white; } }
   @media only screen and (min-width: 768px) {
     .mapblock__content .balfel {
       float: left;

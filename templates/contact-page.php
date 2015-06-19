@@ -140,7 +140,7 @@ if(!$contact_human == 0){
 <section id="mapblock" class="mapblock">	
 	<div class="mapblock__content">
 		<div class="wrapper wrapper--normal">
-			<a href="#" class="mapinfo__close"><i class="icon ion--close"></i></a>
+			<a href="#" class="mapinfo__close"><i class="icon icon--close"></i></a>
 			<div class="balfel">
 				<h2 class="contact__title">Személyesen*</h2>
 				<p class="contactelement__data">Együtt gondolkodni jó. Gyakori vendégünk leszel, ha beindul a projekted.<br>
@@ -177,14 +177,14 @@ if(!$contact_human == 0){
 
     var mapOptions = {
       center: new google.maps.LatLng(47.505175, 19.054692),
-      zoom: 17,
+      zoom: 16,
       zoomControl: false,
       zoomControlOptions: {style: google.maps.ZoomControlStyle.DEFAULT,},
       disableDoubleClickZoom: true,
       mapTypeControl: true,
       mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,},
       scaleControl: true,
-      scrollwheel: true,
+      scrollwheel: false,
       streetViewControl: true,
       draggable: true,
       overviewMapControl: true,
