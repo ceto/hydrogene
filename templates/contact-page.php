@@ -170,7 +170,7 @@ if(!$contact_human == 0){
 
 
 <!-- Google MAps -->
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script data-cfasync="false" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 <script>
 
   function initialize() {
