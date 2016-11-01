@@ -8,7 +8,7 @@
       <p class="niceheading__disclaimer animated fadeInUp">
         Több tucat sikeres projekt áll a hátunk mögött. Számos vállalkozást segítettünk honlappal vagy arculattal. Változatos feladataink közül megmutatjuk a kedvenceinket. Hasonlót szeretnél?
       </p>
-      <a class="readmore animated fadeInUp" href="<?php echo get_permalink(58); ?>">Lépj velünk a kapcsolatba…</a>
+      <a class="readmore animated fadeInUp" href="<?php echo get_permalink(58); ?>">Lépj velünk kapcsolatba…</a>
       <!-- <hr> -->
   </header>
 </div>
